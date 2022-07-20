@@ -1,0 +1,18 @@
+{
+    "legacies": [
+        {
+            "id": "alchemist",
+            "label": "The Alchemist",
+            "description": "It is alchemist",
+            "startdescription": "You are alchemist",
+            "effects": {
+                "loft": 1
+            },
+            "image": "alchemist",
+            "fromending": "default",
+            "availableWithoutEndingMatch": true,
+            "newstart": true, 
+            "startingverbid": "alchemist.explore"
+        }
+    ]
+}

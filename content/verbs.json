@@ -1,0 +1,30 @@
+{
+    "verbs": [
+        {
+            "id": "reaction",
+            "label": "Reaction",
+            "description": "Make new substance from ingredients.",
+            "slot": {
+                "id": "reaction",
+                "label": "Equipment",
+                "description": "What device to use for reaction?",
+                "required": {
+                    "device": 1
+                }
+            }
+        },
+        {
+            "id": "alchemist.explore",
+            "label": "Explore",
+            "description": "Visit some place to check for possibilities.",
+            "slot": {
+                "id": "explore",
+                "label": "Explore",
+                "description": "Where to go?",
+                "required": {
+                    "location": 1
+                }
+            }
+        }
+    ]
+}

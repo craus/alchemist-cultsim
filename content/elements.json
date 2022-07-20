@@ -1,0 +1,51 @@
+{
+    "elements": [
+        {
+            "id": "oldcauldron",
+            "label": "Old cauldron",
+            "aspects": {
+                "device": 1
+            },
+            "description": "Old cauldron"
+        },
+        {
+            "id": "loft",
+            "label": "Loft of my house",
+            "aspects": {
+                "location": 1
+            },
+            "description": "Пыльный чердак. Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
+            "comment": "My father store his old junk on the loft. Probably I can find something here."
+        },
+        {
+            "id": "commissionarticlesecrethistories",
+            "label": "Commission: Secret Histories",
+            "aspects": {
+                "commission": 1,
+                "job": 1
+            },
+            "description": "Dr Ibn al-Adim, called the Aleppine, has offered you a commission. He would like you to provide him with any information you can assemble on the secret histories of the world. [You'll need a matching Lore fragment of at least level 2 to complete this commission.]",
+            "slots": [
+                {
+                    "id": "lore",
+                    "label": "Lore",
+                    "required": {
+                        "lore": 1
+                    },
+                    "actionid": "work"
+                },
+                {
+                    "id": "reason1",
+                    "label": "Reason",
+                    "required": {
+                        "reason": 1
+                    },
+                    "actionid": "work"
+                }
+            ],
+            "xtriggers": {
+                "commissionfulfilled": "compensation"
+            }
+        }
+    ]
+}

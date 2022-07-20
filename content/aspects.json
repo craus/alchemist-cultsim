@@ -1,0 +1,11 @@
+{
+    "elements": [
+        {
+            "id": "device",
+            "label": "Device",
+            "description": "Container to store and mix substances.",
+            "icon": "vaultshires",
+            "isAspect": true
+        }
+    ]
+}

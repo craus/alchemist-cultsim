@@ -1,0 +1,21 @@
+{
+    "recipes": [
+        {
+            "id": "alchemist.explore.loft",
+            "label": "It is dark and littered",
+            "actionid": "alchemist.explore",
+            "requirements": {
+                "loft": 1
+            },
+            "slots": [
+            ],
+            "startdescription": "It is dark and littered 2",
+            "description": "It is dark and littered 3",
+            "effects": {
+                "oldcauldron": 1
+            },
+            "warmup": 1,
+            "craftable": true
+        }
+    ]
+}
