@@ -1,13 +1,13 @@
 {
     "verbs": [
         {
-            "id": "reaction",
-            "label": "Reaction",
-            "description": "Make new substance from ingredients.",
+            "id": "alchemist.reaction",
+            "label": "Реакция",
+            "description": "Создать новую субстанцию из ингредиентов.",
             "slot": {
                 "id": "reaction",
-                "label": "Equipment",
-                "description": "What device to use for reaction?",
+                "label": "Оборудование",
+                "description": "Какое устройство использовать для реакции?",
                 "required": {
                     "device": 1
                 }
@@ -15,12 +15,12 @@
         },
         {
             "id": "alchemist.explore",
-            "label": "Explore",
-            "description": "Visit some place to check for possibilities.",
+            "label": "Исследовать",
+            "description": "Посетить какое-то место и поискать там возможности.",
             "slot": {
                 "id": "explore",
-                "label": "Explore",
-                "description": "Where to go?",
+                "label": "Место",
+                "description": "Куда пойти?",
                 "required": {
                     "location": 1
                 }

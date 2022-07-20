@@ -2,20 +2,36 @@
     "recipes": [
         {
             "id": "alchemist.explore.loft",
-            "label": "It is dark and littered",
+            "label": "Поиск на чердаке",
             "actionid": "alchemist.explore",
             "requirements": {
                 "loft": 1
             },
             "slots": [
             ],
-            "startdescription": "It is dark and littered 2",
-            "description": "It is dark and littered 3",
+            "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
+            "description": "Кое-что удалось обнаружить...",
+            "warmup": 5,
+            "craftable": true,
+            "alt": [
+                {
+                    "id": "alchemist.reaction.intro",
+                    "chance": 100,
+                    "additional": true
+                }
+            ],
+        },
+        {
+            "id": "alchemist.reaction.intro",
+            "label": "Старый батин котёл",
+            "actionid": "alchemist.reaction",
+            "startdescription": "Его ещё предстоит отмыть.",
+            "description": "Фух, теперь в нём можно сварить что-нибудь.",
             "effects": {
                 "oldcauldron": 1
             },
-            "warmup": 1,
-            "craftable": true
-        }
+            "warmup": 5,
+            "craftable": false
+        },
     ]
 }
