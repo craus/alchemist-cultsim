@@ -1,11 +1,11 @@
 {
     "verbs": [
         {
-            "id": "alchemist.reaction",
+            "id": "reaction",
             "label": "Реакция",
             "description": "Создать новую субстанцию из ингредиентов.",
             "slot": {
-                "id": "reaction",
+                "id": "device",
                 "label": "Оборудование",
                 "description": "Какое устройство использовать для реакции?",
                 "required": {
@@ -14,11 +14,11 @@
             }
         },
         {
-            "id": "alchemist.explore",
+            "id": "visit",
             "label": "Исследовать",
             "description": "Посетить какое-то место и поискать там возможности.",
             "slot": {
-                "id": "explore",
+                "id": "location",
                 "label": "Место",
                 "description": "Куда пойти?",
                 "required": {

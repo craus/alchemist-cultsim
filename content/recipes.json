@@ -1,9 +1,9 @@
 {
     "recipes": [
         {
-            "id": "alchemist.explore.loft",
+            "id": "visit.loft",
             "label": "Поиск на чердаке",
-            "actionid": "alchemist.explore",
+            "actionid": "visit",
             "requirements": {
                 "loft": 1
             },
@@ -15,16 +15,16 @@
             "craftable": true,
             "alt": [
                 {
-                    "id": "alchemist.reaction.intro",
+                    "id": "reaction.intro",
                     "chance": 100,
                     "additional": true
                 }
             ],
         },
         {
-            "id": "alchemist.reaction.intro",
+            "id": "reaction.intro",
             "label": "Старый батин котёл",
-            "actionid": "alchemist.reaction",
+            "actionid": "reaction",
             "startdescription": "Его ещё предстоит отмыть.",
             "description": "Фух, теперь в нём можно сварить что-нибудь.",
             "effects": {

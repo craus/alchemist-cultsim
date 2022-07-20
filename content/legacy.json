@@ -12,7 +12,7 @@
             "fromending": "default",
             "availableWithoutEndingMatch": true,
             "newstart": true, 
-            "startingverbid": "alchemist.explore"
+            "startingverbid": "visit"
         }
     ]
 }
