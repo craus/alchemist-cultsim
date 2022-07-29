@@ -1,0 +1,211 @@
+{
+    "elements": [
+        {
+            "id": "leeches",
+            "label": "Личинки",
+            "aspects": {
+                "substance": 1
+            },
+            "description": "Новая жизнь, зародившаяся на остатках старой."
+        },
+        {
+            "id": "flower.black",
+            "label": "Чёрный цветок",
+            "aspects": {
+                "substance": 1,
+                "flower": 1,
+            },
+            "description": "Совершенно не отражает свет."
+        },
+        {
+            "id": "flower.white",
+            "label": "Белый цветок",
+            "aspects": {
+                "substance": 1,
+                "flower": 1,
+            },
+            "description": "Его запах пробуждает мечты."
+        },
+        {
+            "id": "flower.blue",
+            "label": "Синий цветок",
+            "aspects": {
+                "substance": 1,
+                "flower": 1,
+            },
+            "description": "Прекрасное порождение растительного мира."
+        },
+        {
+            "id": "slops",
+            "label": "Худшие помои",
+            "aspects": {
+                "substance": 1,
+            },
+            "description": "Воняет пиздец. Это только выкинуть. Фу бля."
+        },
+        {
+            "id": "heart.of.dark",
+            "label": "Сердце тьмы",
+            "aspects": {
+                "substance": 1,
+            },
+            "description": "Могущественное порождение тёмных искусств."
+        },
+        
+        
+        {
+            "id": "potion.strengthen",
+            "label": "Зелье усиления",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+            },          
+            "description": "Делает вещи более сильными. Они будут делать то же самое, но в гораздо большей степени.",
+            "xtriggers": {
+                "refresh": "potion.strengthen",
+            },
+        },
+        {
+            "id": "potion.weaken",
+            "label": "Зелье ослабления",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+            },
+            "description": "Делает вещи более слабыми.",
+            "xtriggers": {
+                "refresh": "potion.weaken",
+            },
+        },
+        {
+            "id": "potion.reverse",
+            "label": "Зелье противоположности",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+            },
+            "description": "Делает из вещей противоположные им.",
+            "xtriggers": {
+                "refresh": "potion.reverse",
+            },
+        },
+        {
+            "id": "potion.neutralize",
+            "label": "Зелье нейтрализации",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+            },
+            "description": "Делает вещи неработающими. Они от этого перестают делать то, что делали раньше.",
+            "xtriggers": {
+                "refresh": "potion.neutralize",
+            },
+        },
+        {
+            "id": "potion.absolute",
+            "label": "Зелье абсолюта",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+            },
+            "description": "Даёт вещам абсолютную силу.",
+            "xtriggers": {
+                "refresh": "potion.absolute",
+            },
+        },
+        {
+            "id": "potion.identity",
+            "label": "Зелье совпадения",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+            },
+            "description": "Оставляет вещи такими же, как они есть.",
+            "xtriggers": {
+                "refresh": "potion.identity",
+            },
+        },
+        {
+            "id": "potion.difference",
+            "label": "Зелье различия",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+            },
+            "description": "Делает вещи в чём-то другими, не такими же, как они сейчас.",
+            "xtriggers": {
+                "refresh": "potion.difference",
+            },
+        },
+        {
+            "id": "potion.similar",
+            "label": "Зелье похожести",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+            },
+            "description": "Делает вещи похожими на то, каковы они сейчас.",
+            "xtriggers": {
+                "refresh": "potion.similar",
+            },
+        },
+        {
+            "id": "potion.other",
+            "label": "Зелье другого",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+            },
+            "description": "Делает из вещей другие вещи, никак не связанные с ними.",
+            "xtriggers": {
+                "refresh": "potion.other",
+            },
+        },
+        {
+            "id": "potion.split",
+            "label": "Зелье разделения",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+            },
+            "description": "Разделяет целое на множество частей.",
+            "xtriggers": {
+                "refresh": "potion.split",
+            },
+        },
+        {
+            "id": "potion.merge",
+            "label": "Зелье соединения",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+            },
+            "description": "Собирает части в единое целое.",
+            "xtriggers": {
+                "refresh": "potion.split",
+            },
+        },
+        {
+            "id": "potion.static",
+            "label": "Зелье статичности",
+            "aspects": {
+                "substance": 1,
+            },
+            "description": "Делает вещи неизменными.",
+            "xtriggers": {
+                "refresh": "potion.static",
+            },
+        },
+        {
+            "id": "potion.explosion",
+            "label": "Зелье взрыва",
+            "aspects": {
+                "substance": 1,
+            },
+            "description": "Разрывает всё на части.",
+            "xtriggers": {
+                "refresh": "potion.explosion",
+            },
+        },
+    ]
+}

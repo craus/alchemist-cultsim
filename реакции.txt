@@ -1,0 +1,44 @@
+strengthen + strengthen = absolute
+strengthen + weaken = neutralize
+strengthen + reverse = identity
+strengthen + neutralize = reverse
+strengthen + absolute = absolute
+strengthen + identity = static
+strengthen + difference = other
+strengthen + similar = identity
+strengthen + split = explosion
+strengthen + other = reverse
+
+weaken + neutralize = weaken
+weaken + reverse = neutralize
+weaken + absolute = strengthen
+weaken + identity = similar
+weaken + similar = other
+weaken + static = identity
+weaken + other = difference
+weaken + explosion = split
+
+reverse + strengthen = weaken
+reverse + weaken = strengthen
+reverse + reverse = identity
+reverse + neutralize = absolute
+reverse + absolute = neutralize
+reverse + identity = difference
+reverse + difference = identity
+reverse + similar = other
+reverse + other = similar
+reverse + split = merge
+reverse + merge = split
+
+neutralize + identity = other
+neutralize + any _other_ modification = identity
+
+absolute + weaken = reverse
+absolute + reverse = split
+absolute + neutralize = void
+absolute + absolute = absolute
+absolute + any _other_ modification = strength + this modification
+
+identity + any _other_ = same shit
+
+difference + strengthen = 

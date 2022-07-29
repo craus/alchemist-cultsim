@@ -1,0 +1,14 @@
+{
+    "decks": [
+        {
+            "id": "forestloot",
+            "label": "Добыча из леса",
+            "spec": [
+                "flower.white",
+                "flower.black",
+                "flower.blue",
+            ],
+            "resetonexhaustion": true
+        }
+    ]
+}

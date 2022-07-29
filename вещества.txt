@@ -1,0 +1,13 @@
+strengthen
+weaken
+reverse 
+neutralize
+absolute
+identity
+difference
+similar
+other
+split
+merge
+static 
+explosion

@@ -1,0 +1,871 @@
+{
+    "recipes": [
+        {
+            "id": "reaction",
+            "label": "Алхимическое преобразование",
+            "actionid": "reaction",
+            "requirements": {
+                "substance": 2
+            },
+            "startdescription": "sdfasd",
+            "description": "Почти готово.",
+            "warmup": 5,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "two.flowers"
+                },
+                {
+                    "id": "heart.of.dark"
+                }
+            ]
+        }, 
+        {
+            "id": "two.flowers",
+            "label": "Полные помои",
+            "actionid": "reaction",
+            "requirements": {
+                "flower": 2
+            },
+            "startdescription": "sadfas",
+            "warmup": 5,
+            "description": "Получилась полная фигня.",
+            "effects": {
+                "substance": -2,
+                "slops": 1
+            }
+        }, 
+        
+        {
+            "id": "strengthen",
+            "label": "Усиление",
+            "actionid": "reaction",
+            "requirements": {
+                "potion.strengthen": 1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Цель",
+                    "description": "На что я хочу повлиять?",
+                    "required": {
+                        "substance": 1,
+                    },
+                },   
+            ],
+            "startdescription": "Я могу что-то усилить.",
+            "warmup": 5,
+            "description": "Пожалуй, не буду этого делать.",
+            "alt": [
+                {
+                    "id": "strengthen.strengthen",
+                },
+                {
+                    "id": "strengthen.weaken",
+                },
+                {
+                    "id": "strengthen.reverse",
+                },
+                {
+                    "id": "strengthen.neutralize",
+                },
+                {
+                    "id": "strengthen.absolute",
+                },
+                {
+                    "id": "strengthen.identity",
+                },
+                {
+                    "id": "strengthen.difference",
+                },
+                {
+                    "id": "strengthen.similar",
+                },
+                {
+                    "id": "strengthen.split",
+                },
+                {
+                    "id": "strengthen.other",
+                },
+            ],
+            "craftable": true,
+        },       
+        {
+            "id": "strengthen.weaken",
+            "label": "Усиление ослабления - нейтрализация",
+            "requirements": {
+                "potion.weaken": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.strengthen": -1,
+                "potion.weaken": -1,
+                "potion.neutralize": 1,
+            }
+        }, 
+        {
+            "id": "strengthen.neutralize",
+            "label": "Усиление нейтрализации - противоположность",
+            "requirements": {
+                "potion.neutralize": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.strengthen": -1,
+                "potion.neutralize": -1,
+                "potion.reverse": 1,
+            }
+        }, 
+        {
+            "id": "strengthen.strengthen",
+            "label": "Усиление усиления - абсолют",
+            "requirements": {
+                "potion.strengthen": 2,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.strengthen": -2,
+                "potion.absolute": 1,
+            }
+        }, 
+        {
+            "id": "strengthen.reverse",
+            "label": "Усиление противоположности - совпадение",
+            "requirements": {
+                "potion.reverse": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.strengthen": -1,
+                "potion.reverse": -1,
+                "potion.identity": 1,
+            }
+        }, 
+        {
+            "id": "strengthen.absolute",
+            "label": "Усиление абсолюта - абсолют",
+            "requirements": {
+                "potion.absolute": 1,
+            },
+            "startdescription": "На то он и абсолют.",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.strengthen": -1,
+                "potion.absolute": -1,
+                "potion.absolute": 1,
+            }
+        },
+        {
+            "id": "strengthen.identity",
+            "label": "Усиление совпадения - статичность",
+            "requirements": {
+                "potion.identity": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.strengthen": -1,
+                "potion.identity": -1,
+                "potion.static": 1,
+            }
+        }, 
+        {
+            "id": "strengthen.difference",
+            "label": "Усиление различия",
+            "requirements": {
+                "potion.difference": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.strengthen": -1,
+                "potion.difference": -1,
+                "potion.other": 1,
+            }
+        }, 
+        {
+            "id": "strengthen.similar",
+            "label": "Усиление похожести - совпадение",
+            "requirements": {
+                "potion.similar": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.strengthen": -1,
+                "potion.similar": -1,
+                "potion.identity": 1,
+            }
+        }, 
+        {
+            "id": "strengthen.split",
+            "label": "Усиление разделения - взрыв",
+            "requirements": {
+                "potion.split": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.strengthen": -1,
+                "potion.split": -1,
+                "potion.explosion": 1,
+            }
+        }, 
+        {
+            "id": "strengthen.other",
+            "label": "Усиление зелья другого",
+            "requirements": {
+                "potion.other": 1,
+            },
+            "startdescription": "Теперь оно будет делать вещи ещё более непохожими на себя.",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.strengthen": -1,
+                "potion.other": -1,
+                "potion.reverse": 1,
+            }
+        }, 
+        
+        {
+            "id": "weaken",
+            "label": "Ослабление",
+            "actionid": "reaction",
+            "requirements": {
+                "potion.weaken": 1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Цель",
+                    "description": "На что я хочу повлиять?",
+                    "required": {
+                        "substance": 1,
+                    },
+                },   
+            ],
+            "startdescription": "Я могу что-то ослабить.",
+            "warmup": 5,
+            "description": "Пожалуй, не буду этого делать.",
+            "alt": [
+                {
+                    "id": "weaken.neutralize",
+                },
+                {
+                    "id": "weaken.reverse",
+                },
+                {
+                    "id": "weaken.absolute",
+                },
+                {
+                    "id": "weaken.identity",
+                },
+                {
+                    "id": "weaken.similar",
+                },
+                {
+                    "id": "weaken.static",
+                },
+                {
+                    "id": "weaken.other",
+                },
+                {
+                    "id": "weaken.explosion",
+                },
+            ],
+            "craftable": true,
+        },
+        {
+            "id": "weaken.neutralize",
+            "label": "Ослабление нейтрализации - ослабление",
+            "requirements": {
+                "potion.neutralize": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.weaken": -1,
+                "potion.neutralize": -1,
+                "potion.weaken": 1,
+            }
+        }, 
+        {
+            "id": "weaken.reverse",
+            "label": "Ослабление противоположности - нейтрализация",
+            "requirements": {
+                "potion.reverse": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.weaken": -1,
+                "potion.reverse": -1,
+                "potion.neutralize": 1,
+            }
+        }, 
+        {
+            "id": "weaken.absolute",
+            "label": "Ослабление абсолюта - усиление",
+            "requirements": {
+                "potion.absolute": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.weaken": -1,
+                "potion.absolute": -1,
+                "potion.strengthen": 1,
+            }
+        }, 
+        {
+            "id": "weaken.identity",
+            "label": "Ослабление совпадения - сходство",
+            "requirements": {
+                "potion.identity": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.weaken": -1,
+                "potion.identity": -1,
+                "potion.similar": 1,
+            }
+        }, 
+        {
+            "id": "weaken.similar",
+            "label": "Ослабление похожести - несоответствие",
+            "requirements": {
+                "potion.similar": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.weaken": -1,
+                "potion.similar": -1,
+                "potion.other": 1,
+            }
+        }, 
+        {
+            "id": "weaken.static",
+            "label": "Ослабление статичности - совпадение",
+            "requirements": {
+                "potion.static": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.weaken": -1,
+                "potion.static": -1,
+                "potion.identity": 1,
+            }
+        }, 
+        {
+            "id": "weaken.other",
+            "label": "Ослабление зелья другого - различие",
+            "requirements": {
+                "potion.other": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.weaken": -1,
+                "potion.other": -1,
+                "potion.difference": 1,
+            }
+        }, 
+        {
+            "id": "weaken.explosion",
+            "label": "Ослабление взрыва - разделение",
+            "requirements": {
+                "potion.explosion": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.weaken": -1,
+                "potion.explosion": -1,
+                "potion.split": 1,
+            }
+        },
+         
+        {
+            "id": "reverse",
+            "label": "Противоположность",
+            "actionid": "reaction",
+            "requirements": {
+                "potion.reverse": 1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Цель",
+                    "description": "На что я хочу повлиять?",
+                    "required": {
+                        "substance": 1,
+                    },
+                },   
+            ],
+            "startdescription": "Я могу что-то превратить в его противоположность.",
+            "warmup": 5,
+            "description": "Пожалуй, не буду этого делать.",
+            "alt": [
+                {
+                    "id": "reverse.strengthen",
+                },
+                {
+                    "id": "reverse.weaken",
+                },
+                {
+                    "id": "reverse.reverse",
+                },
+                {
+                    "id": "reverse.neutralize",
+                },
+                {
+                    "id": "reverse.absolute",
+                },
+                {
+                    "id": "reverse.identity",
+                },
+                {
+                    "id": "reverse.difference",
+                },
+                {
+                    "id": "reverse.similar",
+                },
+                {
+                    "id": "reverse.other",
+                },
+                {
+                    "id": "reverse.split",
+                },
+                {
+                    "id": "reverse.merge",
+                },
+            ],
+            "craftable": true,
+        },
+        {
+            "id": "reverse.strengthen",
+            "label": "Противоположность усиления - ослабление",
+            "requirements": {
+                "potion.strengthen": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.reverse": -1,
+                "potion.strengthen": -1,
+                "potion.weaken": 1,
+            }
+        }, 
+        {
+            "id": "reverse.weaken",
+            "label": "Противоположность ослабления - усиление",
+            "requirements": {
+                "potion.weaken": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.reverse": -1,
+                "potion.weaken": -1,
+                "potion.strengthen": 1,
+            }
+        }, 
+        {
+            "id": "reverse.reverse",
+            "label": "Противоположность противоположности - совпадение",
+            "requirements": {
+                "potion.reverse": 2,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.reverse": -2,
+                "potion.identity": 1,
+            }
+        },  
+        {
+            "id": "reverse.neutralize",
+            "label": "Противоположность нейтрализации - абсолют",
+            "requirements": {
+                "potion.neutralize": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.reverse": -1,
+                "potion.neutralize": -1,
+                "potion.absolute": 1,
+            }
+        }, 
+        {
+            "id": "reverse.absolute",
+            "label": "Противоположность абсолюта - нейтрализация",
+            "requirements": {
+                "potion.neutralize": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.reverse": -1,
+                "potion.absolute": -1,
+                "potion.neutralize": 1,
+            }
+        },  
+        {
+            "id": "reverse.identity",
+            "label": "Противоположность совпадения - отличие",
+            "requirements": {
+                "potion.identity": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.reverse": -1,
+                "potion.identity": -1,
+                "potion.difference": 1,
+            }
+        },  
+        {
+            "id": "reverse.difference",
+            "label": "Противоположность отличия - совпадение",
+            "requirements": {
+                "potion.difference": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.reverse": -1,
+                "potion.difference": -1,
+                "potion.identity": 1,
+            }
+        }, 
+        {
+            "id": "reverse.similar",
+            "label": "Противоположность похожести - другое",
+            "requirements": {
+                "potion.similar": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.reverse": -1,
+                "potion.similar": -1,
+                "potion.other": 1,
+            }
+        }, 
+        {
+            "id": "reverse.other",
+            "label": "Противоположность другого - сходство",
+            "requirements": {
+                "potion.other": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.reverse": -1,
+                "potion.other": -1,
+                "potion.similar": 1,
+            }
+        }, 
+        {
+            "id": "reverse.split",
+            "label": "Противоположность разделения - соединение",
+            "requirements": {
+                "potion.split": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.reverse": -1,
+                "potion.split": -1,
+                "potion.merge": 1,
+            }
+        },  
+        {
+            "id": "reverse.merge",
+            "label": "Противоположность соединения - разделение",
+            "requirements": {
+                "potion.merge": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.reverse": -1,
+                "potion.merge": -1,
+                "potion.split": 1,
+            }
+        }, 
+             
+        {
+            "id": "neutralize",
+            "label": "Нейтрализация",
+            "actionid": "reaction",
+            "requirements": {
+                "potion.neutralize": 1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Цель",
+                    "description": "На что я хочу повлиять?",
+                    "required": {
+                        "substance": 1,
+                    },
+                },   
+            ],
+            "startdescription": "Я могу лишить что-то эффекта.",
+            "warmup": 5,
+            "description": "Пожалуй, не буду этого делать.",
+            "alt": [
+                {
+                    "id": "neutralize.identity",
+                },
+                {
+                    "id": "neutralize.modification",
+                },
+            ],
+            "craftable": true,
+        },
+        {
+            "id": "neutralize.identity",
+            "label": "Нейтрализация совпадения - отличие",
+            "requirements": {
+                "identity": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.neutralize": -1,
+                "potion.identity": -1,
+                "potion.other": 1,
+            }
+        }, 
+        {
+            "id": "neutralize.modification",
+            "label": "Нейтрализация любой модификации - совпадение",
+            "requirements": {
+                "modification": 2,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "modification": -2,
+                "potion.identity": 1,
+            }
+        }, 
+        
+        {
+            "id": "absolute",
+            "label": "Абсолют",
+            "actionid": "reaction",
+            "requirements": {
+                "potion.absolute": 1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Цель",
+                    "description": "На что я хочу повлиять?",
+                    "required": {
+                        "substance": 1,
+                    },
+                },   
+            ],
+            "startdescription": "Я могу дать чему-то абсолютный эффект.",
+            "warmup": 5,
+            "description": "Пожалуй, не буду этого делать.",
+            "alt": [
+                {
+                    "id": "absolute.weaken",
+                },
+                {
+                    "id": "absolute.reverse",
+                },
+                {
+                    "id": "absolute.neutralize",
+                },
+                {
+                    "id": "absolute.absolute",
+                },
+                {
+                    "id": "absolute.modification",
+                },
+            ],
+            "craftable": true,
+        },
+        {
+            "id": "absolute.weaken",
+            "label": "Абсолют ослабления - противоположность",
+            "requirements": {
+                "weaken": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.absolute": -1,
+                "potion.weaken": -1,
+                "potion.reverse": 1,
+            }
+        }, 
+        {
+            "id": "absolute.reverse",
+            "label": "Абсолют противоположности - разделение",
+            "requirements": {
+                "reverse": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.absolute": -1,
+                "potion.reverse": -1,
+                "potion.split": 1,
+            }
+        }, 
+        {
+            "id": "absolute.neutralize",
+            "label": "Абсолют нейтрализации - исчезновение",
+            "requirements": {
+                "neutralize": 1,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.absolute": -1,
+                "potion.neutralize": -1,
+                "potion.void": 1,
+            }
+        }, 
+        {
+            "id": "absolute.absolute",
+            "label": "Абсолют абсолюта - абсолют",
+            "requirements": {
+                "absolute": 2,
+            },
+            "startdescription": "На то он и абсолют.",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.absolute": -2,
+                "potion.absolute": 1,
+            }
+        }, 
+        {
+            "id": "absolute.identity",
+            "label": "Абсолют совпадения - статичность",
+            "requirements": {
+                "identity": 1,
+            },
+            "startdescription": "На то он и абсолют.",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.absolute": -1,
+                "potion.identity": -1,
+                "potion.static": 1,
+            }
+        }, 
+        {
+            "id": "absolute.modification",
+            "label": "То же, что и обычное усиление",
+            "requirements": {
+                "modification": 2,
+            },
+            "startdescription": "В данном случае абсолют даст то же, что и обычное зелье усиления.",
+            "warmup": 5,
+            "description": ".",
+            "effects": {
+                "potion.absolute": -1,
+                "potion.strength": 1,
+            },
+            "linked": [
+                {
+                    "id": "strengthen",
+                },
+            ]
+        }, 
+                 
+        {
+            "id": "identity",
+            "label": "Совпадение",
+            "actionid": "reaction",
+            "requirements": {
+                "potion.identity": 1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Цель",
+                    "description": "На что я хочу не повлиять?",
+                    "required": {
+                        "substance": 1,
+                    },
+                },   
+            ],
+            "startdescription": "Я могу оставить что-то прежним.",
+            "warmup": 5,
+            "description": "Пожалуй, не буду этого делать.",
+            "alt": [
+                {
+                    "id": "identity.any",
+                },
+            ],
+            "craftable": true,
+        },
+        {
+            "id": "identity.any",
+            "label": "Совпадение с чем угодно - это оно само.",
+            "requirements": {
+                "modification": 2,
+            },
+            "startdescription": ".",
+            "warmup": 5,
+            "description": ".",
+            "aspects": {
+                "refresh": 1,
+            },
+            "effects": {
+                "potion.identity": -1,
+            }
+        }, 
+    ]
+}

@@ -6,7 +6,27 @@
             "aspects": {
                 "device": 1
             },
-            "description": "Этим котлом когда-то пользовался мой отец."
+            "description": "Этим котлом когда-то пользовался мой отец.",
+            "slots": [                
+                {
+                    "id": "ingredient1",
+                    "label": "Ингредиент",
+                    "description": "Первый ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "reaction"
+                },          
+                {
+                    "id": "ingredient2",
+                    "label": "Ингредиент",
+                    "description": "Второй ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "reaction"
+                },
+            ],
         },
         {
             "id": "loft",
@@ -15,6 +35,14 @@
                 "location": 1
             },
             "description": "Пыльный чердак. Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь."
-        }
+        },
+        {
+            "id": "forest",
+            "label": "Лес",
+            "aspects": {
+                "location": 1
+            },
+            "description": "Уголок дикой природы рядом с родной деревней."
+        },
     ]
 }

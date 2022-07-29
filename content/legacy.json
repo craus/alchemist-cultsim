@@ -6,7 +6,12 @@
             "description": "It is alchemist",
             "startdescription": "You are alchemist",
             "effects": {
-                "loft": 1
+                "loft": 1,
+                "forest": 1,
+                "potion.strengthen": 10,
+                "potion.weaken": 10,
+                "potion.neutralize": 10,
+                "potion.reverse": 10,
             },
             "image": "alchemist",
             "fromending": "default",

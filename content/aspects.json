@@ -2,10 +2,31 @@
     "elements": [
         {
             "id": "device",
-            "label": "Device",
-            "description": "Container to store and mix substances.",
-            "icon": "vaultshires",
+            "label": "Устройство",
+            "description": "Контейнер для хранения и смешивания субстанций.",
+            "icon": "device",
             "isAspect": true
-        }
+        },
+        {
+            "id": "substance",
+            "label": "Субстанция",
+            "description": "Материя, пригодная для алхимических превращений.",
+            "icon": "substance",
+            "isAspect": true
+        },
+        {
+            "id": "flower",
+            "label": "Цветок",
+            "description": "Это ещё цветочки.",
+            "icon": "flower",
+            "isAspect": true
+        },
+        {
+            "id": "modification",
+            "label": "Модификация",
+            "description": "Это всё меняет. Но не всегда.",
+            "icon": "modification",
+            "isAspect": true
+        },
     ]
 }

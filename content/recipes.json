@@ -13,14 +13,16 @@
             "description": "Кое-что удалось обнаружить...",
             "warmup": 5,
             "craftable": true,
+            "effects": {
+                "leeches": 1
+            },            
             "alt": [
                 {
                     "id": "reaction.intro",
-                    "chance": 100,
                     "additional": true
                 }
             ],
-        },
+        },  
         {
             "id": "reaction.intro",
             "label": "Старый батин котёл",
@@ -32,6 +34,23 @@
             },
             "warmup": 5,
             "craftable": false
+        },      
+        {
+            "id": "visit.forest",
+            "label": "Поход в лес",
+            "actionid": "visit",
+            "requirements": {
+                "forest": 1
+            },
+            "slots": [
+            ],
+            "startdescription": "Прогулка по непролазной лесной чаще обещает быть утомительной...",
+            "description": "Настала пора возвращаться.",
+            "warmup": 5,
+            "craftable": true, 
+            "deckeffects": {
+                "forestloot": 1
+            }
         },
     ]
 }
