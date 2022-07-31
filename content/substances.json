@@ -155,6 +155,9 @@
             "aspects": {
                 "substance": 1,
                 "modification": 1,
+                "forge": 1,
+                "heart": 1,
+                "edge": 1,
             },          
             "description": "Делает вещи более сильными. Они будут делать то же самое, но в гораздо большей степени.",
             "xtriggers": {
@@ -167,6 +170,9 @@
             "aspects": {
                 "substance": 1,
                 "modification": 1,
+                "winter": 1,
+                "knock": 1,
+                "moth": 1,
             },
             "description": "Делает вещи более слабыми.",
             "xtriggers": {
@@ -179,6 +185,9 @@
             "aspects": {
                 "substance": 1,
                 "modification": 1,
+                "moth": 1,
+                "grail": 1,
+                "edge": 1,
             },
             "description": "Делает из вещей противоположные им.",
             "xtriggers": {
@@ -191,6 +200,9 @@
             "aspects": {
                 "substance": 1,
                 "modification": 1,
+                "winter": 1,
+                "heart": 1,
+                "edge": 1,
             },
             "description": "Делает вещи неработающими. Они от этого перестают делать то, что делали раньше.",
             "xtriggers": {
@@ -203,6 +215,9 @@
             "aspects": {
                 "substance": 1,
                 "modification": 1,
+                "forge": 1,
+                "lantern": 1,
+                "secrethistories": 1,
             },
             "description": "Даёт вещам абсолютную силу.",
             "xtriggers": {
@@ -215,6 +230,9 @@
             "aspects": {
                 "substance": 1,
                 "modification": 1,
+                "heart": 1,
+                "grail": 1,
+                "winter": 1,
             },
             "description": "Оставляет вещи такими же, как они есть.",
             "xtriggers": {
@@ -227,6 +245,9 @@
             "aspects": {
                 "substance": 1,
                 "modification": 1,
+                "moth": 1,
+                "edge": 1,
+                "knock": 1,
             },
             "description": "Делает вещи в чём-то другими, не такими же, как они сейчас.",
             "xtriggers": {
@@ -239,6 +260,8 @@
             "aspects": {
                 "substance": 1,
                 "modification": 1,
+                "secrethistories": 1,
+                "heart": 1,
             },
             "description": "Делает вещи похожими на то, каковы они сейчас.",
             "xtriggers": {
@@ -251,6 +274,8 @@
             "aspects": {
                 "substance": 1,
                 "modification": 1,
+                "lantern": 1,
+                "secrethistories": 1,
             },
             "description": "Делает из вещей другие вещи, никак не связанные с ними.",
             "xtriggers": {
@@ -263,6 +288,9 @@
             "aspects": {
                 "substance": 1,
                 "modification": 1,
+                "edge": 1,
+                "knock": 1,
+                "lantern": 1,
             },
             "description": "Разделяет целое на множество частей.",
             "xtriggers": {
@@ -275,6 +303,9 @@
             "aspects": {
                 "substance": 1,
                 "modification": 1,
+                "grail": 1,
+                "heart": 1,
+                "forge": 1,
             },
             "description": "Собирает части в единое целое.",
             "xtriggers": {
@@ -286,6 +317,7 @@
             "label": "Зелье статичности",
             "aspects": {
                 "substance": 1,
+                "winter": 1,
             },
             "description": "Делает вещи неизменными.",
             "xtriggers": {
@@ -297,6 +329,8 @@
             "label": "Зелье взрыва",
             "aspects": {
                 "substance": 1,
+                "forge": 1,
+                "edge": 1,
             },
             "description": "Разрывает всё на части.",
             "xtriggers": {
