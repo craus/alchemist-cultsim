@@ -4,7 +4,7 @@
             "id": "oldcauldron",
             "label": "Старый котёл",
             "aspects": {
-                "device": 1
+                "device": 1,
             },
             "description": "Этим котлом когда-то пользовался мой отец.",
             "slots": [                
@@ -43,16 +43,7 @@
                         "substance": 1
                     },
                     "actionid": "reaction"
-                },       
-                {
-                    "id": "ingredient5",
-                    "label": "Ингредиент",
-                    "description": "Пятый ингредиент",
-                    "required": {
-                        "substance": 1
-                    },
-                    "actionid": "reaction"
-                },
+                },    
             ],
         },
         {

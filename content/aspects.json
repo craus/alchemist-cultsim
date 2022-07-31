@@ -5,28 +5,28 @@
             "label": "Устройство",
             "description": "Контейнер для хранения и смешивания субстанций.",
             "icon": "device",
-            "isAspect": true
+            "isAspect": true,
         },
         {
             "id": "substance",
             "label": "Субстанция",
             "description": "Материя, пригодная для алхимических превращений.",
             "icon": "substance",
-            "isAspect": true
+            "isAspect": true,
         },
         {
             "id": "flower",
             "label": "Цветок",
             "description": "Это ещё цветочки.",
             "icon": "flower",
-            "isAspect": true
+            "isAspect": true,
         },
         {
             "id": "modification",
             "label": "Модификация",
             "description": "Это всё меняет. Но не всегда.",
             "icon": "modification",
-            "isAspect": true
+            "isAspect": true,
         },
     ]
 }
