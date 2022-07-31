@@ -25,6 +25,33 @@
                         "substance": 1
                     },
                     "actionid": "reaction"
+                },       
+                {
+                    "id": "ingredient3",
+                    "label": "Ингредиент",
+                    "description": "Третий ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "reaction"
+                },       
+                {
+                    "id": "ingredient4",
+                    "label": "Ингредиент",
+                    "description": "Четвёртый ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "reaction"
+                },       
+                {
+                    "id": "ingredient5",
+                    "label": "Ингредиент",
+                    "description": "Пятый ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "reaction"
                 },
             ],
         },

@@ -5,34 +5,259 @@
             "label": "Алхимическое преобразование",
             "actionid": "reaction",
             "requirements": {
-                "substance": 2
+                "device": 1,
             },
-            "startdescription": "sdfasd",
-            "description": "Почти готово.",
+            "hintonly": true,
+            "startdescription": "Нужно добавить какие-нибудь ещё ингредиенты, иначе ничего не получится.",
+            "description": "Нет, так я ничего не сварю.",
             "warmup": 5,
-            "craftable": true,
-            "linked": [
+            "alt": [
                 {
-                    "id": "two.flowers"
+                    "id": "strengthen.potion"
                 },
                 {
-                    "id": "heart.of.dark"
+                    "id": "weaken.potion"
+                },
+                {
+                    "id": "reverse.potion"
+                },
+                {
+                    "id": "neutralize.potion"
+                },
+                {
+                    "id": "absolute.potion"
+                },
+                {
+                    "id": "identity.potion"
+                },
+                {
+                    "id": "difference.potion"
+                },
+                {
+                    "id": "similar.potion"
+                },
+                {
+                    "id": "other.potion"
+                },
+                {
+                    "id": "split.potion"
+                },
+                {
+                    "id": "merge.potion"
+                },
+                {
+                    "id": "static.potion"
+                },
+                {
+                    "id": "explosion.potion"
                 },
             ]
+        },    
+        {
+            "id": "strengthen.potion",
+            "label": "Зелье усиления",
+            "actionid": "reaction",
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "forge": 1,
+                "heart": 1,
+                "edge": 1,
+            },
+            "warmup": 5,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "potion.strengthen": 1,
+            }
+        },    
+        {
+            "id": "weaken.potion",
+            "label": "Зелье ослабления",
+            "actionid": "reaction",
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "winter": 1,
+                "knock": 1,
+                "moth": 1,
+            },
+            "warmup": 5,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "potion.weaken": 1,
+            }
+        },   
+        {
+            "id": "reverse.potion",
+            "label": "Зелье противоположности",
+            "actionid": "reaction",
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "moth": 1,
+                "grail": 1,
+                "edge": 1,
+            },
+            "warmup": 5,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "potion.reverse": 1,
+            }
         }, 
         {
-            "id": "two.flowers",
-            "label": "Полные помои",
+            "id": "neutralize.potion",
+            "label": "Зелье нейтрализации",
             "actionid": "reaction",
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "description": "Готово!",
             "requirements": {
-                "flower": 2
+                "device": 1,
+                "winter": 1,
+                "heart": 1,
+                "edge": 1,
             },
-            "startdescription": "sadfas",
             "warmup": 5,
-            "description": "Получилась полная фигня.",
+            "craftable": true,
             "effects": {
-                "substance": -2,
-                "slops": 1
+                "substance": -999,
+                "potion.neutralize": 1,
+            }
+        }, 
+        {
+            "id": "absolute.potion",
+            "label": "Зелье абсолюта",
+            "actionid": "reaction",
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "forge": 1,
+                "lantern": 1,
+                "secrethistories": 1,
+            },
+            "warmup": 5,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "potion.absolute": 1,
+            }
+        }, 
+        {
+            "id": "identity.potion",
+            "label": "Зелье совпадения",
+            "actionid": "reaction",
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "heart": 1,
+                "grail": 1,
+                "winter": 1,
+            },
+            "warmup": 5,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "potion.identity": 1,
+            }
+        }, 
+        {
+            "id": "difference.potion",
+            "label": "Зелье различия",
+            "actionid": "reaction",
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "moth": 1,
+                "edge": 1,
+                "knock": 1,
+            },
+            "warmup": 5,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "potion.difference": 1,
+            }
+        }, 
+        {
+            "id": "similar.potion",
+            "label": "Зелье похожести",
+            "actionid": "reaction",
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "secrethistories": 1,
+                "heart": 1,
+            },
+            "warmup": 5,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "potion.similar": 1,
+            }
+        }, 
+        {
+            "id": "other.potion",
+            "label": "Зелье другого",
+            "actionid": "reaction",
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "lantern": 1,
+                "secrethistories": 1,
+            },
+            "warmup": 5,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "potion.other": 1,
+            }
+        }, 
+        {
+            "id": "split.potion",
+            "label": "Зелье разделения",
+            "actionid": "reaction",
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "edge": 1,
+                "knock": 1,
+                "lantern": 1,
+            },
+            "warmup": 5,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "potion.split": 1,
+            }
+        }, 
+        {
+            "id": "merge.potion",
+            "label": "Зелье соединения",
+            "actionid": "reaction",
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "grail": 1,
+                "heart": 1,
+                "forge": 1,
+            },
+            "warmup": 5,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "potion.merge": 1,
             }
         }, 
         

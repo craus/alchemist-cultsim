@@ -40,8 +40,8 @@
                 "substance": 1,
                 "flower": 1,
                 "heart": 1,
-                "grail": 1,
                 "moth": 1,
+                "secrethistories": 1,
             },
             "description": "Похож на ветчину."
         },
@@ -77,7 +77,7 @@
                 "flower": 1,
                 "winter": 1,
                 "secrethistories": 1,
-                "edge": 1,
+                "knock": 1,
             },
             "description": "Прекрасное порождение растительного мира."
         },
@@ -101,7 +101,7 @@
                 "flower": 1,
                 "moth": 1,
                 "grail": 1,
-                "forge": 1,
+                "knock": 1,
             },
             "description": "Очень густой запах."
         },
