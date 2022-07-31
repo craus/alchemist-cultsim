@@ -1,0 +1,19 @@
+forest
+	3 black flower
+	3 white flower
+	3 blue flower
+	1 red flower
+field
+	3 red flower
+	3 blue flower
+	3 white flower
+	1 purple flower
+cave
+	3 gray powder
+	3 green powder
+	3 purple flower
+	1 white flower
+
+black flower + white flower -> 2 gray powder
+black flower + 2 blue flower -> 3 green powder
+2 white flower + 2 blue flower -> yellow powder

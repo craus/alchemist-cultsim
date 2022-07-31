@@ -1,13 +1,13 @@
-strengthen
-weaken
-reverse 
-neutralize
-absolute
-identity
-difference
-similar
-other
-split
-merge
-static 
-explosion
+strengthen - forge, heart, edge
+weaken - winter, knock, moth
+reverse - moth, grail, edge
+neutralize - winter, heart, edge
+absolute - forge, lantern, secret histories
+identity - heart, grail, winter
+difference - moth, edge, knock
+similar - secret histories, heart
+other - lantern, secret histories
+split - edge, knock, lantern
+merge - grail, heart, forge
+static - winter
+explosion - forge, edge
