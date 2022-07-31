@@ -8,23 +8,66 @@
             },
             "description": "Новая жизнь, зародившаяся на остатках старой."
         },
-        {
-            "id": "flower.black",
-            "label": "Чёрный цветок",
-            "aspects": {
-                "substance": 1,
-                "flower": 1,
-            },
-            "description": "Совершенно не отражает свет."
-        },
+        
         {
             "id": "flower.white",
             "label": "Белый цветок",
             "aspects": {
                 "substance": 1,
                 "flower": 1,
+                "winter": 1,
+                "lantern": 1,
+                "edge": 1,
             },
             "description": "Его запах пробуждает мечты."
+        },
+        {
+            "id": "flower.yellow",
+            "label": "Жёлтый цветок",
+            "aspects": {
+                "substance": 1,
+                "flower": 1,
+                "lantern": 1,
+                "forge": 1,
+                "heart": 1,
+            },
+            "description": "Содержит радость Солнца."
+        },
+        {
+            "id": "flower.pink",
+            "label": "Розовый цветок",
+            "aspects": {
+                "substance": 1,
+                "flower": 1,
+                "heart": 1,
+                "grail": 1,
+                "moth": 1,
+            },
+            "description": "Похож на ветчину."
+        },
+        {
+            "id": "flower.red",
+            "label": "Красный цветок",
+            "aspects": {
+                "substance": 1,
+                "flower": 1,
+                "heart": 1,
+                "grail": 1,
+                "forge": 1,
+            },
+            "description": "Знак любви."
+        },
+        {
+            "id": "flower.orange",
+            "label": "Оранжевый цветок",
+            "aspects": {
+                "substance": 1,
+                "flower": 1,
+                "edge": 1,
+                "grail": 1,
+                "forge": 1,
+            },
+            "description": "Он тёплый."
         },
         {
             "id": "flower.blue",
@@ -32,9 +75,61 @@
             "aspects": {
                 "substance": 1,
                 "flower": 1,
+                "winter": 1,
+                "secrethistories": 1,
+                "edge": 1,
             },
             "description": "Прекрасное порождение растительного мира."
         },
+        {
+            "id": "flower.black",
+            "label": "Чёрный цветок",
+            "aspects": {
+                "substance": 1,
+                "flower": 1,
+                "edge": 1,
+                "secrethistories": 1,
+                "forge": 1,
+            },
+            "description": "Совершенно не отражает свет."
+        },
+        {
+            "id": "flower.purple",
+            "label": "Фиолетовый цветок",
+            "aspects": {
+                "substance": 1,
+                "flower": 1,
+                "moth": 1,
+                "grail": 1,
+                "forge": 1,
+            },
+            "description": "Очень густой запах."
+        },
+        {
+            "id": "flower.gray",
+            "label": "Серый цветок",
+            "aspects": {
+                "substance": 1,
+                "flower": 1,
+                "moth": 1,
+                "secrethistories": 1,
+                "winter": 1,
+            },
+            "description": "Странный цвет для цветка."
+        },
+        {
+            "id": "flower.brown",
+            "label": "Коричневый цветок",
+            "aspects": {
+                "substance": 1,
+                "flower": 1,
+                "moth": 1,
+                "forge": 1,
+                "edge": 1,
+            },
+            "description": "Его лепестки прочнее, чем кажутся."
+        },
+        
         {
             "id": "slops",
             "label": "Худшие помои",
@@ -43,6 +138,7 @@
             },
             "description": "Воняет пиздец. Это только выкинуть. Фу бля."
         },
+        
         {
             "id": "heart.of.dark",
             "label": "Сердце тьмы",
