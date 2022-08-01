@@ -23,9 +23,23 @@
                 "label": "Место",
                 "description": "Куда пойти?",
                 "required": {
-                    "location": 1
+                    "location": 1,
                 }
             }
-        }
+        },
+        {
+            "id": "alchemist.talk",
+            "label": "Говорить",
+            "description": "Пообщаться с каким-нибудь человеком.",
+            "slot": {
+                "id": "person",
+                "label": "Собеседник",
+                "description": "С кем поговорить?",
+                "required": {
+                    "person": 1,
+                    "location": 1,
+                }
+            }
+        },
     ]
 }

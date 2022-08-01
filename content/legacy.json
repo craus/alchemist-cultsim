@@ -4,8 +4,12 @@
             "id": "alchemist",
             "label": "The Alchemist",
             "description": "It is alchemist",
-            "startdescription": "You are alchemist",
+            "startdescription": "You are alchemist",           
             "effects": {
+                "loft": 1,
+                "forest": 1,
+            },
+            "_effects": {
                 "loft": 1,
                 "forest": 1,
                 

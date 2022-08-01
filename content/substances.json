@@ -263,7 +263,7 @@
         },
         {
             "id": "potion.similar",
-            "label": "Зелье похожести",
+            "label": "Зелье сходства",
             "aspects": {
                 "substance": 1,
                 "modification": 1,
@@ -318,6 +318,7 @@
                 "forge": 1,
                 "limit.edge": 1,
             },
+            "isAspect": true,
             "description": "Собирает части в единое целое.",
             "xtriggers": {
                 "refresh": "potion.split",

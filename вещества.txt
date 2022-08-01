@@ -9,16 +9,16 @@ purple: knock, grail, moth
 gray: moth, winter, secret histories
 brown: moth, grail, edge
 
-strengthen - forge, heart, edge, -moth
-weaken - winter, knock, moth, -forge
-reverse - moth, grail, edge, -lantern
-neutralize - winter, heart, edge, -secret histories
-absolute - forge, lantern, secret histories, -knock
-identity - heart, grail, winter, -lantern
-difference - moth, edge, knock, -grail
-similar - secret histories, heart, -edge
-other - lantern, secret histories, -grail
-split - edge, knock, lantern, -heart
-merge - grail, heart, forge, -edge
+strengthen - forge, heart, edge, -moth (rose)
+weaken - winter, knock, moth, -forge (neville)
+reverse - moth, grail, edge, -lantern (ysabet)
+neutralize - winter, heart, edge, -secret histories (poppy)
+absolute - forge, lantern, secret histories, -knock (cat)
+identity - heart, grail, winter, -lantern (slee)
+difference - moth, edge, knock, -grail (porter)
+similar - secret histories, heart, -edge (natalia)
+other - lantern, secret histories, -grail (sulochana)
+split - edge, knock, lantern, -heart (sylvia)
+merge - grail, heart, forge, -edge (clovette)
 static - winter
 explosion - forge, edge

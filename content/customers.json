@@ -1,0 +1,224 @@
+{
+    "elements": [
+        {
+            "id": "customer.rose",
+            "label": "Роуз",
+            "aspects": {
+                "person": 1,
+                "potion.strengthen": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.strengthen": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],         
+            "description": "Хочет приобрести зелье усиления.",
+        },
+        {
+            "id": "customer.neville",
+            "label": "Невилл",
+            "aspects": {
+                "person": 1,
+                "potion.weaken": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.weaken": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье ослабления.",
+        },
+        {
+            "id": "customer.ysabet",
+            "label": "Изабет",
+            "aspects": {
+                "person": 1,
+                "potion.reverse": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.reverse": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье противоположности.",
+        },
+        {
+            "id": "customer.poppy",
+            "label": "Поппи",
+            "aspects": {
+                "person": 1,
+                "potion.neutralize": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.neutralize": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье нейтрализации.",
+        },
+        {
+            "id": "customer.cat",
+            "label": "Кэт",
+            "aspects": {
+                "person": 1,
+                "potion.absolute": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.absolute": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье абсолюта.",
+        },
+        {
+            "id": "customer.slee",
+            "label": "Сли",
+            "aspects": {
+                "person": 1,
+                "potion.identity": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.identity": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье совпадения.",
+        },
+        {
+            "id": "customer.porter",
+            "label": "Портер",
+            "aspects": {
+                "person": 1,
+                "potion.difference": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.difference": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье различия.",
+        },
+        {
+            "id": "customer.natalia",
+            "label": "Наталья",
+            "aspects": {
+                "person": 1,
+                "potion.similar": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.similar": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье сходства.",
+        },
+        {
+            "id": "customer.sulochana",
+            "label": "Сулочана",
+            "aspects": {
+                "person": 1,
+                "potion.other": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.other": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье другого.",
+        },
+        {
+            "id": "customer.sylvia",
+            "label": "Сильвия",
+            "aspects": {
+                "person": 1,
+                "potion.split": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.split": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье разделения.",
+        },
+        {
+            "id": "customer.clovette",
+            "label": "Кловетта",
+            "aspects": {
+                "person": 1,
+                "potion.merge": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.merge": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье соединения.",
+        },
+    ],
+}

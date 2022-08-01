@@ -28,6 +28,13 @@
             "icon": "modification",
             "isAspect": true,
         },
+        {
+            "id": "person",
+            "label": "Человек",
+            "description": "Представитель Homo sapiens.",
+            "icon": "person",
+            "isAspect": true,
+        },
         
         {
             "id": "limit.forge",

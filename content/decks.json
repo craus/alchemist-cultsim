@@ -16,6 +16,24 @@
                 "flower.brown",
             ],
             "resetonexhaustion": true
-        }
+        },
+        {
+            "id": "customers",
+            "label": "Заказчики",
+            "spec": [
+                "customer.rose",
+                "customer.neville",
+                "customer.ysabet",
+                "customer.poppy",
+                "customer.cat",
+                "customer.slee",
+                "customer.porter",
+                "customer.natalia",
+                "customer.sulochana",
+                "customer.sylvia",
+                "customer.clovette",
+            ],
+            "resetonexhaustion": true
+        },
     ]
 }

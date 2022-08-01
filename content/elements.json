@@ -55,12 +55,49 @@
             "description": "Пыльный чердак. Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь."
         },
         {
+            "id": "recipebook",
+            "label": "Книга рецептов",
+            "aspects": {
+                "potion.strengthen": 1,
+                "potion.weaken": 1,
+                "potion.reverse": 1,
+                "potion.neutralize": 1,
+                "potion.absolute": 1,
+                "potion.identity": 1,
+                "potion.difference": 1,
+                "potion.similar": 1,
+                "potion.other": 1,
+                "potion.split": 1,
+                "potion.merge": 1,
+                "potion.static": 1,
+                "potion.explosion": 1,
+            },
+            "description": "Мой отец записывал в неё рецепты варки разных алхимических зелий."
+        },
+        {
             "id": "forest",
             "label": "Лес",
             "aspects": {
                 "location": 1
             },
             "description": "Уголок дикой природы рядом с родной деревней."
+        },
+        {
+            "id": "village",
+            "label": "Бинарадка",
+            "aspects": {
+                "location": 1,
+            },
+            "description": "Моя родная деревня."
+        },
+        
+        
+        {
+            "id": "money",
+            "label": "Деньги",
+            "aspects": {
+            },
+            "description": "На них можно покупать всякое."
         },
     ]
 }

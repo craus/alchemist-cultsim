@@ -14,7 +14,7 @@
             "warmup": 5,
             "craftable": true,
             "effects": {
-                "leeches": 1
+                "leeches": 1,
             },            
             "alt": [
                 {
@@ -33,7 +33,13 @@
                 "oldcauldron": 1
             },
             "warmup": 5,
-            "craftable": false
+            "craftable": false,
+            "alt": [
+                {
+                    "id": "talk.intro",
+                    "additional": true,
+                }
+            ],
         },      
         {
             "id": "visit.forest",
@@ -52,5 +58,37 @@
                 "forestloot": 1
             }
         },
+        {
+            "id": "talk.intro",
+            "label": "Контакты",
+            "actionid": "alchemist.talk",
+            "requirements": {
+            },
+            "slots": [
+            ],
+            "startdescription": "Мне понадобятся заказчики, если я хочу зарабатывать алхимией. Я могу пообщаться с жителями моей деревни и спросить, не нужны ли им какие-нибудь зелья.",
+            "description": ".",
+            "warmup": 5,
+            "effects": {
+                "village": 1,
+            },         
+        },  
+        {
+            "id": "talk.village",
+            "label": "Искать клиентов",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "village": 1,
+            },
+            "slots": [
+            ],
+            "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня.",
+            "description": "Я нашёл себе заказчика!",
+            "warmup": 5,
+            "craftable": true,
+            "deckeffects": {
+                "customers": 1,
+            },         
+        },  
     ]
 }

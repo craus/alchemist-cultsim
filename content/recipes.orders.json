@@ -1,0 +1,24 @@
+{
+    "recipes": [
+        {
+            "id": "talk.customer",
+            "label": "Сдать заказ клиенту",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "substance": 1,
+            },
+            "startdescription": "Я передаю результат своей работы и получаю деньги.",
+            "description": "Меня порекомендовали! Я получил ещё заказ.",
+            "warmup": 5,
+            "craftable": true,
+            "deckeffects": {
+                "customers": 1,
+            },        
+            "effects": {
+                "person": -1,
+                "substance": -1,
+                "money": 1,
+            },          
+        },  
+    ]
+}

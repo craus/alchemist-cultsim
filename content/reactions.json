@@ -100,13 +100,13 @@
         }, 
         {
             "id": "similar.potion.overdraft",
-            "label": "Зелье похожести",
+            "label": "Зелье сходства",
             "actionid": "reaction",
             "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
             "description": "Готово!",
             "requirements": {
                 "device": 1,
-                "secrethistories": 1,
+                "secrethistories": 2,
                 "heart": 1,
             },
             "hintonly": true,
@@ -313,7 +313,7 @@
         }, 
         {
             "id": "similar.potion",
-            "label": "Зелье похожести",
+            "label": "Зелье сходства",
             "actionid": "reaction",
             "startdescription": "Этих ингредиентов должно хватить.",
             "description": "Готово!",
@@ -551,7 +551,7 @@
         }, 
         {
             "id": "strengthen.similar",
-            "label": "Усиление похожести - совпадение",
+            "label": "Усиление сходства - совпадение",
             "requirements": {
                 "potion.similar": 1,
             },
@@ -706,7 +706,7 @@
         }, 
         {
             "id": "weaken.similar",
-            "label": "Ослабление похожести - несоответствие",
+            "label": "Ослабление сходства - несоответствие",
             "requirements": {
                 "potion.similar": 1,
             },
@@ -929,7 +929,7 @@
         }, 
         {
             "id": "reverse.similar",
-            "label": "Противоположность похожести - другое",
+            "label": "Противоположность сходства - другое",
             "requirements": {
                 "potion.similar": 1,
             },
