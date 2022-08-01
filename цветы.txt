@@ -1,0 +1,10 @@
+white: lantern, edge, winter
+yellow: heart, lantern, forge
+pink: moth, heart, secret histories
+red: heart, grail, forge
+orange: edge, forge, grail
+blue: winter, knock, secret histories
+black: knock, forge, secret histories
+purple: knock, grail, moth
+gray: moth, winter, secret histories
+brown: moth, grail, edge

@@ -1,13 +1,24 @@
-strengthen - forge, heart, edge
-weaken - winter, knock, moth
-reverse - moth, grail, edge
-neutralize - winter, heart, edge
-absolute - forge, lantern, secret histories
-identity - heart, grail, winter
-difference - moth, edge, knock
-similar - secret histories, heart
-other - lantern, secret histories
-split - edge, knock, lantern
-merge - grail, heart, forge
+white: lantern, edge, winter
+yellow: heart, lantern, forge
+pink: moth, heart, secret histories
+red: heart, grail, forge
+orange: edge, forge, grail
+blue: winter, knock, secret histories
+black: knock, forge, secret histories
+purple: knock, grail, moth
+gray: moth, winter, secret histories
+brown: moth, grail, edge
+
+strengthen - forge, heart, edge, -moth
+weaken - winter, knock, moth, -forge
+reverse - moth, grail, edge, -lantern
+neutralize - winter, heart, edge, -secret histories
+absolute - forge, lantern, secret histories, -knock
+identity - heart, grail, winter, -lantern
+difference - moth, edge, knock, -grail
+similar - secret histories, heart, -edge
+other - lantern, secret histories, -grail
+split - edge, knock, lantern, -heart
+merge - grail, heart, forge, -edge
 static - winter
 explosion - forge, edge

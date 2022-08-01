@@ -1,5 +1,160 @@
 {
-    "recipes": [
+    "recipes": [ 
+        
+        {
+            "id": "strengthen.potion.overdraft",
+            "label": "Зелье усиления: лишние компоненты!",
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "requirements": {
+                "device": 1,
+                "forge": 1,
+                "heart": 1,
+                "edge": 1,
+            },
+            "hintonly": true,
+        },    
+        {
+            "id": "weaken.potion.overdraft",
+            "label": "Зелье ослабления",
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "winter": 1,
+                "knock": 1,
+                "moth": 1,
+            },
+            "hintonly": true,
+        },   
+        {
+            "id": "reverse.potion.overdraft",
+            "label": "Зелье противоположности",
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "moth": 1,
+                "grail": 1,
+                "edge": 1,
+            },
+            "hintonly": true,
+        }, 
+        {
+            "id": "neutralize.potion.overdraft",
+            "label": "Зелье нейтрализации",
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "winter": 1,
+                "heart": 1,
+                "edge": 1,
+            },
+            "hintonly": true,
+        }, 
+        {
+            "id": "absolute.potion.overdraft",
+            "label": "Зелье абсолюта",
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "forge": 1,
+                "lantern": 1,
+                "secrethistories": 1,
+            },
+            "hintonly": true,
+        }, 
+        {
+            "id": "identity.potion.overdraft",
+            "label": "Зелье совпадения",
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "heart": 1,
+                "grail": 1,
+                "winter": 1,
+            },
+            "hintonly": true,
+        }, 
+        {
+            "id": "difference.potion.overdraft",
+            "label": "Зелье различия",
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "moth": 1,
+                "edge": 1,
+                "knock": 1,
+            },
+            "hintonly": true,
+        }, 
+        {
+            "id": "similar.potion.overdraft",
+            "label": "Зелье похожести",
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "secrethistories": 1,
+                "heart": 1,
+            },
+            "hintonly": true,
+        }, 
+        {
+            "id": "other.potion.overdraft",
+            "label": "Зелье другого",
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "lantern": 1,
+                "secrethistories": 1,
+            },
+            "hintonly": true,
+        }, 
+        {
+            "id": "split.potion.overdraft",
+            "label": "Зелье разделения",
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "edge": 1,
+                "knock": 1,
+                "lantern": 1,
+            },
+            "hintonly": true,
+        }, 
+        {
+            "id": "merge.potion.overdraft",
+            "label": "Зелье соединения",
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "grail": 1,
+                "heart": 1,
+                "forge": 1,
+            },
+            "hintonly": true,
+        }, 
+        
+        
+        
         {
             "id": "reaction",
             "label": "Алхимическое преобразование",
@@ -11,48 +166,11 @@
             "startdescription": "Нужно добавить какие-нибудь ещё ингредиенты, иначе ничего не получится.",
             "description": "Нет, так я ничего не сварю.",
             "warmup": 5,
-            "alt": [
-                {
-                    "id": "strengthen.potion"
-                },
-                {
-                    "id": "weaken.potion"
-                },
-                {
-                    "id": "reverse.potion"
-                },
-                {
-                    "id": "neutralize.potion"
-                },
-                {
-                    "id": "absolute.potion"
-                },
-                {
-                    "id": "identity.potion"
-                },
-                {
-                    "id": "difference.potion"
-                },
-                {
-                    "id": "similar.potion"
-                },
-                {
-                    "id": "other.potion"
-                },
-                {
-                    "id": "split.potion"
-                },
-                {
-                    "id": "merge.potion"
-                },
-                {
-                    "id": "static.potion"
-                },
-                {
-                    "id": "explosion.potion"
-                },
-            ]
-        },    
+            "comment": "ВЫШЕ: ПОДСКАЗКИ ПРО ЛИШНИЕ ИНГРЕДИЕНТЫ. НИЖЕ: РЕЦЕПТЫ ВАРКИ ЗЕЛИЙ КОТЛОМ",
+        },   
+        
+        
+        
         {
             "id": "strengthen.potion",
             "label": "Зелье усиления",
@@ -64,6 +182,7 @@
                 "forge": 1,
                 "heart": 1,
                 "edge": 1,
+                "moth": -1,
             },
             "warmup": 5,
             "craftable": true,
@@ -83,6 +202,7 @@
                 "winter": 1,
                 "knock": 1,
                 "moth": 1,
+                "forge": -1,
             },
             "warmup": 5,
             "craftable": true,
@@ -102,6 +222,7 @@
                 "moth": 1,
                 "grail": 1,
                 "edge": 1,
+                "lantern": -1,
             },
             "warmup": 5,
             "craftable": true,
@@ -121,6 +242,7 @@
                 "winter": 1,
                 "heart": 1,
                 "edge": 1,
+                "secrethistories": -1,
             },
             "warmup": 5,
             "craftable": true,
@@ -140,6 +262,7 @@
                 "forge": 1,
                 "lantern": 1,
                 "secrethistories": 1,
+                "knock": -1,
             },
             "warmup": 5,
             "craftable": true,
@@ -159,6 +282,7 @@
                 "heart": 1,
                 "grail": 1,
                 "winter": 1,
+                "lantern": -1,
             },
             "warmup": 5,
             "craftable": true,
@@ -178,6 +302,7 @@
                 "moth": 1,
                 "edge": 1,
                 "knock": 1,
+                "grail": -1,
             },
             "warmup": 5,
             "craftable": true,
@@ -194,8 +319,9 @@
             "description": "Готово!",
             "requirements": {
                 "device": 1,
-                "secrethistories": 1,
+                "secrethistories": 2,
                 "heart": 1,
+                "edge": -1,
             },
             "warmup": 5,
             "craftable": true,
@@ -214,6 +340,7 @@
                 "device": 1,
                 "lantern": 1,
                 "secrethistories": 1,
+                "grail": -1,
             },
             "warmup": 5,
             "craftable": true,
@@ -233,6 +360,7 @@
                 "edge": 1,
                 "knock": 1,
                 "lantern": 1,
+                "heart": -1,
             },
             "warmup": 5,
             "craftable": true,
@@ -252,6 +380,7 @@
                 "grail": 1,
                 "heart": 1,
                 "forge": 1,
+                "edge": -1,
             },
             "warmup": 5,
             "craftable": true,
@@ -266,6 +395,7 @@
             "label": "Усиление",
             "actionid": "reaction",
             "requirements": {
+                "device": -1,
                 "potion.strengthen": 1,
             },
             "slots": [                
@@ -470,6 +600,7 @@
             "label": "Ослабление",
             "actionid": "reaction",
             "requirements": {
+                "device": -1,
                 "potion.weaken": 1,
             },
             "slots": [                
@@ -639,6 +770,7 @@
             "label": "Противоположность",
             "actionid": "reaction",
             "requirements": {
+                "device": -1,
                 "potion.reverse": 1,
             },
             "slots": [                
@@ -861,6 +993,7 @@
             "label": "Нейтрализация",
             "actionid": "reaction",
             "requirements": {
+                "device": -1,
                 "potion.neutralize": 1,
             },
             "slots": [                
@@ -921,6 +1054,7 @@
             "label": "Абсолют",
             "actionid": "reaction",
             "requirements": {
+                "device": -1,
                 "potion.absolute": 1,
             },
             "slots": [                
@@ -1054,6 +1188,7 @@
             "label": "Совпадение",
             "actionid": "reaction",
             "requirements": {
+                "device": -1,
                 "potion.identity": 1,
             },
             "slots": [                

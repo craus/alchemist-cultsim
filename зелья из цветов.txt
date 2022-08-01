@@ -1,0 +1,46 @@
+F forge
+E edge
+W winter
+H heart
+G grail
+M moth
+L lantern
+K knock
+S secret histories
+
+white: lantern, edge, winter (LEW)
+yellow: heart, lantern, forge (HLF)
+pink: moth, heart, secret histories (MHS)
+red: heart, grail, forge (HGF)
+orange: edge, forge, grail (EFG)
+blue: winter, knock, secret histories (WKS)
+black: edge, forge, secret histories (EFS)
+purple: knock, grail, moth (KGM)
+gray: moth, winter, secret histories (MWS)
+brown: moth, grail, edge (MGE)
+
+strengthen - forge, heart, edge, -moth
+  yellow + white 
+weaken - winter, knock, moth, -forge
+  white + blue + pink
+reverse - moth, grail, edge, -lantern
+  pink + red + orange
+neutralize - winter, heart, edge, -secret histories
+  white + yellow + purple
+absolute - forge, lantern, secret histories, -knock
+  yellow + pink
+identity - heart, grail, winter, -lantern
+  red + blue
+difference - moth, edge, knock, -grail
+  black + blue + pink
+similar - secret histories, heart, -edge
+  pink + pink
+other - lantern, secret histories, -grail
+  white + pink
+split - edge, knock, lantern, -heart
+  white + purple + brown
+  white + blue + orange
+merge - grail, heart, forge, -edge
+  red
+static - winter
+explosion - forge, edge
