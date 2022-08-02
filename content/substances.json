@@ -4,7 +4,7 @@
             "id": "leeches",
             "label": "Личинки",
             "aspects": {
-                "substance": 1
+                "substance": 1,
             },
             "description": "Новая жизнь, зародившаяся на остатках старой."
         },
@@ -19,7 +19,8 @@
                 "lantern": 1,
                 "edge": 1,
             },
-            "description": "Его запах пробуждает мечты."
+            "description": "Его запах пробуждает мечты.",
+            "lifetime": 180,
         },
         {
             "id": "flower.yellow",
@@ -31,7 +32,8 @@
                 "forge": 1,
                 "heart": 1,
             },
-            "description": "Содержит радость Солнца."
+            "description": "Содержит радость Солнца.",
+            "lifetime": 180,
         },
         {
             "id": "flower.pink",
@@ -43,7 +45,8 @@
                 "moth": 1,
                 "secrethistories": 1,
             },
-            "description": "Похож на ветчину."
+            "description": "Похож на ветчину.",
+            "lifetime": 180,
         },
         {
             "id": "flower.red",
@@ -55,7 +58,8 @@
                 "grail": 1,
                 "forge": 1,
             },
-            "description": "Знак любви."
+            "description": "Знак любви.",
+            "lifetime": 180,
         },
         {
             "id": "flower.orange",
@@ -67,7 +71,8 @@
                 "grail": 1,
                 "forge": 1,
             },
-            "description": "Он тёплый."
+            "description": "Он тёплый.",
+            "lifetime": 180,
         },
         {
             "id": "flower.blue",
@@ -79,7 +84,8 @@
                 "secrethistories": 1,
                 "knock": 1,
             },
-            "description": "Прекрасное порождение растительного мира."
+            "description": "Прекрасное порождение растительного мира.",
+            "lifetime": 180,
         },
         {
             "id": "flower.black",
@@ -91,7 +97,8 @@
                 "secrethistories": 1,
                 "forge": 1,
             },
-            "description": "Совершенно не отражает свет."
+            "description": "Совершенно не отражает свет.",
+            "lifetime": 180,
         },
         {
             "id": "flower.purple",
@@ -103,7 +110,8 @@
                 "grail": 1,
                 "knock": 1,
             },
-            "description": "Очень густой запах."
+            "description": "Очень густой запах.",
+            "lifetime": 180,
         },
         {
             "id": "flower.gray",
@@ -115,7 +123,8 @@
                 "secrethistories": 1,
                 "winter": 1,
             },
-            "description": "Странный цвет для цветка."
+            "description": "Странный цвет для цветка.",
+            "lifetime": 180,
         },
         {
             "id": "flower.brown",
@@ -127,7 +136,8 @@
                 "forge": 1,
                 "edge": 1,
             },
-            "description": "Его лепестки прочнее, чем кажутся."
+            "description": "Его лепестки прочнее, чем кажутся.",
+            "lifetime": 180,
         },
         
         {
@@ -136,7 +146,8 @@
             "aspects": {
                 "substance": 1,
             },
-            "description": "Воняет пиздец. Это только выкинуть. Фу бля."
+            "description": "Воняет пиздец. Это только выкинуть. Фу бля.",
+            "lifetime": 180,
         },
         
         {
@@ -145,7 +156,8 @@
             "aspects": {
                 "substance": 1,
             },
-            "description": "Могущественное порождение тёмных искусств."
+            "description": "Могущественное порождение тёмных искусств.",
+            "lifetime": 180,
         },
         
         
@@ -164,6 +176,7 @@
             "xtriggers": {
                 "refresh": "potion.strengthen",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.weaken",
@@ -180,6 +193,7 @@
             "xtriggers": {
                 "refresh": "potion.weaken",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.reverse",
@@ -196,6 +210,7 @@
             "xtriggers": {
                 "refresh": "potion.reverse",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.neutralize",
@@ -212,6 +227,7 @@
             "xtriggers": {
                 "refresh": "potion.neutralize",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.absolute",
@@ -228,6 +244,7 @@
             "xtriggers": {
                 "refresh": "potion.absolute",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.identity",
@@ -244,6 +261,7 @@
             "xtriggers": {
                 "refresh": "potion.identity",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.difference",
@@ -260,6 +278,7 @@
             "xtriggers": {
                 "refresh": "potion.difference",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.similar",
@@ -275,6 +294,7 @@
             "xtriggers": {
                 "refresh": "potion.similar",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.other",
@@ -290,6 +310,7 @@
             "xtriggers": {
                 "refresh": "potion.other",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.split",
@@ -306,6 +327,7 @@
             "xtriggers": {
                 "refresh": "potion.split",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.merge",
@@ -323,6 +345,7 @@
             "xtriggers": {
                 "refresh": "potion.split",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.static",
@@ -335,6 +358,7 @@
             "xtriggers": {
                 "refresh": "potion.static",
             },
+            "lifetime": 300,
         },
         {
             "id": "potion.explosion",
@@ -348,6 +372,7 @@
             "xtriggers": {
                 "refresh": "potion.explosion",
             },
+            "lifetime": 300,
         },
     ]
 }

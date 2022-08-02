@@ -1,7 +1,7 @@
 {
     "recipes": [
         {
-            "id": "visit.loft",
+            "id": "visit.loft.first",
             "label": "Поиск на чердаке",
             "actionid": "visit",
             "requirements": {
@@ -9,10 +9,12 @@
             },
             "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
             "description": "Кое-что удалось обнаружить...",
-            "warmup": 5,
+            "warmup": 10,
             "craftable": true,
+            "maxexecutions": 1,
             "effects": {
                 "leeches": 1,
+                "money": 5,
             },            
             "alt": [
                 {
@@ -20,6 +22,21 @@
                     "additional": true
                 }
             ],
+        },  
+        {
+            "id": "visit.loft",
+            "label": "Поиск на чердаке",
+            "actionid": "visit",
+            "requirements": {
+                "loft": 1,
+            },
+            "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
+            "description": "Кое-что удалось обнаружить...",
+            "warmup": 60,
+            "craftable": true,
+            "effects": {
+                "leeches": 1,
+            },    
         },  
         {
             "id": "reaction.intro",
@@ -30,7 +47,7 @@
             "effects": {
                 "oldcauldron": 1
             },
-            "warmup": 5,
+            "warmup": 15,
             "alt": [
                 {
                     "id": "talk.intro",
@@ -47,13 +64,10 @@
             },
             "startdescription": "Прогулка по непролазной лесной чаще обещает быть утомительной...",
             "description": "Настала пора возвращаться.",
-            "warmup": 5,
+            "warmup": 30,
             "craftable": true, 
             "deckeffects": {
                 "forestloot": 1
-            },
-            "effects": {
-                "money": 1,
             },
         },
         {
@@ -61,11 +75,14 @@
             "label": "Контакты",
             "actionid": "alchemist.talk",
             "startdescription": "Мне понадобятся заказчики, если я хочу зарабатывать алхимией. Я могу пообщаться с жителями моей деревни и спросить, не нужны ли им какие-нибудь зелья.",
-            "description": ".",
-            "warmup": 5,
+            "description": "Я нашёл человека, которому пригодились бы мои услуги. Значит, смогу найти и ещё.",
+            "warmup": 30,
             "effects": {
                 "village": 1,
-            },  
+            },    
+            "deckeffects": {
+                "customers": 1,
+            },
             "alt": [
                 {
                     "id": "time",
@@ -80,15 +97,52 @@
             "requirements": {
                 "village": 1,
             },
-            "slots": [
+            "slots": [              
+                {
+                    "id": "target",
+                    "label": "Репутация",
+                    "description": "Что люди знают обо мне?",
+                    "greedy": true,
+                    "required": {
+                        "failedorder": 1,
+                    },
+                },  
             ],
             "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня.",
             "description": "Я нашёл себе заказчика!",
-            "warmup": 5,
+            "warmup": 120,
             "craftable": true,
             "deckeffects": {
                 "customers": 1,
-            },         
+            },  
+            "alt": [
+                {
+                    "id": "talk.village.failedorder",
+                }
+            ],         
+        },   
+        {
+            "id": "talk.village.failedorder",
+            "label": "Осложнения",
+            "requirements": {
+                "failedorder": 1,
+            },
+            "startdescription": "Люди меньше доверяют мне из-за проваленного заказа. Найти нового покупателя будет непросто.",
+            "effects": {
+                "failedorder": -1,
+            },
+            "linked": [
+                {
+                    "id": "talk.village.delay",
+                },
+            ],
+        },  
+        {
+            "id": "talk.village.delay",
+            "label": "Осложнения",
+            "warmup": 120,
+            "startdescription": "Люди меньше доверяют мне из-за проваленного заказа. Найти нового покупателя будет непросто.",
+            "description": "Сейчас жители деревни слишком невысокого обо мне мнения. Возможно, в другой раз получится.",
         },  
         {
             "id": "time",
@@ -106,7 +160,7 @@
                 },   
             ],
             "startdescription": "Мне нужно расходовать деньги, чтобы обеспечивать себя.",
-            "warmup": 10,
+            "warmup": 60,
             "linked": [
                 {
                     "id": "time",
@@ -161,7 +215,7 @@
                 }
             ],  
             "startdescription": "Мне нужно купить еды, или я умру!",
-            "warmup": 5,
+            "warmup": 30,
             "signalEndingFlavour": "Melancholy",
             "signalimportantloop": true,
             "ending": "ending.hunger",

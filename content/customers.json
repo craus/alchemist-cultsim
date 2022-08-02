@@ -20,6 +20,7 @@
             ],         
             "description": "Хочет приобрести зелье усиления.",
             "lifetime": 300,
+            "decayTo": "failedorder",
         },
         {
             "id": "customer.neville",
@@ -41,6 +42,7 @@
             ], 
             "description": "Хочет приобрести зелье ослабления.",
             "lifetime": 300,
+            "decayTo": "failedorder",
         },
         {
             "id": "customer.ysabet",
@@ -62,6 +64,7 @@
             ], 
             "description": "Хочет приобрести зелье противоположности.",
             "lifetime": 300,
+            "decayTo": "failedorder",
         },
         {
             "id": "customer.poppy",
@@ -83,6 +86,7 @@
             ], 
             "description": "Хочет приобрести зелье нейтрализации.",
             "lifetime": 300,
+            "decayTo": "failedorder",
         },
         {
             "id": "customer.cat",
@@ -104,6 +108,7 @@
             ], 
             "description": "Хочет приобрести зелье абсолюта.",
             "lifetime": 300,
+            "decayTo": "failedorder",
         },
         {
             "id": "customer.slee",
@@ -125,6 +130,7 @@
             ], 
             "description": "Хочет приобрести зелье совпадения.",
             "lifetime": 300,
+            "decayTo": "failedorder",
         },
         {
             "id": "customer.porter",
@@ -146,6 +152,7 @@
             ], 
             "description": "Хочет приобрести зелье различия.",
             "lifetime": 300,
+            "decayTo": "failedorder",
         },
         {
             "id": "customer.natalia",
@@ -167,6 +174,7 @@
             ], 
             "description": "Хочет приобрести зелье сходства.",
             "lifetime": 300,
+            "decayTo": "failedorder",
         },
         {
             "id": "customer.sulochana",
@@ -188,6 +196,7 @@
             ], 
             "description": "Хочет приобрести зелье другого.",
             "lifetime": 300,
+            "decayTo": "failedorder",
         },
         {
             "id": "customer.sylvia",
@@ -209,6 +218,7 @@
             ], 
             "description": "Хочет приобрести зелье разделения.",
             "lifetime": 300,
+            "decayTo": "failedorder",
         },
         {
             "id": "customer.clovette",
@@ -230,6 +240,7 @@
             ], 
             "description": "Хочет приобрести зелье соединения.",
             "lifetime": 300,
+            "decayTo": "failedorder",
         },
     ],
 }

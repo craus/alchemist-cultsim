@@ -165,7 +165,6 @@
             "hintonly": true,
             "startdescription": "Нужно добавить какие-нибудь ещё ингредиенты, иначе ничего не получится.",
             "description": "Нет, так я ничего не сварю.",
-            "warmup": 5,
             "comment": "ВЫШЕ: ПОДСКАЗКИ ПРО ЛИШНИЕ ИНГРЕДИЕНТЫ. НИЖЕ: РЕЦЕПТЫ ВАРКИ ЗЕЛИЙ КОТЛОМ",
         },   
         
@@ -184,7 +183,7 @@
                 "edge": 1,
                 "moth": -1,
             },
-            "warmup": 5,
+            "warmup": 60,
             "craftable": true,
             "effects": {
                 "substance": -999,
@@ -204,7 +203,7 @@
                 "moth": 1,
                 "forge": -1,
             },
-            "warmup": 5,
+            "warmup": 60,
             "craftable": true,
             "effects": {
                 "substance": -999,
@@ -224,7 +223,7 @@
                 "edge": 1,
                 "lantern": -1,
             },
-            "warmup": 5,
+            "warmup": 60,
             "craftable": true,
             "effects": {
                 "substance": -999,
@@ -244,7 +243,7 @@
                 "edge": 1,
                 "secrethistories": -1,
             },
-            "warmup": 5,
+            "warmup": 60,
             "craftable": true,
             "effects": {
                 "substance": -999,
@@ -264,7 +263,7 @@
                 "secrethistories": 1,
                 "knock": -1,
             },
-            "warmup": 5,
+            "warmup": 60,
             "craftable": true,
             "effects": {
                 "substance": -999,
@@ -284,7 +283,7 @@
                 "winter": 1,
                 "lantern": -1,
             },
-            "warmup": 5,
+            "warmup": 60,
             "craftable": true,
             "effects": {
                 "substance": -999,
@@ -304,7 +303,7 @@
                 "knock": 1,
                 "grail": -1,
             },
-            "warmup": 5,
+            "warmup": 60,
             "craftable": true,
             "effects": {
                 "substance": -999,
@@ -323,7 +322,7 @@
                 "heart": 1,
                 "edge": -1,
             },
-            "warmup": 5,
+            "warmup": 60,
             "craftable": true,
             "effects": {
                 "substance": -999,
@@ -342,7 +341,7 @@
                 "secrethistories": 1,
                 "grail": -1,
             },
-            "warmup": 5,
+            "warmup": 60,
             "craftable": true,
             "effects": {
                 "substance": -999,
@@ -362,7 +361,7 @@
                 "lantern": 1,
                 "heart": -1,
             },
-            "warmup": 5,
+            "warmup": 60,
             "craftable": true,
             "effects": {
                 "substance": -999,
@@ -382,7 +381,7 @@
                 "forge": 1,
                 "edge": -1,
             },
-            "warmup": 5,
+            "warmup": 60,
             "craftable": true,
             "effects": {
                 "substance": -999,
@@ -409,7 +408,7 @@
                 },   
             ],
             "startdescription": "Я могу что-то усилить.",
-            "warmup": 5,
+            "warmup": 60,
             "description": "Пожалуй, не буду этого делать.",
             "alt": [
                 {
@@ -452,7 +451,7 @@
                 "potion.weaken": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.strengthen": -1,
@@ -467,7 +466,7 @@
                 "potion.neutralize": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.strengthen": -1,
@@ -482,7 +481,7 @@
                 "potion.strengthen": 2,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.strengthen": -2,
@@ -496,7 +495,7 @@
                 "potion.reverse": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.strengthen": -1,
@@ -511,7 +510,7 @@
                 "potion.absolute": 1,
             },
             "startdescription": "На то он и абсолют.",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.strengthen": -1,
@@ -526,7 +525,7 @@
                 "potion.identity": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.strengthen": -1,
@@ -541,7 +540,7 @@
                 "potion.difference": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.strengthen": -1,
@@ -556,7 +555,7 @@
                 "potion.similar": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.strengthen": -1,
@@ -571,7 +570,7 @@
                 "potion.split": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.strengthen": -1,
@@ -586,7 +585,7 @@
                 "potion.other": 1,
             },
             "startdescription": "Теперь оно будет делать вещи ещё более непохожими на себя.",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.strengthen": -1,
@@ -614,7 +613,7 @@
                 },   
             ],
             "startdescription": "Я могу что-то ослабить.",
-            "warmup": 5,
+            "warmup": 60,
             "description": "Пожалуй, не буду этого делать.",
             "alt": [
                 {
@@ -651,7 +650,7 @@
                 "potion.neutralize": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.weaken": -1,
@@ -666,7 +665,7 @@
                 "potion.reverse": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.weaken": -1,
@@ -681,7 +680,7 @@
                 "potion.absolute": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.weaken": -1,
@@ -696,7 +695,7 @@
                 "potion.identity": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.weaken": -1,
@@ -711,7 +710,7 @@
                 "potion.similar": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.weaken": -1,
@@ -726,7 +725,7 @@
                 "potion.static": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.weaken": -1,
@@ -741,7 +740,7 @@
                 "potion.other": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.weaken": -1,
@@ -756,7 +755,7 @@
                 "potion.explosion": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.weaken": -1,
@@ -784,7 +783,7 @@
                 },   
             ],
             "startdescription": "Я могу что-то превратить в его противоположность.",
-            "warmup": 5,
+            "warmup": 60,
             "description": "Пожалуй, не буду этого делать.",
             "alt": [
                 {
@@ -830,7 +829,7 @@
                 "potion.strengthen": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.reverse": -1,
@@ -845,7 +844,7 @@
                 "potion.weaken": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.reverse": -1,
@@ -860,7 +859,7 @@
                 "potion.reverse": 2,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.reverse": -2,
@@ -874,7 +873,7 @@
                 "potion.neutralize": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.reverse": -1,
@@ -889,7 +888,7 @@
                 "potion.neutralize": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.reverse": -1,
@@ -904,7 +903,7 @@
                 "potion.identity": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.reverse": -1,
@@ -919,7 +918,7 @@
                 "potion.difference": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.reverse": -1,
@@ -934,7 +933,7 @@
                 "potion.similar": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.reverse": -1,
@@ -949,7 +948,7 @@
                 "potion.other": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.reverse": -1,
@@ -964,7 +963,7 @@
                 "potion.split": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.reverse": -1,
@@ -979,7 +978,7 @@
                 "potion.merge": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.reverse": -1,
@@ -1007,7 +1006,7 @@
                 },   
             ],
             "startdescription": "Я могу лишить что-то эффекта.",
-            "warmup": 5,
+            "warmup": 60,
             "description": "Пожалуй, не буду этого делать.",
             "alt": [
                 {
@@ -1026,7 +1025,7 @@
                 "identity": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.neutralize": -1,
@@ -1041,7 +1040,7 @@
                 "modification": 2,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "modification": -2,
@@ -1068,7 +1067,7 @@
                 },   
             ],
             "startdescription": "Я могу дать чему-то абсолютный эффект.",
-            "warmup": 5,
+            "warmup": 60,
             "description": "Пожалуй, не буду этого делать.",
             "alt": [
                 {
@@ -1096,7 +1095,7 @@
                 "weaken": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.absolute": -1,
@@ -1111,7 +1110,7 @@
                 "reverse": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.absolute": -1,
@@ -1126,7 +1125,7 @@
                 "neutralize": 1,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.absolute": -1,
@@ -1141,7 +1140,7 @@
                 "absolute": 2,
             },
             "startdescription": "На то он и абсолют.",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.absolute": -2,
@@ -1155,7 +1154,7 @@
                 "identity": 1,
             },
             "startdescription": "На то он и абсолют.",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.absolute": -1,
@@ -1170,7 +1169,7 @@
                 "modification": 2,
             },
             "startdescription": "В данном случае абсолют даст то же, что и обычное зелье усиления.",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.absolute": -1,
@@ -1202,7 +1201,7 @@
                 },   
             ],
             "startdescription": "Я могу оставить что-то прежним.",
-            "warmup": 5,
+            "warmup": 60,
             "description": "Да оно, в принципе, и так останется прежним.",
             "alt": [
                 {
@@ -1218,7 +1217,7 @@
                 "modification": 2,
             },
             "startdescription": ".",
-            "warmup": 5,
+            "warmup": 60,
             "description": ".",
             "aspects": {
                 "refresh": 1,
