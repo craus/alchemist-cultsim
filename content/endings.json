@@ -1,0 +1,12 @@
+{
+    "endings": [
+        {
+            "id": "ending.hunger",
+            "label": "Голод",
+            "description": "Я не смог обеспечить себя едой и умер от голода.",
+            "image": "ending.hunger",
+            "flavour": "Melancholy",
+            "anim": "DramaticLightEvil",
+        },    
+    ]
+}

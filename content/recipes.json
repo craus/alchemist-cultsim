@@ -7,8 +7,6 @@
             "requirements": {
                 "loft": 1
             },
-            "slots": [
-            ],
             "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
             "description": "Кое-что удалось обнаружить...",
             "warmup": 5,
@@ -33,7 +31,6 @@
                 "oldcauldron": 1
             },
             "warmup": 5,
-            "craftable": false,
             "alt": [
                 {
                     "id": "talk.intro",
@@ -48,30 +45,33 @@
             "requirements": {
                 "forest": 1
             },
-            "slots": [
-            ],
             "startdescription": "Прогулка по непролазной лесной чаще обещает быть утомительной...",
             "description": "Настала пора возвращаться.",
             "warmup": 5,
             "craftable": true, 
             "deckeffects": {
                 "forestloot": 1
-            }
+            },
+            "effects": {
+                "money": 1,
+            },
         },
         {
             "id": "talk.intro",
             "label": "Контакты",
             "actionid": "alchemist.talk",
-            "requirements": {
-            },
-            "slots": [
-            ],
             "startdescription": "Мне понадобятся заказчики, если я хочу зарабатывать алхимией. Я могу пообщаться с жителями моей деревни и спросить, не нужны ли им какие-нибудь зелья.",
             "description": ".",
             "warmup": 5,
             "effects": {
                 "village": 1,
-            },         
+            },  
+            "alt": [
+                {
+                    "id": "time",
+                    "additional": true,
+                }
+            ],       
         },  
         {
             "id": "talk.village",
@@ -89,6 +89,93 @@
             "deckeffects": {
                 "customers": 1,
             },         
+        },  
+        {
+            "id": "time",
+            "label": "Время идёт",
+            "actionid": "alchemist.time",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Деньги",
+                    "description": "Цена моей жизни.",
+                    "greedy": true,
+                    "required": {
+                        "money": 1,
+                    },
+                },   
+            ],
+            "startdescription": "Мне нужно расходовать деньги, чтобы обеспечивать себя.",
+            "warmup": 10,
+            "linked": [
+                {
+                    "id": "time",
+                },
+            ],
+            "alt": [
+                {
+                    "id": "time.nomoney",
+                }
+            ],  
+            "effects": {
+                "money": -1,
+            },
+        }, 
+        {
+            "id": "time.nomoney",
+            "label": "Время идёт",
+            "requirements": {
+                "money": -1,
+            },
+            "startdescription": "Если я не найду средств к существованию, я могу умереть от голода!",
+            "linked": [
+                {
+                    "id": "time",
+                },
+            ],
+            "alt": [
+                {
+                    "id": "hunger",
+                    "additional": true,
+                }
+            ],            
+        },   
+        {
+            "id": "hunger",
+            "label": "Голод",
+            "actionid": "hunger",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Деньги",
+                    "description": "Цена моей жизни.",
+                    "greedy": true,
+                    "required": {
+                        "money": 1,
+                    },
+                },   
+            ],
+            "alt": [
+                {
+                    "id": "hunger.money",
+                }
+            ],  
+            "startdescription": "Мне нужно купить еды, или я умру!",
+            "warmup": 5,
+            "signalEndingFlavour": "Melancholy",
+            "signalimportantloop": true,
+            "ending": "ending.hunger",
+        },  
+        {
+            "id": "hunger.money",
+            "label": "Голод утолён",
+            "requirements": {
+                "money": 1,
+            },
+            "startdescription": "Мне удалось найти возможность купить еды. Пока что.",
+            "effects": {
+                "money": -1,
+            },
         },  
     ]
 }
