@@ -9,7 +9,7 @@
             },
             "startdescription": "Я передаю результат своей работы и получаю деньги.",
             "description": "Меня порекомендовали! Я получил ещё заказ.",
-            "warmup": 5,
+            "warmup": 10,
             "craftable": true,
             "deckeffects": {
                 "customers": 1,
@@ -17,7 +17,7 @@
             "effects": {
                 "person": -1,
                 "substance": -1,
-                "money": 5,
+                "money": 3,
             },          
         },  
     ]

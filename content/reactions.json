@@ -187,7 +187,7 @@
             "craftable": true,
             "effects": {
                 "substance": -999,
-                "potion.strengthen": 1,
+                "potion.strengthen": 2,
             }
         },    
         {
@@ -207,7 +207,7 @@
             "craftable": true,
             "effects": {
                 "substance": -999,
-                "potion.weaken": 1,
+                "potion.weaken": 2,
             }
         },   
         {
@@ -227,7 +227,7 @@
             "craftable": true,
             "effects": {
                 "substance": -999,
-                "potion.reverse": 1,
+                "potion.reverse": 2,
             }
         }, 
         {
@@ -247,7 +247,7 @@
             "craftable": true,
             "effects": {
                 "substance": -999,
-                "potion.neutralize": 1,
+                "potion.neutralize": 2,
             }
         }, 
         {
@@ -267,7 +267,7 @@
             "craftable": true,
             "effects": {
                 "substance": -999,
-                "potion.absolute": 1,
+                "potion.absolute": 2,
             }
         }, 
         {
@@ -287,7 +287,7 @@
             "craftable": true,
             "effects": {
                 "substance": -999,
-                "potion.identity": 1,
+                "potion.identity": 2,
             }
         }, 
         {
@@ -307,7 +307,7 @@
             "craftable": true,
             "effects": {
                 "substance": -999,
-                "potion.difference": 1,
+                "potion.difference": 2,
             }
         }, 
         {
@@ -326,7 +326,7 @@
             "craftable": true,
             "effects": {
                 "substance": -999,
-                "potion.similar": 1,
+                "potion.similar": 2,
             }
         }, 
         {
@@ -345,7 +345,7 @@
             "craftable": true,
             "effects": {
                 "substance": -999,
-                "potion.other": 1,
+                "potion.other": 2,
             }
         }, 
         {
@@ -365,7 +365,7 @@
             "craftable": true,
             "effects": {
                 "substance": -999,
-                "potion.split": 1,
+                "potion.split": 2,
             }
         }, 
         {
@@ -385,7 +385,7 @@
             "craftable": true,
             "effects": {
                 "substance": -999,
-                "potion.merge": 1,
+                "potion.merge": 2,
             }
         }, 
         
@@ -456,7 +456,7 @@
             "effects": {
                 "potion.strengthen": -1,
                 "potion.weaken": -1,
-                "potion.neutralize": 1,
+                "potion.neutralize": 2,
             }
         }, 
         {
@@ -471,7 +471,7 @@
             "effects": {
                 "potion.strengthen": -1,
                 "potion.neutralize": -1,
-                "potion.reverse": 1,
+                "potion.reverse": 2,
             }
         }, 
         {
@@ -485,7 +485,7 @@
             "description": ".",
             "effects": {
                 "potion.strengthen": -2,
-                "potion.absolute": 1,
+                "potion.absolute": 2,
             }
         }, 
         {
@@ -500,7 +500,7 @@
             "effects": {
                 "potion.strengthen": -1,
                 "potion.reverse": -1,
-                "potion.identity": 1,
+                "potion.identity": 2,
             }
         }, 
         {
@@ -515,7 +515,7 @@
             "effects": {
                 "potion.strengthen": -1,
                 "potion.absolute": -1,
-                "potion.absolute": 1,
+                "potion.absolute": 2,
             }
         },
         {
@@ -530,7 +530,7 @@
             "effects": {
                 "potion.strengthen": -1,
                 "potion.identity": -1,
-                "potion.static": 1,
+                "potion.static": 2,
             }
         }, 
         {
@@ -545,7 +545,7 @@
             "effects": {
                 "potion.strengthen": -1,
                 "potion.difference": -1,
-                "potion.other": 1,
+                "potion.other": 2,
             }
         }, 
         {
@@ -560,7 +560,7 @@
             "effects": {
                 "potion.strengthen": -1,
                 "potion.similar": -1,
-                "potion.identity": 1,
+                "potion.identity": 2,
             }
         }, 
         {
@@ -575,7 +575,7 @@
             "effects": {
                 "potion.strengthen": -1,
                 "potion.split": -1,
-                "potion.explosion": 1,
+                "potion.explosion": 2,
             }
         }, 
         {
@@ -590,7 +590,7 @@
             "effects": {
                 "potion.strengthen": -1,
                 "potion.other": -1,
-                "potion.reverse": 1,
+                "potion.reverse": 2,
             }
         }, 
         
@@ -655,7 +655,7 @@
             "effects": {
                 "potion.weaken": -1,
                 "potion.neutralize": -1,
-                "potion.weaken": 1,
+                "potion.weaken": 2,
             }
         }, 
         {
@@ -670,7 +670,7 @@
             "effects": {
                 "potion.weaken": -1,
                 "potion.reverse": -1,
-                "potion.neutralize": 1,
+                "potion.neutralize": 2,
             }
         }, 
         {
@@ -685,7 +685,7 @@
             "effects": {
                 "potion.weaken": -1,
                 "potion.absolute": -1,
-                "potion.strengthen": 1,
+                "potion.strengthen": 2,
             }
         }, 
         {
@@ -700,7 +700,7 @@
             "effects": {
                 "potion.weaken": -1,
                 "potion.identity": -1,
-                "potion.similar": 1,
+                "potion.similar": 2,
             }
         }, 
         {
@@ -715,7 +715,7 @@
             "effects": {
                 "potion.weaken": -1,
                 "potion.similar": -1,
-                "potion.other": 1,
+                "potion.other": 2,
             }
         }, 
         {
@@ -730,7 +730,7 @@
             "effects": {
                 "potion.weaken": -1,
                 "potion.static": -1,
-                "potion.identity": 1,
+                "potion.identity": 2,
             }
         }, 
         {
@@ -745,7 +745,7 @@
             "effects": {
                 "potion.weaken": -1,
                 "potion.other": -1,
-                "potion.difference": 1,
+                "potion.difference": 2,
             }
         }, 
         {
@@ -760,7 +760,7 @@
             "effects": {
                 "potion.weaken": -1,
                 "potion.explosion": -1,
-                "potion.split": 1,
+                "potion.split": 2,
             }
         },
          
@@ -834,7 +834,7 @@
             "effects": {
                 "potion.reverse": -1,
                 "potion.strengthen": -1,
-                "potion.weaken": 1,
+                "potion.weaken": 2,
             }
         }, 
         {
@@ -849,7 +849,7 @@
             "effects": {
                 "potion.reverse": -1,
                 "potion.weaken": -1,
-                "potion.strengthen": 1,
+                "potion.strengthen": 2,
             }
         }, 
         {
@@ -863,7 +863,7 @@
             "description": ".",
             "effects": {
                 "potion.reverse": -2,
-                "potion.identity": 1,
+                "potion.identity": 2,
             }
         },  
         {
@@ -878,7 +878,7 @@
             "effects": {
                 "potion.reverse": -1,
                 "potion.neutralize": -1,
-                "potion.absolute": 1,
+                "potion.absolute": 2,
             }
         }, 
         {
@@ -893,7 +893,7 @@
             "effects": {
                 "potion.reverse": -1,
                 "potion.absolute": -1,
-                "potion.neutralize": 1,
+                "potion.neutralize": 2,
             }
         },  
         {
@@ -908,7 +908,7 @@
             "effects": {
                 "potion.reverse": -1,
                 "potion.identity": -1,
-                "potion.difference": 1,
+                "potion.difference": 2,
             }
         },  
         {
@@ -923,7 +923,7 @@
             "effects": {
                 "potion.reverse": -1,
                 "potion.difference": -1,
-                "potion.identity": 1,
+                "potion.identity": 2,
             }
         }, 
         {
@@ -938,7 +938,7 @@
             "effects": {
                 "potion.reverse": -1,
                 "potion.similar": -1,
-                "potion.other": 1,
+                "potion.other": 2,
             }
         }, 
         {
@@ -953,7 +953,7 @@
             "effects": {
                 "potion.reverse": -1,
                 "potion.other": -1,
-                "potion.similar": 1,
+                "potion.similar": 2,
             }
         }, 
         {
@@ -968,7 +968,7 @@
             "effects": {
                 "potion.reverse": -1,
                 "potion.split": -1,
-                "potion.merge": 1,
+                "potion.merge": 2,
             }
         },  
         {
@@ -983,7 +983,7 @@
             "effects": {
                 "potion.reverse": -1,
                 "potion.merge": -1,
-                "potion.split": 1,
+                "potion.split": 2,
             }
         }, 
              
@@ -1030,7 +1030,7 @@
             "effects": {
                 "potion.neutralize": -1,
                 "potion.identity": -1,
-                "potion.other": 1,
+                "potion.other": 2,
             }
         }, 
         {
@@ -1044,7 +1044,7 @@
             "description": ".",
             "effects": {
                 "modification": -2,
-                "potion.identity": 1,
+                "potion.identity": 2,
             }
         }, 
         
@@ -1100,7 +1100,7 @@
             "effects": {
                 "potion.absolute": -1,
                 "potion.weaken": -1,
-                "potion.reverse": 1,
+                "potion.reverse": 2,
             }
         }, 
         {
@@ -1115,7 +1115,7 @@
             "effects": {
                 "potion.absolute": -1,
                 "potion.reverse": -1,
-                "potion.split": 1,
+                "potion.split": 2,
             }
         }, 
         {
@@ -1130,7 +1130,7 @@
             "effects": {
                 "potion.absolute": -1,
                 "potion.neutralize": -1,
-                "potion.void": 1,
+                "potion.void": 2,
             }
         }, 
         {
@@ -1144,14 +1144,14 @@
             "description": ".",
             "effects": {
                 "potion.absolute": -2,
-                "potion.absolute": 1,
+                "potion.absolute": 2,
             }
         }, 
         {
             "id": "absolute.identity",
             "label": "Абсолют совпадения - статичность",
             "requirements": {
-                "identity": 1,
+                "potion.identity": 1,
             },
             "startdescription": "На то он и абсолют.",
             "warmup": 60,
@@ -1159,7 +1159,7 @@
             "effects": {
                 "potion.absolute": -1,
                 "potion.identity": -1,
-                "potion.static": 1,
+                "potion.static": 2,
             }
         }, 
         {
@@ -1224,7 +1224,20 @@
             },
             "effects": {
                 "potion.identity": -1,
-            }
+                "potion.strengthen": "potion.strengthen",
+                "potion.weaken": "potion.weaken",
+                "potion.reverse": "potion.reverse",
+                "potion.neutralize": "potion.neutralize",
+                "potion.absolute": "potion.absolute",
+                "potion.identity": "potion.identity",
+                "potion.difference": "potion.difference",
+                "potion.similar": "potion.similar",
+                "potion.other": "potion.other",
+                "potion.split": "potion.split",
+                "potion.merge": "potion.merge",
+                "potion.static": "potion.static",
+                "potion.explosion": "potion.explosion",
+            },
         }, 
     ]
 }

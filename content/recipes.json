@@ -64,10 +64,13 @@
             },
             "startdescription": "Прогулка по непролазной лесной чаще обещает быть утомительной...",
             "description": "Настала пора возвращаться.",
-            "warmup": 30,
+            "warmup": 60,
             "craftable": true, 
             "deckeffects": {
-                "forestloot": 1
+                "forestloot": 6,
+            },
+            "effects": {
+                "substance": -4,
             },
         },
         {
@@ -97,6 +100,38 @@
             "requirements": {
                 "village": 1,
             },
+            "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня.",
+            "description": "В этот раз мне не удалось найти никого, кто заинтересовался бы моими товарами.",
+            "warmup": 30,
+            "craftable": true,
+            "alt": [
+                {
+                    "id": "talk.village.success",
+                    "chance": 33,
+                }
+            ],         
+        },   
+        {
+            "id": "talk.village.success",
+            "label": "Искать клиентов",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "village": 1,
+            },
+            "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня. Я верю в успех!",
+            "description": ".",
+            "warmup": 30,
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "talk.village.interest",
+                },
+            ]
+        },  
+        {
+            "id": "talk.village.interest",
+            "label": "Интерес",
+            "actionid": "alchemist.talk",
             "slots": [              
                 {
                     "id": "target",
@@ -108,10 +143,9 @@
                     },
                 },  
             ],
-            "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня.",
-            "description": "Я нашёл себе заказчика!",
-            "warmup": 120,
-            "craftable": true,
+            "startdescription": "Кто-то заинтересовался моими изделиями!",
+            "description": "Я получил заказ!",
+            "warmup": 30,
             "deckeffects": {
                 "customers": 1,
             },  
@@ -127,22 +161,11 @@
             "requirements": {
                 "failedorder": 1,
             },
-            "startdescription": "Люди меньше доверяют мне из-за проваленного заказа. Найти нового покупателя будет непросто.",
+            "startdescription": "Моя репутация подводит меня.",
+            "description": "Из-за проваленного заказа мне не удаётся получить доверие покупателя. Сделка сорвалась.",
             "effects": {
                 "failedorder": -1,
             },
-            "linked": [
-                {
-                    "id": "talk.village.delay",
-                },
-            ],
-        },  
-        {
-            "id": "talk.village.delay",
-            "label": "Осложнения",
-            "warmup": 120,
-            "startdescription": "Люди меньше доверяют мне из-за проваленного заказа. Найти нового покупателя будет непросто.",
-            "description": "Сейчас жители деревни слишком невысокого обо мне мнения. Возможно, в другой раз получится.",
         },  
         {
             "id": "time",
