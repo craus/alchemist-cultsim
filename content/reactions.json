@@ -153,8 +153,56 @@
             "hintonly": true,
         }, 
         
-        
-        
+        {
+            "id": "reaction.start",
+            "label": "Алхимическое преобразование",
+            "actionid": "_reaction",
+            "requirements": {
+                "device": 1,
+            },
+            "craftable": true,
+            "startdescription": "Я ставлю котёл на огонь. Займёмся же алхимией!",
+            "warmup": 5,
+            "slots": [                
+                {
+                    "id": "ingredient1",
+                    "label": "Ингредиент",
+                    "description": "Первый ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                },          
+                {
+                    "id": "ingredient2",
+                    "label": "Ингредиент",
+                    "description": "Второй ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                },       
+                {
+                    "id": "ingredient3",
+                    "label": "Ингредиент",
+                    "description": "Третий ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                },       
+                {
+                    "id": "ingredient4",
+                    "label": "Ингредиент",
+                    "description": "Четвёртый ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                },    
+            ],
+            "alt": [
+                {
+                    "id": "strengthen.potion",
+                },
+            ],
+        },   
         {
             "id": "reaction",
             "label": "Алхимическое преобразование",
@@ -885,7 +933,7 @@
             "id": "reverse.absolute",
             "label": "Противоположность абсолюта - нейтрализация",
             "requirements": {
-                "potion.neutralize": 1,
+                "potion.absolute": 1,
             },
             "startdescription": ".",
             "warmup": 60,
