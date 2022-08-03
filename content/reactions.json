@@ -233,6 +233,12 @@
             },
             "warmup": 60,
             "craftable": true,
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
             "effects": {
                 "substance": -999,
                 "potion.strengthen": 2,
@@ -253,10 +259,16 @@
             },
             "warmup": 60,
             "craftable": true,
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
             "effects": {
                 "substance": -999,
                 "potion.weaken": 2,
-            }
+            },
         },   
         {
             "id": "reverse.potion",
@@ -273,10 +285,16 @@
             },
             "warmup": 60,
             "craftable": true,
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
             "effects": {
                 "substance": -999,
                 "potion.reverse": 2,
-            }
+            },
         }, 
         {
             "id": "neutralize.potion",
@@ -293,10 +311,16 @@
             },
             "warmup": 60,
             "craftable": true,
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
             "effects": {
                 "substance": -999,
                 "potion.neutralize": 2,
-            }
+            },
         }, 
         {
             "id": "absolute.potion",
@@ -313,10 +337,16 @@
             },
             "warmup": 60,
             "craftable": true,
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
             "effects": {
                 "substance": -999,
                 "potion.absolute": 2,
-            }
+            },
         }, 
         {
             "id": "identity.potion",
@@ -333,10 +363,16 @@
             },
             "warmup": 60,
             "craftable": true,
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
             "effects": {
                 "substance": -999,
                 "potion.identity": 2,
-            }
+            },
         }, 
         {
             "id": "difference.potion",
@@ -353,10 +389,16 @@
             },
             "warmup": 60,
             "craftable": true,
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
             "effects": {
                 "substance": -999,
                 "potion.difference": 2,
-            }
+            },
         }, 
         {
             "id": "similar.potion",
@@ -372,10 +414,16 @@
             },
             "warmup": 60,
             "craftable": true,
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
             "effects": {
                 "substance": -999,
                 "potion.similar": 2,
-            }
+            },
         }, 
         {
             "id": "other.potion",
@@ -391,10 +439,16 @@
             },
             "warmup": 60,
             "craftable": true,
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
             "effects": {
                 "substance": -999,
                 "potion.other": 2,
-            }
+            },
         }, 
         {
             "id": "split.potion",
@@ -411,10 +465,16 @@
             },
             "warmup": 60,
             "craftable": true,
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
             "effects": {
                 "substance": -999,
                 "potion.split": 2,
-            }
+            },
         }, 
         {
             "id": "merge.potion",
@@ -431,16 +491,22 @@
             },
             "warmup": 60,
             "craftable": true,
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
             "effects": {
                 "substance": -999,
                 "potion.merge": 2,
-            }
+            },
         }, 
         
         {
             "id": "strengthen",
             "label": "Усиление",
-            "actionid": "reaction",
+            "actionid": "alchemist.use",
             "requirements": {
                 "device": -1,
                 "potion.strengthen": 1,
@@ -645,7 +711,7 @@
         {
             "id": "weaken",
             "label": "Ослабление",
-            "actionid": "reaction",
+            "actionid": "alchemist.use",
             "requirements": {
                 "device": -1,
                 "potion.weaken": 1,
@@ -815,7 +881,7 @@
         {
             "id": "reverse",
             "label": "Противоположность",
-            "actionid": "reaction",
+            "actionid": "alchemist.use",
             "requirements": {
                 "device": -1,
                 "potion.reverse": 1,
@@ -1038,7 +1104,7 @@
         {
             "id": "neutralize",
             "label": "Нейтрализация",
-            "actionid": "reaction",
+            "actionid": "alchemist.use",
             "requirements": {
                 "device": -1,
                 "potion.neutralize": 1,
@@ -1070,7 +1136,7 @@
             "id": "neutralize.identity",
             "label": "Нейтрализация совпадения - отличие",
             "requirements": {
-                "identity": 1,
+                "potion.identity": 1,
             },
             "startdescription": ".",
             "warmup": 60,
@@ -1099,7 +1165,7 @@
         {
             "id": "absolute",
             "label": "Абсолют",
-            "actionid": "reaction",
+            "actionid": "alchemist.use",
             "requirements": {
                 "device": -1,
                 "potion.absolute": 1,
@@ -1140,7 +1206,7 @@
             "id": "absolute.weaken",
             "label": "Абсолют ослабления - противоположность",
             "requirements": {
-                "weaken": 1,
+                "potion.weaken": 1,
             },
             "startdescription": ".",
             "warmup": 60,
@@ -1155,7 +1221,7 @@
             "id": "absolute.reverse",
             "label": "Абсолют противоположности - разделение",
             "requirements": {
-                "reverse": 1,
+                "potion.reverse": 1,
             },
             "startdescription": ".",
             "warmup": 60,
@@ -1170,7 +1236,7 @@
             "id": "absolute.neutralize",
             "label": "Абсолют нейтрализации - исчезновение",
             "requirements": {
-                "neutralize": 1,
+                "potion.neutralize": 1,
             },
             "startdescription": ".",
             "warmup": 60,
@@ -1185,7 +1251,7 @@
             "id": "absolute.absolute",
             "label": "Абсолют абсолюта - абсолют",
             "requirements": {
-                "absolute": 2,
+                "potion.absolute": 2,
             },
             "startdescription": "На то он и абсолют.",
             "warmup": 60,
@@ -1221,7 +1287,7 @@
             "description": ".",
             "effects": {
                 "potion.absolute": -1,
-                "potion.strength": 1,
+                "potion.strengthen": 1,
             },
             "linked": [
                 {
@@ -1233,7 +1299,7 @@
         {
             "id": "identity",
             "label": "Совпадение",
-            "actionid": "reaction",
+            "actionid": "alchemist.use",
             "requirements": {
                 "device": -1,
                 "potion.identity": 1,
@@ -1267,24 +1333,21 @@
             "startdescription": ".",
             "warmup": 60,
             "description": ".",
-            "aspects": {
-                "refresh": 1,
-            },
             "effects": {
                 "potion.identity": -1,
-                "potion.strengthen": "potion.strengthen",
-                "potion.weaken": "potion.weaken",
-                "potion.reverse": "potion.reverse",
-                "potion.neutralize": "potion.neutralize",
-                "potion.absolute": "potion.absolute",
-                "potion.identity": "potion.identity",
-                "potion.difference": "potion.difference",
-                "potion.similar": "potion.similar",
-                "potion.other": "potion.other",
-                "potion.split": "potion.split",
-                "potion.merge": "potion.merge",
-                "potion.static": "potion.static",
-                "potion.explosion": "potion.explosion",
+            },
+            "linked": [
+                {
+                    "id": "identity.any.step2",
+                },
+            ],
+        }, 
+        {
+            "id": "identity.any.step2",
+            "label": "Совпадение с чем угодно - это оно само.",
+            "aspects": {
+                "refresh": 1,
+                "copy": 1,
             },
         }, 
     ]

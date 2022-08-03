@@ -175,8 +175,21 @@
             "description": "Делает вещи более сильными. Они будут делать то же самое, но в гораздо большей степени.",
             "xtriggers": {
                 "refresh": "potion.strengthen",
+                "copy": [
+                    {
+                        "id": "potion.strengthen",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },        
+        {
+            "id": "potion.strengthen.precursor",
+            "icon": "potion.strengthen",
+            "label": "Зелье усиления: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.strengthen",
         },
         {
             "id": "potion.weaken",
@@ -192,8 +205,21 @@
             "description": "Делает вещи более слабыми.",
             "xtriggers": {
                 "refresh": "potion.weaken",
+                "copy": [
+                    {
+                        "id": "potion.weaken",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.weaken.precursor",
+            "icon": "potion.weaken",
+            "label": "Зелье ослабления: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.weaken",
         },
         {
             "id": "potion.reverse",
@@ -209,8 +235,21 @@
             "description": "Делает из вещей противоположные им.",
             "xtriggers": {
                 "refresh": "potion.reverse",
+                "copy": [
+                    {
+                        "id": "potion.reverse",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.reverse.precursor",
+            "icon": "potion.reverse",
+            "label": "Зелье противоположности: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.reverse",
         },
         {
             "id": "potion.neutralize",
@@ -226,8 +265,21 @@
             "description": "Делает вещи неработающими. Они от этого перестают делать то, что делали раньше.",
             "xtriggers": {
                 "refresh": "potion.neutralize",
+                "copy": [
+                    {
+                        "id": "potion.neutralize",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.neutralize.precursor",
+            "icon": "potion.neutralize",
+            "label": "Зелье нейтрализации: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.neutralize",
         },
         {
             "id": "potion.absolute",
@@ -243,8 +295,21 @@
             "description": "Даёт вещам абсолютную силу.",
             "xtriggers": {
                 "refresh": "potion.absolute",
+                "copy": [
+                    {
+                        "id": "potion.absolute",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.absolute.precursor",
+            "icon": "potion.absolute",
+            "label": "Зелье абсолюта: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.absolute",
         },
         {
             "id": "potion.identity",
@@ -260,8 +325,21 @@
             "description": "Оставляет вещи такими же, как они есть.",
             "xtriggers": {
                 "refresh": "potion.identity",
+                "copy": [
+                    {
+                        "id": "potion.identity",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.identity.precursor",
+            "icon": "potion.identity",
+            "label": "Зелье совпадения: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.identity",
         },
         {
             "id": "potion.difference",
@@ -277,8 +355,21 @@
             "description": "Делает вещи в чём-то другими, не такими же, как они сейчас.",
             "xtriggers": {
                 "refresh": "potion.difference",
+                "copy": [
+                    {
+                        "id": "potion.difference",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.difference.precursor",
+            "icon": "potion.difference",
+            "label": "Зелье различия: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.difference",
         },
         {
             "id": "potion.similar",
@@ -293,8 +384,21 @@
             "description": "Делает вещи похожими на то, каковы они сейчас.",
             "xtriggers": {
                 "refresh": "potion.similar",
+                "copy": [
+                    {
+                        "id": "potion.similar",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.similar.precursor",
+            "icon": "potion.similar",
+            "label": "Зелье сходства: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.similar",
         },
         {
             "id": "potion.other",
@@ -309,8 +413,21 @@
             "description": "Делает из вещей другие вещи, никак не связанные с ними.",
             "xtriggers": {
                 "refresh": "potion.other",
+                "copy": [
+                    {
+                        "id": "potion.other",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.other.precursor",
+            "icon": "potion.other",
+            "label": "Зелье другого: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.other",
         },
         {
             "id": "potion.split",
@@ -326,8 +443,21 @@
             "description": "Разделяет целое на множество частей.",
             "xtriggers": {
                 "refresh": "potion.split",
+                "copy": [
+                    {
+                        "id": "potion.split",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.split.precursor",
+            "icon": "potion.split",
+            "label": "Зелье разделения: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.split",
         },
         {
             "id": "potion.merge",
@@ -343,9 +473,22 @@
             "isAspect": true,
             "description": "Собирает части в единое целое.",
             "xtriggers": {
-                "refresh": "potion.split",
+                "refresh": "potion.merge",
+                "copy": [
+                    {
+                        "id": "potion.merge",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.merge.precursor",
+            "icon": "potion.merge",
+            "label": "Зелье соединения: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.merge",
         },
         {
             "id": "potion.static",
@@ -357,8 +500,21 @@
             "description": "Делает вещи неизменными.",
             "xtriggers": {
                 "refresh": "potion.static",
+                "copy": [
+                    {
+                        "id": "potion.static",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.static.precursor",
+            "icon": "potion.static",
+            "label": "Зелье статичности: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.static",
         },
         {
             "id": "potion.explosion",
@@ -371,8 +527,50 @@
             "description": "Разрывает всё на части.",
             "xtriggers": {
                 "refresh": "potion.explosion",
+                "copy": [
+                    {
+                        "id": "potion.explosion",
+                        "morpheffect": "spawn",
+                    },
+                ],
             },
             "lifetime": 300,
+        },  
+        {
+            "id": "potion.explosion.precursor",
+            "icon": "potion.explosion",
+            "label": "Зелье взрыва: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.explosion",
+        },
+        {
+            "id": "potion.void",
+            "label": "Зелье исчезновения",
+            "aspects": {
+                "substance": 1,
+                "winter": 1,
+                "edge": 1,
+                "knock": 1,
+            },
+            "description": "Заставляет что-то исчезнуть.",
+            "xtriggers": {
+                "refresh": "potion.void",
+                "copy": [
+                    {
+                        "id": "potion.void",
+                        "level": 2,
+                        "morpheffect": "spawn",
+                    },
+                ],
+            },
+            "lifetime": 300,
+        },
+        {
+            "id": "potion.void.precursor",
+            "icon": "potion.void",
+            "label": "Зелье исчезновения: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.void",
         },
     ]
 }

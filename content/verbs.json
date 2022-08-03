@@ -10,6 +10,18 @@
                 "description": "Устройство или субстанция для проведения реакции.",
                 "required": {
                     "device": 1,
+                }
+            }
+        },
+        {
+            "id": "alchemist.use",
+            "label": "Применить зелье",
+            "description": "Использовать зелье по его прямому назначению.",
+            "slot": {
+                "id": "potion",
+                "label": "Зелье",
+                "description": "Что применить?",
+                "required": {
                     "modification": 1,
                 }
             }

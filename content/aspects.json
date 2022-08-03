@@ -35,6 +35,16 @@
             "icon": "person",
             "isAspect": true,
         },
+        {
+            "id": "refresh",
+            "label": "Обновление",
+            "isAspect": true,
+        },
+        {
+            "id": "copy",
+            "label": "Копирование",
+            "isAspect": true,
+        },
         
         {
             "id": "limit.forge",

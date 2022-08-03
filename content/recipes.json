@@ -80,11 +80,11 @@
             "startdescription": "Мне понадобятся заказчики, если я хочу зарабатывать алхимией. Я могу пообщаться с жителями моей деревни и спросить, не нужны ли им какие-нибудь зелья.",
             "description": "Я нашёл человека, которому пригодились бы мои услуги. Значит, смогу найти и ещё.",
             "warmup": 30,
-            "effects": {
+            "_effects": {
                 "village": 1,
             },    
             "deckeffects": {
-                "customers": 1,
+                "customers": 3,
             },
             "alt": [
                 {
@@ -96,7 +96,7 @@
         {
             "id": "talk.village",
             "label": "Искать клиентов",
-            "actionid": "alchemist.talk",
+            "actionid": "_alchemist.talk",
             "requirements": {
                 "village": 1,
             },
@@ -121,7 +121,6 @@
             "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня. Я верю в успех!",
             "description": ".",
             "warmup": 30,
-            "craftable": true,
             "linked": [
                 {
                     "id": "talk.village.interest",
@@ -186,7 +185,7 @@
             "warmup": 60,
             "linked": [
                 {
-                    "id": "time",
+                    "id": "time.next",
                 },
             ],
             "alt": [
@@ -197,6 +196,14 @@
             "effects": {
                 "money": -1,
             },
+        }, 
+        {
+            "id": "time.next",
+            "linked": [
+                {
+                    "id": "time",
+                },
+            ],
         }, 
         {
             "id": "time.nomoney",
@@ -253,6 +260,13 @@
             "effects": {
                 "money": -1,
             },
+        },  
+        {
+            "id": "use.intro",
+            "label": "Применение зелий",
+            "actionid": "alchemist.use",
+            "startdescription": "Я могу сам использовать зелья, которые изготовил.",
+            "warmup": 30,   
         },  
     ]
 }
