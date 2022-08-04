@@ -45,6 +45,12 @@
             "label": "Копирование",
             "isAspect": true,
         },
+        {
+            "id": "time",
+            "label": "Время",
+            "description": "Из-за него всё происходит не сразу, а постепенно.",
+            "isAspect": true,
+        },
         
         {
             "id": "limit.forge",

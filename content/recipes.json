@@ -204,6 +204,33 @@
                     "id": "time",
                 },
             ],
+            "mutations": [
+                {
+                    "filter": "time.spent",
+                    "mutate": "time",
+                    "level": 1,
+                    "additive": true,
+                },
+            ],
+            "alt": [
+                {
+                    "id": "time.next.empty",
+                },
+            ],
+        }, 
+        {
+            "id": "time.next.empty",
+            "requirements": {
+                "time.spent": -1,
+            },
+            "effects": {
+                "time.spent": 1,
+            },
+            "linked": [
+                {
+                    "id": "time",
+                },
+            ],
         }, 
         {
             "id": "time.nomoney",
