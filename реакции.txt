@@ -4,7 +4,7 @@ strengthen + reverse = identity
 strengthen + neutralize = reverse
 strengthen + absolute = absolute
 strengthen + identity = static
-strengthen + difference = other
+strengthen + change = other
 strengthen + similar = identity
 strengthen + split = explosion
 strengthen + other = reverse
@@ -15,7 +15,7 @@ weaken + absolute = strengthen
 weaken + identity = similar
 weaken + similar = other
 weaken + static = identity
-weaken + other = difference
+weaken + other = change
 weaken + explosion = split
 
 reverse + strengthen = weaken
@@ -23,12 +23,13 @@ reverse + weaken = strengthen
 reverse + reverse = identity
 reverse + neutralize = absolute
 reverse + absolute = neutralize
-reverse + identity = difference
-reverse + difference = identity
+reverse + identity = change
+reverse + change = identity
 reverse + similar = other
 reverse + other = similar
 reverse + split = merge
 reverse + merge = split
+reverse + part = whole
 
 neutralize + identity = other
 neutralize + any _other_ modification = identity
@@ -41,4 +42,39 @@ absolute + any _other_ modification = strength + this modification
 
 identity + any _other_ = same shit
 
-difference + strengthen = 
+change + strengthen = merge
+change + weaken = split
+change + reverse = 
+change + change = comparison
+
+similar + absolute = all
+similar + all = absolute
+similar + identity = unit
+similar + unit = identity
+similar + void = null
+similar + null = void
+similar + change = difference
+similar + difference = change
+
+other + strengthen = random?
+
+split + strengthen = strength + increase
+split + weaken = strength + decrease
+split + reverse = strength + negate
+split + neutralize = strength + void
+split + absolute = strength + all
+split + identity = strength + unit
+split + all = space + time + materia + information + energy
+split + materia = fire + air + water + earth
+
+merge + strengthen + weaken = identity
+merge + absolute + neutralize = identity
+merge + identity + reverse = neutralize
+merge + split + unit = part
+
+static + any _other_ = same with no decay
+
+difference + X + Y = Z: Z X = Y
+
+
+

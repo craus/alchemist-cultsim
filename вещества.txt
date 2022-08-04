@@ -22,3 +22,4 @@ split - edge, knock, lantern, -heart (sylvia)
 merge - grail, heart, forge, -edge (clovette)
 static - winter
 explosion - forge, edge
+void - winter, edge, knock
