@@ -288,7 +288,7 @@
         },
         {
             "id": "customer.enid",
-            "label": "Клифтон",
+            "label": "Энид",
             "aspects": {
                 "person": 1,
                 "potion.void": 1,

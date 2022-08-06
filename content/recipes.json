@@ -13,7 +13,6 @@
             "craftable": true,
             "maxexecutions": 1,
             "effects": {
-                "leeches": 1,
                 "money": 5,
             },            
             "alt": [
@@ -34,8 +33,6 @@
             "description": "Кое-что удалось обнаружить...",
             "warmup": 60,
             "craftable": true,
-            "effects": {
-            },    
         },  
         {
             "id": "reaction.intro",
@@ -43,15 +40,8 @@
             "actionid": "reaction",
             "startdescription": "Его ещё предстоит отмыть.",
             "description": "Фух, теперь в нём можно сварить что-нибудь.",
-            "_effects": {
-                "oldcauldron": 1,
-            },
             "effects": {
                 "oldcauldron": 1,
-                
-                "potion.strengthen": 2,
-                "potion.weaken": 2,
-                "potion.absolute": 2,
             },
             "warmup": 15,
             "alt": [
@@ -306,7 +296,7 @@
         {
             "id": "test.1",
             "label": "тест 1",
-            "actionid": "reaction",
+            "actionid": "_reaction",
             "startdescription": "тест 1 старт",
             "description": "тест 1 конец",
             "requirements": {

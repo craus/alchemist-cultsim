@@ -1055,6 +1055,12 @@
                 {
                     "id": "reverse.merge",
                 },
+                {
+                    "id": "reverse.static",
+                },
+                {
+                    "id": "reverse.explosion",
+                },
             ],
             "craftable": true,
         },
@@ -2120,7 +2126,7 @@
             "id": "split.strengthen",
             "label": "Разделение усиления - ослабление и абсолют",
             "requirements": {
-                "modification": 2,
+                "potion.strengthen": 1,
             },
             "startdescription": ".",
             "warmup": 60,
@@ -2518,6 +2524,7 @@
         {
             "id": "void.any",
             "label": "Заставить предмет исчезнуть",
+            "description": "Пожалуй, не буду этого делать.",
             "actionid": "alchemist.use",
             "requirements": {
                 "substance": 2,
