@@ -108,12 +108,23 @@
         },
         {
             "id": "potion.strengthen.or.absolute",
+            "label": "Зелье силы или абсолюта",
             "isAspect": true,
         },
         {
             "id": "stasis.access",
             "label": "Доступ к стазису",
             "description": "Ключ, позволяющий манипулировать стазисом.",
+            "isAspect": true,
+        },
+        {
+            "id": "stasis.extend",
+            "label": "Расширение стазиса",
+            "isAspect": true,
+        },
+        {
+            "id": "stasis.interrupt",
+            "label": "Прерывание стазиса",
             "isAspect": true,
         },
     ]
