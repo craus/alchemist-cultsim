@@ -106,5 +106,9 @@
             "description": "Излишнее использование Тайных историй может помешать изготовлению.",
             "isAspect": true,
         },
+        {
+            "id": "potion.strengthen.or.absolute",
+            "isAspect": true,
+        },
     ]
 }

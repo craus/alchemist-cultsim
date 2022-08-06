@@ -171,6 +171,7 @@
                 "heart": 1,
                 "edge": 1,
                 "limit.moth": 1,
+                "potion.strengthen.or.absolute": 1,
             },          
             "description": "Делает вещи более сильными. Они будут делать то же самое, но в гораздо большей степени.",
             "xtriggers": {
@@ -291,6 +292,7 @@
                 "lantern": 1,
                 "secrethistories": 1,
                 "limit.knock": 1,
+                "potion.strengthen.or.absolute": 1,
             },
             "description": "Даёт вещам абсолютную силу.",
             "xtriggers": {

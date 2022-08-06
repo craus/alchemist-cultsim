@@ -35,7 +35,6 @@
             "warmup": 60,
             "craftable": true,
             "effects": {
-                "leeches": 1,
             },    
         },  
         {
@@ -44,8 +43,15 @@
             "actionid": "reaction",
             "startdescription": "Его ещё предстоит отмыть.",
             "description": "Фух, теперь в нём можно сварить что-нибудь.",
+            "_effects": {
+                "oldcauldron": 1,
+            },
             "effects": {
-                "oldcauldron": 1
+                "oldcauldron": 1,
+                
+                "potion.strengthen": 2,
+                "potion.weaken": 2,
+                "potion.absolute": 2,
             },
             "warmup": 15,
             "alt": [
@@ -295,5 +301,100 @@
             "startdescription": "Я могу сам использовать зелья, которые изготовил.",
             "warmup": 30,   
         },  
+        
+        
+        {
+            "id": "test.1",
+            "label": "тест 1",
+            "actionid": "reaction",
+            "startdescription": "тест 1 старт",
+            "description": "тест 1 конец",
+            "requirements": {
+                "device": 1,
+            },
+            "warmup": 5,
+            "craftable": true,
+            "aspects": {
+                "potion.strengthen": 1,
+            },
+            "slots": [  
+                {
+                    "id": "target",
+                    "requirements": {
+                        "substance": 1,
+                    },
+                },
+            ],
+            "alt": [
+                {
+                    "id": "test.2",
+                },
+            ],
+        },         
+        {
+            "id": "test.2",
+            "label": "тест 2",
+            "actionid": "reaction",
+            "startdescription": "тест 2 старт",
+            "description": "тест 2 конец",
+            "requirements": {
+            },
+            "warmup": 5,
+            "alt": [
+                {
+                    "id": "test.3",
+                },
+            ],
+        },        
+        {
+            "id": "test.3",
+            "label": "тест 3",
+            "actionid": "reaction",
+            "startdescription": "тест 3 старт",
+            "description": "тест 3 конец",
+            "requirements": {
+                "flower.pink": 1,
+            },
+            "warmup": 5,
+            "effects": {
+                "flower.red": 1,
+            },
+            "alt": [
+                {
+                    "id": "test.4",
+                },
+            ],
+        },        
+        {
+            "id": "test.4",
+            "label": "тест 4",
+            "actionid": "reaction",
+            "startdescription": "тест 4 старт",
+            "description": "тест 4 конец",
+            "requirements": {
+            },
+            "warmup": 50,
+            "effects": {
+                "flower.black": 1,
+            },
+            "alt": [
+                {
+                    "id": "test.5",
+                },
+            ],
+        },     
+        {
+            "id": "test.5",
+            "label": "тест 5",
+            "actionid": "reaction",
+            "startdescription": "тест 5 старт",
+            "description": "тест 5 конец",
+            "requirements": {
+            },
+            "warmup": 50,
+            "effects": {
+                "flower.white": 1,
+            },
+        }, 
     ]
 }

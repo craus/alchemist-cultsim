@@ -1,5 +1,19 @@
 {
     "recipes": [ 
+    
+        {
+            "id": "reaction",
+            "label": "Алхимическое преобразование",
+            "actionid": "reaction",
+            "requirements": {
+                "device": 1,
+            },
+            "hintonly": true,
+            "startdescription": "Нужно добавить какие-нибудь ещё ингредиенты, иначе ничего не получится.",
+            "description": "Нет, так я ничего не сварю.",
+        },   
+    
+    
         
         {
             "id": "strengthen.potion.overdraft",
@@ -182,15 +196,7 @@
         
         
         {
-            "id": "reaction",
-            "label": "Алхимическое преобразование",
-            "actionid": "reaction",
-            "requirements": {
-                "device": 1,
-            },
-            "hintonly": true,
-            "startdescription": "Нужно добавить какие-нибудь ещё ингредиенты, иначе ничего не получится.",
-            "description": "Нет, так я ничего не сварю.",
+            "id": "comment.split.hints.and.cauldron.recipes",
             "comment": "ВЫШЕ: ПОДСКАЗКИ ПРО ЛИШНИЕ ИНГРЕДИЕНТЫ. НИЖЕ: РЕЦЕПТЫ ВАРКИ ЗЕЛИЙ КОТЛОМ",
         },   
         
@@ -557,14 +563,54 @@
         }, 
         
         
-        
+            
+        {
+            "id": "absolute",
+            "label": "Абсолют",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "device": -1,
+                "potion.absolute": 1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Цель",
+                    "description": "На что я хочу повлиять?",
+                    "required": {
+                        "substance": 1,
+                    },
+                },   
+            ],
+            "startdescription": "Я могу дать чему-то абсолютный эффект.",
+            "warmup": 60,
+            "description": "Пожалуй, не буду этого делать.",
+            "alt": [
+                {
+                    "id": "absolute.weaken",
+                },
+                {
+                    "id": "absolute.reverse",
+                },
+                {
+                    "id": "absolute.neutralize",
+                },
+                {
+                    "id": "absolute.absolute",
+                },
+                {
+                    "id": "absolute.modification",
+                },
+            ],
+            "craftable": true,
+        },
         {
             "id": "strengthen",
             "label": "Усиление",
             "actionid": "alchemist.use",
             "requirements": {
                 "device": -1,
-                "potion.strengthen": 1,
+                "potion.strengthen.or.absolute": 1,
             },
             "slots": [                
                 {
@@ -581,6 +627,10 @@
             "description": "Пожалуй, не буду этого делать.",
             "alt": [
                 {
+                    "id": "strengthen.absolute",
+                    "comment": "это должно быть выше чем strengthen.strengthen",
+                },
+                {
                     "id": "strengthen.strengthen",
                 },
                 {
@@ -591,9 +641,6 @@
                 },
                 {
                     "id": "strengthen.neutralize",
-                },
-                {
-                    "id": "strengthen.absolute",
                 },
                 {
                     "id": "strengthen.identity",
@@ -623,7 +670,7 @@
             "warmup": 60,
             "description": ".",
             "effects": {
-                "potion.strengthen": -1,
+                "potion.strengthen.or.absolute": -1,
                 "potion.weaken": -1,
                 "potion.neutralize": 2,
             }
@@ -638,22 +685,39 @@
             "warmup": 60,
             "description": ".",
             "effects": {
-                "potion.strengthen": -1,
+                "potion.strengthen.or.absolute": -1,
                 "potion.neutralize": -1,
                 "potion.reverse": 2,
             }
         }, 
         {
+            "id": "strengthen.absolute",
+            "label": "Усиление абсолюта - абсолют",
+            "requirements": {
+                "potion.strengthen": 1,
+                "potion.absolute": 1,
+            },
+            "startdescription": "На то он и абсолют.",
+            "warmup": 60,
+            "description": ".",
+            "effects": {
+                "potion.strengthen": -1,
+                "potion.absolute": -1,
+                "potion.absolute": 2,
+            },
+            "comment": "Эта реакция должна быть выше чем strengthen.strengthen",
+        },
+        {
             "id": "strengthen.strengthen",
             "label": "Усиление усиления - абсолют",
             "requirements": {
-                "potion.strengthen": 2,
+                "potion.strengthen.or.absolute": 2,
             },
             "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
-                "potion.strengthen": -2,
+                "potion.strengthen.or.absolute": -2,
                 "potion.absolute": 2,
             }
         }, 
@@ -667,26 +731,11 @@
             "warmup": 60,
             "description": ".",
             "effects": {
-                "potion.strengthen": -1,
+                "potion.strengthen.or.absolute": -1,
                 "potion.reverse": -1,
                 "potion.identity": 2,
             }
         }, 
-        {
-            "id": "strengthen.absolute",
-            "label": "Усиление абсолюта - абсолют",
-            "requirements": {
-                "potion.absolute": 1,
-            },
-            "startdescription": "На то он и абсолют.",
-            "warmup": 60,
-            "description": ".",
-            "effects": {
-                "potion.strengthen": -1,
-                "potion.absolute": -1,
-                "potion.absolute": 2,
-            }
-        },
         {
             "id": "strengthen.identity",
             "label": "Усиление совпадения - статичность",
@@ -697,7 +746,7 @@
             "warmup": 60,
             "description": ".",
             "effects": {
-                "potion.strengthen": -1,
+                "potion.strengthen.or.absolute": -1,
                 "potion.identity": -1,
                 "potion.static": 2,
             }
@@ -712,7 +761,7 @@
             "warmup": 60,
             "description": ".",
             "effects": {
-                "potion.strengthen": -1,
+                "potion.strengthen.or.absolute": -1,
                 "potion.difference": -1,
                 "potion.other": 2,
             }
@@ -727,7 +776,7 @@
             "warmup": 60,
             "description": ".",
             "effects": {
-                "potion.strengthen": -1,
+                "potion.strengthen.or.absolute": -1,
                 "potion.similar": -1,
                 "potion.identity": 2,
             }
@@ -742,7 +791,7 @@
             "warmup": 60,
             "description": ".",
             "effects": {
-                "potion.strengthen": -1,
+                "potion.strengthen.or.absolute": -1,
                 "potion.split": -1,
                 "potion.explosion": 2,
             }
@@ -757,7 +806,7 @@
             "warmup": 60,
             "description": ".",
             "effects": {
-                "potion.strengthen": -1,
+                "potion.strengthen.or.absolute": -1,
                 "potion.other": -1,
                 "potion.reverse": 2,
             }
@@ -1264,46 +1313,12 @@
                 "potion.identity": 2,
             }
         }, 
-        
+            
         {
-            "id": "absolute",
+            "id": "_absolute",
             "label": "Абсолют",
-            "actionid": "alchemist.use",
-            "requirements": {
-                "device": -1,
-                "potion.absolute": 1,
-            },
-            "slots": [                
-                {
-                    "id": "target",
-                    "label": "Цель",
-                    "description": "На что я хочу повлиять?",
-                    "required": {
-                        "substance": 1,
-                    },
-                },   
-            ],
-            "startdescription": "Я могу дать чему-то абсолютный эффект.",
-            "warmup": 60,
-            "description": "Пожалуй, не буду этого делать.",
-            "alt": [
-                {
-                    "id": "absolute.weaken",
-                },
-                {
-                    "id": "absolute.reverse",
-                },
-                {
-                    "id": "absolute.neutralize",
-                },
-                {
-                    "id": "absolute.absolute",
-                },
-                {
-                    "id": "absolute.modification",
-                },
-            ],
-            "craftable": true,
+            "actionid": "_alchemist.use",
+            "comment": "Этот рецепт вынесен до рецепта strengthen, чтобы перехватывать его",
         },
         {
             "id": "absolute.weaken",
@@ -1388,11 +1403,10 @@
             "startdescription": "В данном случае абсолют даст то же, что и обычное зелье усиления.",
             "warmup": 60,
             "description": ".",
-            "effects": {
-                "potion.absolute": -1,
-                "potion.strengthen": 1,
-            },
-            "linked": [
+            "alt": [
+                {
+                    "id": "strengthen.strengthen",
+                },
                 {
                     "id": "strengthen",
                 },
@@ -1614,7 +1628,7 @@
             "effects": {
                 "potion.similar": -1,
                 "potion.void": -1,
-                "potion.exposion": 2,
+                "potion.explosion": 2,
             }
         }, 
         
@@ -2112,17 +2126,15 @@
             "warmup": 60,
             "description": ".",
             "effects": {
-                "substance": -2,
+                "potion.split": -1,
+                "potion.strengthen": -1,
+                "potion.weaken": 1,
+                "potion.absolute": 1,
             },
-            "linked": [
-                {
-                    "id": "other.any.step2",
-                },
-            ],
         }, 
         
         {
-            "id": "merge",
+            "id": "alchemist.merge",
             "label": "Соединение",
             "actionid": "alchemist.use",
             "requirements": {
@@ -2137,7 +2149,35 @@
                     "required": {
                         "substance": 1,
                     },
-                },               
+                }, 
+            ],
+            "startdescription": "Я могу соединить что-то воедино.",
+            "warmup": 10,
+            "description": ".",
+            "craftable": true,
+            "linked": [
+                {
+                    "id": "merge.step2",
+                },
+                {
+                    "id": "merge.abort1",
+                },
+            ],
+        },
+        {
+            "id": "merge.abort1",
+            "label": "Отмена",
+            "description": "Пожалуй, не буду этого делать.",
+        },
+        {
+            "id": "merge.step2",
+            "label": "Нужна ещё одна цель",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "device": -1,
+                "substance": 2,
+            },
+            "slots": [                
                 {
                     "id": "target2",
                     "label": "Цель",
@@ -2145,10 +2185,10 @@
                     "required": {
                         "substance": 1,
                     },
-                },  
+                }, 
             ],
             "startdescription": "Я могу соединить что-то воедино.",
-            "warmup": 60,
+            "warmup": 10,
             "description": "Пожалуй, не буду этого делать.",
             "alt": [
                 {
@@ -2161,7 +2201,6 @@
                     "id": "merge.identity.reverse",
                 },
             ],
-            "craftable": true,
         },
         {
             "id": "merge.strengthen.weaken",
@@ -2214,5 +2253,48 @@
                 "potion.neutralize": 3,
             },
         }, 
+        
+        {
+            "id": "merge",
+            "label": "Соединение",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "device": -1,
+                "potion.merge": 1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Цель",
+                    "description": "На что я хочу повлиять?",
+                    "required": {
+                        "substance": 1,
+                    },
+                },               
+                {
+                    "id": "target2",
+                    "label": "Цель",
+                    "description": "На что я хочу повлиять?",
+                    "required": {
+                        "substance": 1,
+                    },
+                },  
+            ],
+            "startdescription": "Я могу соединить что-то воедино.",
+            "warmup": 60,
+            "description": "Пожалуй, не буду этого делать.",
+            "alt": [
+                {
+                    "id": "merge.strengthen.weaken",
+                },
+                {
+                    "id": "merge.absolute.neutralize",
+                },
+                {
+                    "id": "merge.identity.reverse",
+                },
+            ],
+            "craftable": true,
+        },
     ]
 }
