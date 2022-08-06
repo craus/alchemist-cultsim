@@ -472,7 +472,6 @@
                 "forge": 1,
                 "limit.edge": 1,
             },
-            "isAspect": true,
             "description": "Собирает части в единое целое.",
             "xtriggers": {
                 "refresh": "potion.merge",
