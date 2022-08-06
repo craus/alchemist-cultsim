@@ -2134,7 +2134,7 @@
         }, 
         
         {
-            "id": "alchemist.merge",
+            "id": "merge",
             "label": "Соединение",
             "actionid": "alchemist.use",
             "requirements": {
@@ -2255,12 +2255,12 @@
         }, 
         
         {
-            "id": "merge",
-            "label": "Соединение",
+            "id": "static",
+            "label": "Статичность",
             "actionid": "alchemist.use",
             "requirements": {
                 "device": -1,
-                "potion.merge": 1,
+                "potion.static": 1,
             },
             "slots": [                
                 {
@@ -2270,31 +2270,116 @@
                     "required": {
                         "substance": 1,
                     },
-                },               
-                {
-                    "id": "target2",
-                    "label": "Цель",
-                    "description": "На что я хочу повлиять?",
-                    "required": {
-                        "substance": 1,
-                    },
-                },  
+                },   
             ],
-            "startdescription": "Я могу соединить что-то воедино.",
+            "startdescription": "Я могу сделать что-то неизменным. По крайней мере, на какое-то время.",
             "warmup": 60,
             "description": "Пожалуй, не буду этого делать.",
             "alt": [
                 {
-                    "id": "merge.strengthen.weaken",
-                },
-                {
-                    "id": "merge.absolute.neutralize",
-                },
-                {
-                    "id": "merge.identity.reverse",
+                    "id": "static.any",
                 },
             ],
             "craftable": true,
+        },
+        {
+            "id": "static.any",
+            "label": "Погрузить предмет в стазис",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "substance": 2,
+            },
+            "effects": {
+                "potion.static": -1,
+            },
+            "alt": [
+                {
+                    "id": "stasis.passive",
+                    "additional": true,
+                    "expulsion": {
+                        "limit": 1,
+                        "filter": {
+                            "substance": 1,
+                        }
+                    }
+                },
+            ],
+        },
+        {
+            "id": "stasis.passive",
+            "actionid": "stasis",
+            "label": "Стазис",
+            "startdescription": "Вещи, находящиеся в стазисе, останутся неизменными до его окончания.",
+            "warmup": 60,
+            "slots": [                
+                {
+                    "id": "access",
+                    "label": "Доступ к стазису",
+                    "description": "Стазисом можно управлять. Если только знать как.",
+                    "required": {
+                        "stasis.access": 1,
+                    },
+                },   
+            ],
+            "alt": [
+                {
+                    "id": "stasis.extend",
+                },
+                {
+                    "id": "stasis.interrupt",
+                },
+            ],
+            "linked": [
+                {
+                    "id": "stasis.passive",
+                },
+            ],
+        },
+        {
+            "id": "stasis.extend",
+            "requirements": {
+                "potion.static": 1,
+            },
+            "label": "Расширить стазис",
+            "effects": {
+                "potion.static": -1,
+            },
+            "linked": [
+                {
+                    "id": "stasis.active",
+                },
+            ],
+        },
+        {
+            "id": "stasis.active",
+            "label": "Расширить стазис",
+            "warmup": 60,
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Цель",
+                    "description": "Я могу добавить в стазис ещё что-то.",
+                    "required": {
+                        "substance": 1,
+                    },
+                },   
+            ],
+            "linked": [
+                {
+                    "id": "stasis.passive",
+                },
+            ],
+        },
+        {
+            "id": "stasis.interrupt",
+            "label": "Прервать стазис",
+            "startdescription": "Все вещи в стазисе перейдут в своё обычное, изменчивое состояние.",
+            "requirements": {
+                "potion.explosion": 1,
+            },
+            "effects": {
+                "potion.explosion": -1,
+            },
         },
     ]
 }

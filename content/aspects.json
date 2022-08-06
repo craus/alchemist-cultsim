@@ -110,5 +110,11 @@
             "id": "potion.strengthen.or.absolute",
             "isAspect": true,
         },
+        {
+            "id": "stasis.access",
+            "label": "Доступ к стазису",
+            "description": "Ключ, позволяющий манипулировать стазисом.",
+            "isAspect": true,
+        },
     ]
 }

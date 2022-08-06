@@ -496,6 +496,8 @@
             "label": "Зелье статичности",
             "aspects": {
                 "substance": 1,
+                "modification": 1,
+                "stasis.access": 1,
                 "winter": 3,
                 "limit.moth": 1,
             },
@@ -523,6 +525,8 @@
             "label": "Зелье взрыва",
             "aspects": {
                 "substance": 1,
+                "modification": 1,
+                "stasis.access": 1,
                 "forge": 2,
                 "edge": 1,
                 "limit.winter": 1,
