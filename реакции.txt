@@ -46,6 +46,11 @@ similar + strengthen = merge
 similar + merge = strengthen
 similar + weaken = split
 similar + split = weaken
+  change + strengthen = merge
+  change + weaken = split
+  change + reverse = 
+  change + change = comparison
+  
   similar + reverse = 
   similar + difference = comparison
 
@@ -53,6 +58,17 @@ similar + split = weaken
   similar + all = absolute
   similar + identity = unit
   similar + unit = identity
+  
+  similar + absolute = all
+  similar + all = absolute
+  similar + identity = unit
+  similar + unit = identity
+  similar + void = null
+  similar + null = void
+  similar + change = difference
+  similar + difference = change
+  similar + reverse = undo
+  similar + undo = reverse  
 
 similar + absolute = static
 similar + static = absolute
@@ -96,7 +112,15 @@ merge + identity + reverse = neutralize
 
 static + any _other_ = same with no decay
 
+  whole + space = all
+  whole + time = all
+  whole + materia = all
+  whole + information = all
+  whole + energy = all
+
   difference + X + Y = Z: Z X = Y
+
+undo + X = Z + W: Z W = X
 
 
 
