@@ -2255,12 +2255,25 @@
         }, 
         
         {
+            "id": "static.alreadyactive",
+            "label": "Стазис уже активен!",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "potion.static": 1,
+            },
+            "startdescription": "Стазис уже активен. Мне нужно использовать управление стазисом, если я хочу добавить туда ещё что-то.",
+            "hintonly": true,
+        },
+        {
             "id": "static",
             "label": "Статичность",
             "actionid": "alchemist.use",
             "requirements": {
                 "device": -1,
                 "potion.static": 1,
+            },
+            "extantreqs": {
+                "stasis.verb": -1,
             },
             "slots": [                
                 {
@@ -2294,7 +2307,7 @@
             },
             "alt": [
                 {
-                    "id": "stasis.subvert",
+                    "id": "stasis.initiate",
                     "additional": true,
                     "expulsion": {
                         "limit": 1,
@@ -2302,6 +2315,20 @@
                             "substance": 1,
                         }
                     }
+                },
+            ],
+        },
+        {
+            "id": "stasis.initiate",
+            "actionid": "stasis",
+            "label": "Стазис",
+            "startdescription": "Вещи, находящиеся в стазисе, останутся неизменными до его окончания.",
+            "effects": {
+                "stasis.verb": 1,
+            },
+            "linked": [
+                {
+                    "id": "stasis.subvert",
                 },
             ],
         },
@@ -2402,6 +2429,7 @@
             },
             "effects": {
                 "stasis.interrupt": -1,
+                "stasis.verb": -1,
             },
             "mutations": [
                 {
