@@ -110,6 +110,7 @@
             "id": "potion.strengthen.or.absolute",
             "label": "Зелье силы или абсолюта",
             "isAspect": true,
+            "isHidden": true,
         },
         {
             "id": "stasis.access",
@@ -121,11 +122,13 @@
             "id": "stasis.extend",
             "label": "Расширение стазиса",
             "isAspect": true,
+            "isHidden": true,
         },
         {
             "id": "stasis.interrupt",
             "label": "Прерывание стазиса",
             "isAspect": true,
+            "isHidden": true,
         },
     ]
 }

@@ -115,7 +115,8 @@
         {
             "id": "stasis.verb",
             "label": "Стазис",
-            "description": "Стазис включён."
+            "description": "Стазис включён.",
+            "isHidden": true,
         },
     ]
 }
