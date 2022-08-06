@@ -342,6 +342,35 @@
             "decayTo": "potion.identity",
         },
         {
+            "id": "potion.similar",
+            "label": "Зелье сходства",
+            "aspects": {
+                "substance": 1,
+                "modification": 1,
+                "secrethistories": 2,
+                "heart": 1,
+                "limit.edge": 1,
+            },
+            "description": "Делает вещи похожими на то, каковы они сейчас.",
+            "xtriggers": {
+                "refresh": "potion.similar",
+                "copy": [
+                    {
+                        "id": "potion.similar",
+                        "morpheffect": "spawn",
+                    },
+                ],
+            },
+            "lifetime": 300,
+        },  
+        {
+            "id": "potion.similar.precursor",
+            "icon": "potion.similar",
+            "label": "Зелье сходства: прекурсор",  
+            "lifetime": 1,
+            "decayTo": "potion.similar",
+        },
+        {
             "id": "potion.difference",
             "label": "Зелье различия",
             "aspects": {
@@ -370,35 +399,6 @@
             "label": "Зелье различия: прекурсор",  
             "lifetime": 1,
             "decayTo": "potion.difference",
-        },
-        {
-            "id": "potion.similar",
-            "label": "Зелье сходства",
-            "aspects": {
-                "substance": 1,
-                "modification": 1,
-                "secrethistories": 2,
-                "heart": 1,
-                "limit.edge": 1,
-            },
-            "description": "Делает вещи похожими на то, каковы они сейчас.",
-            "xtriggers": {
-                "refresh": "potion.similar",
-                "copy": [
-                    {
-                        "id": "potion.similar",
-                        "morpheffect": "spawn",
-                    },
-                ],
-            },
-            "lifetime": 300,
-        },  
-        {
-            "id": "potion.similar.precursor",
-            "icon": "potion.similar",
-            "label": "Зелье сходства: прекурсор",  
-            "lifetime": 1,
-            "decayTo": "potion.similar",
         },
         {
             "id": "potion.other",
@@ -495,7 +495,8 @@
             "label": "Зелье статичности",
             "aspects": {
                 "substance": 1,
-                "winter": 1,
+                "winter": 3,
+                "limit.moth": 1,
             },
             "description": "Делает вещи неизменными.",
             "xtriggers": {
@@ -521,8 +522,9 @@
             "label": "Зелье взрыва",
             "aspects": {
                 "substance": 1,
-                "forge": 1,
+                "forge": 2,
                 "edge": 1,
+                "limit.winter": 1,
             },
             "description": "Разрывает всё на части.",
             "xtriggers": {
@@ -545,12 +547,13 @@
         },
         {
             "id": "potion.void",
-            "label": "Зелье исчезновения",
+            "label": "Зелье пустоты",
             "aspects": {
                 "substance": 1,
                 "winter": 1,
                 "edge": 1,
                 "knock": 1,
+                "limit.grail": 1,
             },
             "description": "Заставляет что-то исчезнуть.",
             "xtriggers": {

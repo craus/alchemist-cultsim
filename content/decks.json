@@ -35,5 +35,148 @@
             ],
             "resetonexhaustion": true
         },
+        {
+            "id": "difference.strengthen.deck",
+            "spec": [
+                "potion.absolute",
+                "potion.weaken",
+                "potion.merge",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.weaken.deck",
+            "spec": [
+                "potion.neutralize",
+                "potion.strengthen",
+                "potion.reverse",
+                "potion.split",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.reverse.deck",
+            "spec": [
+                "potion.identity",
+                "potion.neutralize",
+                "potion.split",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.neutralize.deck",
+            "spec": [
+                "potion.reverse",
+                "potion.weaken",
+                "potion.absolute",
+                "potion.void",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.absolute.deck",
+            "spec": [
+                "potion.strengthen",
+                "potion.neutralize",
+                "potion.static",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.identity.deck",
+            "spec": [
+                "potion.static",
+                "potion.similar",
+                "potion.other",
+                "potion.difference",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.similar.deck",
+            "spec": [
+                "potion.identity",
+                "potion.other",
+                "potion.difference",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.difference.deck",
+            "spec": [
+                "potion.other",
+                "potion.similar",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.other.deck",
+            "spec": [
+                "potion.reverse",
+                "potion.difference",
+                "potion.identity",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.split.deck",
+            "spec": [
+                "potion.explosion",
+                "potion.merge",
+                "potion.weaken",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.merge.deck",
+            "spec": [
+                "potion.split",
+                "potion.strengthen",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.static.deck",
+            "spec": [
+                "potion.identity",
+                "potion.absolute",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.explosion.deck",
+            "spec": [
+                "potion.split",
+                "potion.void",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "difference.void.deck",
+            "spec": [
+                "potion.explosion",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "other.any.deck",
+            "spec": [
+                "potion.strengthen",
+                "potion.weaken",
+                "potion.reverse",
+                "potion.neutralize",
+                "potion.absolute",
+                "potion.identity",
+                "potion.similar",
+                "potion.difference",
+                "potion.other",
+                "potion.split",
+                "potion.merge",
+                "potion.static",
+                "potion.explosion",
+                "potion.void",
+            ],
+            "resetonexhaustion": true
+        },
     ]
 }

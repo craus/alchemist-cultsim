@@ -15,11 +15,11 @@ reverse - moth, grail, edge, -lantern (ysabet)
 neutralize - winter, heart, edge, -secret histories (poppy)
 absolute - forge, lantern, secret histories, -knock (cat)
 identity - heart, grail, winter, -lantern (slee)
+similar - secret histories 2, heart, -edge (natalia)
 difference - moth, edge, knock, -grail (porter)
-similar - secret histories, heart, -edge (natalia)
 other - lantern, secret histories, -grail (sulochana)
 split - edge, knock, lantern, -heart (sylvia)
 merge - grail, heart, forge, -edge (clovette)
-static - winter
-explosion - forge, edge
-void - winter, edge, knock
+static - winter 3, -moth
+explosion - forge, edge, knock, -winter
+void - winter, edge, knock, -grail

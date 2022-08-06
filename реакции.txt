@@ -4,7 +4,7 @@ strengthen + reverse = identity
 strengthen + neutralize = reverse
 strengthen + absolute = absolute
 strengthen + identity = static
-strengthen + change = other
+strengthen + difference = other
 strengthen + similar = identity
 strengthen + split = explosion
 strengthen + other = reverse
@@ -15,7 +15,7 @@ weaken + absolute = strengthen
 weaken + identity = similar
 weaken + similar = other
 weaken + static = identity
-weaken + other = change
+weaken + other = difference
 weaken + explosion = split
 
 reverse + strengthen = weaken
@@ -23,15 +23,15 @@ reverse + weaken = strengthen
 reverse + reverse = identity
 reverse + neutralize = absolute
 reverse + absolute = neutralize
-reverse + identity = change
-reverse + change = identity
-reverse + similar = other
-reverse + other = similar
+reverse + identity = other
+reverse + similar = difference
+reverse + difference = similar
+reverse + other = identity
 reverse + split = merge
 reverse + merge = split
-reverse + part = whole
+  reverse + part = whole
 
-neutralize + identity = other
+neutralize + identity = difference
 neutralize + any _other_ modification = identity
 
 absolute + weaken = reverse
@@ -42,39 +42,61 @@ absolute + any _other_ modification = strength + this modification
 
 identity + any _other_ = same shit
 
-change + strengthen = merge
-change + weaken = split
-change + reverse = 
-change + change = comparison
+similar + strengthen = merge
+similar + merge = strengthen
+similar + weaken = split
+similar + split = weaken
+  similar + reverse = 
+  similar + difference = comparison
 
-similar + absolute = all
-similar + all = absolute
-similar + identity = unit
-similar + unit = identity
-similar + void = null
-similar + null = void
-similar + change = difference
-similar + difference = change
+  similar + absolute = all
+  similar + all = absolute
+  similar + identity = unit
+  similar + unit = identity
 
-other + strengthen = random?
+similar + absolute = static
+similar + static = absolute
+similar + void = explosion
+similar + explosion = void
 
-split + strengthen = strength + increase
-split + weaken = strength + decrease
-split + reverse = strength + negate
-split + neutralize = strength + void
-split + absolute = strength + all
-split + identity = strength + unit
-split + all = space + time + materia + information + energy
-split + materia = fire + air + water + earth
+difference + strengthen = absolute / weaken / merge
+difference + weaken = neutralize / strengthen / reverse / split
+difference + reverse = identity / neutralize / split
+difference + neutralize = reverse / weaken / absolute / void
+difference + absolute = strengthen / neutralize / static
+difference + identity = static / similar / other / difference
+difference + similar = identity / other / difference
+difference + difference = other / similar
+difference + other = reverse / difference / identity
+difference + split = explosion / merge / weaken
+difference + merge = split / strengthen
+difference + static = identity / absolute
+difference + explosion = split / void
+difference + void = explosion
+
+other + any _other_ = random
+
+  split + strengthen = strength + increase
+  split + weaken = strength + decrease
+  split + reverse = strength + negate
+  split + neutralize = strength + void
+  split + absolute = strength + all
+  split + identity = strength + unit
+  split + all = space + time + materia + information + energy
+  split + materia = fire + air + water + earth
 
 merge + strengthen + weaken = identity
-merge + absolute + neutralize = identity
+merge + absolute + neutralize = identityide
 merge + identity + reverse = neutralize
-merge + split + unit = part
+  merge + identity + other = difference
+  merge + identity + difference = similar
+  merge + similar + other = difference
+
+  merge + split + unit = part
 
 static + any _other_ = same with no decay
 
-difference + X + Y = Z: Z X = Y
+  difference + X + Y = Z: Z X = Y
 
 
 
