@@ -242,5 +242,71 @@
             "lifetime": 300,
             "decayTo": "failedorder",
         },
+        {
+            "id": "customer.auclair",
+            "label": "Оклер",
+            "aspects": {
+                "person": 1,
+                "potion.static": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.static": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье статичности.",
+            "lifetime": 300,
+            "decayTo": "failedorder",
+        },
+        {
+            "id": "customer.clifton",
+            "label": "Клифтон",
+            "aspects": {
+                "person": 1,
+                "potion.explosion": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.explosion": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье взрыва.",
+            "lifetime": 300,
+            "decayTo": "failedorder",
+        },
+        {
+            "id": "customer.enid",
+            "label": "Клифтон",
+            "aspects": {
+                "person": 1,
+                "potion.void": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.void": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
+            "description": "Хочет приобрести зелье пустоты.",
+            "lifetime": 300,
+            "decayTo": "failedorder",
+        },
     ],
 }

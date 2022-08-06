@@ -2444,5 +2444,87 @@
                 },
             ],
         },
+        
+        
+        {
+            "id": "explosion",
+            "label": "Взрыв",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "device": -1,
+                "potion.explosion": 1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Цель",
+                    "description": "На что я хочу повлиять?",
+                    "required": {
+                        "substance": 1,
+                    },
+                },   
+            ],
+            "startdescription": "Я могу что-то взорвать.",
+            "warmup": 10,
+            "description": "Пожалуй, не буду этого делать.",
+            "alt": [
+                {
+                    "id": "explosion.any",
+                },
+            ],
+            "craftable": true,
+        },
+        {
+            "id": "explosion.any",
+            "label": "Взорвать",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "substance": 2,
+            },
+            "effects": {
+                "substance": -2,
+                "shivers": 13,
+            },
+        },
+        
+        {
+            "id": "void",
+            "label": "Пустота",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "device": -1,
+                "potion.void": 1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Цель",
+                    "description": "На что я хочу повлиять?",
+                    "required": {
+                        "substance": 1,
+                    },
+                },   
+            ],
+            "startdescription": "Я могу заставить что-то исчезнуть. Без следа.",
+            "warmup": 10,
+            "description": "Пожалуй, не буду этого делать.",
+            "alt": [
+                {
+                    "id": "void.any",
+                },
+            ],
+            "craftable": true,
+        },
+        {
+            "id": "void.any",
+            "label": "Заставить предмет исчезнуть",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "substance": 2,
+            },
+            "effects": {
+                "substance": -2,
+            },
+        },
     ]
 }

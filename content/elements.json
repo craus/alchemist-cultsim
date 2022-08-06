@@ -118,5 +118,11 @@
             "description": "Стазис включён.",
             "isHidden": true,
         },
+        {
+            "id": "shivers",
+            "label": "Обломки",
+            "description": "Их разбросало взрывом.",
+            "lifetime": 1,
+        },
     ]
 }

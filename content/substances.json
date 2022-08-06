@@ -557,6 +557,7 @@
             "label": "Зелье пустоты",
             "aspects": {
                 "substance": 1,
+                "modification": 1,
                 "winter": 1,
                 "edge": 1,
                 "knock": 1,
