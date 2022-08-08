@@ -1,5 +1,17 @@
 {
     "recipes": [ 
+    
+        {
+            "id": "unmatch",
+            "label": "Неподходящая цель",
+            "requirements": {
+                "substance": 2,
+            },
+            "startdescription": "На это не получится воздействовать.",
+            "description": "Всё осталось по-прежнему.",
+        }, 
+        
+        
         {
             "id": "absolute",
             "label": "Абсолют",
@@ -36,6 +48,9 @@
                 },
                 {
                     "id": "absolute.modification",
+                },
+                {
+                    "id": "unmatch",
                 },
             ],
             "craftable": true,
@@ -92,6 +107,9 @@
                 },
                 {
                     "id": "strengthen.other",
+                },
+                {
+                    "id": "unmatch",
                 },
             ],
             "craftable": true,
@@ -297,6 +315,9 @@
                 {
                     "id": "weaken.explosion",
                 },
+                {
+                    "id": "unmatch",
+                },
             ],
             "craftable": true,
         },
@@ -496,6 +517,9 @@
                 },
                 {
                     "id": "reverse.explosion",
+                },
+                {
+                    "id": "unmatch",
                 },
             ],
             "craftable": true,
@@ -723,6 +747,9 @@
                 {
                     "id": "neutralize.modification",
                 },
+                {
+                    "id": "unmatch",
+                },
             ],
             "craftable": true,
         },
@@ -880,6 +907,9 @@
                 {
                     "id": "identity.any",
                 },
+                {
+                    "id": "unmatch",
+                },
             ],
             "craftable": true,
         },
@@ -949,6 +979,9 @@
                 },
                 {
                     "id": "similar.static",
+                },
+                {
+                    "id": "unmatch",
                 },
             ],
             "craftable": true,
@@ -1137,6 +1170,9 @@
                 },
                 {
                     "id": "difference.void",
+                },
+                {
+                    "id": "unmatch",
                 },
             ],
             "craftable": true,
@@ -1491,6 +1527,9 @@
                 {
                     "id": "other.any",
                 },
+                {
+                    "id": "unmatch",
+                },
             ],
             "craftable": true,
         },
@@ -1549,6 +1588,9 @@
             "alt": [
                 {
                     "id": "split.strengthen",
+                },
+                {
+                    "id": "unmatch",
                 },
             ],
             "craftable": true,

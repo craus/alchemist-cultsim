@@ -13,9 +13,10 @@
             "craftable": true,
             "maxexecutions": 1,
             "effects": {
+                "loft": -1,
                 "money": 10,
                 "wish.philosopherstone": 1,
-            },            
+            },           
             "alt": [
                 {
                     "id": "reaction.intro",
@@ -24,9 +25,9 @@
             ],
         },  
         {
-            "id": "visit.loft",
+            "id": "_visit.loft",
             "label": "Поиск на чердаке",
-            "actionid": "visit",
+            "actionid": "_visit",
             "requirements": {
                 "loft": 1,
             },
@@ -40,9 +41,11 @@
             "label": "Старый батин котёл",
             "actionid": "reaction",
             "startdescription": "Его ещё предстоит отмыть.",
-            "description": "Фух, теперь в нём можно сварить что-нибудь.",
+            "description": "Фух, теперь в нём можно сварить что-нибудь. Можно найти в лесу каких-нибудь растений, годящихся в качестве ингредиентов зелья.",
             "effects": {
                 "oldcauldron": 1,
+                "loft": -1,
+                "forest": 1,
             },
             "warmup": 15,
             "alt": [
@@ -108,7 +111,7 @@
                 "village": 1,
             },
             "extantreqs": {
-                "person": -4,
+                "person": -3,
             },
             "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня.",
             "description": "Мне не удалось найти никого, кто заинтересовался бы моими товарами. Может, в другой раз повезёт.",
@@ -148,7 +151,7 @@
                     "description": "Что люди знают обо мне?",
                     "greedy": true,
                     "required": {
-                        "failedorder": 1,
+                        "reputation": 1,
                     },
                 },  
             ],

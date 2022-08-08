@@ -1,5 +1,27 @@
 {
     "elements": [
+		{
+			"id": "grail",
+			"induces": [
+			]
+		},
+		{
+			"id": "heart",
+			"induces": [
+			]
+		},
+		{
+			"id": "lantern",
+			"induces": [
+			]
+		},
+		{
+			"id": "moth",
+			"induces": [
+			]
+		},
+    
+    
         {
             "id": "device",
             "label": "Устройство",
@@ -129,6 +151,12 @@
             "label": "Прерывание стазиса",
             "isAspect": true,
             "isHidden": true,
+        },
+        {
+            "id": "_alchemist.reputation",
+            "label": "Репутация",
+            "description": "Мирская молва — морская волна.",
+            "isAspect": true,
         },
         
         
