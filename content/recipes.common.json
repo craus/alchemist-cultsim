@@ -13,7 +13,7 @@
             "craftable": true,
             "maxexecutions": 1,
             "effects": {
-                "money": 5,
+                "money": 10,
                 "wish.philosopherstone": 1,
             },            
             "alt": [
@@ -77,11 +77,11 @@
             "startdescription": "Мне понадобятся заказчики, если я хочу зарабатывать алхимией. Я могу пообщаться с жителями моей деревни и спросить, не нужны ли им какие-нибудь зелья.",
             "description": "Я нашёл человека, которому пригодились бы мои услуги. Значит, смогу найти и ещё.",
             "warmup": 30,
-            "_effects": {
+            "effects": {
                 "village": 1,
             },    
             "deckeffects": {
-                "customers": 3,
+                "customers": 1,
             },
             "alt": [
                 {
@@ -89,22 +89,35 @@
                     "additional": true,
                 }
             ],       
-        },  
+        },
         {
-            "id": "talk.village",
+            "id": "talk.village.hint",
             "label": "Искать клиентов",
-            "actionid": "_alchemist.talk",
+            "actionid": "alchemist.talk",
             "requirements": {
                 "village": 1,
             },
+            "startdescription": "У меня и так сейчас много заказов. Вряд ли я смогу найти кого-то ещё.",
+            "hintonly": true,
+        },    
+        {
+            "id": "talk.village",
+            "label": "Искать клиентов",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "village": 1,
+            },
+            "extantreqs": {
+                "person": -4,
+            },
             "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня.",
-            "description": "В этот раз мне не удалось найти никого, кто заинтересовался бы моими товарами.",
+            "description": "Мне не удалось найти никого, кто заинтересовался бы моими товарами. Может, в другой раз повезёт.",
             "warmup": 30,
             "craftable": true,
             "alt": [
                 {
                     "id": "talk.village.success",
-                    "chance": 33,
+                    "chance": 60,
                 }
             ],         
         },   

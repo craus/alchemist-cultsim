@@ -2,13 +2,9 @@
     "legacies": [
         {
             "id": "alchemist",
-            "label": "The Alchemist",
+            "label": "Алхимик",
             "description": "It is alchemist",
-            "startdescription": "You are alchemist",           
-            "effects": {
-                "loft": 1,
-                "forest": 1,
-            },
+            "startdescription": "Мой отец занимался алхимией и мечтал создать Философский Камень, но неожиданная болезнь прервала его путь. Я собираюсь продолжить его дело.",
             "effects": {
                 "loft": 1,
                 "forest": 1,

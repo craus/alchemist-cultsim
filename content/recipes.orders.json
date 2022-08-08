@@ -17,7 +17,7 @@
             "effects": {
                 "person": -1,
                 "substance": -1,
-                "money": 1,
+                "money": 2,
             },          
         },  
     ]
