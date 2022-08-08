@@ -1,0 +1,68 @@
+{
+    "elements": [
+        {
+            "id": "leeches",
+            "label": "Личинки",
+            "aspects": {
+                "substance": 1,
+            },
+            "description": "Новая жизнь, зародившаяся на остатках старой."
+        },
+        {
+            "id": "slops",
+            "label": "Худшие помои",
+            "aspects": {
+                "substance": 1,
+            },
+            "description": "Воняет пиздец. Это только выкинуть. Фу бля.",
+            "lifetime": 180,
+        },
+        {
+            "id": "heart.of.dark",
+            "label": "Сердце тьмы",
+            "aspects": {
+                "substance": 1,
+            },
+            "description": "Могущественное порождение тёмных искусств.",
+            "lifetime": 180,
+        },
+        
+        
+        {
+            "id": "sphere.fire",
+            "label": "Сфера Огня",
+            "aspects": {
+                "substance": 1,
+            },
+            "description": "Воплощение силы Первого Элемента.",
+            "lifetime": 1200,
+        },     
+        {
+            "id": "sphere.air",
+            "label": "Сфера Воздуха",
+            "aspects": {
+                "substance": 1,
+            },
+            "description": "Воплощение силы Второго Элемента.",
+            "lifetime": 1200,
+        },  
+        {
+            "id": "sphere.water",
+            "label": "Сфера Воды",
+            "aspects": {
+                "substance": 1,
+            },
+            "description": "Воплощение силы Третьего Элемента.",
+            "lifetime": 1200,
+        },  
+        {
+            "id": "sphere.earth",
+            "label": "Сфера Земли",
+            "aspects": {
+                "substance": 1,
+            },
+            "description": "Воплощение силы Четвёртого Элемента.",
+            "lifetime": 1200,
+        },
+    ]
+}
