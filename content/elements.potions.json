@@ -11,6 +11,7 @@
                 "edge": 1,
                 "limit.moth": 1,
                 "potion.strengthen.or.absolute": 1,
+                "part.sphere.fire": 1,
             },          
             "description": "Делает вещи более сильными. Они будут делать то же самое, но в гораздо большей степени.",
             "xtriggers": {
@@ -41,6 +42,8 @@
                 "knock": 1,
                 "moth": 1,
                 "limit.forge": 1,
+                "part.sphere.water": 1,
+                "part.sphere.air": 1,
             },
             "description": "Делает вещи более слабыми.",
             "xtriggers": {
@@ -71,6 +74,7 @@
                 "grail": 1,
                 "edge": 1,
                 "limit.lantern": 1,
+                "part.sphere.water": 1,
             },
             "description": "Делает из вещей противоположные им.",
             "xtriggers": {
@@ -101,6 +105,7 @@
                 "heart": 1,
                 "edge": 1,
                 "limit.secrethistories": 1,
+                "part.sphere.air": 1,
             },
             "description": "Делает вещи неработающими. Они от этого перестают делать то, что делали раньше.",
             "xtriggers": {
@@ -132,6 +137,7 @@
                 "secrethistories": 1,
                 "limit.knock": 1,
                 "potion.strengthen.or.absolute": 1,
+                "part.sphere.earth": 1,
             },
             "description": "Даёт вещам абсолютную силу.",
             "xtriggers": {
@@ -162,6 +168,7 @@
                 "grail": 1,
                 "winter": 1,
                 "limit.lantern": 1,
+                "part.sphere.earth": 1,
             },
             "description": "Оставляет вещи такими же, как они есть.",
             "xtriggers": {
@@ -191,6 +198,7 @@
                 "secrethistories": 2,
                 "heart": 1,
                 "limit.edge": 1,
+                "part.sphere.water": 1,
             },
             "description": "Делает вещи похожими на то, каковы они сейчас.",
             "xtriggers": {
@@ -221,6 +229,7 @@
                 "edge": 1,
                 "knock": 1,
                 "limit.grail": 1,
+                "part.sphere.water": 1,
             },
             "description": "Делает вещи в чём-то другими, не такими же, как они сейчас.",
             "xtriggers": {
@@ -250,6 +259,7 @@
                 "lantern": 1,
                 "secrethistories": 1,
                 "limit.grail": 1,
+                "part.sphere.air": 1,
             },
             "description": "Делает из вещей другие вещи, никак не связанные с ними.",
             "xtriggers": {
@@ -280,6 +290,7 @@
                 "knock": 1,
                 "lantern": 1,
                 "limit.heart": 1,
+                "part.sphere.fire": 1,
             },
             "description": "Разделяет целое на множество частей.",
             "xtriggers": {
@@ -310,6 +321,7 @@
                 "heart": 1,
                 "forge": 1,
                 "limit.edge": 1,
+                "part.sphere.earth": 1,
             },
             "description": "Собирает части в единое целое.",
             "xtriggers": {
@@ -340,6 +352,7 @@
                 "stasis.extend": 1,
                 "winter": 3,
                 "limit.moth": 1,
+                "part.sphere.earth": 1,
             },
             "description": "Делает вещи неизменными.",
             "xtriggers": {
@@ -371,6 +384,7 @@
                 "forge": 2,
                 "edge": 1,
                 "limit.winter": 1,
+                "part.sphere.fire": 1,
             },
             "description": "Разрывает всё на части.",
             "xtriggers": {
@@ -401,6 +415,8 @@
                 "edge": 1,
                 "knock": 1,
                 "limit.grail": 1,
+                "part.sphere.air": 1,
+                "part.sphere.fire": 1,
             },
             "description": "Заставляет что-то исчезнуть.",
             "xtriggers": {

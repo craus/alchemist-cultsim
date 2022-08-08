@@ -29,6 +29,19 @@
         
         
         {
+            "id": "wish.philosopherstone",
+            "label": "Желание: Философский Камень",
+            "aspects": {
+                "sphere.fire": 1,
+                "sphere.air": 1,
+                "sphere.water": 1,
+                "sphere.earth": 1,
+            },
+            "description": "Моя мечта — пройти Путь Алхимика до конца. Для этого мне нужно создать Философский Камень из четырёх Сфер.",
+        },
+        
+        
+        {
             "id": "sphere.fire",
             "label": "Сфера Огня",
             "aspects": {

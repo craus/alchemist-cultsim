@@ -8,5 +8,13 @@
             "flavour": "Melancholy",
             "anim": "DramaticLightEvil",
         },    
+        {
+            "id": "ending.philosopherstone",
+            "label": "Философский Камень",
+            "description": "Я получил Философский Камень! Путь Алхимика пройден мной до конца.",
+            "image": "ending.philosopherstone",
+            "flavour": "Grand",
+            "anim": "DramaticLightCool",
+        },    
     ]
 }

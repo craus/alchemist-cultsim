@@ -130,5 +130,31 @@
             "isAspect": true,
             "isHidden": true,
         },
+        
+        
+        {
+            "id": "part.sphere.fire",
+            "label": "Часть Сферы Огня",
+            "description": "Одна из составляющих Сферы Огня.",
+            "isAspect": true,
+        },     
+        {
+            "id": "part.sphere.air",
+            "label": "Часть Сферы Воздуха",
+            "description": "Одна из составляющих Сферы Воздуха.",
+            "isAspect": true,
+        },    
+        {
+            "id": "part.sphere.water",
+            "label": "Часть Сферы Воды",
+            "description": "Одна из составляющих Сферы Воды.",
+            "isAspect": true,
+        },   
+        {
+            "id": "part.sphere.earth",
+            "label": "Часть Сферы Земли",
+            "description": "Одна из составляющих Сферы Земли.",
+            "isAspect": true,
+        },   
     ]
 }

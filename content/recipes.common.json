@@ -14,6 +14,7 @@
             "maxexecutions": 1,
             "effects": {
                 "money": 5,
+                "wish.philosopherstone": 1,
             },            
             "alt": [
                 {
@@ -292,99 +293,105 @@
             "warmup": 30,   
         },  
         
-        
+                
         {
-            "id": "test.1",
-            "label": "тест 1",
-            "actionid": "_reaction",
-            "startdescription": "тест 1 старт",
-            "description": "тест 1 конец",
+            "id": "sphere.fire",
+            "label": "Сфера Огня",
+            "actionid": "reaction",
+            "startdescription": "Я собрал все необходимые составляющие для получения Сферы Огня.",
+            "description": "Готово!",
             "requirements": {
                 "device": 1,
-            },
-            "warmup": 5,
-            "craftable": true,
-            "aspects": {
                 "potion.strengthen": 1,
+                "potion.split": 1,
+                "potion.explosion": 1,
+                "potion.void": 1,
             },
-            "slots": [  
-                {
-                    "id": "target",
-                    "requirements": {
-                        "substance": 1,
-                    },
-                },
-            ],
-            "alt": [
-                {
-                    "id": "test.2",
-                },
-            ],
+            "warmup": 120,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "sphere.fire": 1,
+            }
+        },            
+        {
+            "id": "sphere.air",
+            "label": "Сфера Воздуха",
+            "actionid": "reaction",
+            "startdescription": "Я собрал все необходимые составляющие для получения Сферы Воздуха.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "potion.weaken": 1,
+                "potion.neutralize": 1,
+                "potion.other": 1,
+                "potion.void": 1,
+            },
+            "warmup": 120,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "sphere.air": 1,
+            }
         },         
         {
-            "id": "test.2",
-            "label": "тест 2",
+            "id": "sphere.water",
+            "label": "Сфера Воды",
             "actionid": "reaction",
-            "startdescription": "тест 2 старт",
-            "description": "тест 2 конец",
+            "startdescription": "Я собрал все необходимые составляющие для получения Сферы Воды.",
+            "description": "Готово!",
             "requirements": {
+                "device": 1,
+                "potion.weaken": 1,
+                "potion.reverse": 1,
+                "potion.similar": 1,
+                "potion.difference": 1,
             },
-            "warmup": 5,
-            "alt": [
-                {
-                    "id": "test.3",
-                },
-            ],
-        },        
-        {
-            "id": "test.3",
-            "label": "тест 3",
-            "actionid": "reaction",
-            "startdescription": "тест 3 старт",
-            "description": "тест 3 конец",
-            "requirements": {
-                "flower.pink": 1,
-            },
-            "warmup": 5,
+            "warmup": 120,
+            "craftable": true,
             "effects": {
-                "flower.red": 1,
-            },
-            "alt": [
-                {
-                    "id": "test.4",
-                },
-            ],
-        },        
+                "substance": -999,
+                "sphere.water": 1,
+            }
+        },         
         {
-            "id": "test.4",
-            "label": "тест 4",
+            "id": "sphere.earth",
+            "label": "Сфера Земли",
             "actionid": "reaction",
-            "startdescription": "тест 4 старт",
-            "description": "тест 4 конец",
+            "startdescription": "Я собрал все необходимые составляющие для получения Сферы Земли.",
+            "description": "Готово!",
             "requirements": {
+                "device": 1,
+                "potion.absolute": 1,
+                "potion.identity": 1,
+                "potion.merge": 1,
+                "potion.static": 1,
             },
-            "warmup": 50,
+            "warmup": 120,
+            "craftable": true,
             "effects": {
-                "flower.black": 1,
-            },
-            "alt": [
-                {
-                    "id": "test.5",
-                },
-            ],
-        },     
+                "substance": -999,
+                "sphere.earth": 1,
+            }
+        },         
         {
-            "id": "test.5",
-            "label": "тест 5",
+            "id": "philosopherstone",
+            "label": "Философский Камень",
             "actionid": "reaction",
-            "startdescription": "тест 5 старт",
-            "description": "тест 5 конец",
+            "startdescription": "Из четырёх Сфер я могу получить Философский Камень и исполнить свою мечту!",
+            "description": "Готово!",
             "requirements": {
+                "device": 1,
+                "sphere.fire": 1,
+                "sphere.air": 1,
+                "sphere.water": 1,
+                "sphere.earth": 1,
             },
-            "warmup": 50,
-            "effects": {
-                "flower.white": 1,
-            },
-        }, 
+            "warmup": 60,
+            "craftable": true,
+            "signalEndingFlavour": "Grand",
+            "signalimportantloop": true,
+            "ending": "ending.philosopherstone",
+        },  
     ]
 }
