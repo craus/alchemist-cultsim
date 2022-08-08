@@ -1,20 +1,5 @@
 {
     "recipes": [ 
-    
-        {
-            "id": "reaction",
-            "label": "Алхимическое преобразование",
-            "actionid": "reaction",
-            "requirements": {
-                "device": 1,
-            },
-            "hintonly": true,
-            "startdescription": "Нужно добавить какие-нибудь ещё ингредиенты, иначе ничего не получится.",
-            "description": "Нет, так я ничего не сварю.",
-        },   
-    
-    
-        
         {
             "id": "strengthen.potion.overdraft",
             "label": "Зелье усиления: лишние компоненты!",
@@ -198,6 +183,17 @@
         {
             "id": "comment.split.hints.and.cauldron.recipes",
             "comment": "ВЫШЕ: ПОДСКАЗКИ ПРО ЛИШНИЕ ИНГРЕДИЕНТЫ. НИЖЕ: РЕЦЕПТЫ ВАРКИ ЗЕЛИЙ КОТЛОМ",
+        },           
+        {
+            "id": "reaction",
+            "label": "Алхимическое преобразование",
+            "actionid": "reaction",
+            "requirements": {
+                "device": 1,
+            },
+            "hintonly": true,
+            "startdescription": "Нужно добавить какие-нибудь ещё ингредиенты, иначе ничего не получится.",
+            "description": "Нет, так я ничего не сварю.",
         },   
         
         
@@ -490,7 +486,7 @@
             "id": "static.potion",
             "label": "Зелье статичности",
             "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "startdescription": "Этих ингредиентов должно хватить.",
             "description": "Готово!",
             "requirements": {
                 "device": 1,
@@ -514,7 +510,7 @@
             "id": "explosion.potion",
             "label": "Зелье взрыва",
             "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "startdescription": "Этих ингредиентов должно хватить.",
             "description": "Готово!",
             "requirements": {
                 "device": 1,
@@ -539,7 +535,7 @@
             "id": "void.potion",
             "label": "Зелье пустоты",
             "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
+            "startdescription": "Этих ингредиентов должно хватить.",
             "description": "Готово!",
             "requirements": {
                 "device": 1,
@@ -1721,11 +1717,6 @@
             "aspects": {
                 "copy": 2,
             },
-            "linked": [
-                {
-                    "id": "difference.step3",
-                }
-            ],
         }, 
         {
             "id": "difference.strengthen",
