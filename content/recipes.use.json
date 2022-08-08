@@ -981,6 +981,12 @@
                     "id": "similar.static",
                 },
                 {
+                    "id": "similar.explosion",
+                },
+                {
+                    "id": "similar.void",
+                },
+                {
                     "id": "unmatch",
                 },
             ],
