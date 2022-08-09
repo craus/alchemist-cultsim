@@ -1358,7 +1358,7 @@
             "id": "difference.difference",
             "label": "Отличие от отличия - сходство или другое",
             "requirements": {
-                "potion.similar": 1,
+                "potion.difference": 1,
             },
             "startdescription": ".",
             "warmup": 60,
