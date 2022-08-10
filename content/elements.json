@@ -125,5 +125,32 @@
             "description": "Их разбросало взрывом.",
             "lifetime": 1,
         },
+        {
+            "id": "souldrop",
+            "label": "Капля души",
+            "aspects": {
+                "soul": 1,
+            },
+            "description": "Капля человеческой души. Такие отделяются от неё, когда человек имеет дело с Алхимией.",
+        },
+        {
+            "id": "iziim",
+            "label": "Ищущий",
+            "aspects": {
+                "interlocutor": 1,
+            },
+            "description": "\"Есть души смертных? Я за них хорошо плачу!\"",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
+        },
     ]
 }

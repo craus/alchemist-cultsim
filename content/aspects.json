@@ -54,7 +54,12 @@
             "id": "person",
             "label": "Человек",
             "description": "Представитель Homo sapiens.",
-            "icon": "person",
+            "isAspect": true,
+        },
+        {
+            "id": "interlocutor", 
+            "label": "Собеседник",
+            "description": "Мы можем пообщаться.",
             "isAspect": true,
         },
         {
@@ -73,6 +78,9 @@
             "description": "Из-за него всё происходит не сразу, а постепенно.",
             "isAspect": true,
         },
+        
+        
+        
         
         {
             "id": "limit.forge",
@@ -158,6 +166,24 @@
             "description": "Мирская молва — морская волна.",
             "isAspect": true,
         },
+        {
+            "id": "soul",
+            "label": "Душа",
+            "description": "«‎Так! — весь я не умру, но часть меня большая,\nОт тлена убежав, по смерти станет жить...»\n\n(Державин)",
+            "isAspect": true,
+        },
+        {
+            "id": "soultrader",
+            "label": "Торговец душами",
+            "description": "Если вам понадобятся души — обращайтесь.",
+            "isAspect": true,
+        },
+        {
+            "id": "loft.visited",
+            "label": "Посещённый чердак",
+            "isAspect": true,
+        },
+        
         
         
         {

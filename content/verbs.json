@@ -44,11 +44,11 @@
             "label": "Говорить",
             "description": "Пообщаться с каким-нибудь человеком.",
             "slot": {
-                "id": "person",
+                "id": "target",
                 "label": "Собеседник",
                 "description": "С кем поговорить?",
                 "required": {
-                    "person": 1,
+                    "interlocutor": 1,
                     "location": 1,
                 }
             }

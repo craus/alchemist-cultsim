@@ -5,13 +5,13 @@
             "label": "Поиск на чердаке",
             "actionid": "visit",
             "requirements": {
-                "loft": 1
+                "loft": 1,
+                "loftvisited": -1,
             },
             "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
             "description": "Кое-что удалось обнаружить...",
             "warmup": 10,
             "craftable": true,
-            "maxexecutions": 1,
             "effects": {
                 "loft": -1,
                 "money": 10,
@@ -22,6 +22,13 @@
                     "id": "reaction.intro",
                     "additional": true
                 }
+            ],            
+            "mutations": [
+                {
+                    "filter": "loft",
+                    "mutate": "loftvisited",
+                    "level": 1,
+                },
             ],
         },  
         {
@@ -204,7 +211,11 @@
             "alt": [
                 {
                     "id": "time.nomoney",
-                }
+                },
+                {
+                    "id": "iziim.intro",
+                    "additional": true,
+                },
             ],  
             "effects": {
                 "money": -1,
@@ -296,7 +307,7 @@
             "requirements": {
                 "money": 1,
             },
-            "startdescription": "Мне удалось найти возможность купить еды. Пока что.",
+            "startdescription": "На этот раз мне удалось найти возможность купить еды.",
             "effects": {
                 "money": -1,
             },
@@ -306,8 +317,144 @@
             "label": "Применение зелий",
             "actionid": "alchemist.use",
             "startdescription": "Я могу сам использовать зелья, которые изготовил.",
-            "warmup": 30,   
+            "warmup": 30,  
+            "effects": {
+                "i": 1,
+            }, 
+            "_maxexecutions": 1,
         },  
+        {
+            "id": "iziim.intro", 
+            "label": "Ищущий",          
+            "extantreqs": {
+                "soul": 1,
+                "iziim": -1,
+            },
+            "actionid": "summon",
+            "startdescription": "Меня посетил Ищущий. Он жаждет душ смертных.",
+            "warmup": 30,   
+            "effects": {
+                "iziim": 1,
+            },
+        },  
+        {
+            "id": "talk.iziim.nosoul",
+            "label": "Сделка с Ищущим",            
+            "requirements": {
+                "iziim": 1,
+            },
+            "actionid": "alchemist.talk",
+            "startdescription": "Чтобы Ищущий захотел иметь со мной дело, я должен отдать ему душу.",
+            "hintonly": true,
+        }, 
+        {
+            "id": "talk.iziim",
+            "label": "Сделка с Ищущим",            
+            "requirements": {
+                "iziim": 1,
+                "soul": 1,
+            },
+            "actionid": "alchemist.talk",
+            "startdescription": "Ищущий заберёт все имеющиеся у меня души до последней капли. И выдаст мне вознаграждение за каждую, кроме первой, которую придётся отдать просто так.",
+            "warmup": 30,   
+            "craftable": true, 
+            "effects": {
+                "soul": -1,
+            },
+            "linked": [
+                {
+                    "id": "talk.iziim.active",
+                },
+            ],
+        }, 
+        {
+            "id": "talk.iziim.active",
+            "label": "Ищущий собирает души",
+            "startdescription": "Ищущий заберёт все имеющиеся у меня души до последней капли. И выдаст мне вознаграждение за каждую, кроме первой, которую придётся отдать просто так.",     
+            "warmup": 5,   
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "greedy": true,
+                },         
+            ],     
+            "effects": {
+                "money": "soul",
+            },
+            "linked": [
+                {
+                    "id": "talk.iziim.active2",
+                },
+            ],
+            "alt": [
+                {
+                    "id": "talk.iziim.final",
+                }
+            ],  
+        }, 
+        {
+            "id": "talk.iziim.active2",
+            "effects": {
+                "soul": -999,
+            },  
+            "linked": [
+                {
+                    "id": "talk.iziim.active",
+                },
+            ],
+        }, 
+        {
+            "id": "talk.iziim.final",
+            "label": "Все души собраны?",
+            "startdescription": "Ищущий не нашёл больше душ. Он уходит.",
+            "warmup": 5,          
+            "requirements": {
+                "soul": -1,
+            },   
+            "effects": {
+                "iziim": -1,
+            },  
+            "alt": [
+                {
+                    "id": "soultrader.intro",
+                    "additional": true,
+                }
+            ],    
+        }, 
+        {
+            "id": "soultrader.intro",
+            "label": "Торговец душами",     
+            "actionid": "soultrader",
+            "startdescription": "Некоторые решения изменяют нас навсегда.",
+            "description": "Пути назад нет.",
+            "warmup": 120,  
+            "extantreqs": {
+                "soultrader": -1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Действующее лицо",
+                    "description": "Кто-то сделал выбор и встретит его последствия.",
+                    "required": {
+                        "i": 1,
+                    },
+                    "greedy": true,
+                },         
+            ],            
+            "mutations": [
+                {
+                    "filter": "i",
+                    "mutate": "soultrader",
+                    "level": 1,
+                },
+            ],       
+        }, 
         
                 
         {

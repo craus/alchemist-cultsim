@@ -5,6 +5,7 @@
             "label": "Роуз",
             "aspects": {
                 "person": 1,
+                "interlocutor": 1,
                 "potion.strengthen": 1,
             },
             "slots": [                
@@ -28,6 +29,7 @@
             "aspects": {
                 "person": 1,
                 "potion.weaken": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -50,6 +52,7 @@
             "aspects": {
                 "person": 1,
                 "potion.reverse": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -72,6 +75,7 @@
             "aspects": {
                 "person": 1,
                 "potion.neutralize": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -94,6 +98,7 @@
             "aspects": {
                 "person": 1,
                 "potion.absolute": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -116,6 +121,7 @@
             "aspects": {
                 "person": 1,
                 "potion.identity": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -138,6 +144,7 @@
             "aspects": {
                 "person": 1,
                 "potion.difference": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -160,6 +167,7 @@
             "aspects": {
                 "person": 1,
                 "potion.similar": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -182,6 +190,7 @@
             "aspects": {
                 "person": 1,
                 "potion.other": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -204,6 +213,7 @@
             "aspects": {
                 "person": 1,
                 "potion.split": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -226,6 +236,7 @@
             "aspects": {
                 "person": 1,
                 "potion.merge": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -248,6 +259,7 @@
             "aspects": {
                 "person": 1,
                 "potion.static": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -270,6 +282,7 @@
             "aspects": {
                 "person": 1,
                 "potion.explosion": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
@@ -292,6 +305,7 @@
             "aspects": {
                 "person": 1,
                 "potion.void": 1,
+                "interlocutor": 1,
             },
             "slots": [                
                 {
