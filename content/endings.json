@@ -7,7 +7,15 @@
             "image": "ending.hunger",
             "flavour": "Melancholy",
             "anim": "DramaticLightEvil",
-        },    
+        },   
+        {
+            "id": "ending.iziim",
+            "label": "Гибель души",
+            "description": "Ищущий забрал мою душу.",
+            "image": "ending.iziim",
+            "flavour": "Melancholy",
+            "anim": "DramaticLightEvil",
+        },   
         {
             "id": "ending.philosopherstone",
             "label": "Философский Камень",

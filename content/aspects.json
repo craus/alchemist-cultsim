@@ -181,6 +181,19 @@
         {
             "id": "loft.visited",
             "label": "Посещённый чердак",
+            "description": "Я уже побывал там.",
+            "isAspect": true,
+        },
+        {
+            "id": "seeker",
+            "label": "Ищущий",
+            "description": "Он почуял души и пришёл за ними.",
+            "isAspect": true,
+        },
+        {
+            "id": "impatience",
+            "label": "Нетерпение",
+            "description": "Рано или поздно все устают ждать.",
             "isAspect": true,
         },
         

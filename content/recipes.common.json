@@ -6,7 +6,7 @@
             "actionid": "visit",
             "requirements": {
                 "loft": 1,
-                "loftvisited": -1,
+                "loft.visited": -1,
             },
             "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
             "description": "Кое-что удалось обнаружить...",
@@ -26,7 +26,7 @@
             "mutations": [
                 {
                     "filter": "loft",
-                    "mutate": "loftvisited",
+                    "mutate": "loft.visited",
                     "level": 1,
                 },
             ],
@@ -211,6 +211,10 @@
             "alt": [
                 {
                     "id": "time.nomoney",
+                },
+                {
+                    "id": "iziim.enrage.intro",
+                    "additional": true,
                 },
                 {
                     "id": "iziim.intro",
@@ -499,6 +503,85 @@
                     "level": 1,
                 },
             ],       
+        }, 
+        {
+            "id": "iziim.enrage.intro",
+            "label": "Ищущий идёт за мной",
+            "startdescription": "Ищущему надоело ждать, пока я отдам ему души, и он решил действовать.",
+            "warmup": 60,          
+            "actionid": "souleating",          
+            "extantreqs": {
+                "seeker": 1,
+                "impatience": 4,
+            },      
+            "requirements": {
+                "seeker": -1,
+            },  
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Ищущий",
+                    "description": "Это работа для него.",
+                    "required": {
+                        "seeker": 1,
+                    },
+                    "greedy": true,
+                },         
+            ],  
+            "linked": [
+                {
+                    "id": "iziim.enrage.intro",
+                },
+                {
+                    "id": "iziim.enrage",
+                },
+            ],   
+        }, 
+        {
+            "id": "iziim.enrage",
+            "label": "Ищущий забирает мою душу!",
+            "startdescription": "Если я не остановлю его — это конец.",
+            "warmup": 60,                  
+            "requirements": {
+                "seeker": 1,
+            },   
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Аргумент",
+                    "description": "Мне нужно что-то убедительное.",
+                    "required": {
+                        "soul": 1,
+                    },
+                },         
+            ],  
+            "alt": [
+                {
+                    "id": "iziim.enrage.calm",
+                }
+            ],  
+            "signalEndingFlavour": "Melancholy",
+            "signalimportantloop": true,
+            "ending": "ending.iziim",  
+        }, 
+        {
+            "id": "iziim.enrage.calm",
+            "label": "Откуп",
+            "startdescription": "Я могу подарить Ищущему каплю души, чтобы сдержать его гнев.",     
+            "requirements": {
+                "soul": 1,
+            },  
+            "effects": {
+                "seeker": -1,
+                "soul": -1,
+                "iziim4": 1,
+            }, 
+            "alt": [
+                {
+                    "id": "soultrader.intro",
+                    "additional": true,
+                }
+            ],   
         }, 
         
                 

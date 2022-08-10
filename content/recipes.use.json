@@ -1,17 +1,5 @@
 {
     "recipes": [ 
-    
-        {
-            "id": "unmatch",
-            "label": "Неподходящая цель!",
-            "requirements": {
-                "substance": 2,
-            },
-            "startdescription": "На это не получится воздействовать.",
-            "description": "Всё осталось по-прежнему.",
-        }, 
-        
-        
         {
             "id": "absolute",
             "label": "Абсолют",
@@ -48,9 +36,6 @@
                 },
                 {
                     "id": "absolute.modification",
-                },
-                {
-                    "id": "unmatch",
                 },
             ],
             "craftable": true,
@@ -107,9 +92,6 @@
                 },
                 {
                     "id": "strengthen.other",
-                },
-                {
-                    "id": "unmatch",
                 },
             ],
             "craftable": true,
@@ -315,9 +297,6 @@
                 {
                     "id": "weaken.explosion",
                 },
-                {
-                    "id": "unmatch",
-                },
             ],
             "craftable": true,
         },
@@ -517,9 +496,6 @@
                 },
                 {
                     "id": "reverse.explosion",
-                },
-                {
-                    "id": "unmatch",
                 },
             ],
             "craftable": true,
@@ -747,9 +723,6 @@
                 {
                     "id": "neutralize.modification",
                 },
-                {
-                    "id": "unmatch",
-                },
             ],
             "craftable": true,
         },
@@ -907,9 +880,6 @@
                 {
                     "id": "identity.any",
                 },
-                {
-                    "id": "unmatch",
-                },
             ],
             "craftable": true,
         },
@@ -979,15 +949,6 @@
                 },
                 {
                     "id": "similar.static",
-                },
-                {
-                    "id": "similar.explosion",
-                },
-                {
-                    "id": "similar.void",
-                },
-                {
-                    "id": "unmatch",
                 },
             ],
             "craftable": true,
@@ -1177,9 +1138,6 @@
                 {
                     "id": "difference.void",
                 },
-                {
-                    "id": "unmatch",
-                },
             ],
             "craftable": true,
         },
@@ -1358,7 +1316,7 @@
             "id": "difference.difference",
             "label": "Отличие от отличия - сходство или другое",
             "requirements": {
-                "potion.difference": 2,
+                "potion.similar": 1,
             },
             "startdescription": ".",
             "warmup": 60,
@@ -1533,9 +1491,6 @@
                 {
                     "id": "other.any",
                 },
-                {
-                    "id": "unmatch",
-                },
             ],
             "craftable": true,
         },
@@ -1594,9 +1549,6 @@
             "alt": [
                 {
                     "id": "split.strengthen",
-                },
-                {
-                    "id": "unmatch",
                 },
             ],
             "craftable": true,
@@ -1986,6 +1938,7 @@
                     "description": "На что я хочу повлиять?",
                     "required": {
                         "substance": 1,
+                        "interlocutor": 1,
                     },
                 },   
             ],
@@ -2002,13 +1955,27 @@
         {
             "id": "void.any",
             "label": "Заставить предмет исчезнуть",
-            "description": "Пожалуй, не буду этого делать.",
+            "description": "Больше я этого не увижу.",
             "actionid": "alchemist.use",
             "requirements": {
                 "substance": 2,
             },
             "effects": {
                 "substance": -2,
+            },
+        },
+        {
+            "id": "void.interlocutor",
+            "label": "Заставить кого-то исчезнуть",
+            "description": "Пожалуй, не буду этого делать.",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "potion.void": 1,
+                "interlocutor": 1,
+            },
+            "effects": {
+                "potion.void": -1,
+                "interlocutor": -1,
             },
         },
     ]

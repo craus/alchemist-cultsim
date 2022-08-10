@@ -162,7 +162,7 @@
                 },         
             ],
             "lifetime": 60,
-            "decayTo": "izzim2",
+            "decayTo": "iziim2",
         },
         {
             "id": "iziim2",
@@ -185,7 +185,7 @@
                 },         
             ],
             "lifetime": 60,
-            "decayTo": "izzim3",
+            "decayTo": "iziim3",
         },
         {
             "id": "iziim3",
@@ -208,7 +208,7 @@
                 },         
             ],
             "lifetime": 60,
-            "decayTo": "izzim4",
+            "decayTo": "iziim4",
         },
         {
             "id": "iziim4",
@@ -231,7 +231,7 @@
                 },         
             ],
             "lifetime": 60,
-            "decayTo": "izzim5",
+            "decayTo": "iziim5",
         },
         {
             "id": "iziim5",
