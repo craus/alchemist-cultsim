@@ -19,7 +19,11 @@
                 "substance": -1,
                 "money": 1,
                 "souldrop": 1,
-            },          
+            },     
+            "linked": [{"id": "talk.customer.end"}],
         },  
+        {
+            "id": "talk.customer.end",
+        },
     ]
 }

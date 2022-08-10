@@ -134,12 +134,22 @@
             "description": "Капля человеческой души. Такие отделяются от неё, когда человек имеет дело с Алхимией.",
         },
         {
+            "id": "mysouldrop",
+            "label": "Капля моей души",
+            "aspects": {
+                "soul": 1,
+                "i": 1,
+            },
+            "description": "Капля человеческой души. Такие отделяются от неё, когда человек имеет дело с Алхимией.",
+        },
+        {
             "id": "iziim",
             "label": "Ищущий",
             "aspects": {
                 "interlocutor": 1,
+                "seeker": 1,
             },
-            "description": "\"Есть души смертных? Я за них хорошо плачу!\"",
+            "description": "«‎Есть души смертных? Я за них хорошо плачу!»",
             "slots": [                
                 {
                     "id": "target",
@@ -151,6 +161,87 @@
                     "actionid": "alchemist.talk",
                 },         
             ],
+            "lifetime": 60,
+            "decayTo": "izzim2",
+        },
+        {
+            "id": "iziim2",
+            "label": "Ищущий (в нетерпении)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 1,
+            },
+            "description": "«‎Давай же заключим сделку! Чего ты ждёшь?»",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
+            "lifetime": 60,
+            "decayTo": "izzim3",
+        },
+        {
+            "id": "iziim3",
+            "label": "Ищущий (раздражён)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 2,
+            },
+            "description": "«Не трать моё время зря, смертный! Не то я могу забрать и <i>твою</i> душу!»",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
+            "lifetime": 60,
+            "decayTo": "izzim4",
+        },
+        {
+            "id": "iziim4",
+            "label": "Ищущий (злится)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 3,
+            },
+            "description": "«Выкладывай души, что держишь у себя. Это моё последнее предупреждение!»",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
+            "lifetime": 60,
+            "decayTo": "izzim5",
+        },
+        {
+            "id": "iziim5",
+            "label": "Ищущий (в ярости)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 4,
+            },
+            "description": "«Моё терпение иссякло. Я заберу сам твою душу и те, что тебе удалось собрать!»",
         },
     ]
 }

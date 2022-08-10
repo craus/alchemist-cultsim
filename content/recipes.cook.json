@@ -214,10 +214,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -241,10 +240,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -268,10 +266,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -295,10 +292,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -322,10 +318,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -349,10 +344,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -376,10 +370,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -402,10 +395,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -428,10 +420,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -455,10 +446,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -482,10 +472,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -507,10 +496,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -533,10 +521,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
@@ -560,10 +547,9 @@
             },
             "warmup": 60,
             "craftable": true,
-            "alt": [
+            "linked": [
                 {
-                    "id": "use.intro",
-                    "additional": true,
+                    "id": "cook.end",
                 },
             ],
             "effects": {
