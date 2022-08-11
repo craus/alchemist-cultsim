@@ -196,6 +196,12 @@
             "description": "Рано или поздно все устают ждать.",
             "isAspect": true,
         },
+        {
+            "id": "customer",
+            "label": "Заказчик",
+            "description": "Приятно, когда твой труд кто-то ценит.",
+            "isAspect": true,
+        },
         
         
         

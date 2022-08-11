@@ -118,7 +118,7 @@
                 "village": 1,
             },
             "extantreqs": {
-                "person": -3,
+                "customer": -3,
             },
             "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня.",
             "description": "Мне не удалось найти никого, кто заинтересовался бы моими товарами. Может, в другой раз повезёт.",
@@ -363,7 +363,7 @@
             "tablereqs": {
                 "soul": 1,
             },
-            "actionid": "summon",
+            "actionid": "soulreturn",
             "startdescription": "Капли душ понемногу воссоединяются со своими душами.",
             "slots": [                
                 {
@@ -376,7 +376,7 @@
                     "greedy": true,
                 },         
             ],   
-            "warmup": 60,   
+            "warmup": 90,   
             "effects": {
                 "soul": -1,
             },     
