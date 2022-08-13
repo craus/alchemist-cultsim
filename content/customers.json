@@ -23,12 +23,27 @@
         },
         {
             "id": "customer.rose",
-            "extends": ["customer.abstract"],
             "label": "Роуз",
-            "aspects$add": {
+            "aspects": {
+                "person": 1,
                 "potion.strengthen": 1,
-            },        
+                "interlocutor": 1,
+                "customer": 1,
+            },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "potion.strengthen": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ], 
             "description": "Хочет приобрести зелье усиления.",
+            "lifetime": 300,
+            "decayTo": "failedorder",
         },
         {
             "id": "customer.neville",
