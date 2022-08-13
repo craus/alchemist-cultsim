@@ -23,6 +23,7 @@
             "linked": [{"id": "talk.customer.end"}],
         },  
         {
+            "label": "Сдать заказ клиенту",
             "id": "talk.customer.end",
         },
     ]

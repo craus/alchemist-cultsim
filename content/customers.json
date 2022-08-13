@@ -1,13 +1,11 @@
 {
     "elements": [
         {
-            "id": "customer.rose",
-            "label": "Роуз",
+            "id": "customer.abstract",
             "aspects": {
                 "person": 1,
                 "interlocutor": 1,
                 "customer": 1,
-                "potion.strengthen": 1,
             },
             "slots": [                
                 {
@@ -20,9 +18,17 @@
                     "actionid": "alchemist.talk",
                 },   
             ],         
-            "description": "Хочет приобрести зелье усиления.",
             "lifetime": 300,
             "decayTo": "failedorder",
+        },
+        {
+            "id": "customer.rose",
+            "extends": ["customer.abstract"],
+            "label": "Роуз",
+            "aspects$add": {
+                "potion.strengthen": 1,
+            },        
+            "description": "Хочет приобрести зелье усиления.",
         },
         {
             "id": "customer.neville",

@@ -845,6 +845,18 @@
             "description": ".",
             "effects": {
                 "potion.absolute": -2,
+            },
+            "linked": [
+                {
+                    "id": "absolute.absolute.step2",
+                },
+            ],
+        }, 
+        {
+            "id": "absolute.absolute.step2",
+            "label": "Абсолют абсолюта - абсолют",
+            "startdescription": "На то он и абсолют.",
+            "effects": {
                 "potion.absolute": 2,
             }
         }, 
@@ -1571,11 +1583,20 @@
             "effects": {
                 "substance": -19,
             },
-            "aspects": {
-                "copy": 3,
-            },
             "deckeffects": {
                 "other.any.deck": 20,
+            },
+            "linked": [
+                {
+                    "id": "other.any.step3",
+                },
+            ],
+        }, 
+        {
+            "id": "other.any.step3",
+            "label": "Вот что я получил.",
+            "aspects": {
+                "copy": 1,
             },
         }, 
         
@@ -2006,6 +2027,9 @@
                 {
                     "id": "void.any",
                 },
+                {
+                    "id": "void.interlocutor",
+                },
             ],
             "craftable": true,
         },
@@ -2024,7 +2048,7 @@
         {
             "id": "void.interlocutor",
             "label": "Заставить кого-то исчезнуть",
-            "description": "Пожалуй, не буду этого делать.",
+            "description": "Когда-нибудь увидимся снова.",
             "actionid": "alchemist.use",
             "requirements": {
                 "potion.void": 1,
