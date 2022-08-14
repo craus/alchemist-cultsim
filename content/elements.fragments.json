@@ -1,91 +1,113 @@
 {
     "elements": [
         {
+            "id": "fragment.base",
+            "lifetime": 60,
+        },
+        {
             "id": "fragment.forge",
+            "extends": ["fragment.base"],
             "label": "Фрагмент: Кузня",
             "aspects": {
                 "substance": 1,
                 "modifiable": 1,
+                "fragment": 1,
                 "forge": 1,
             },
             "description": "Отколовшийся от своего первоисточника фрагмент Кузни. Редкая и недолговечная, но чистая субстанция.",
         },
         {
             "id": "fragment.edge",
+            "extends": ["fragment.base"],
             "label": "Фрагмент: Грань",
             "aspects": {
                 "substance": 1,
                 "modifiable": 1,
+                "fragment": 1,
                 "edge": 1,
             },
             "description": "Отколовшийся от своего первоисточника фрагмент Грани. Редкая и недолговечная, но чистая субстанция.",
         },
         {
             "id": "fragment.winter",
+            "extends": ["fragment.base"],
             "label": "Фрагмент: Зима",
             "aspects": {
                 "substance": 1,
                 "modifiable": 1,
+                "fragment": 1,
                 "winter": 1,
             },
             "description": "Отколовшийся от своего первоисточника фрагмент Зимы. Редкая и недолговечная, но чистая субстанция.",
         },
         {
             "id": "fragment.heart",
+            "extends": ["fragment.base"],
             "label": "Фрагмент: Сердце",
             "aspects": {
                 "substance": 1,
                 "modifiable": 1,
+                "fragment": 1,
                 "heart": 1,
             },
             "description": "Отколовшийся от своего первоисточника фрагмент Сердца. Редкая и недолговечная, но чистая субстанция.",
         },
         {
             "id": "fragment.grail",
+            "extends": ["fragment.base"],
             "label": "Фрагмент: Чаша",
             "aspects": {
                 "substance": 1,
                 "modifiable": 1,
+                "fragment": 1,
                 "grail": 1,
             },
             "description": "Отколовшийся от своего первоисточника фрагмент Чаши. Редкая и недолговечная, но чистая субстанция.",
         },
         {
             "id": "fragment.moth",
+            "extends": ["fragment.base"],
             "label": "Фрагмент: Мотылёк",
             "aspects": {
                 "substance": 1,
                 "modifiable": 1,
+                "fragment": 1,
                 "moth": 1,
             },
             "description": "Отколовшийся от своего первоисточника фрагмент Мотылька. Редкая и недолговечная, но чистая субстанция.",
         },
         {
             "id": "fragment.lantern",
+            "extends": ["fragment.base"],
             "label": "Фрагмент: Лампада",
             "aspects": {
                 "substance": 1,
                 "modifiable": 1,
+                "fragment": 1,
                 "lantern": 1,
             },
             "description": "Отколовшийся от своего первоисточника фрагмент Лампады. Редкая и недолговечная, но чистая субстанция.",
         },
         {
             "id": "fragment.knock",
+            "extends": ["fragment.base"],
             "label": "Фрагмент: Стук",
             "aspects": {
                 "substance": 1,
                 "modifiable": 1,
+                "fragment": 1,
                 "knock": 1,
             },
             "description": "Отколовшийся от своего первоисточника фрагмент Стука. Редкая и недолговечная, но чистая субстанция.",
         },
         {
             "id": "fragment.secrethistories",
+            "extends": ["fragment.base"],
             "label": "Фрагмент: Тайные истории",
             "aspects": {
                 "substance": 1,
                 "modifiable": 1,
+                "fragment": 1,
                 "secrethistories": 1,
             },
             "description": "Отколовшийся от своего первоисточника фрагмент Тайных историй. Редкая и недолговечная, но чистая субстанция.",

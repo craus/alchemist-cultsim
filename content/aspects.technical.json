@@ -47,6 +47,11 @@
             "label": "Активация соединения",
             "isAspect": true,
         },
+        {
+            "id": "remove.at.the.end",
+            "label": "После окончания реакции удалить этот объект.",
+            "isAspect": true,
+        },
         
         
         {

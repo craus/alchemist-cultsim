@@ -1786,7 +1786,10 @@
                     "id": "split.strengthen",
                 },
                 {
-                    "id": "split.any",
+                    "id": "split.any.nonfragment",
+                },
+                {
+                    "id": "split.fragment",
                 },
                 {
                     "id": "unmatch",
@@ -1811,18 +1814,30 @@
             },
         }, 
         {
-            "id": "split.any",
+            "id": "split.any.nonfragment",
             "label": "Разделить на базовые фрагменты",
             "requirements": {
                 "substance": 2,
-            },
-            "startdescription": ".",
-            "warmup": 60,
-            "description": ".",
-            "effects": {
-                "potion.split": -1,
-                "universal": 1,
-            },
+                "fragment": -1,
+            },           
+
+            "effects": {"potion.split": -1},
+            "linked": [{"id": "split.any.step1.1"}],
+        }, 
+        {
+            "id": "split.any.step1.1",            
+            "mutations": [
+                {
+                    "filter": "substance",
+                    "mutate": "remove.at.the.end",
+                    "level": 1,
+                },
+            ],
+            "linked": [{"id": "split.any.step1.2"}],
+        }, 
+        {
+            "id": "split.any.step1.2",
+            "effects": {"universal": 1},
             "linked": [{"id": "split.any.step2"}],
         }, 
         {
@@ -1853,9 +1868,16 @@
                 "fragment.knock": -1,
                 "fragment.secrethistories": -1,
                 "universal": -1,
+                "remove.at.the.end": -1,
             },
             "label": "Разделить на базовые фрагменты",
             "description": "Фрагменты недолговечны, но чисты.",
+        }, 
+        {
+            "id": "split.fragment",
+            "label": "Разделить неделимое?",
+            "requirements": {"fragment": 1},       
+            "startdescription": "Фрагменты — самые маленькие части, на которые можно поделить субстанции. Дальше поделить уже не получится.",
         }, 
                 
         {
@@ -1943,7 +1965,7 @@
                 "potion.strengthen": 1,
                 "potion.weaken": 1,
             },
-            "startdescription": ".",
+            "startdescription": "<i>Вы получите три копии результата.</i>",
             "description": ".",
             "effects": {
                 "potion.strengthen": -1,
@@ -1959,7 +1981,7 @@
                 "potion.absolute": 1,
                 "potion.neutralize": 1,
             },
-            "startdescription": ".",
+            "startdescription": "<i>Вы получите три копии результата.</i>",
             "description": ".",
             "effects": {
                 "potion.absolute": -1,
@@ -1975,7 +1997,7 @@
                 "potion.identity": 1,
                 "potion.reverse": 1,
             },
-            "startdescription": ".",
+            "startdescription": "<i>Вы получите три копии результата.</i>",
             "description": ".",
             "effects": {
                 "potion.identity": -1,
