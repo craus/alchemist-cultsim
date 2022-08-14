@@ -4,7 +4,8 @@
             "id": "loft",
             "label": "Чердак моего дома",
             "aspects": {
-                "location": 1
+                "location": 1,
+                "modifiable": 1,
             },
             "description": "Пыльный чердак. Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь."
         },
@@ -13,59 +14,50 @@
             "label": "Бинарадка",
             "aspects": {
                 "location": 1,
+                "modifiable": 1,
             },
             "description": "Моя родная деревня."
         },
         
+        
         {
-            "id": "location.forest",
-            "label": "Лес",
+            "id": "expedition.base",
             "aspects": {
                 "location": 1,
+                "modifiable": 1,
                 "expedition": 1,
             },
+            "lifetime": 600,
+        },
+        {
+            "id": "location.forest",
+            "extends": ["expedition.base"],
+            "label": "Лес",
             "description": "Уголок дикой природы.",
-            "lifetime": 180,
         },        
         {
             "id": "location.plain",
+            "extends": ["expedition.base"],
             "label": "Равнина",
-            "aspects": {
-                "location": 1,
-                "expedition": 1,
-            },
             "description": "Просторный и открытый участок земли.",
-            "lifetime": 180,
         },    
         {
             "id": "location.island",
+            "extends": ["expedition.base"],
             "label": "Остров",
-            "aspects": {
-                "location": 1,
-                "expedition": 1,
-            },
             "description": "Экзотический пейзаж, отделённый водной преградой.",
-            "lifetime": 180,
         },    
         {
             "id": "location.swamp",
+            "extends": ["expedition.base"],
             "label": "Болото",
-            "aspects": {
-                "location": 1,
-                "expedition": 1,
-            },
             "description": "Мрачное и уединённое место.",
-            "lifetime": 180,
         },    
         {
             "id": "location.mountain",
+            "extends": ["expedition.base"],
             "label": "Гора",
-            "aspects": {
-                "location": 1,
-                "expedition": 1,
-            },
             "description": "Для тех, кто любит быть на высоте.",
-            "lifetime": 180,
         },
     ]
 }

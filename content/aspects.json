@@ -79,6 +79,12 @@
             "isAspect": true,
         },
         {
+            "id": "modifiable",
+            "label": "Модифицируемое",
+            "isAspect": true,
+            "isHidden": true,
+        },
+        {
             "id": "time",
             "label": "Время",
             "description": "Из-за него всё происходит не сразу, а постепенно.",

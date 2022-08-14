@@ -1367,7 +1367,7 @@
         {
             "id": "difference.step2",
             "effects": {
-                "substance": -9,
+                "modifiable": -9,
             },
             "linked": [
                 {
@@ -1741,7 +1741,7 @@
         {
             "id": "other.any.step2",
             "effects": {
-                "substance": -19,
+                "modifiable": -19,
             },
             "deckeffects": {
                 "other.any.deck": 20,
