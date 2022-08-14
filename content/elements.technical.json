@@ -1,0 +1,45 @@
+{
+    "elements": [
+
+        {
+            "id": "universal",
+            "label": "Универсал",
+            "aspects": {
+                "substance": 1,
+                "forge": 1,
+                "edge": 1,
+                "winter": 1,
+                "heart": 1,
+                "grail": 1,
+                "moth": 1,
+                "lantern": 1,
+                "knock": 1,
+                "secrethistories": 1,
+            },
+            "description": "Содержит всё, но по чуть-чуть.",
+            "lifetime": 0,
+        },
+        {
+            "id": "fictive.device",
+            "label": "Фиктивное устройство",
+            "aspects": {
+                "device": 1,
+            },
+            "description": "Это не котёл, но хоть что-то.",
+            "lifetime": 1,
+            "isHidden": true,
+        },
+        {
+            "id": "potion.merge.activating",
+            "icon": "activation",
+            "label": "Зелье соединения: активация",
+            "xtriggers": {
+                "merge.deactivate": [
+                    {
+                        "id": "potion.merge",
+                    },
+                ],
+            },
+        },
+    ]
+}

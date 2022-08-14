@@ -1,6 +1,22 @@
 {
     "recipes": [ 
         {
+            "id": "cook.end",
+            "label": "Готово!",
+            "description": "Я получил, что задумал. Но сейчас это уже немного другой я.",
+            "alt": [
+                {
+                    "id": "use.intro",
+                    "additional": true,
+                },
+            ],
+            "effects": {
+                "mysouldrop": 1,
+            },
+            "linked": [{"id": "merge.final"}],
+        }, 
+    
+        {
             "id": "strengthen.potion.overdraft",
             "label": "Зелье усиления: лишние компоненты!",
             "actionid": "reaction",
@@ -468,7 +484,7 @@
                 "heart": 1,
                 "forge": 1,
                 "edge": -1,
-                "potion.merge": -1,
+                "potion.merge.inactive": -1,
             },
             "warmup": 60,
             "craftable": true,

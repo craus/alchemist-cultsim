@@ -352,21 +352,7 @@
             "effects": {
                 "money": -1,
             },
-        },  
-        {
-            "id": "cook.end",
-            "label": "Готово!",
-            "description": "Я получил, что задумал. Но сейчас это уже немного другой я.",
-            "alt": [
-                {
-                    "id": "use.intro",
-                    "additional": true,
-                },
-            ],
-            "effects": {
-                "mysouldrop": 1,
-            },
-        },  
+        },   
         {
             "id": "use.intro",
             "label": "Применение зелий",

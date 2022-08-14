@@ -1,0 +1,72 @@
+{
+    "elements": [
+		{
+			"id": "grail",
+			"induces": [
+			]
+		},
+		{
+			"id": "heart",
+			"induces": [
+			]
+		},
+		{
+			"id": "lantern",
+			"induces": [
+			]
+		},
+		{
+			"id": "moth",
+			"induces": [
+			]
+		},
+    
+    
+        {
+            "id": "refresh",
+            "label": "Обновление",
+            "isAspect": true,
+        },
+        {
+            "id": "copy",
+            "label": "Копирование",
+            "isAspect": true,
+        },
+        {
+            "id": "potion.merge.inactive",
+            "label": "Неактивное зелье соединения",
+            "isAspect": true,
+        },
+        {
+            "id": "merge.activate",
+            "label": "Активация соединения",
+            "isAspect": true,
+        },
+        {
+            "id": "merge.deactivate",
+            "label": "Активация соединения",
+            "isAspect": true,
+        },
+        
+        
+        {
+            "id": "modifiable",
+            "label": "Модифицируемое",
+            "isAspect": true,
+            "isHidden": true,
+        },
+        
+        {
+            "id": "potion.strengthen.or.absolute",
+            "label": "Зелье силы или абсолюта",
+            "isAspect": true,
+            "isHidden": true,
+        },
+        {
+            "id": "_alchemist.reputation",
+            "label": "Репутация",
+            "description": "Мирская молва — морская волна.",
+            "isAspect": true,
+        }, 
+    ]
+}

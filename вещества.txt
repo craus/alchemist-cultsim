@@ -9,6 +9,21 @@ purple: knock, grail, moth
 gray: moth, winter, secret histories
 brown: moth, grail, edge
 
+strengthen
+weaken
+reverse
+neutralize
+absolute
+identity
+similar
+difference
+other
+split
+merge
+static
+explosion
+void
+
 strengthen - forge, heart, edge, -moth (rose) [fire]
 weaken - winter, knock, moth, -forge (neville) [water] [air]
 reverse - moth, grail, edge, -lantern (ysabet) [water]

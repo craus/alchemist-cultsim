@@ -1786,6 +1786,9 @@
                     "id": "split.strengthen",
                 },
                 {
+                    "id": "split.any",
+                },
+                {
                     "id": "unmatch",
                 },
             ],
@@ -1807,75 +1810,131 @@
                 "potion.absolute": 1,
             },
         }, 
-        
+        {
+            "id": "split.any",
+            "label": "Разделить на базовые фрагменты",
+            "requirements": {
+                "substance": 2,
+            },
+            "startdescription": ".",
+            "warmup": 60,
+            "description": ".",
+            "effects": {
+                "potion.split": -1,
+                "universal": 1,
+            },
+            "linked": [{"id": "split.any.step2"}],
+        }, 
+        {
+            "id": "split.any.step2",
+            "effects": {
+                "fragment.forge": "forge",
+                "fragment.edge": "edge",
+                "fragment.winter": "winter",
+                "fragment.heart": "heart",
+                "fragment.grail": "grail",
+                "fragment.moth": "moth",
+                "fragment.lantern": "lantern",
+                "fragment.knock": "knock",
+                "fragment.secrethistories": "secrethistories",
+            },
+            "linked": [{"id": "split.any.step3"}],
+        }, 
+        {
+            "id": "split.any.step3",
+            "effects": {                
+                "fragment.forge": -1,
+                "fragment.edge": -1,
+                "fragment.winter": -1,
+                "fragment.heart": -1,
+                "fragment.grail": -1,
+                "fragment.moth": -1,
+                "fragment.lantern": -1,
+                "fragment.knock": -1,
+                "fragment.secrethistories": -1,
+                "universal": -1,
+            },
+            "label": "Разделить на базовые фрагменты",
+            "description": "Фрагменты недолговечны, но чисты.",
+        }, 
+                
         {
             "id": "merge",
             "label": "Соединение",
             "actionid": "alchemist.use",
-            "requirements": {
-                "device": -1,
-                "potion.merge": 1,
-            },
+            "requirements": {"potion.merge": 1},
+            "startdescription": "Я могу соединить что-то воедино.",
+            "craftable": true,
+            "aspects": {"merge.activate": 1},
+            "linked": [{"id": "merge.step0",},],
+        },
+        {
+            "id": "merge.step0",
+            "label": "Соединение",
             "slots": [                
                 {
                     "id": "target",
                     "label": "Цель",
                     "description": "На что я хочу повлиять?",
-                    "required": {
-                        "substance": 1,
-                    },
+                    "required": {"substance": 1},
                 }, 
             ],
-            "startdescription": "Я могу соединить что-то воедино.",
             "warmup": 10,
-            "description": ".",
-            "craftable": true,
             "linked": [
-                {
-                    "id": "merge.step2",
-                },
-                {
-                    "id": "merge.abort1",
-                },
+                {"id": "merge.step1.1"},
+                {"id": "merge.abort1"},
             ],
         },
         {
             "id": "merge.abort1",
             "label": "Отмена",
             "description": "Пожалуй, не буду этого делать.",
+            "aspects": {"merge.deactivate": 1},
+        },
+        {
+            "id": "merge.step1.1",
+            "requirements": {"substance": 1},
+            "effects": {"fictive.device": 1},
+            "linked": [{"id": "merge.step2"}],
         },
         {
             "id": "merge.step2",
-            "label": "Нужна ещё одна цель",
-            "actionid": "alchemist.use",
-            "requirements": {
-                "device": -1,
-                "substance": 2,
-            },
+            "label": "Добавить что-то ещё",
             "slots": [                
                 {
                     "id": "target2",
                     "label": "Цель",
                     "description": "На что я хочу повлиять?",
-                    "required": {
-                        "substance": 1,
-                    },
+                    "required": {"substance": 1},
                 }, 
             ],
-            "startdescription": "Я могу соединить что-то воедино.",
+            "startdescription": "Пока что ингредиентов мало для реакции.",
             "warmup": 10,
-            "description": "Пожалуй, не буду этого делать.",
             "alt": [
-                {
-                    "id": "merge.strengthen.weaken",
-                },
-                {
-                    "id": "merge.absolute.neutralize",
-                },
-                {
-                    "id": "merge.identity.reverse",
-                },
+                {"id": "merge.strengthen.weaken"},
+                {"id": "merge.absolute.neutralize"},
+                {"id": "merge.identity.reverse"},
+                
+                {"id": "strengthen.potion"},
+                {"id": "weaken.potion"},
+                {"id": "reverse.potion"},
+                {"id": "neutralize.potion"},
+                {"id": "absolute.potion"},
+                {"id": "identity.potion"},
+                {"id": "similar.potion"},
+                {"id": "difference.potion"},
+                {"id": "other.potion"},
+                {"id": "split.potion"},
+                {"id": "merge.potion"},
+                {"id": "static.potion"},
+                {"id": "explosion.potion"},
+                {"id": "void.potion"},
             ],
+            "aspects": {"merge.deactivate": 1},
+            "effects": {
+                "fictive.device": -1,
+            },
+            "description": "Пожалуй, не буду этого делать.",
         },
         {
             "id": "merge.strengthen.weaken",
@@ -1885,14 +1944,13 @@
                 "potion.weaken": 1,
             },
             "startdescription": ".",
-            "warmup": 60,
             "description": ".",
             "effects": {
-                "potion.merge": -1,
                 "potion.strengthen": -1,
                 "potion.weaken": -1,
                 "potion.identity": 3,
             },
+            "linked": [{"id": "merge.final"}],
         }, 
         {
             "id": "merge.absolute.neutralize",
@@ -1902,14 +1960,13 @@
                 "potion.neutralize": 1,
             },
             "startdescription": ".",
-            "warmup": 10,
             "description": ".",
             "effects": {
-                "potion.merge": -1,
                 "potion.absolute": -1,
                 "potion.neutralize": -1,
                 "potion.identity": 3,
             },
+            "linked": [{"id": "merge.final"}],
         }, 
         {
             "id": "merge.identity.reverse",
@@ -1919,13 +1976,20 @@
                 "potion.reverse": 1,
             },
             "startdescription": ".",
-            "warmup": 10,
             "description": ".",
             "effects": {
-                "potion.merge": -1,
                 "potion.identity": -1,
                 "potion.reverse": -1,
                 "potion.neutralize": 3,
+            },
+            "linked": [{"id": "merge.final"}],
+        }, 
+        {
+            "id": "merge.final",
+            "label": "Готово!",
+            "effects": {
+                "activation": -1,
+                "fictive.device": -1,
             },
         }, 
         
