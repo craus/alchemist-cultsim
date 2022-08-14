@@ -153,9 +153,6 @@
             "requirements": {
                 "village": 1,
             },
-            "extantreqs": {
-                "customer": -3,
-            },
             "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня.",
             "description": "Мне не удалось найти никого, кто заинтересовался бы моими товарами. Может, в другой раз повезёт.",
             "warmup": 30,
@@ -382,7 +379,7 @@
             "id": "iziim.intro", 
             "label": "Ищущий",          
             "extantreqs": {
-                "soul": 1,
+                "soul": 3,
                 "seeker": -1,
             },
             "actionid": "summon",
