@@ -22,6 +22,7 @@
             "label": "Лес",
             "aspects": {
                 "location": 1,
+                "expedition": 1,
             },
             "description": "Уголок дикой природы.",
             "lifetime": 180,
@@ -31,6 +32,7 @@
             "label": "Равнина",
             "aspects": {
                 "location": 1,
+                "expedition": 1,
             },
             "description": "Просторный и открытый участок земли.",
             "lifetime": 180,
@@ -40,6 +42,7 @@
             "label": "Остров",
             "aspects": {
                 "location": 1,
+                "expedition": 1,
             },
             "description": "Экзотический пейзаж, отделённый водной преградой.",
             "lifetime": 180,
@@ -49,6 +52,7 @@
             "label": "Болото",
             "aspects": {
                 "location": 1,
+                "expedition": 1,
             },
             "description": "Мрачное и уединённое место.",
             "lifetime": 180,
@@ -58,6 +62,7 @@
             "label": "Гора",
             "aspects": {
                 "location": 1,
+                "expedition": 1,
             },
             "description": "Для тех, кто любит быть на высоте.",
             "lifetime": 180,

@@ -46,6 +46,23 @@
         },  
         
         
+        {
+            "id": "visit.village",
+            "label": "Прогулка по деревне",
+            "actionid": "visit",
+            "requirements": {
+                "village": 1,
+            },
+            "startdescription": "Приятно прогуляться по знакомым местам. Может, найду что-то полезное для себя.",
+            "description": "Кое-что удалось обнаружить...",
+            "warmup": 60,
+            "craftable": true,
+            "deckeffects": {
+                "deck.villlage": 1,
+            },      
+        },  
+        
+        
         
         {
             "id": "visit.expedition.base",

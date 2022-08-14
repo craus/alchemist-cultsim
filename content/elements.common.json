@@ -8,6 +8,24 @@
             },
             "description": "Иногда мне кажется, что все мои поступки продиктованы волей какого-то другого существа."
         },
+        
+        {
+            "id": "flowermaker",
+            "label": "Цветочник",
+            "aspects": {
+                "person": 1,
+            },
+            "description": "В лавке цветочника я могу купить экземпляры редких растений."
+        },       
+        {
+            "id": "cartographer",
+            "label": "Картограф",
+            "aspects": {
+                "person": 1,
+            },
+            "description": "Картограф может снабдить меня указаниями, как добраться до разных мест — далёких и не очень."
+        },
+        
         {
             "id": "oldcauldron",
             "label": "Старый котёл",
@@ -150,6 +168,7 @@
         },
         {
             "id": "iziim2",
+            "extends": ["iziim"],
             "label": "Ищущий (в нетерпении)",
             "aspects": {
                 "interlocutor": 1,
@@ -157,22 +176,12 @@
                 "impatience": 1,
             },
             "description": "«‎Давай же заключим сделку! Чего ты ждёшь?»",
-            "slots": [                
-                {
-                    "id": "target",
-                    "label": "Души",
-                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
-                    "required": {
-                        "soul": 1,
-                    },
-                    "actionid": "alchemist.talk",
-                },         
-            ],
             "lifetime": 60,
             "decayTo": "iziim3",
         },
         {
             "id": "iziim3",
+            "extends": ["iziim"],
             "label": "Ищущий (раздражён)",
             "aspects": {
                 "interlocutor": 1,
