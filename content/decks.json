@@ -1,8 +1,69 @@
 {
     "decks": [
         {
-            "id": "forestloot",
+            "id": "deck.village",
+            "label": "Контакты в деревне",
+            "spec": [
+                "contact.flowermaker",
+                "contact.cartographer",
+            ],
+            "resetonexhaustion": true,
+        },
+    
+        {
+            "id": "deck.forest",
             "label": "Добыча из леса",
+            "spec": [
+                "flower.white",
+                "flower.red",
+                "flower.blue",
+            ],
+            "resetonexhaustion": true,
+        },
+        {
+            "id": "deck.plain",
+            "label": "Добыча с равнины",
+            "spec": [
+                "flower.white",
+                "flower.yellow",
+                "flower.orange",
+            ],
+            "resetonexhaustion": true,
+        },
+        {
+            "id": "deck.island",
+            "label": "Добыча с острова",
+            "spec": [
+                "flower.pink",
+                "flower.blue",
+                "flower.purple",
+            ],
+            "resetonexhaustion": true,
+        },
+        {
+            "id": "deck.swamp",
+            "label": "Добыча с болота",
+            "spec": [
+                "flower.black",
+                "flower.purple",
+                "flower.gray",
+            ],
+            "resetonexhaustion": true,
+        },
+        {
+            "id": "deck.mountain",
+            "label": "Добыча с горы",
+            "spec": [
+                "flower.red",
+                "flower.black",
+                "flower.brown",
+            ],
+            "resetonexhaustion": true,
+        },
+        
+        {
+            "id": "deck.flowermaker",
+            "label": "Товары цветочника",
             "spec": [
                 "flower.white",
                 "flower.yellow",
@@ -15,8 +76,21 @@
                 "flower.gray",
                 "flower.brown",
             ],
-            "resetonexhaustion": true
+            "resetonexhaustion": true,
         },
+        {
+            "id": "deck.cartographer",
+            "label": "Товары картографа",
+            "spec": [
+                "location.forest",
+                "location.plain",
+                "location.island",
+                "location.swamp",
+                "location.mountain",
+            ],
+            "resetonexhaustion": true,
+        },
+        
         {
             "id": "customers",
             "label": "Заказчики",
@@ -36,8 +110,9 @@
                 "customer.clifton",
                 "customer.enid",
             ],
-            "resetonexhaustion": true
+            "resetonexhaustion": true,
         },
+        
         {
             "id": "difference.strengthen.deck",
             "spec": [
@@ -162,6 +237,18 @@
             "resetonexhaustion": true
         },
         {
+            "id": "difference.location.deck",
+            "spec": [
+                "location.forest",
+                "location.plain",
+                "location.island",
+                "location.swamp",
+                "location.mountain",
+            ],
+            "resetonexhaustion": true
+        },
+        
+        {
             "id": "other.any.deck",
             "spec": [
                 "potion.strengthen",
@@ -178,6 +265,11 @@
                 "potion.static",
                 "potion.explosion",
                 "potion.void",
+                "location.forest",
+                "location.plain",
+                "location.island",
+                "location.swamp",
+                "location.mountain",
             ],
             "resetonexhaustion": true
         },

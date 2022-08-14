@@ -1,58 +1,17 @@
 {
     "recipes": [
         {
-            "id": "visit.loft.first",
-            "label": "Поиск на чердаке",
-            "actionid": "visit",
-            "requirements": {
-                "loft": 1,
-                "loft.visited": -1,
-            },
-            "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
-            "description": "Кое-что удалось обнаружить...",
-            "warmup": 10,
-            "craftable": true,
-            "effects": {
-                "loft": -1,
-                "money": 10,
-                "wish.philosopherstone": 1,
-            },           
-            "alt": [
-                {
-                    "id": "reaction.intro",
-                    "additional": true
-                }
-            ],            
-            "mutations": [
-                {
-                    "filter": "loft",
-                    "mutate": "loft.visited",
-                    "level": 1,
-                },
-            ],
-        },  
-        {
-            "id": "_visit.loft",
-            "label": "Поиск на чердаке",
-            "actionid": "_visit",
-            "requirements": {
-                "loft": 1,
-            },
-            "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
-            "description": "Кое-что удалось обнаружить...",
-            "warmup": 60,
-            "craftable": true,
-        },  
-        {
             "id": "reaction.intro",
             "label": "Старый батин котёл",
             "actionid": "reaction",
             "startdescription": "Его ещё предстоит отмыть.",
-            "description": "Фух, теперь в нём можно сварить что-нибудь. Можно найти в лесу каких-нибудь растений, годящихся в качестве ингредиентов зелья.",
+            "description": "Фух, теперь в нём можно сварить что-нибудь. Я знаю пару мест, где можно найти немного растений, годящихся в качестве ингредиентов зелья.",
             "effects": {
                 "oldcauldron": 1,
                 "loft": -1,
-                "forest": 1,
+            },
+            "deckeffects": {
+                "deck.cartographer": 2,
             },
             "warmup": 15,
             "alt": [
@@ -62,24 +21,6 @@
                 }
             ],
         },      
-        {
-            "id": "visit.forest",
-            "label": "Поход в лес",
-            "actionid": "visit",
-            "requirements": {
-                "forest": 1
-            },
-            "startdescription": "Прогулка по непролазной лесной чаще обещает быть утомительной...",
-            "description": "Настала пора возвращаться.",
-            "warmup": 60,
-            "craftable": true, 
-            "deckeffects": {
-                "forestloot": 6,
-            },
-            "effects": {
-                "substance": -4,
-            },
-        },
         {
             "id": "talk.intro",
             "label": "Контакты",
@@ -101,6 +42,101 @@
             ],       
         },
         {
+            "id": "talk.expedition.hint",
+            "label": "Искать клиентов",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "expedition": 1,
+            },
+            "startdescription": "Это дикая и безлюдная местность. Вряд ли мне удастся найти там заказчика.",
+            "hintonly": true,
+        },  
+        {
+            "id": "money.for.trade",
+            "warmup": 30,
+            "description": "Я решил воздержаться от покупки.",
+        },
+        {
+            "id": "talk.cartographer",
+            "label": "Посетить картографа",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "contact.cartographer": 1,
+            },
+            "warmup": 5,
+            "startdescription": "Если кто-то и может мне помочь узнать больше о новых местах — то это и есть тот человек.",
+            "craftable": true,
+            "linked": [{"id": "talk.cartographer.step2"}],
+            "deckeffects": {"deck.cartographer": 10},
+            "effects": {"location": -9},
+        },  
+        {
+            "id": "talk.cartographer.step2",
+            "extends": ["money.for.trade"],
+            "label": "Купить карту?",
+            "startdescription": "Меня заинтересовала одна из предлагаемых карт.",
+            "slots": [              
+                {
+                    "id": "money",
+                    "label": "Плата",
+                    "description": "Товар должен быть оплачен.",
+                    "required": {
+                        "money": 1,
+                    },
+                },  
+            ],
+            "effects": {"location": -1},
+            "alt":[{"id":"talk.cartographer.step2.money"}],
+        },  
+        {
+            "id": "talk.cartographer.step2.money",
+            "requirements": {"money": 1},
+            "label": "Купить",
+            "warmup": 30,
+            "startdescription": "Я бы хотел подробнее изучить это место.",
+            "effects": {"money": -1},
+        },  
+        {
+            "id": "talk.flowermaker",
+            "label": "Наведаться к цветочнику",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "contact.flowermaker": 1,
+            },
+            "warmup": 5,
+            "startdescription": "В лавке цветочника растения повсюду — столы, полки... Несколько даже подвешены к потолку. Может, что-то из этого годится для моего дела?",
+            "craftable": true,
+            "linked": [{"id": "talk.flowermaker.step2"}],
+            "deckeffects": {"deck.flowermaker": 10},
+            "effects": {"substance": -9},
+        },  
+        {
+            "id": "talk.flowermaker.step2",
+            "extends": ["money.for.trade"],
+            "label": "Подходящий цветок",
+            "startdescription": "Одно из растений имеет отношение к алхимии.",
+            "slots": [              
+                {
+                    "id": "money",
+                    "label": "Плата",
+                    "description": "Товар должен быть оплачен.",
+                    "required": {
+                        "money": 1,
+                    },
+                },  
+            ],
+            "effects": {"substance": -1},
+            "alt":[{"id":"talk.flowermaker.step2.money"}],
+        },  
+        {
+            "id": "talk.flowermaker.step2.money",
+            "requirements": {"money": 1},
+            "label": "Купить",
+            "warmup": 30,
+            "startdescription": "Я мог бы найти этому цветку применение в своих алхимических рецептах.",
+            "effects": {"money": -1},
+        },  
+        {
             "id": "talk.village.hint",
             "label": "Искать клиентов",
             "actionid": "alchemist.talk",
@@ -116,9 +152,6 @@
             "actionid": "alchemist.talk",
             "requirements": {
                 "village": 1,
-            },
-            "extantreqs": {
-                "customer": -3,
             },
             "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня.",
             "description": "Мне не удалось найти никого, кто заинтересовался бы моими товарами. Может, в другой раз повезёт.",
@@ -319,37 +352,20 @@
             "effects": {
                 "money": -1,
             },
-        },  
-        {
-            "label": "Готово!",
-            "description": "Я получил, что задумал. Но сейчас это уже немного другой я.",
-            "id": "cook.end",
-            "alt": [
-                {
-                    "id": "use.intro",
-                    "additional": true,
-                },
-            ],
-            "effects": {
-                "mysouldrop": 1,
-            },
-        },  
+        },   
         {
             "id": "use.intro",
             "label": "Применение зелий",
             "actionid": "alchemist.use",
             "startdescription": "Я могу сам использовать зелья, которые изготовил.",
             "warmup": 30,  
-            "effects": {
-                "i": 1,
-            }, 
             "_maxexecutions": 1,
         },  
         {
             "id": "iziim.intro", 
             "label": "Ищущий",          
             "extantreqs": {
-                "soul": 1,
+                "soul": 3,
                 "seeker": -1,
             },
             "actionid": "summon",

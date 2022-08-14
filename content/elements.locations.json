@@ -1,0 +1,63 @@
+{
+    "elements": [
+        {
+            "id": "loft",
+            "label": "Чердак моего дома",
+            "aspects": {
+                "location": 1,
+                "modifiable": 1,
+            },
+            "description": "Пыльный чердак. Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь."
+        },
+        {
+            "id": "village",
+            "label": "Бинарадка",
+            "aspects": {
+                "location": 1,
+                "modifiable": 1,
+            },
+            "description": "Моя родная деревня."
+        },
+        
+        
+        {
+            "id": "expedition.base",
+            "aspects": {
+                "location": 1,
+                "modifiable": 1,
+                "expedition": 1,
+            },
+            "lifetime": 600,
+        },
+        {
+            "id": "location.forest",
+            "extends": ["expedition.base"],
+            "label": "Лес",
+            "description": "Уголок дикой природы.",
+        },        
+        {
+            "id": "location.plain",
+            "extends": ["expedition.base"],
+            "label": "Равнина",
+            "description": "Просторный и открытый участок земли.",
+        },    
+        {
+            "id": "location.island",
+            "extends": ["expedition.base"],
+            "label": "Остров",
+            "description": "Экзотический пейзаж, отделённый водной преградой.",
+        },    
+        {
+            "id": "location.swamp",
+            "extends": ["expedition.base"],
+            "label": "Болото",
+            "description": "Мрачное и уединённое место.",
+        },    
+        {
+            "id": "location.mountain",
+            "extends": ["expedition.base"],
+            "label": "Гора",
+            "description": "Для тех, кто любит быть на высоте.",
+        },
+    ]
+}

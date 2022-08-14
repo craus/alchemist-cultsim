@@ -1,27 +1,5 @@
 {
     "elements": [
-		{
-			"id": "grail",
-			"induces": [
-			]
-		},
-		{
-			"id": "heart",
-			"induces": [
-			]
-		},
-		{
-			"id": "lantern",
-			"induces": [
-			]
-		},
-		{
-			"id": "moth",
-			"induces": [
-			]
-		},
-    
-    
         {
             "id": "device",
             "label": "Устройство",
@@ -63,13 +41,9 @@
             "isAspect": true,
         },
         {
-            "id": "refresh",
-            "label": "Обновление",
-            "isAspect": true,
-        },
-        {
-            "id": "copy",
-            "label": "Копирование",
+            "id": "contact.village", 
+            "label": "Расположение: Бинарадка",
+            "description": "Считай, рукой подать.",
             "isAspect": true,
         },
         {
@@ -78,9 +52,12 @@
             "description": "Из-за него всё происходит не сразу, а постепенно.",
             "isAspect": true,
         },
-        
-        
-        
+        {
+            "id": "expedition",
+            "label": "Экспедиция",
+            "description": "Визит в это место сулит — в равной степени — невзгоды и награды.",
+            "isAspect": true,
+        },
         
         {
             "id": "limit.forge",
@@ -136,12 +113,9 @@
             "description": "Излишнее использование Тайных историй может помешать изготовлению.",
             "isAspect": true,
         },
-        {
-            "id": "potion.strengthen.or.absolute",
-            "label": "Зелье силы или абсолюта",
-            "isAspect": true,
-            "isHidden": true,
-        },
+        
+        
+        
         {
             "id": "stasis.access",
             "label": "Доступ к стазису",
@@ -159,12 +133,6 @@
             "label": "Прерывание стазиса",
             "isAspect": true,
             "isHidden": true,
-        },
-        {
-            "id": "_alchemist.reputation",
-            "label": "Репутация",
-            "description": "Мирская молва — морская волна.",
-            "isAspect": true,
         },
         {
             "id": "soul",
@@ -200,6 +168,21 @@
             "id": "customer",
             "label": "Заказчик",
             "description": "Приятно, когда твой труд кто-то ценит.",
+            "isAspect": true,
+        },
+        {
+            "id": "fragment",
+            "label": "Фрагмент",
+            "description": "Это элементарная субстанция. Все другие состоят из них.",
+            "isAspect": true,
+        },
+        
+        
+        
+        {
+            "id": "activation",
+            "label": "Активация",
+            "description": "Это зелье сейчас активировано. Оно временно лишено части своих аспектов.",
             "isAspect": true,
         },
         

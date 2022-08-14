@@ -5,6 +5,7 @@
             "label": "Зелье усиления",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "forge": 1,
                 "heart": 1,
@@ -37,6 +38,7 @@
             "label": "Зелье ослабления",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "winter": 1,
                 "knock": 1,
@@ -69,6 +71,7 @@
             "label": "Зелье противоположности",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "moth": 1,
                 "grail": 1,
@@ -100,6 +103,7 @@
             "label": "Зелье нейтрализации",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "winter": 1,
                 "heart": 1,
@@ -131,6 +135,7 @@
             "label": "Зелье абсолюта",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "forge": 1,
                 "lantern": 1,
@@ -163,6 +168,7 @@
             "label": "Зелье совпадения",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "heart": 1,
                 "grail": 1,
@@ -194,6 +200,7 @@
             "label": "Зелье сходства",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "secrethistories": 2,
                 "heart": 1,
@@ -224,6 +231,7 @@
             "label": "Зелье различия",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "moth": 1,
                 "edge": 1,
@@ -255,6 +263,7 @@
             "label": "Зелье другого",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "lantern": 1,
                 "secrethistories": 1,
@@ -285,6 +294,7 @@
             "label": "Зелье разделения",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "edge": 1,
                 "knock": 1,
@@ -316,7 +326,9 @@
             "label": "Зелье соединения",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
+                "potion.merge.inactive": 1,
                 "grail": 1,
                 "heart": 1,
                 "forge": 1,
@@ -331,6 +343,22 @@
                         "id": "potion.merge",
                         "morpheffect": "spawn",
                     },
+                ],
+                "merge.activate": [
+                    {"morpheffect": "mutate","id": "grail","level": -1},
+                    {"morpheffect": "mutate","id": "heart","level": -1},
+                    {"morpheffect": "mutate","id": "forge","level": -1},
+                    {"morpheffect": "mutate","id": "substance","level": -1},
+                    {"morpheffect": "mutate","id": "potion.merge.inactive","level": -1},
+                    {"morpheffect": "mutate","id": "activation","level": 1},
+                ],
+                "merge.deactivate": [
+                    {"morpheffect": "mutate","id": "grail","level": 1},
+                    {"morpheffect": "mutate","id": "heart","level": 1},
+                    {"morpheffect": "mutate","id": "forge","level": 1},
+                    {"morpheffect": "mutate","id": "substance","level": 1},
+                    {"morpheffect": "mutate","id": "potion.merge.inactive","level": 1},
+                    {"morpheffect": "mutate","id": "activation","level": -1},
                 ],
             },
             "lifetime": 300,
@@ -347,6 +375,7 @@
             "label": "Зелье статичности",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "stasis.access": 1,
                 "stasis.extend": 1,
@@ -378,6 +407,7 @@
             "label": "Зелье взрыва",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "stasis.access": 1,
                 "stasis.interrupt": 1,
@@ -410,6 +440,7 @@
             "label": "Зелье пустоты",
             "aspects": {
                 "substance": 1,
+                "modifiable": 1,
                 "modification": 1,
                 "winter": 1,
                 "edge": 1,
