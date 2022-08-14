@@ -1,49 +1,6 @@
 {
     "recipes": [
         {
-            "id": "visit.loft.first",
-            "label": "Поиск на чердаке",
-            "actionid": "visit",
-            "requirements": {
-                "loft": 1,
-                "loft.visited": -1,
-            },
-            "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
-            "description": "Кое-что удалось обнаружить...",
-            "warmup": 10,
-            "craftable": true,
-            "effects": {
-                "loft": -1,
-                "money": 10,
-                "wish.philosopherstone": 1,
-            },           
-            "alt": [
-                {
-                    "id": "reaction.intro",
-                    "additional": true
-                }
-            ],            
-            "mutations": [
-                {
-                    "filter": "loft",
-                    "mutate": "loft.visited",
-                    "level": 1,
-                },
-            ],
-        },  
-        {
-            "id": "_visit.loft",
-            "label": "Поиск на чердаке",
-            "actionid": "_visit",
-            "requirements": {
-                "loft": 1,
-            },
-            "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
-            "description": "Кое-что удалось обнаружить...",
-            "warmup": 60,
-            "craftable": true,
-        },  
-        {
             "id": "reaction.intro",
             "label": "Старый батин котёл",
             "actionid": "reaction",
@@ -62,24 +19,6 @@
                 }
             ],
         },      
-        {
-            "id": "visit.forest",
-            "label": "Поход в лес",
-            "actionid": "visit",
-            "requirements": {
-                "forest": 1
-            },
-            "startdescription": "Прогулка по непролазной лесной чаще обещает быть утомительной...",
-            "description": "Настала пора возвращаться.",
-            "warmup": 60,
-            "craftable": true, 
-            "deckeffects": {
-                "forestloot": 6,
-            },
-            "effects": {
-                "substance": -4,
-            },
-        },
         {
             "id": "talk.intro",
             "label": "Контакты",
@@ -321,9 +260,9 @@
             },
         },  
         {
+            "id": "cook.end",
             "label": "Готово!",
             "description": "Я получил, что задумал. Но сейчас это уже немного другой я.",
-            "id": "cook.end",
             "alt": [
                 {
                     "id": "use.intro",
@@ -340,9 +279,6 @@
             "actionid": "alchemist.use",
             "startdescription": "Я могу сам использовать зелья, которые изготовил.",
             "warmup": 30,  
-            "effects": {
-                "i": 1,
-            }, 
             "_maxexecutions": 1,
         },  
         {

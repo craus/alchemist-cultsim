@@ -1,0 +1,66 @@
+{
+    "elements": [
+        {
+            "id": "loft",
+            "label": "Чердак моего дома",
+            "aspects": {
+                "location": 1
+            },
+            "description": "Пыльный чердак. Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь."
+        },
+        {
+            "id": "village",
+            "label": "Бинарадка",
+            "aspects": {
+                "location": 1,
+            },
+            "description": "Моя родная деревня."
+        },
+        
+        {
+            "id": "location.forest",
+            "label": "Лес",
+            "aspects": {
+                "location": 1,
+            },
+            "description": "Уголок дикой природы.",
+            "lifetime": 180,
+        },        
+        {
+            "id": "location.plain",
+            "label": "Равнина",
+            "aspects": {
+                "location": 1,
+            },
+            "description": "Просторный и открытый участок земли.",
+            "lifetime": 180,
+        },    
+        {
+            "id": "location.island",
+            "label": "Остров",
+            "aspects": {
+                "location": 1,
+            },
+            "description": "Экзотический пейзаж, отделённый водной преградой.",
+            "lifetime": 180,
+        },    
+        {
+            "id": "location.swamp",
+            "label": "Болото",
+            "aspects": {
+                "location": 1,
+            },
+            "description": "Мрачное и уединённое место.",
+            "lifetime": 180,
+        },    
+        {
+            "id": "location.mountain",
+            "label": "Гора",
+            "aspects": {
+                "location": 1,
+            },
+            "description": "Для тех, кто любит быть на высоте.",
+            "lifetime": 180,
+        },
+    ]
+}

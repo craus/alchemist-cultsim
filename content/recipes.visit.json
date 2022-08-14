@@ -1,0 +1,125 @@
+{
+    "recipes": [
+        {
+            "id": "visit.loft.first",
+            "label": "Поиск на чердаке",
+            "actionid": "visit",
+            "requirements": {
+                "loft": 1,
+                "loft.visited": -1,
+            },
+            "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
+            "description": "Кое-что удалось обнаружить...",
+            "warmup": 10,
+            "craftable": true,
+            "effects": {
+                "loft": -1,
+                "money": 10,
+                "wish.philosopherstone": 1,
+                "i": 1,
+            },           
+            "alt": [
+                {
+                    "id": "reaction.intro",
+                    "additional": true
+                }
+            ],            
+            "mutations": [
+                {
+                    "filter": "loft",
+                    "mutate": "loft.visited",
+                    "level": 1,
+                },
+            ],
+        },  
+        {
+            "id": "_visit.loft",
+            "label": "Поиск на чердаке",
+            "actionid": "_visit",
+            "requirements": {
+                "loft": 1,
+            },
+            "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
+            "description": "Кое-что удалось обнаружить...",
+            "warmup": 60,
+            "craftable": true,
+        },  
+        
+        
+        
+        {
+            "id": "visit.expedition.base",
+            "actionid": "visit",
+            "description": "Настала пора возвращаться.",
+            "warmup": 60,
+            "effects": {
+                "substance": -4,
+            },
+        },
+        {
+            "id": "visit.forest",
+            "label": "Поход в лес",
+            "extends": ["visit.expedition.base"],
+            "requirements": {
+                "location.forest": 1
+            },
+            "startdescription": "Прогулка по непролазной лесной чаще обещает быть утомительной...",
+            "craftable": true, 
+            "deckeffects": {
+                "deck.forest": 6,
+            },
+        },
+        {
+            "id": "visit.plain",
+            "label": "Поход на равнину",
+            "extends": ["visit.expedition.base"],
+            "requirements": {
+                "location.plain": 1
+            },
+            "startdescription": "Изнурительный маршрут под палящим солнцем...",
+            "craftable": true, 
+            "deckeffects": {
+                "deck.plain": 6,
+            },
+        },
+        {
+            "id": "visit.island",
+            "label": "Путешествие на остров",
+            "extends": ["visit.expedition.base"],
+            "requirements": {
+                "location.island": 1
+            },
+            "startdescription": "Опасное преодоление водной пучины...",
+            "craftable": true, 
+            "deckeffects": {
+                "deck.island": 6,
+            },
+        },
+        {
+            "id": "visit.swamp",
+            "label": "Экспедиция на болото",
+            "extends": ["visit.expedition.base"],
+            "requirements": {
+                "location.swamp": 1
+            },
+            "startdescription": "Мерзкий запах и вязкая почва...",
+            "craftable": true, 
+            "deckeffects": {
+                "deck.swamp": 6,
+            },
+        },
+        {
+            "id": "visit.mountain",
+            "label": "Исследование горы",
+            "extends": ["visit.expedition.base"],
+            "requirements": {
+                "location.mountain": 1
+            },
+            "startdescription": "Одно неосторожное движение — и страх падения окажется предвидением...",
+            "craftable": true, 
+            "deckeffects": {
+                "deck.mountain": 6,
+            },
+        },
+    ]
+}

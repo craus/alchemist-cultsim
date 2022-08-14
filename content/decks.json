@@ -1,18 +1,51 @@
 {
     "decks": [
         {
-            "id": "forestloot",
+            "id": "deck.forest",
             "label": "Добыча из леса",
             "spec": [
                 "flower.white",
-                "flower.yellow",
-                "flower.pink",
                 "flower.red",
-                "flower.orange",
                 "flower.blue",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "deck.plain",
+            "label": "Добыча с равнины",
+            "spec": [
+                "flower.white",
+                "flower.yellow",
+                "flower.orange",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "deck.island",
+            "label": "Добыча с острова",
+            "spec": [
+                "flower.pink",
+                "flower.blue",
+                "flower.purple",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "deck.swamp",
+            "label": "Добыча с болота",
+            "spec": [
                 "flower.black",
                 "flower.purple",
                 "flower.gray",
+            ],
+            "resetonexhaustion": true
+        },
+        {
+            "id": "deck.mountain",
+            "label": "Добыча с горы",
+            "spec": [
+                "flower.red",
+                "flower.black",
                 "flower.brown",
             ],
             "resetonexhaustion": true

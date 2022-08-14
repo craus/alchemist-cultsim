@@ -9,81 +9,223 @@
             "description": "Иногда мне кажется, что все мои поступки продиктованы волей какого-то другого существа."
         },
         {
-            "id": "leeches",
-            "label": "Личинки",
+            "id": "oldcauldron",
+            "label": "Старый котёл",
             "aspects": {
-                "substance": 1,
+                "device": 1,
             },
-            "description": "Новая жизнь, зародившаяся на остатках старой."
+            "description": "Этим котлом когда-то пользовался мой отец.",
+            "slots": [                
+                {
+                    "id": "ingredient1",
+                    "label": "Ингредиент",
+                    "description": "Первый ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "reaction"
+                },          
+                {
+                    "id": "ingredient2",
+                    "label": "Ингредиент",
+                    "description": "Второй ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "reaction"
+                },       
+                {
+                    "id": "ingredient3",
+                    "label": "Ингредиент",
+                    "description": "Третий ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "reaction"
+                },       
+                {
+                    "id": "ingredient4",
+                    "label": "Ингредиент",
+                    "description": "Четвёртый ингредиент",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "reaction"
+                },    
+            ],
         },
         {
-            "id": "slops",
-            "label": "Худшие помои",
+            "id": "_recipebook",
+            "label": "Книга рецептов",
             "aspects": {
-                "substance": 1,
+                "potion.strengthen": 1,
+                "potion.weaken": 1,
+                "potion.reverse": 1,
+                "potion.neutralize": 1,
+                "potion.absolute": 1,
+                "potion.identity": 1,
+                "potion.difference": 1,
+                "potion.similar": 1,
+                "potion.other": 1,
+                "potion.split": 1,
+                "potion.merge": 1,
+                "potion.static": 1,
+                "potion.explosion": 1,
             },
-            "description": "Воняет пиздец. Это только выкинуть. Фу бля.",
-            "lifetime": 180,
+            "description": "Мой отец записывал в неё рецепты варки разных алхимических зелий."
         },
         {
-            "id": "heart.of.dark",
-            "label": "Сердце тьмы",
+            "id": "money",
+            "label": "Деньги",
             "aspects": {
-                "substance": 1,
             },
-            "description": "Могущественное порождение тёмных искусств.",
-            "lifetime": 180,
+            "description": "На них можно покупать всякое."
         },
-        
-        
         {
-            "id": "wish.philosopherstone",
-            "label": "Желание: Философский Камень",
+            "id": "failedorder",
+            "label": "Проваленный заказ",
             "aspects": {
-                "sphere.fire": 1,
-                "sphere.air": 1,
-                "sphere.water": 1,
-                "sphere.earth": 1,
+                "reputation": 1,
             },
-            "description": "Моя мечта — пройти Путь Алхимика до конца. Для этого мне нужно создать Философский Камень из четырёх Сфер.",
+            "description": "Моя репутация под угрозой из-за недовольного заказчика."
         },
-        
-        
         {
-            "id": "sphere.fire",
-            "label": "Сфера Огня",
+            "id": "time.spent",
+            "label": "Прошло времени",
             "aspects": {
-                "substance": 1,
+                "time": 1,
             },
-            "description": "Воплощение силы Первого Элемента.",
-            "lifetime": 1200,
-        },     
+            "description": "Время, проведённое мной в игре."
+        },
         {
-            "id": "sphere.air",
-            "label": "Сфера Воздуха",
-            "aspects": {
-                "substance": 1,
-            },
-            "description": "Воплощение силы Второго Элемента.",
-            "lifetime": 1200,
-        },  
+            "id": "stasis.verb",
+            "label": "Стазис",
+            "description": "Стазис включён.",
+            "isHidden": true,
+        },
         {
-            "id": "sphere.water",
-            "label": "Сфера Воды",
-            "aspects": {
-                "substance": 1,
-            },
-            "description": "Воплощение силы Третьего Элемента.",
-            "lifetime": 1200,
-        },  
+            "id": "shivers",
+            "label": "Обломки",
+            "description": "Их разбросало взрывом.",
+            "lifetime": 1,
+        },
         {
-            "id": "sphere.earth",
-            "label": "Сфера Земли",
+            "id": "souldrop",
+            "label": "Капля души",
             "aspects": {
-                "substance": 1,
+                "soul": 1,
             },
-            "description": "Воплощение силы Четвёртого Элемента.",
-            "lifetime": 1200,
+            "description": "Капля человеческой души. Такие отделяются от неё, когда человек имеет дело с Алхимией.",
+        },
+        {
+            "id": "mysouldrop",
+            "label": "Капля моей души",
+            "aspects": {
+                "soul": 1,
+                "i": 1,
+            },
+            "description": "Капля человеческой души. Такие отделяются от неё, когда человек имеет дело с Алхимией.",
+        },
+        {
+            "id": "iziim",
+            "label": "Ищущий",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+            },
+            "description": "«‎Есть души смертных? Я за них хорошо плачу!»",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
+            "lifetime": 60,
+            "decayTo": "iziim2",
+        },
+        {
+            "id": "iziim2",
+            "label": "Ищущий (в нетерпении)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 1,
+            },
+            "description": "«‎Давай же заключим сделку! Чего ты ждёшь?»",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
+            "lifetime": 60,
+            "decayTo": "iziim3",
+        },
+        {
+            "id": "iziim3",
+            "label": "Ищущий (раздражён)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 2,
+            },
+            "description": "«Не трать моё время зря, смертный! Не то я могу забрать и <i>твою</i> душу!»",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
+            "lifetime": 60,
+            "decayTo": "iziim4",
+        },
+        {
+            "id": "iziim4",
+            "label": "Ищущий (злится)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 3,
+            },
+            "description": "«Выкладывай души, что держишь у себя. Это моё последнее предупреждение!»",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
+            "lifetime": 60,
+            "decayTo": "iziim5",
+        },
+        {
+            "id": "iziim5",
+            "label": "Ищущий (в ярости)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 4,
+            },
+            "description": "«Моё терпение иссякло. Я заберу сам твою душу и те, что тебе удалось собрать!»",
         },
     ]
 }
