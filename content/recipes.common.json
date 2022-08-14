@@ -9,7 +9,7 @@
             "effects": {
                 "oldcauldron": 1,
                 "loft": -1,
-                "forest": 1,
+                "location.forest": 1,
             },
             "warmup": 15,
             "alt": [
@@ -51,16 +51,6 @@
         },  
         {
             "id": "money.for.trade",
-            "slots": [              
-                {
-                    "id": "money",
-                    "label": "Плата",
-                    "description": "Товар должен быть оплачен.",
-                    "required": {
-                        "money": 1,
-                    },
-                },  
-            ],
             "warmup": 30,
             "description": "Я решил воздержаться от покупки.",
         },
@@ -69,8 +59,9 @@
             "label": "Посетить картографа",
             "actionid": "alchemist.talk",
             "requirements": {
-                "cartographer": 1,
+                "contact.cartographer": 1,
             },
+            "warmup": 5,
             "startdescription": "Если кто-то и может мне помочь узнать больше о новых местах — то это и есть тот человек.",
             "craftable": true,
             "linked": [{"id": "talk.cartographer.step2"}],
@@ -82,6 +73,16 @@
             "extends": ["money.for.trade"],
             "label": "Купить карту?",
             "startdescription": "Меня заинтересовала одна из предлагаемых карт.",
+            "slots": [              
+                {
+                    "id": "money",
+                    "label": "Плата",
+                    "description": "Товар должен быть оплачен.",
+                    "required": {
+                        "money": 1,
+                    },
+                },  
+            ],
             "effects": {"location": -1},
             "alt":[{"id":"talk.cartographer.step2.money"}],
         },  
@@ -98,7 +99,7 @@
             "label": "Наведаться к цветочнику",
             "actionid": "alchemist.talk",
             "requirements": {
-                "flowermaker": 1,
+                "contact.flowermaker": 1,
             },
             "warmup": 5,
             "startdescription": "В лавке цветочника растения повсюду — столы, полки... Несколько даже подвешены к потолку. Может, что-то из этого годится для моего дела?",
@@ -112,6 +113,16 @@
             "extends": ["money.for.trade"],
             "label": "Подходящий цветок",
             "startdescription": "Одно из растений имеет отношение к алхимии.",
+            "slots": [              
+                {
+                    "id": "money",
+                    "label": "Плата",
+                    "description": "Товар должен быть оплачен.",
+                    "required": {
+                        "money": 1,
+                    },
+                },  
+            ],
             "effects": {"substance": -1},
             "alt":[{"id":"talk.flowermaker.step2.money"}],
         },  

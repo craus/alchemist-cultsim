@@ -63,6 +63,12 @@
             "isAspect": true,
         },
         {
+            "id": "contact.village", 
+            "label": "Расположение: Бинарадка",
+            "description": "Считай, рукой подать.",
+            "isAspect": true,
+        },
+        {
             "id": "refresh",
             "label": "Обновление",
             "isAspect": true,

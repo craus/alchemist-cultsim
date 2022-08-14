@@ -45,11 +45,23 @@
             "craftable": true,
         },  
         
-        
+        {
+            "id": "visit.village.limit",
+            "label": "Прогулка по деревне",
+            "actionid": "visit",
+            "requirements": {
+                "village": 1,
+            },
+            "startdescription": "Я уже знаю в этом месте каждый метр. Вряд ли мне удастся найти что-то новое здесь.",
+            "hintonly": true,
+        },  
         {
             "id": "visit.village",
             "label": "Прогулка по деревне",
             "actionid": "visit",
+            "extantreqs": {
+                "contact.village": -3,
+            },
             "requirements": {
                 "village": 1,
             },
@@ -58,7 +70,7 @@
             "warmup": 60,
             "craftable": true,
             "deckeffects": {
-                "deck.villlage": 1,
+                "deck.village": 1,
             },      
         },  
         

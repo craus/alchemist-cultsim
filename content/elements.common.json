@@ -10,18 +10,22 @@
         },
         
         {
-            "id": "flowermaker",
+            "id": "contact.flowermaker",
             "label": "Цветочник",
             "aspects": {
                 "person": 1,
+                "interlocutor": 1,
+                "contact.village": 1,
             },
             "description": "В лавке цветочника я могу купить экземпляры редких растений."
         },       
         {
-            "id": "cartographer",
+            "id": "contact.cartographer",
             "label": "Картограф",
             "aspects": {
                 "person": 1,
+                "interlocutor": 1,
+                "contact.village": 1,
             },
             "description": "Картограф может снабдить меня указаниями, как добраться до разных мест — далёких и не очень."
         },
