@@ -416,7 +416,7 @@
                 "limit.winter": 1,
                 "part.sphere.fire": 1,
             },
-            "description": "Разрывает всё на части.",
+            "description": "Имея зелье взрыва, можно взорвать что угодно.",
             "xtriggers": {
                 "refresh": "potion.explosion",
                 "copy": [
