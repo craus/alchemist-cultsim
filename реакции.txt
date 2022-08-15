@@ -13,9 +13,10 @@ weaken + neutralize = weaken
 weaken + reverse = neutralize
 weaken + absolute = strengthen
 weaken + identity = similar
-weaken + similar = other
-weaken + static = identity
+weaken + similar = difference
+weaken + difference = similar
 weaken + other = difference
+weaken + static = identity
 weaken + explosion = split
 
 reverse + strengthen = weaken
@@ -29,6 +30,8 @@ reverse + difference = similar
 reverse + other = identity
 reverse + split = merge
 reverse + merge = split
+reverse + explosion = static
+reverse + static = explosion
   reverse + part = whole
 
 neutralize + identity = difference

@@ -12,7 +12,8 @@
             "fromending": "default",
             "availableWithoutEndingMatch": true,
             "newstart": true, 
-            "startingverbid": "visit"
+            "startingverbid": "visit",
+            "tablecoverimage": "table_alchemist",
         }
     ]
 }
