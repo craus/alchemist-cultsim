@@ -154,6 +154,7 @@
             "aspects": {
                 "interlocutor": 1,
                 "seeker": 1,
+                "modifiable": 1,
             },
             "description": "«‎Есть души смертных? Я за них хорошо плачу!»",
             "slots": [                
@@ -178,6 +179,11 @@
                 "interlocutor": 1,
                 "seeker": 1,
                 "impatience": 1,
+                "modifiable": 1,
+            },
+            "xtriggers": {
+                "action.weaken": "iziim",
+                "action.neutralize": "iziim",
             },
             "description": "«‎Давай же заключим сделку! Чего ты ждёшь?»",
             "lifetime": 60,
@@ -191,6 +197,11 @@
                 "interlocutor": 1,
                 "seeker": 1,
                 "impatience": 2,
+                "modifiable": 1,
+            },
+            "xtriggers": {
+                "action.weaken": "iziim2",
+                "action.neutralize": "iziim",
             },
             "description": "«Не трать моё время зря, смертный! Не то я могу забрать и <i>твою</i> душу!»",
             "slots": [                
@@ -214,6 +225,11 @@
                 "interlocutor": 1,
                 "seeker": 1,
                 "impatience": 3,
+                "modifiable": 1,
+            },
+            "xtriggers": {
+                "action.weaken": "iziim3",
+                "action.neutralize": "iziim",
             },
             "description": "«Выкладывай души, что держишь у себя. Это моё последнее предупреждение!»",
             "slots": [                
@@ -237,6 +253,11 @@
                 "interlocutor": 1,
                 "seeker": 1,
                 "impatience": 4,
+                "modifiable": 1,
+            },
+            "xtriggers": {
+                "action.weaken": "iziim4",
+                "action.neutralize": "iziim",
             },
             "description": "«Моё терпение иссякло. Я заберу сам твою душу и те, что тебе удалось собрать!»",
         },

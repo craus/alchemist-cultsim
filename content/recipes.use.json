@@ -5,7 +5,7 @@
             "id": "unmatch",
             "label": "Неподходящая цель!",
             "requirements": {
-                "substance": 2,
+                "modifiable": 2,
             },
             "startdescription": "На это не получится воздействовать.",
             "description": "Всё осталось по-прежнему.",
@@ -120,7 +120,7 @@
             "requirements": {
                 "potion.weaken": 1,
             },
-            "startdescription": "Усиленное зелье ослабления будет ещё сильнее ослаблять эффекты, вплоть до их полного отсутствия.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -135,7 +135,7 @@
             "requirements": {
                 "potion.neutralize": 1,
             },
-            "startdescription": "Усиленное зелье нейтрализации будет не просто убирать эффекты, но и добавлять обратный эффект.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -167,7 +167,7 @@
             "requirements": {
                 "potion.strengthen.or.absolute": 2,
             },
-            "startdescription": "Усиленное зелье усиления будет увеличивать эффекты предметов до максимума.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -181,7 +181,7 @@
             "requirements": {
                 "potion.reverse": 1,
             },
-            "startdescription": "Я могу подобрать дозировку зелья усиления так, чтобы эффект зелья противоположности увеличился в два раза. Тогда два таких эффекта скомпенсируют друг друга.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -196,7 +196,7 @@
             "requirements": {
                 "potion.identity": 1,
             },
-            "startdescription": "Теперь зелье будет не просто оставлять предметы прежними, но и делать чтобы они оставались таковыми впредь.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -211,7 +211,7 @@
             "requirements": {
                 "potion.difference": 1,
             },
-            "startdescription": "Более различное, чем различие – вообще не похожее на оригинал.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -226,7 +226,7 @@
             "requirements": {
                 "potion.similar": 1,
             },
-            "startdescription": "Ещё более похожий предмет – это совпадающий с исходным.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -241,7 +241,7 @@
             "requirements": {
                 "potion.split": 1,
             },
-            "startdescription": "Взрыв не просто разделяет предмет на части, но и раскидывает части подальше друг от друга. А зачастую, не даёт возможности собрать части обратно.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -256,7 +256,7 @@
             "requirements": {
                 "potion.other": 1,
             },
-            "startdescription": "Теперь оно будет делать вещи ещё более непохожими на себя. Они будут во всём противоположными прежним.",
+            "startdescription": "Теперь оно будет делать вещи ещё более непохожими на себя.",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -281,6 +281,7 @@
                     "description": "На что я хочу повлиять?",
                     "required": {
                         "substance": 1,
+                        "interlocutor": 1,
                     },
                 },   
             ],
@@ -316,6 +317,9 @@
                     "id": "weaken.explosion",
                 },
                 {
+                    "id": "weaken.seeker",
+                },
+                {
                     "id": "unmatch",
                 },
             ],
@@ -327,7 +331,7 @@
             "requirements": {
                 "potion.neutralize": 1,
             },
-            "startdescription": "Зелье станет не полностью, а только частично убирать эффекты.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -342,7 +346,7 @@
             "requirements": {
                 "potion.reverse": 1,
             },
-            "startdescription": "Противоположность делает эффект обратным. Нейтрализация же лишь убирает его.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -357,7 +361,7 @@
             "requirements": {
                 "potion.absolute": 1,
             },
-            "startdescription": "Зелье всё ещё будет давать предметам силу, но уже не предельную, как раньше.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -372,7 +376,7 @@
             "requirements": {
                 "potion.identity": 1,
             },
-            "startdescription": "Будет делать не совсем точно такие же предметы, но всё ещё похожие.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -387,7 +391,7 @@
             "requirements": {
                 "potion.similar": 1,
             },
-            "startdescription": "Будет делать не такие уж похожие предметы, а довольно отличающиеся.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -402,7 +406,7 @@
             "requirements": {
                 "potion.other": 1,
             },
-            "startdescription": "Будет делать не то чтобы совершенно другие предметы, но всё же довольно отличные от оригинала.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -417,7 +421,7 @@
             "requirements": {
                 "potion.difference": 1,
             },
-            "startdescription": "Теперь это зелье будет вносить не так уж много различий в предметы, и результат будет похож на оригинал.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -432,7 +436,7 @@
             "requirements": {
                 "potion.static": 1,
             },
-            "startdescription": "Зелье больше не будет делать предметы неизменными. Но и изменять их не будет.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -447,13 +451,30 @@
             "requirements": {
                 "potion.explosion": 1,
             },
-            "startdescription": "Теперь от этого зелья предметы будут не разлетаться на части, а только разделяться на них.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
                 "potion.weaken": -1,
                 "potion.explosion": -1,
                 "potion.split": 2,
+            }
+        },
+        {
+            "id": "weaken.seeker",
+            "label": "Ослабить Ищущего",
+            "requirements": {
+                "seeker": 1,
+                "impatience": 1,
+            },
+            "startdescription": "Его нетерпение уменьшится.",
+            "warmup": 60,
+            "description": ".",
+            "aspects": {
+                "weaken.seeker": -1,
+            }
+            "effects": {
+                "potion.weaken": -1,
             }
         },
          
@@ -535,7 +556,7 @@
             "requirements": {
                 "potion.strengthen": 1,
             },
-            "startdescription": "Силу можно увеличить. Или, наоборот, уменьшить.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -550,7 +571,7 @@
             "requirements": {
                 "potion.weaken": 1,
             },
-            "startdescription": "Силу можно уменьшить. Или, наоборот, увеличить.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -565,7 +586,7 @@
             "requirements": {
                 "potion.reverse": 2,
             },
-            "startdescription": "Зелье противоположности делает эффект предмета обратным. Зелье же совпадения, наоборот, не меняет его вовсе.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -579,7 +600,7 @@
             "requirements": {
                 "potion.neutralize": 1,
             },
-            "startdescription": "Нейтрализация уменьшала эффекты до нуля, абсолют же, напротив, даст им бесконечную силу.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -594,7 +615,7 @@
             "requirements": {
                 "potion.absolute": 1,
             },
-            "startdescription": "Абсолют давал эффектам бесконечную силу, нейтрализация же, напротив, лишит их сил.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -609,7 +630,7 @@
             "requirements": {
                 "potion.identity": 1,
             },
-            "startdescription": "Совпадение оставляло вещи точно такими же, как раньше. Теперь же оно будет делать из них совершенно другие.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -624,7 +645,7 @@
             "requirements": {
                 "potion.similar": 1,
             },
-            "startdescription": "Предметы могут быть похожи. Или, наоборот, отличаться.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -639,7 +660,7 @@
             "requirements": {
                 "potion.difference": 1,
             },
-            "startdescription": "Предметы могут различаться. Или, наоборот, быть похожи.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -654,7 +675,7 @@
             "requirements": {
                 "potion.other": 1,
             },
-            "startdescription": "Зелье другого делало из предметов другие. А зелье совпадения – такие же.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -669,7 +690,7 @@
             "requirements": {
                 "potion.split": 1,
             },
-            "startdescription": "Что разбирало, теперь соберёт.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -684,7 +705,7 @@
             "requirements": {
                 "potion.merge": 1,
             },
-            "startdescription": "Что собирало, теперь разберёт.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -699,7 +720,7 @@
             "requirements": {
                 "potion.static": 1,
             },
-            "startdescription": "Статичность не даёт изменить предмет. Взрыв же не даст оставить его прежним.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -714,7 +735,7 @@
             "requirements": {
                 "potion.explosion": 1,
             },
-            "startdescription": "Взрыв изменял предмет необратимо. Статичность же не даст менять его вовсе.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -828,6 +849,9 @@
                     "id": "neutralize.modification",
                 },
                 {
+                    "id": "neutralize.seeker",
+                },
+                {
                     "id": "unmatch",
                 },
             ],
@@ -839,7 +863,7 @@
             "requirements": {
                 "potion.identity": 1,
             },
-            "startdescription": "Чтобы перестать оставлять вещи неизменными, нужно сделать их отличающимися от прежних.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -850,18 +874,35 @@
         }, 
         {
             "id": "neutralize.modification",
-            "label": "Нейтрализация любого изменения — совпадение",
+            "label": "Нейтрализация любой модификации — совпадение",
             "requirements": {
                 "modification": 2,
             },
-            "startdescription": "Есть только один способ перестать что-либо менять: не менять ничего.",
+            "startdescription": ".",
             "warmup": 60,
-            "description": "Мог ли я получить что-то, кроме этого?",
+            "description": ".",
             "effects": {
                 "modification": -2,
                 "potion.identity": 2,
             }
         }, 
+        {
+            "id": "neutralize.seeker",
+            "label": "Нейтрализовать Ищущего",
+            "requirements": {
+                "seeker": 1,
+                "impatience": 1,
+            },
+            "startdescription": "Его нетерпение исчезнет.",
+            "warmup": 60,
+            "description": ".",
+            "aspects": {
+                "neutralize.seeker": -1,
+            }
+            "effects": {
+                "potion.neutralize": -1,
+            }
+        },
             
         {
             "id": "_absolute",
@@ -875,7 +916,7 @@
             "requirements": {
                 "potion.weaken": 1,
             },
-            "startdescription": "Нельзя ослабить эффект слабее, чем достичь обратного эффекта.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -890,7 +931,7 @@
             "requirements": {
                 "potion.reverse": 1,
             },
-            "startdescription": "По мере роста силы зелье противоположности разрывается между двумя крайностями. При абсолютной силе оно будет порождать сразу обе из них. А может быть, найдёт ещё больше крайностей и породит их все.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -905,7 +946,7 @@
             "requirements": {
                 "potion.neutralize": 1,
             },
-            "startdescription": "Не просто лишить эффекта. Лишить самого существования.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -938,6 +979,21 @@
             "startdescription": "На то он и абсолют.",
             "effects": {
                 "potion.absolute": 2,
+            }
+        }, 
+        {
+            "id": "absolute.identity",
+            "label": "Абсолют совпадения — статичность",
+            "requirements": {
+                "potion.identity": 1,
+            },
+            "startdescription": "На то он и абсолют.",
+            "warmup": 60,
+            "description": ".",
+            "effects": {
+                "potion.absolute": -1,
+                "potion.identity": -1,
+                "potion.static": 2,
             }
         }, 
         {
@@ -1005,6 +1061,12 @@
             "linked": [
                 {
                     "id": "identity.any.step2",
+                },
+                {
+                    "id": "similar.explosion",
+                },
+                {
+                    "id": "similar.void",
                 },
                 {
                     "id": "unmatch",
@@ -1083,7 +1145,7 @@
             "requirements": {
                 "potion.strengthen": 1,
             },
-            "startdescription": "Часто вещи сильнее вместе, чем по отдельности.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1098,7 +1160,7 @@
             "requirements": {
                 "potion.merge": 1,
             },
-            "startdescription": "Часто вещи сильнее вместе, чем по отдельности.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1113,7 +1175,7 @@
             "requirements": {
                 "potion.weaken": 1,
             },
-            "startdescription": "Часто вещи слабее, когда отделены друг от друга.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1128,7 +1190,7 @@
             "requirements": {
                 "potion.split": 1,
             },
-            "startdescription": "Часто вещи слабее, когда отделены друг от друга.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1143,7 +1205,7 @@
             "requirements": {
                 "potion.absolute": 1,
             },
-            "startdescription": "Абсолют даёт вещам предельную силу. Статичность же – предельную долговечность.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1158,7 +1220,7 @@
             "requirements": {
                 "potion.static": 1,
             },
-            "startdescription": "Абсолют даёт вещам предельную силу. Статичность же – предельную долговечность.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1173,7 +1235,7 @@
             "requirements": {
                 "potion.explosion": 1,
             },
-            "startdescription": "И то, и другое приводит к одному: цель перестаёт существовать.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1188,7 +1250,7 @@
             "requirements": {
                 "potion.void": 1,
             },
-            "startdescription": "И то, и другое приводит к одному: цель перестаёт существовать.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1366,7 +1428,7 @@
             "requirements": {
                 "potion.strengthen": 1,
             },
-            "startdescription": "Абсолют увеличивает силу вещей, но сильнее. Ослабление меняет силу вещей, но в другую сторону. Соединение увеличивает силу вещей, но не напрямую, а за счёт того что они вместе.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1388,7 +1450,7 @@
             "requirements": {
                 "potion.weaken": 1,
             },
-            "startdescription": "Нейтрализация ослабляет вещи, но до нуля. Усиление меняет силу, но в другую сторону. Противоположность ослабляет вещи, но делает это абсурдно предельным образом. Разделение ослабляет, хотя и не напрямую.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1410,7 +1472,7 @@
             "requirements": {
                 "potion.reverse": 1,
             },
-            "startdescription": "Совпадение делает предмет противоположным противоположному себе. Нейтрализация делает предмет противоположным, но только наполовину. Разделение делает из предмета противоположность, но не одну – несколько, не ему – друг другу.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1432,7 +1494,7 @@
             "requirements": {
                 "potion.neutralize": 1,
             },
-            "startdescription": "Противоположность и ослабления тоже уменьшают эффекты, но сильнее или слабее, чем нейтрализация. Абсолют идёт в своём изменении до конца, хотя направление у него обратное. Пустота тоже приводит к тому, чтобы предмет не работал, хотя и иным образом.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -1454,7 +1516,7 @@
             "requirements": {
                 "potion.absolute": 1,
             },
-            "startdescription": "Усиление не так предельно, как абсолют. Нейтрализация предельна, но действует в другую сторону. Статичность предельна, но в плане длительности, а не силы.",
+            "startdescription": ".",
             "warmup": 60,
             "description": ".",
             "effects": {
@@ -2210,6 +2272,9 @@
                 {
                     "id": "explosion.any",
                 },
+                {
+                    "id": "explosion.interlocutor",
+                },
             ],
             "craftable": true,
         },
@@ -2223,6 +2288,20 @@
             "effects": {
                 "substance": -2,
                 "shivers": 13,
+            },
+        },
+        {
+            "id": "explosion.interlocutor",
+            "label": "Взорвать кого-то",
+            "description": "Одна нога здесь, другая там.",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "potion.explosion": 1,
+                "interlocutor": 1,
+            },
+            "effects": {
+                "potion.explosion": -1,
+                "interlocutor": -1,
             },
         },
         

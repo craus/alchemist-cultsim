@@ -33,11 +33,6 @@
             "isAspect": true,
         },
         {
-            "id": "potion.merge.inactive",
-            "label": "Неактивное зелье соединения",
-            "isAspect": true,
-        },
-        {
             "id": "merge.activate",
             "label": "Активация соединения",
             "isAspect": true,
@@ -45,6 +40,23 @@
         {
             "id": "merge.deactivate",
             "label": "Активация соединения",
+            "isAspect": true,
+        },
+        {
+            "id": "action.weaken",
+            "label": "Действие: ослабить",
+            "isAspect": true,
+        },
+        {
+            "id": "action.neutralize",
+            "label": "Действие: нейтрализовать",
+            "isAspect": true,
+        },
+        
+        
+        {
+            "id": "potion.merge.inactive",
+            "label": "Неактивное зелье соединения",
             "isAspect": true,
         },
         {
