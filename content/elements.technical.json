@@ -1,6 +1,5 @@
 {
     "elements": [
-
         {
             "id": "universal",
             "label": "Универсал",
@@ -18,6 +17,11 @@
             },
             "description": "Содержит всё, но по чуть-чуть.",
             "lifetime": 0,
+        },        
+        {
+            "id": "impossible",
+            "label": "Невозможная карта",
+            "description": "Её не должно существовать.",
         },
         {
             "id": "fictive.device",

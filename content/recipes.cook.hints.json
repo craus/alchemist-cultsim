@@ -1,0 +1,171 @@
+{
+    "recipes": [ 
+        {
+            "id": "potion.overdraft.base",
+            "requirements": {"device": 8,},
+            "actionid": "reaction",
+            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",   
+            "hintonly": true,
+        },   
+        {
+            "id": "strengthen.potion.overdraft",
+            "label": "Зелье усиления: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "forge": 1,
+                "heart": 1,
+                "edge": 1,
+            },
+        },    
+        {
+            "id": "weaken.potion.overdraft",
+            "label": "Зелье ослабления: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "winter": 1,
+                "knock": 1,
+                "moth": 1,
+            },
+        },   
+        {
+            "id": "reverse.potion.overdraft",
+            "label": "Зелье противоположности: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "moth": 1,
+                "grail": 1,
+                "edge": 1,
+            },
+        }, 
+        {
+            "id": "neutralize.potion.overdraft",
+            "label": "Зелье нейтрализации: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "winter": 1,
+                "heart": 1,
+                "edge": 1,
+            },
+        }, 
+        {
+            "id": "absolute.potion.overdraft",
+            "label": "Зелье абсолюта: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "forge": 1,
+                "lantern": 1,
+                "secrethistories": 1,
+            },
+        }, 
+        {
+            "id": "identity.potion.overdraft",
+            "label": "Зелье совпадения: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "heart": 1,
+                "grail": 1,
+                "winter": 1,
+            },
+        }, 
+        {
+            "id": "difference.potion.overdraft",
+            "label": "Зелье различия: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "moth": 1,
+                "edge": 1,
+                "knock": 1,
+            },
+        }, 
+        {
+            "id": "similar.potion.overdraft",
+            "label": "Зелье сходства: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "secrethistories": 2,
+                "heart": 1,
+            },
+        }, 
+        {
+            "id": "other.potion.overdraft",
+            "label": "Зелье другого: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "lantern": 1,
+                "secrethistories": 1,
+            },
+        }, 
+        {
+            "id": "split.potion.overdraft",
+            "label": "Зелье разделения: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "edge": 1,
+                "knock": 1,
+                "lantern": 1,
+            },
+        }, 
+        {
+            "id": "merge.potion.overdraft",
+            "label": "Зелье соединения: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "grail": 1,
+                "heart": 1,
+                "forge": 1,
+            }, 
+        }, 
+        {
+            "id": "static.potion.overdraft",
+            "label": "Зелье статичности: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "winter": 3,
+            },
+        }, 
+        {
+            "id": "explosion.potion.overdraft",
+            "label": "Зелье взрыва: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "forge": 2,
+                "edge": 1,
+            },
+        }, 
+        {
+            "id": "void.potion.overdraft",
+            "label": "Зелье пустоты: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "winter": 1,
+                "edge": 1,
+                "knock": 1,
+            },
+        }, 
+        
+               
+        {
+            "id": "reaction",
+            "label": "Алхимическое преобразование",
+            "actionid": "reaction",
+            "requirements": {"device": 1},
+            "hintonly": true,
+            "startdescription": "Нужно добавить какие-нибудь ещё ингредиенты, иначе ничего не получится.",
+            "description": "Нет, так я ничего не сварю.",
+        },   
+    ]
+}

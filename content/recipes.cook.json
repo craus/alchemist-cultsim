@@ -15,211 +15,23 @@
             },
             "linked": [{"id": "merge.final"}],
         }, 
-    
+
+        
+        
         {
-            "id": "strengthen.potion.overdraft",
-            "label": "Зелье усиления: лишние компоненты!",
+            "id": "cook.potion.base",
             "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "forge": 1,
-                "heart": 1,
-                "edge": 1,
-            },
-            "hintonly": true,
-        },    
-        {
-            "id": "weaken.potion.overdraft",
-            "label": "Зелье ослабления: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "winter": 1,
-                "knock": 1,
-                "moth": 1,
-            },
-            "hintonly": true,
+            "requirements": {"impossible": 1},
+            "startdescription": "Этих ингредиентов должно хватить.",
+            "craftable": true,
+            "warmup": 60,
+            "linked": [{"id": "cook.end",},],
         },   
-        {
-            "id": "reverse.potion.overdraft",
-            "label": "Зелье противоположности: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "moth": 1,
-                "grail": 1,
-                "edge": 1,
-            },
-            "hintonly": true,
-        }, 
-        {
-            "id": "neutralize.potion.overdraft",
-            "label": "Зелье нейтрализации: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "winter": 1,
-                "heart": 1,
-                "edge": 1,
-            },
-            "hintonly": true,
-        }, 
-        {
-            "id": "absolute.potion.overdraft",
-            "label": "Зелье абсолюта: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "forge": 1,
-                "lantern": 1,
-                "secrethistories": 1,
-            },
-            "hintonly": true,
-        }, 
-        {
-            "id": "identity.potion.overdraft",
-            "label": "Зелье совпадения: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "heart": 1,
-                "grail": 1,
-                "winter": 1,
-            },
-            "hintonly": true,
-        }, 
-        {
-            "id": "difference.potion.overdraft",
-            "label": "Зелье различия: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "moth": 1,
-                "edge": 1,
-                "knock": 1,
-            },
-            "hintonly": true,
-        }, 
-        {
-            "id": "similar.potion.overdraft",
-            "label": "Зелье сходства: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "secrethistories": 2,
-                "heart": 1,
-            },
-            "hintonly": true,
-        }, 
-        {
-            "id": "other.potion.overdraft",
-            "label": "Зелье другого: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "lantern": 1,
-                "secrethistories": 1,
-            },
-            "hintonly": true,
-        }, 
-        {
-            "id": "split.potion.overdraft",
-            "label": "Зелье разделения: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "edge": 1,
-                "knock": 1,
-                "lantern": 1,
-            },
-            "hintonly": true,
-        }, 
-        {
-            "id": "merge.potion.overdraft",
-            "label": "Зелье соединения: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "grail": 1,
-                "heart": 1,
-                "forge": 1,
-            },
-            "hintonly": true,
-        }, 
-        {
-            "id": "static.potion.overdraft",
-            "label": "Зелье статичности: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "winter": 3,
-            },
-            "hintonly": true,
-        }, 
-        {
-            "id": "explosion.potion.overdraft",
-            "label": "Зелье взрыва: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "forge": 2,
-                "edge": 1,
-            },
-            "hintonly": true,
-        }, 
-        {
-            "id": "void.potion.overdraft",
-            "label": "Зелье пустоты: лишние компоненты!",
-            "actionid": "reaction",
-            "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",
-            "requirements": {
-                "device": 1,
-                "winter": 1,
-                "edge": 1,
-                "knock": 1,
-            },
-            "hintonly": true,
-        }, 
-        
-        
-        
-        {
-            "id": "comment.split.hints.and.cauldron.recipes",
-            "comment": "ВЫШЕ: ПОДСКАЗКИ ПРО ЛИШНИЕ ИНГРЕДИЕНТЫ. НИЖЕ: РЕЦЕПТЫ ВАРКИ ЗЕЛИЙ КОТЛОМ",
-        },           
-        {
-            "id": "reaction",
-            "label": "Алхимическое преобразование",
-            "actionid": "reaction",
-            "requirements": {
-                "device": 1,
-            },
-            "hintonly": true,
-            "startdescription": "Нужно добавить какие-нибудь ещё ингредиенты, иначе ничего не получится.",
-            "description": "Нет, так я ничего не сварю.",
-        },   
-        
-        
-        
         {
             "id": "strengthen.potion",
             "label": "Зелье усиления",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "forge": 1,
@@ -228,13 +40,6 @@
                 "moth": -1,
                 "potion.strengthen": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.strengthen": 2,
@@ -243,9 +48,8 @@
         {
             "id": "weaken.potion",
             "label": "Зелье ослабления",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "winter": 1,
@@ -254,13 +58,6 @@
                 "forge": -1,
                 "potion.weaken": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.weaken": 2,
@@ -269,9 +66,8 @@
         {
             "id": "reverse.potion",
             "label": "Зелье противоположности",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "moth": 1,
@@ -280,13 +76,6 @@
                 "lantern": -1,
                 "potion.reverse": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.reverse": 2,
@@ -295,9 +84,8 @@
         {
             "id": "neutralize.potion",
             "label": "Зелье нейтрализации",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "winter": 1,
@@ -306,13 +94,6 @@
                 "secrethistories": -1,
                 "potion.neutralize": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.neutralize": 2,
@@ -321,9 +102,8 @@
         {
             "id": "absolute.potion",
             "label": "Зелье абсолюта",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "forge": 1,
@@ -332,13 +112,6 @@
                 "knock": -1,
                 "potion.absolute": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.absolute": 2,
@@ -347,9 +120,8 @@
         {
             "id": "identity.potion",
             "label": "Зелье совпадения",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "heart": 1,
@@ -358,13 +130,6 @@
                 "lantern": -1,
                 "potion.identity": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.identity": 2,
@@ -373,9 +138,8 @@
         {
             "id": "difference.potion",
             "label": "Зелье различия",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "moth": 1,
@@ -384,13 +148,6 @@
                 "grail": -1,
                 "potion.difference": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.difference": 2,
@@ -399,9 +156,8 @@
         {
             "id": "similar.potion",
             "label": "Зелье сходства",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "secrethistories": 2,
@@ -409,13 +165,6 @@
                 "edge": -1,
                 "potion.similar": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.similar": 2,
@@ -424,9 +173,8 @@
         {
             "id": "other.potion",
             "label": "Зелье другого",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "lantern": 1,
@@ -434,13 +182,6 @@
                 "grail": -1,
                 "potion.other": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.other": 2,
@@ -449,9 +190,8 @@
         {
             "id": "split.potion",
             "label": "Зелье разделения",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "edge": 1,
@@ -460,13 +200,6 @@
                 "heart": -1,
                 "potion.split": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.split": 2,
@@ -475,24 +208,16 @@
         {
             "id": "merge.potion",
             "label": "Зелье соединения",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
-                "device": 1,
                 "grail": 1,
                 "heart": 1,
                 "forge": 1,
+                "device": 1,
                 "edge": -1,
                 "potion.merge.inactive": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.merge": 2,
@@ -501,22 +226,14 @@
         {
             "id": "static.potion",
             "label": "Зелье статичности",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "winter": 3,
                 "moth": -1,
                 "potion.static": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.static": 2,
@@ -525,9 +242,8 @@
         {
             "id": "explosion.potion",
             "label": "Зелье взрыва",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "forge": 2,
@@ -535,13 +251,6 @@
                 "winter": -1,
                 "potion.explosion": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.explosion": 2,
@@ -550,9 +259,8 @@
         {
             "id": "void.potion",
             "label": "Зелье пустоты",
-            "actionid": "reaction",
-            "startdescription": "Этих ингредиентов должно хватить.",
-            "description": "Готово!",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
                 "winter": 1,
@@ -561,13 +269,6 @@
                 "grail": -1,
                 "potion.void": -1,
             },
-            "warmup": 60,
-            "craftable": true,
-            "linked": [
-                {
-                    "id": "cook.end",
-                },
-            ],
             "effects": {
                 "substance": -999,
                 "potion.void": 2,
