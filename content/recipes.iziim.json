@@ -1,0 +1,244 @@
+{
+    "recipes": [
+        {
+            "id": "iziim.intro", 
+            "label": "Ищущий",          
+            "extantreqs": {
+                "soul": 3,
+                "seeker": -1,
+            },
+            "actionid": "summon",
+            "startdescription": "Меня посетил Ищущий. Он жаждет душ смертных.",
+            "warmup": 30,   
+            "effects": {
+                "iziim": 1,
+            },
+        },   
+        {
+            "id": "soulreturn.intro", 
+            "label": "Возвращение душ",          
+            "tablereqs": {
+                "soul": 1,
+            },
+            "actionid": "soulreturn",
+            "startdescription": "Капли душ понемногу воссоединяются со своими душами.",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Возврат",
+                    "description": "Всё возвращается на круги своя.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "greedy": true,
+                },         
+            ],   
+            "warmup": 120,   
+            "effects": {
+                "soul": -1,
+            },     
+            "linked": [
+                {
+                    "id": "soulreturn.intro",
+                },
+            ],     
+        },  
+        {
+            "id": "talk.iziim.nosoul",
+            "label": "Сделка с Ищущим",            
+            "requirements": {
+                "seeker": 1,
+            },
+            "actionid": "alchemist.talk",
+            "startdescription": "Чтобы Ищущий захотел иметь со мной дело, я должен отдать ему душу.",
+            "hintonly": true,
+        }, 
+        {
+            "id": "talk.iziim",
+            "label": "Сделка с Ищущим",            
+            "requirements": {
+                "seeker": 1,
+                "soul": 1,
+            },
+            "actionid": "alchemist.talk",
+            "startdescription": "Ищущий заберёт все имеющиеся у меня души до последней капли. И выдаст мне вознаграждение за каждую, кроме первой, которую придётся отдать просто так.",
+            "warmup": 30,   
+            "craftable": true, 
+            "effects": {
+                "soul": -1,
+            },
+            "linked": [
+                {
+                    "id": "talk.iziim.active",
+                },
+            ],
+        }, 
+        {
+            "id": "talk.iziim.active",
+            "label": "Ищущий собирает души",
+            "startdescription": "Ищущий заберёт все имеющиеся у меня души до последней капли. И выдаст мне вознаграждение за каждую, кроме первой, которую придётся отдать просто так.",     
+            "warmup": 5,   
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "greedy": true,
+                },         
+            ],     
+            "effects": {
+                "money": "soul",
+            },
+            "linked": [
+                {
+                    "id": "talk.iziim.active2",
+                },
+            ],
+            "alt": [
+                {
+                    "id": "talk.iziim.final",
+                }
+            ],  
+        }, 
+        {
+            "id": "talk.iziim.active2",
+            "effects": {
+                "soul": -999,
+            },  
+            "linked": [
+                {
+                    "id": "talk.iziim.active",
+                },
+            ],
+        }, 
+        {
+            "id": "talk.iziim.final",
+            "label": "Все души собраны?",
+            "startdescription": "Ищущий не нашёл больше душ. Он уходит.",
+            "warmup": 5,          
+            "requirements": {
+                "soul": -1,
+            },   
+            "effects": {
+                "seeker": -1,
+            },  
+            "alt": [
+                {
+                    "id": "soultrader.intro",
+                    "additional": true,
+                }
+            ],    
+        }, 
+        {
+            "id": "soultrader.intro",
+            "label": "Торговец душами",     
+            "actionid": "soultrader",
+            "startdescription": "Некоторые решения изменяют нас навсегда.",
+            "description": "Пути назад нет.",
+            "warmup": 120,  
+            "extantreqs": {
+                "soultrader": -1,
+            },
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Действующее лицо",
+                    "description": "Кто-то сделал выбор и встретит его последствия.",
+                    "required": {
+                        "i": 1,
+                    },
+                    "greedy": true,
+                },         
+            ],            
+            "mutations": [
+                {
+                    "filter": "i",
+                    "mutate": "soultrader",
+                    "level": 1,
+                },
+            ],       
+        }, 
+        {
+            "id": "iziim.enrage.intro",
+            "label": "Ищущий идёт за мной",
+            "startdescription": "Ищущему надоело ждать, пока я отдам ему души, и он решил действовать.",
+            "warmup": 60,          
+            "actionid": "souleating",          
+            "extantreqs": {
+                "seeker": 1,
+                "impatience": 4,
+            },      
+            "requirements": {
+                "seeker": -1,
+            },  
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Ищущий",
+                    "description": "Это работа для него.",
+                    "required": {
+                        "seeker": 1,
+                    },
+                    "greedy": true,
+                },         
+            ],  
+            "linked": [
+                {
+                    "id": "iziim.enrage.intro",
+                },
+                {
+                    "id": "iziim.enrage",
+                },
+            ],   
+        }, 
+        {
+            "id": "iziim.enrage",
+            "label": "Ищущий забирает мою душу!",
+            "startdescription": "Если я не остановлю его — это конец.",
+            "warmup": 60,                  
+            "requirements": {
+                "seeker": 1,
+            },   
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Аргумент",
+                    "description": "Мне нужно что-то убедительное.",
+                    "required": {
+                        "soul": 1,
+                    },
+                },         
+            ],  
+            "alt": [
+                {
+                    "id": "iziim.enrage.calm",
+                }
+            ],  
+            "signalEndingFlavour": "Melancholy",
+            "signalimportantloop": true,
+            "ending": "ending.iziim",  
+        }, 
+        {
+            "id": "iziim.enrage.calm",
+            "label": "Откуп",
+            "startdescription": "Я могу подарить Ищущему каплю души, чтобы сдержать его гнев.",     
+            "requirements": {
+                "soul": 1,
+            },  
+            "effects": {
+                "seeker": -1,
+                "soul": -1,
+                "iziim4": 1,
+            }, 
+            "alt": [
+                {
+                    "id": "soultrader.intro",
+                    "additional": true,
+                }
+            ],   
+        }, 
+    ]
+}

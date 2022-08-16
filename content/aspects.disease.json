@@ -1,0 +1,106 @@
+{
+    "elements": [
+        {
+            "id": "recipe",
+            "label": "Рецепт",
+            "description": "Стадия заболевания. Более поздние стадии опаснее.\n<i>Если это число достигнет семи, вы проиграли.</i>",
+            "isAspect": true,
+        },
+        {
+            "id": "alchemist.disease.level",
+            "label": "Прогресс болезни Алхимика",
+            "description": "Стадия заболевания. Более поздние стадии опаснее.\n<i>Если это число достигнет семи, вы проиграли.</i>",
+            "isAspect": true,
+        },
+        {
+            "id": "time.disease",
+            "label": "Время болезни",
+            "description": "Как давно я болен?",
+            "isAspect": true,
+        },
+        {
+            "id": "required.strengthen.potion",
+            "label": "Требование: зелье усиления",
+            "description": "Мне понадобится зелье усиления для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.weaken.potion",
+            "label": "Требование: зелье ослабления",
+            "description": "Мне понадобится зелье ослабления для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.reverse.potion",
+            "label": "Требование: зелье противоположности",
+            "description": "Мне понадобится зелье противоположности для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.neutralize.potion",
+            "label": "Требование: зелье нейтрализации",
+            "description": "Мне понадобится зелье нейтрализации для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.absolute.potion",
+            "label": "Требование: зелье абсолюта",
+            "description": "Мне понадобится зелье абсолюта для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.identity.potion",
+            "label": "Требование: зелье совпадения",
+            "description": "Мне понадобится зелье совпадения для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.similar.potion",
+            "label": "Требование: зелье сходства",
+            "description": "Мне понадобится зелье сходства для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.difference.potion",
+            "label": "Требование: зелье различия",
+            "description": "Мне понадобится зелье различия для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.other.potion",
+            "label": "Требование: зелье другого",
+            "description": "Мне понадобится зелье другого для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.split.potion",
+            "label": "Требование: зелье разделения",
+            "description": "Мне понадобится зелье разделения для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.merge.potion",
+            "label": "Требование: зелье соединения",
+            "description": "Мне понадобится зелье соединения для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.static.potion",
+            "label": "Требование: зелье статичности",
+            "description": "Мне понадобится зелье статичности для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.explosion.potion",
+            "label": "Требование: зелье взрыва",
+            "description": "Мне понадобится зелье взрыва для исполнения этого рецепта.",
+            "isAspect": true,
+        },
+        {
+            "id": "required.void.potion",
+            "label": "Требование: зелье пустоты",
+            "description": "Мне понадобится зелье пустоты для исполнения этого рецепта.",
+            "isAspect": true,
+        }, 
+    ]
+}

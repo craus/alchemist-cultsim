@@ -1,0 +1,75 @@
+{
+    "recipes": [
+        {
+            "id": "time",
+            "label": "Время идёт",
+            "actionid": "alchemist.time",
+            "slots": [{
+                "id": "target",
+                "label": "Деньги",
+                "description": "Цена моей жизни.",
+                "greedy": true,
+                "required": {"money": 1},
+            }],
+            "startdescription": "Мне нужно расходовать деньги, чтобы обеспечивать себя.",
+            "warmup": 60,
+            "linked": [{"id": "time.next"}],
+            "alt": [
+                {"id": "time.nomoney"},
+                {"id": "iziim.enrage.intro", "additional": true},
+                {"id": "iziim.intro", "additional": true},
+            ],  
+            "effects": {"money": -1},
+        }, 
+        {
+            "id": "time.next",
+            "linked": [{"id": "time"}],
+            "mutations": [{
+                "filter": "time.spent",
+                "mutate": "time",
+                "level": 1,
+                "additive": true,
+            }],
+            "alt": [{"id": "time.next.empty"}],
+        }, 
+        {
+            "id": "time.next.empty",
+            "requirements": {"time.spent": -1},
+            "effects": {"time.spent": 1},
+            "linked": [{"id": "time"}],
+        }, 
+        {
+            "id": "time.nomoney",
+            "label": "Время идёт",
+            "requirements": {"money": -1},
+            "startdescription": "Если я не найду средств к существованию, я могу умереть от голода!",
+            "linked": [{"id": "time"}],
+            "alt": [{"id": "hunger", "additional": true}],            
+        },   
+        {
+            "id": "hunger",
+            "label": "Голод",
+            "actionid": "hunger",
+            "slots": [{
+                "id": "target",
+                "label": "Деньги",
+                "description": "Цена моей жизни.",
+                "greedy": true,
+                "required": {"money": 1},
+            }],
+            "alt": [{"id": "hunger.money"}],  
+            "startdescription": "Мне нужно купить еды, или я умру!",
+            "warmup": 30,
+            "signalEndingFlavour": "Melancholy",
+            "signalimportantloop": true,
+            "ending": "ending.hunger",
+        },  
+        {
+            "id": "hunger.money",
+            "label": "Голод утолён",
+            "requirements": {"money": 1},
+            "startdescription": "На этот раз мне удалось найти возможность купить еды.",
+            "effects": {"money": -1},
+        },   
+    ]
+}

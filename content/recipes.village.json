@@ -1,0 +1,177 @@
+{
+    "recipes": [
+        {
+            "id": "money.for.trade",
+            "warmup": 30,
+            "description": "Я решил воздержаться от покупки.",
+        },
+        
+        {
+            "id": "talk.cartographer",
+            "label": "Посетить картографа",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "contact.cartographer": 1,
+            },
+            "warmup": 5,
+            "startdescription": "Если кто-то и может мне помочь узнать больше о новых местах — то это и есть тот человек.",
+            "craftable": true,
+            "linked": [{"id": "talk.cartographer.step2"}],
+            "deckeffects": {"deck.cartographer": 10},
+            "effects": {"location": -9},
+        },  
+        {
+            "id": "talk.cartographer.step2",
+            "extends": ["money.for.trade"],
+            "label": "Купить карту?",
+            "startdescription": "Меня заинтересовала одна из предлагаемых карт.",
+            "slots": [              
+                {
+                    "id": "money",
+                    "label": "Плата",
+                    "description": "Товар должен быть оплачен.",
+                    "required": {
+                        "money": 1,
+                    },
+                },  
+            ],
+            "effects": {"location": -1},
+            "alt":[{"id":"talk.cartographer.step2.money"}],
+        },  
+        {
+            "id": "talk.cartographer.step2.money",
+            "requirements": {"money": 1},
+            "label": "Купить",
+            "warmup": 30,
+            "startdescription": "Я бы хотел подробнее изучить это место.",
+            "effects": {"money": -1},
+        },  
+        
+        
+        {
+            "id": "talk.flowermaker",
+            "label": "Наведаться к цветочнику",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "contact.flowermaker": 1,
+            },
+            "warmup": 5,
+            "startdescription": "В лавке цветочника растения повсюду — столы, полки... Несколько даже подвешены к потолку. Может, что-то из этого годится для моего дела?",
+            "craftable": true,
+            "linked": [{"id": "talk.flowermaker.step2"}],
+            "deckeffects": {"deck.flowermaker": 10},
+            "effects": {"substance": -9},
+        },  
+        {
+            "id": "talk.flowermaker.step2",
+            "extends": ["money.for.trade"],
+            "label": "Подходящий цветок",
+            "startdescription": "Одно из растений имеет отношение к алхимии.",
+            "slots": [              
+                {
+                    "id": "money",
+                    "label": "Плата",
+                    "description": "Товар должен быть оплачен.",
+                    "required": {
+                        "money": 1,
+                    },
+                },  
+            ],
+            "effects": {"substance": -1},
+            "alt":[{"id":"talk.flowermaker.step2.money"}],
+        },  
+        {
+            "id": "talk.flowermaker.step2.money",
+            "requirements": {"money": 1},
+            "label": "Купить",
+            "warmup": 30,
+            "startdescription": "Я мог бы найти этому цветку применение в своих алхимических рецептах.",
+            "effects": {"money": -1},
+        },  
+        
+        
+        {
+            "id": "talk.village.hint",
+            "label": "Искать клиентов",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "village": 1,
+            },
+            "startdescription": "У меня и так сейчас много заказов. Вряд ли я смогу найти кого-то ещё.",
+            "hintonly": true,
+        },    
+        {
+            "id": "talk.village",
+            "label": "Искать клиентов",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "village": 1,
+            },
+            "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня.",
+            "description": "Мне не удалось найти никого, кто заинтересовался бы моими товарами. Может, в другой раз повезёт.",
+            "warmup": 30,
+            "craftable": true,
+            "alt": [
+                {
+                    "id": "talk.village.success",
+                    "chance": 60,
+                }
+            ],         
+        },   
+        {
+            "id": "talk.village.success",
+            "label": "Искать клиентов",
+            "actionid": "alchemist.talk",
+            "requirements": {
+                "village": 1,
+            },
+            "startdescription": "В деревне проживает много людей. Может быть, кто-то захочет купить что-нибудь у меня. Я верю в успех!",
+            "description": ".",
+            "warmup": 30,
+            "linked": [
+                {
+                    "id": "talk.village.interest",
+                },
+            ]
+        },  
+        {
+            "id": "talk.village.interest",
+            "label": "Интерес",
+            "actionid": "alchemist.talk",
+            "slots": [              
+                {
+                    "id": "target",
+                    "label": "Репутация",
+                    "description": "Что люди знают обо мне?",
+                    "greedy": true,
+                    "required": {
+                        "reputation": 1,
+                    },
+                },  
+            ],
+            "startdescription": "Кто-то заинтересовался моими изделиями!",
+            "description": "Я получил заказ!",
+            "warmup": 30,
+            "deckeffects": {
+                "customers": 1,
+            },  
+            "alt": [
+                {
+                    "id": "talk.village.failedorder",
+                }
+            ],         
+        },   
+        {
+            "id": "talk.village.failedorder",
+            "label": "Осложнения",
+            "requirements": {
+                "failedorder": 1,
+            },
+            "startdescription": "Моя репутация подводит меня.",
+            "description": "Из-за проваленного заказа мне не удаётся получить доверие покупателя. Сделка сорвалась.",
+            "effects": {
+                "failedorder": -1,
+            },
+        },  
+    ]
+}

@@ -17,7 +17,13 @@
             },
             "description": "Содержит всё, но по чуть-чуть.",
             "lifetime": 0,
-        },        
+        },  
+        {
+            "id": "stasis.verb",
+            "label": "Стазис",
+            "description": "Стазис включён.",
+            "isHidden": true,
+        },      
         {
             "id": "impossible",
             "label": "Невозможная карта",

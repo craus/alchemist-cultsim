@@ -9,6 +9,27 @@
             ],
             "resetonexhaustion": true,
         },
+        {
+            "id": "alchemist.disease.deck",
+            "label": "Части рецепта для лечения болезни Алхимика",
+            "spec": [
+                "potion.strengthen",
+                "potion.weaken",
+                "potion.reverse",
+                "potion.neutralize",
+                "potion.absolute",
+                "potion.identity",
+                "potion.similar",
+                "potion.difference",
+                "potion.other",
+                "potion.split",
+                "potion.merge",
+                "potion.static",
+                "potion.explosion",
+                "potion.void",
+            ],
+            "resetonexhaustion": true,
+        },
     
         {
             "id": "deck.forest",

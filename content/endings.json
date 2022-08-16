@@ -17,6 +17,14 @@
             "anim": "DramaticLightEvil",
         },   
         {
+            "id": "ending.disease",
+            "label": "Гибель тела",
+            "description": "Я скончался от болезни Алхимика.",
+            "image": "ending.disease",
+            "flavour": "Melancholy",
+            "anim": "DramaticLightEvil",
+        },   
+        {
             "id": "ending.philosopherstone",
             "label": "Философский Камень",
             "description": "Я получил Философский Камень! Путь Алхимика пройден мной до конца.",

@@ -1,0 +1,103 @@
+{
+    "recipes": [
+        {
+            "id": "sphere.fire",
+            "label": "Сфера Огня",
+            "actionid": "reaction",
+            "startdescription": "Я собрал все необходимые составляющие для получения Сферы Огня.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "potion.strengthen": 1,
+                "potion.split": 1,
+                "potion.explosion": 1,
+                "potion.void": 1,
+            },
+            "warmup": 120,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "sphere.fire": 1,
+            }
+        },            
+        {
+            "id": "sphere.air",
+            "label": "Сфера Воздуха",
+            "actionid": "reaction",
+            "startdescription": "Я собрал все необходимые составляющие для получения Сферы Воздуха.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "potion.weaken": 1,
+                "potion.neutralize": 1,
+                "potion.other": 1,
+                "potion.void": 1,
+            },
+            "warmup": 120,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "sphere.air": 1,
+            }
+        },         
+        {
+            "id": "sphere.water",
+            "label": "Сфера Воды",
+            "actionid": "reaction",
+            "startdescription": "Я собрал все необходимые составляющие для получения Сферы Воды.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "potion.weaken": 1,
+                "potion.reverse": 1,
+                "potion.similar": 1,
+                "potion.difference": 1,
+            },
+            "warmup": 120,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "sphere.water": 1,
+            }
+        },         
+        {
+            "id": "sphere.earth",
+            "label": "Сфера Земли",
+            "actionid": "reaction",
+            "startdescription": "Я собрал все необходимые составляющие для получения Сферы Земли.",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "potion.absolute": 1,
+                "potion.identity": 1,
+                "potion.merge": 1,
+                "potion.static": 1,
+            },
+            "warmup": 120,
+            "craftable": true,
+            "effects": {
+                "substance": -999,
+                "sphere.earth": 1,
+            }
+        },         
+        {
+            "id": "philosopherstone",
+            "label": "Философский Камень",
+            "actionid": "reaction",
+            "startdescription": "Из четырёх Сфер я могу получить Философский Камень и исполнить свою мечту!",
+            "description": "Готово!",
+            "requirements": {
+                "device": 1,
+                "sphere.fire": 1,
+                "sphere.air": 1,
+                "sphere.water": 1,
+                "sphere.earth": 1,
+            },
+            "warmup": 60,
+            "craftable": true,
+            "signalEndingFlavour": "Grand",
+            "signalimportantloop": true,
+            "ending": "ending.philosopherstone",
+        },  
+    ]
+}

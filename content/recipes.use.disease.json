@@ -1,0 +1,49 @@
+{
+    "recipes": [ 
+        {
+            "id": "use.disease.recipe.lack.ingredients",
+            "label": "Воспользоваться рецептом?",
+            "actionid": "alchemist.use",
+            "requirements": {"recipe": 1},
+            "startdescription": "Чтобы изготовить лекарство, мне необходимо собрать все зелья, указанные в рецепте.",
+            "hintonly": true,
+        },
+        {
+            "id": "use.disease.recipe",
+            "label": "Воспользоваться рецептом",
+            "actionid": "alchemist.use",
+            "requirements": {
+                "recipe": 1,
+                "alchemist.disease.level": -1,
+                "potion.strengthen": "required.strengthen.potion",
+                "potion.weaken": "required.weaken.potion",
+                "potion.reverse": "required.reverse.potion",
+                "potion.neutralize": "required.neutralize.potion",
+                "potion.absolute": "required.absolute.potion",
+                "potion.identity": "required.identity.potion",
+                "potion.similar": "required.similar.potion",
+                "potion.difference": "required.difference.potion",
+                "potion.other": "required.other.potion",
+                "potion.split": "required.split.potion",
+                "potion.merge": "required.merge.potion",
+                "potion.static": "required.static.potion",
+                "potion.explosion": "required.explosion.potion",
+                "potion.void": "required.void.potion",
+            },
+            "slots": [                
+                {
+                    "id": "disease",
+                    "label": "Болезнь",
+                    "description": "Заболевание, подлежащее лечению.",
+                    "required": {"alchemist.disease.level": 1},
+                    "greedy": true,
+                },   
+            ],
+            "startdescription": "Это поможет мне облегчить мою болезнь.",
+            "warmup": 5,
+            "craftable": true,
+            "aspects": {"action.disease.heal": 1},
+            "linked": [{"id": "use.disease.recipe"}],
+        },
+    ]
+}

@@ -67,6 +67,20 @@
         
         
         {
+            "id": "stasis.extend",
+            "label": "Расширение стазиса",
+            "isAspect": true,
+            "isHidden": true,
+        },
+        {
+            "id": "stasis.interrupt",
+            "label": "Прерывание стазиса",
+            "isAspect": true,
+            "isHidden": true,
+        },
+        
+        
+        {
             "id": "modifiable",
             "label": "Модифицируемое",
             "isAspect": true,

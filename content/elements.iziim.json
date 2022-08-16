@@ -1,0 +1,134 @@
+{
+    "elements": [
+        {
+            "id": "souldrop",
+            "label": "Капля души",
+            "aspects": {
+                "soul": 1,
+            },
+            "description": "Капля человеческой души. Такие отделяются от неё, когда человек имеет дело с Алхимией.",
+        },
+        {
+            "id": "mysouldrop",
+            "label": "Капля моей души",
+            "aspects": {
+                "soul": 1,
+                "i": 1,
+            },
+            "description": "Капля человеческой души. Такие отделяются от неё, когда человек имеет дело с Алхимией.",
+        },
+        {
+            "id": "iziim",
+            "label": "Ищущий",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "modifiable": 1,
+            },
+            "description": "«‎Есть души смертных? Я за них хорошо плачу!»",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
+            "lifetime": 60,
+            "decayTo": "iziim2",
+        },
+        {
+            "id": "iziim2",
+            "extends": ["iziim"],
+            "label": "Ищущий (в нетерпении)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 1,
+                "modifiable": 1,
+            },
+            "xtriggers": {
+                "action.weaken": "iziim",
+                "action.neutralize": "iziim",
+            },
+            "description": "«‎Давай же заключим сделку! Чего ты ждёшь?»",
+            "lifetime": 60,
+            "decayTo": "iziim3",
+        },
+        {
+            "id": "iziim3",
+            "extends": ["iziim"],
+            "label": "Ищущий (раздражён)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 2,
+                "modifiable": 1,
+            },
+            "xtriggers": {
+                "action.weaken": "iziim2",
+                "action.neutralize": "iziim",
+            },
+            "description": "«Не трать моё время зря, смертный! Не то я могу забрать и <i>твою</i> душу!»",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
+            "lifetime": 60,
+            "decayTo": "iziim4",
+        },
+        {
+            "id": "iziim4",
+            "label": "Ищущий (злится)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 3,
+                "modifiable": 1,
+            },
+            "xtriggers": {
+                "action.weaken": "iziim3",
+                "action.neutralize": "iziim",
+            },
+            "description": "«Выкладывай души, что держишь у себя. Это моё последнее предупреждение!»",
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
+            "lifetime": 60,
+            "decayTo": "iziim5",
+        },
+        {
+            "id": "iziim5",
+            "label": "Ищущий (в ярости)",
+            "aspects": {
+                "interlocutor": 1,
+                "seeker": 1,
+                "impatience": 4,
+                "modifiable": 1,
+            },
+            "xtriggers": {
+                "action.weaken": "iziim4",
+                "action.neutralize": "iziim",
+            },
+            "description": "«Моё терпение иссякло. Я заберу сам твою душу и те, что тебе удалось собрать!»",
+        },
+    ]
+}
