@@ -2,11 +2,186 @@
     "recipes": [ 
         {
             "id": "potion.overdraft.base",
-            "requirements": {"device": 8,},
+            "requirements": {"impossible": 1},
             "actionid": "reaction",
             "startdescription": "Я набрал необходимый состав, но нужно устранить лишние примеси. Без этого результата не будет.",   
             "hintonly": true,
+        }, 
+        {
+            "id": "potion.self.base",
+            "requirements": {"impossible": 1},
+            "actionid": "reaction",
+            "startdescription": "Я не могу сварить зелье из него самого!",   
+            "hintonly": true,
         },   
+
+
+
+        {
+            "id": "strengthen.potion.self",
+            "label": "Зелье усиления: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "forge": 1,
+                "heart": 1,
+                "edge": 1,
+                "potion.strengthen": 1,
+            },
+        },    
+        {
+            "id": "weaken.potion.self",
+            "label": "Зелье ослабления: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "winter": 1,
+                "knock": 1,
+                "moth": 1,
+                "potion.weaken": 1,
+            },
+        },   
+        {
+            "id": "reverse.potion.self",
+            "label": "Зелье противоположности: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "moth": 1,
+                "grail": 1,
+                "edge": 1,
+                "potion.reverse": 1,
+            },
+        }, 
+        {
+            "id": "neutralize.potion.self",
+            "label": "Зелье нейтрализации: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "winter": 1,
+                "heart": 1,
+                "edge": 1,
+                "potion.neutralize": 1,
+            },
+        }, 
+        {
+            "id": "absolute.potion.self",
+            "label": "Зелье абсолюта: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "forge": 1,
+                "lantern": 1,
+                "secrethistories": 1,
+                "potion.absolute": 1,
+            },
+        }, 
+        {
+            "id": "identity.potion.self",
+            "label": "Зелье совпадения: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "heart": 1,
+                "grail": 1,
+                "winter": 1,
+                "potion.identity": 1,
+            },
+        }, 
+        {
+            "id": "difference.potion.self",
+            "label": "Зелье различия: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "moth": 1,
+                "edge": 1,
+                "knock": 1,
+                "potion.difference": 1,
+            },
+        }, 
+        {
+            "id": "similar.potion.self",
+            "label": "Зелье сходства: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "secrethistories": 2,
+                "heart": 1,
+                "potion.similar": 1,
+            },
+        }, 
+        {
+            "id": "other.potion.self",
+            "label": "Зелье другого: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "lantern": 1,
+                "secrethistories": 1,
+                "potion.other": 1,
+            },
+        }, 
+        {
+            "id": "split.potion.self",
+            "label": "Зелье разделения: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "edge": 1,
+                "knock": 1,
+                "lantern": 1,
+                "potion.split": 1,
+            },
+        }, 
+        {
+            "id": "merge.potion.self",
+            "label": "Зелье соединения: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "grail": 1,
+                "heart": 1,
+                "forge": 1,
+                "potion.merge": 1,
+            }, 
+        }, 
+        {
+            "id": "static.potion.self",
+            "label": "Зелье статичности: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "winter": 3,
+                "potion.static": 1,
+            },
+        }, 
+        {
+            "id": "explosion.potion.self",
+            "label": "Зелье взрыва: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "forge": 2,
+                "edge": 1,
+                "potion.explosion": 1,
+            },
+        }, 
+        {
+            "id": "void.potion.self",
+            "label": "Зелье пустоты: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "winter": 1,
+                "edge": 1,
+                "knock": 1,
+                "potion.void": 1,
+            },
+        }, 
+
+        
         {
             "id": "strengthen.potion.overdraft",
             "label": "Зелье усиления: лишние компоненты!",
