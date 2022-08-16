@@ -92,8 +92,11 @@ static - winter 3, -moth (auclair) [earth]
 	-edge | -knock | -lantern | heart (vs split)
 	-grail | -heart | -forge | edge (vs merge)
 
-	
-	
+	heart
+		edge & -forge & secret histories & (grail ^ lantern)
+		-edge & -secret histories 2 & (-forge | -lantern | -secret histories | knock) & (-grail | lantern)
+
+
 explosion - forge, edge, knock, -winter (clifton) [fire]
 	-heart | moth (vs strengthen)
 	-moth | -grail | lantern (vs reverse)
