@@ -1,0 +1,172 @@
+strengthen (explosion 3x4 \1)
+  strengthen 
+    identity
+  weaken 
+    reverse
+  neutralize 
+    reverse + strengthen
+    strengthen + reverse
+    \weaken
+  absolute
+    strengthen
+  identity
+    neutralize
+  similar
+    neutralize + weaken
+  difference
+    neutralize + neutralize
+  other
+    neutralize + reverse
+    \difference
+  split
+    similar + reverse
+    reverse + similar
+  merge
+    similar
+  static
+    strengthen + similar
+    neutralize + strengthen
+    \identity
+  explosion
+    similar + reverse + strengthen
+    reverse + similar + strengthen
+    strengthen + similar + reverse
+    neutralize + strengthen + reverse
+    \split
+weaken (other 2, static 2, explosion 2, void 2)
+  strengthen
+    reverse
+    \absolute
+  weaken
+    identity
+    \neutralize
+  reverse
+    absolute
+  neutralize
+    strengthen
+    \reverse
+  absolute
+    reverse + strengthen
+    strengthen + reverse
+  identity
+    neutralize
+    \static
+  similar
+    neutralize + weaken
+    \identity
+    \difference
+  difference
+    neutralize + neutralize
+    \other
+    \similar
+  other
+    neutralize + reverse
+  split
+    similar
+    \explosion
+  merge
+    similar + reverse
+    reverse + similar
+  static
+    neutralize + strengthen
+  explosion
+    similar + strengthen
+  void
+    strengthen + absolute
+reverse (strengthen 3x4 or \1, void 2)
+  strengthen
+    weaken + reverse + weaken
+    weaken + weaken + reverse
+    absolute + similar + reverse
+    absolute + reverse + similar
+    \weaken
+  weaken
+    weaken + weaken
+    absolute + similar
+    \strengthen
+  reverse
+    identity
+  neutralize
+    weaken
+    \absolute
+  absolute
+    weaken + reverse
+    \neutralize
+  identity
+    neutralize
+    reverse
+    \reverse
+    \other
+  similar
+    neutralize + weaken
+    reverse + weaken
+    \difference
+  difference
+    neutralize + neutralize
+    reverse + neutralize
+    \similar
+  other
+    neutralize + reverse
+    reverse + reverse
+    \identity
+  split
+    absolute
+    \merge
+  merge
+    absolute + reverse
+    \split
+  static 
+    neutralize + strengthen
+    reverse + strengthen
+    \explosion
+  explosion
+    absolute + strengthen
+    \static
+  void 
+    weaken + absolute
+neutralize
+  strengthen
+    weaken + reverse
+    reverse + weaken
+  weaken
+    weaken
+    strenghten + absolute + similar
+  reverse
+    strengthen
+  neutralize
+    identity
+  absolute
+    reverse
+  identity
+    neutralize
+    \any
+  similar
+    neutralize + weaken
+    \any + weaken
+  difference
+    neutralize + neutralize
+    \identity
+  other
+    neutralize + reverse
+    \any + reverse
+  split
+    strengthen + absolute
+    weaken + similar
+  merge
+    strengthen + absolute + reverse
+    weaken + similar + reverse
+    weaken + reverse + similar
+    reverse + weaken + similar
+  static
+    reverse + similar
+    neutralize + strengthen
+absolute
+identity
+similar
+difference
+other
+split
+merge
+static
+explosion
+void
