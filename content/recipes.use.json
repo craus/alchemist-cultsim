@@ -17,7 +17,8 @@
             "label": "Абсолют",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.absolute": 1,
             },
             "slots": [                
@@ -60,7 +61,8 @@
             "label": "Усиление",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.strengthen.or.absolute": 1,
             },
             "slots": [                
@@ -271,7 +273,8 @@
             "label": "Ослабление",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.weaken": 1,
             },
             "slots": [                
@@ -483,7 +486,8 @@
             "label": "Противоположность",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.reverse": 1,
             },
             "slots": [{
@@ -793,7 +797,8 @@
             "label": "Нейтрализация",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.neutralize": 1,
             },
             "slots": [                
@@ -988,7 +993,8 @@
             "label": "Совпадение",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.identity": 1,
             },
             "slots": [                
@@ -1055,7 +1061,8 @@
             "label": "Похожее",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.similar": 1,
             },
             "slots": [                
@@ -1308,7 +1315,8 @@
             "label": "Различие",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.difference": 1,
             },
             "slots": [                
@@ -1703,7 +1711,8 @@
             "label": "Другое",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.other": 1,
             },
             "slots": [                
@@ -1774,7 +1783,8 @@
             "label": "Разделение",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.split": 1,
             },
             "slots": [                
@@ -1885,7 +1895,11 @@
             "id": "merge",
             "label": "Соединение",
             "actionid": "alchemist.use",
-            "requirements": {"potion.merge": 1},
+            "requirements": {
+                "device": -1, 
+                "recipe": -1,
+                "potion.merge": 1,
+            },
             "startdescription": "Я могу соединить что-то воедино.",
             "craftable": true,
             "aspects": {"merge.activate": 1},
@@ -2031,7 +2045,8 @@
             "label": "Статичность",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.static": 1,
             },
             "extantreqs": {
@@ -2212,7 +2227,8 @@
             "label": "Взрыв",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.explosion": 1,
             },
             "slots": [                
@@ -2270,7 +2286,8 @@
             "label": "Пустота",
             "actionid": "alchemist.use",
             "requirements": {
-                "device": -1,
+                "device": -1, 
+                "recipe": -1,
                 "potion.void": 1,
             },
             "slots": [                

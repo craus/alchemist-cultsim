@@ -10,6 +10,23 @@
             "resetonexhaustion": true,
         },
         {
+            "id": "alchemist.disease.recipes.deck",
+            "label": "Рецепты лекарства от болезни Алхимика",
+            "spec": [
+                "alchemist.disease.recipe.model1",
+                "alchemist.disease.recipe.model2",
+                "alchemist.disease.recipe.model3",
+                "alchemist.disease.recipe.model4",
+                "alchemist.disease.recipe.model5",
+                "alchemist.disease.recipe.model6",
+                "alchemist.disease.recipe.model7",
+                "alchemist.disease.recipe.model8",
+                "alchemist.disease.recipe.model9",
+                "alchemist.disease.recipe.model10",
+            ],
+            "resetonexhaustion": true,
+        },
+        {
             "id": "alchemist.disease.deck",
             "label": "Части рецепта для лечения болезни Алхимика",
             "spec": [
