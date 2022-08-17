@@ -1,68 +1,64 @@
 {
     "elements": [
-		{
-			"id": "grail",
-			"induces": [
-			]
-		},
-		{
-			"id": "heart",
-			"induces": [
-			]
-		},
-		{
-			"id": "lantern",
-			"induces": [
-			]
-		},
-		{
-			"id": "moth",
-			"induces": [
-			]
-		},
-    
+		{ "id": "grail", "induces": []},
+		{ "id": "heart", "induces": []},
+		{ "id": "lantern", "induces": []},
+		{ "id": "moth", "induces": []},
     
         {
             "id": "refresh",
             "label": "Обновление",
             "isAspect": true,
+            "isHidden": true,
         },
         {
             "id": "copy",
             "label": "Копирование",
             "isAspect": true,
+            "isHidden": true,
         },
         {
             "id": "merge.activate",
             "label": "Активация соединения",
             "isAspect": true,
+            "isHidden": true,
         },
         {
             "id": "merge.deactivate",
             "label": "Активация соединения",
             "isAspect": true,
+            "isHidden": true,
         },
         {
             "id": "action.weaken",
             "label": "Действие: ослабить",
             "isAspect": true,
+            "isHidden": true,
         },
         {
             "id": "action.neutralize",
             "label": "Действие: нейтрализовать",
             "isAspect": true,
+            "isHidden": true,
         },
-        
+        {
+            "id": "action.disease.heal",
+            "label": "Действие: полечить болезнь",
+            "isAspect": true,
+            "isHidden": true,
+        },
         
         {
             "id": "potion.merge.inactive",
             "label": "Неактивное зелье соединения",
             "isAspect": true,
+            "isHidden": true,
         },
         {
             "id": "remove.at.the.end",
             "label": "После окончания реакции удалить этот объект.",
             "isAspect": true,
+            "isHidden": true,
         },
         
         
