@@ -21,6 +21,7 @@
             "id": "strengthen.potion.self",
             "label": "Зелье усиления: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "forge": 1,
@@ -33,6 +34,7 @@
             "id": "weaken.potion.self",
             "label": "Зелье ослабления: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "winter": 1,
@@ -45,6 +47,7 @@
             "id": "reverse.potion.self",
             "label": "Зелье противоположности: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "moth": 1,
@@ -57,6 +60,7 @@
             "id": "neutralize.potion.self",
             "label": "Зелье нейтрализации: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "winter": 1,
@@ -69,6 +73,7 @@
             "id": "absolute.potion.self",
             "label": "Зелье абсолюта: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "forge": 1,
@@ -82,6 +87,7 @@
             "id": "identity.potion.self",
             "label": "Зелье совпадения: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "heart": 1,
@@ -94,6 +100,7 @@
             "id": "similar.potion.self",
             "label": "Зелье сходства: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "secrethistories": 2,
@@ -106,6 +113,7 @@
             "id": "difference.potion.self",
             "label": "Зелье различия: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "moth": 1,
@@ -118,6 +126,7 @@
             "id": "other.potion.self",
             "label": "Зелье другого: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "lantern": 1,
@@ -129,6 +138,7 @@
             "id": "split.potion.self",
             "label": "Зелье разделения: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "edge": 1,
@@ -142,6 +152,7 @@
             "id": "merge.potion.self",
             "label": "Зелье соединения: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "grail": 1,
@@ -154,6 +165,7 @@
             "id": "static.potion.self",
             "label": "Зелье статичности: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "winter": 3,
@@ -164,6 +176,7 @@
             "id": "explosion.potion.self",
             "label": "Зелье взрыва: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "forge": 2,
@@ -175,6 +188,7 @@
             "id": "void.potion.self",
             "label": "Зелье пустоты: лишние компоненты!",
             "extends": ["potion.self.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "winter": 1,
@@ -190,6 +204,7 @@
             "id": "strengthen.potion.overdraft",
             "label": "Зелье усиления: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "forge": 1,
@@ -201,6 +216,7 @@
             "id": "weaken.potion.overdraft",
             "label": "Зелье ослабления: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "winter": 1,
@@ -212,6 +228,7 @@
             "id": "reverse.potion.overdraft",
             "label": "Зелье противоположности: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "moth": 1,
@@ -223,6 +240,7 @@
             "id": "neutralize.potion.overdraft",
             "label": "Зелье нейтрализации: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "winter": 1,
@@ -234,6 +252,7 @@
             "id": "absolute.potion.overdraft",
             "label": "Зелье абсолюта: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "forge": 1,
@@ -246,6 +265,7 @@
             "id": "identity.potion.overdraft",
             "label": "Зелье совпадения: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "heart": 1,
@@ -257,6 +277,7 @@
             "id": "similar.potion.overdraft",
             "label": "Зелье сходства: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "secrethistories": 2,
@@ -268,6 +289,7 @@
             "id": "difference.potion.overdraft",
             "label": "Зелье различия: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "moth": 1,
@@ -279,6 +301,7 @@
             "id": "other.potion.overdraft",
             "label": "Зелье другого: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "lantern": 1,
@@ -289,6 +312,7 @@
             "id": "split.potion.overdraft",
             "label": "Зелье разделения: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "edge": 1,
@@ -301,6 +325,7 @@
             "id": "merge.potion.overdraft",
             "label": "Зелье соединения: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "grail": 1,
@@ -312,6 +337,7 @@
             "id": "static.potion.overdraft",
             "label": "Зелье статичности: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "winter": 3,
@@ -321,6 +347,7 @@
             "id": "explosion.potion.overdraft",
             "label": "Зелье взрыва: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "forge": 2,
@@ -331,6 +358,7 @@
             "id": "void.potion.overdraft",
             "label": "Зелье пустоты: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
+            "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
                 "winter": 1,

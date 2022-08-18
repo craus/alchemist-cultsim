@@ -7,18 +7,7 @@
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
-            },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "substance": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ],         
+            },     
             "lifetime": 300,
             "decayTo": "failedorder",
         },
@@ -46,6 +35,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье ослабления.",
         },
         {
@@ -59,6 +59,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье противоположности.",
         },
         {
@@ -72,6 +83,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье нейтрализации.",
         },
         {
@@ -85,6 +107,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье абсолюта.",
         },
         {
@@ -98,6 +131,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье совпадения.",
         },
         {
@@ -111,6 +155,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье различия.",
         },
         {
@@ -124,6 +179,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье сходства.",
         },
         {
@@ -137,6 +203,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье другого.",
         },
         {
@@ -150,6 +227,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье разделения.",
         },
         {
@@ -163,6 +251,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье соединения.",
         },
         {
@@ -176,6 +275,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье статичности.",
         },
         {
@@ -189,6 +299,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье взрыва.",
         },
         {
@@ -202,6 +323,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],    
             "description": "Хочет приобрести зелье пустоты.",
         },
     ],
