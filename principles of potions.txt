@@ -1,0 +1,82 @@
+forge
+  strengthen
+  absolute
+  merge
+  explosion
+  -weaken
+  -identity
+edge
+  strenghten
+  reverse
+  neutralize
+  difference
+  explosion
+  void
+  -weaken
+  -similar
+  -other
+  -merge
+winter
+  weaken
+  neutralize
+  identity
+  static
+  void
+  -strengthen
+  -similar
+  -difference
+  -explosion
+heart
+  strengthen
+  neutralize
+  identity
+  similar
+  merge
+  -reverse
+  -absolute
+  -split
+  -static
+  -explosion
+grail
+  reverse
+  absolute
+  identity
+  merge
+  -neutralize
+  -difference
+  -other
+  -void
+moth
+  weaken
+  reverse
+  difference
+  split
+  -strengthen
+  -identity
+  -static
+  -explosion
+lantern
+  absolute
+  other
+  split
+  -reverse
+  -identity
+  -difference
+  -void
+knock
+  weaken
+  difference
+  split
+  explosion
+  void
+  similar
+  -absolute
+  -other
+secret histories
+  absolute
+  similar
+  other
+  void
+  -neutralize
+  -merge
+  -static

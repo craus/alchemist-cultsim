@@ -73,6 +73,7 @@
                 "device": 1,
                 "forge": 1,
                 "lantern": 1,
+                "grail": 1,
                 "secrethistories": 1,
                 "potion.absolute": 1,
             },
@@ -90,6 +91,18 @@
             },
         }, 
         {
+            "id": "similar.potion.self",
+            "label": "Зелье сходства: лишние компоненты!",
+            "extends": ["potion.self.base"],
+            "requirements": {
+                "device": 1,
+                "secrethistories": 2,
+                "heart": 1,
+                "knock": 1,
+                "potion.similar": 1,
+            },
+        }, 
+        {
             "id": "difference.potion.self",
             "label": "Зелье различия: лишние компоненты!",
             "extends": ["potion.self.base"],
@@ -99,17 +112,6 @@
                 "edge": 1,
                 "knock": 1,
                 "potion.difference": 1,
-            },
-        }, 
-        {
-            "id": "similar.potion.self",
-            "label": "Зелье сходства: лишние компоненты!",
-            "extends": ["potion.self.base"],
-            "requirements": {
-                "device": 1,
-                "secrethistories": 2,
-                "heart": 1,
-                "potion.similar": 1,
             },
         }, 
         {
@@ -132,6 +134,7 @@
                 "edge": 1,
                 "knock": 1,
                 "lantern": 1,
+                "moth": 1,
                 "potion.split": 1,
             },
         }, 
@@ -177,6 +180,7 @@
                 "winter": 1,
                 "edge": 1,
                 "knock": 1,
+                "secrethistories": 1,
                 "potion.void": 1,
             },
         }, 
@@ -234,6 +238,7 @@
                 "device": 1,
                 "forge": 1,
                 "lantern": 1,
+                "grail": 1,
                 "secrethistories": 1,
             },
         }, 
@@ -249,6 +254,17 @@
             },
         }, 
         {
+            "id": "similar.potion.overdraft",
+            "label": "Зелье сходства: лишние компоненты!",
+            "extends": ["potion.overdraft.base"],
+            "requirements": {
+                "device": 1,
+                "secrethistories": 2,
+                "heart": 1,
+                "knock": 1,
+            },
+        }, 
+        {
             "id": "difference.potion.overdraft",
             "label": "Зелье различия: лишние компоненты!",
             "extends": ["potion.overdraft.base"],
@@ -257,16 +273,6 @@
                 "moth": 1,
                 "edge": 1,
                 "knock": 1,
-            },
-        }, 
-        {
-            "id": "similar.potion.overdraft",
-            "label": "Зелье сходства: лишние компоненты!",
-            "extends": ["potion.overdraft.base"],
-            "requirements": {
-                "device": 1,
-                "secrethistories": 2,
-                "heart": 1,
             },
         }, 
         {
@@ -288,6 +294,7 @@
                 "edge": 1,
                 "knock": 1,
                 "lantern": 1,
+                "moth": 1,
             },
         }, 
         {
@@ -329,6 +336,7 @@
                 "winter": 1,
                 "edge": 1,
                 "knock": 1,
+                "secrethistories": 1,
             },
         }, 
         

@@ -17,6 +17,7 @@
             "alt": [
                 {"id": "time.nomoney"},
                 {"id": "iziim.enrage.intro", "additional": true},
+                {"id": "soulreturn.intro", "additional": true},
                 {"id": "iziim.intro", "additional": true},
             ],  
             "effects": {"money": -1},

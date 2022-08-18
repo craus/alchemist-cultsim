@@ -5,6 +5,7 @@
             "label": "Я",
             "aspects": {
                 "person": 1,
+                "modifiable": 1,
             },
             "description": "Иногда мне кажется, что все мои поступки продиктованы волей какого-то другого существа."
         },
@@ -15,6 +16,7 @@
             "aspects": {
                 "person": 1,
                 "interlocutor": 1,
+                "modifiable": 1,
                 "contact.village": 1,
             },
             "description": "В лавке цветочника я могу купить экземпляры редких растений."
@@ -25,6 +27,7 @@
             "aspects": {
                 "person": 1,
                 "interlocutor": 1,
+                "modifiable": 1,
                 "contact.village": 1,
             },
             "description": "Картограф может снабдить меня указаниями, как добраться до разных мест — далёких и не очень."

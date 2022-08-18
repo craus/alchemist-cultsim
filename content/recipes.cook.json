@@ -38,6 +38,7 @@
                 "heart": 1,
                 "edge": 1,
                 "moth": -1,
+                "winter": -1,
                 "potion.strengthen": -1,
             },
             "effects": {
@@ -56,6 +57,7 @@
                 "knock": 1,
                 "moth": 1,
                 "forge": -1,
+                "edge": -1,
                 "potion.weaken": -1,
             },
             "effects": {
@@ -74,6 +76,7 @@
                 "grail": 1,
                 "edge": 1,
                 "lantern": -1,
+                "heart": -1,
                 "potion.reverse": -1,
             },
             "effects": {
@@ -91,6 +94,7 @@
                 "winter": 1,
                 "heart": 1,
                 "edge": 1,
+                "grail": -1,
                 "secrethistories": -1,
                 "potion.neutralize": -1,
             },
@@ -109,7 +113,9 @@
                 "forge": 1,
                 "lantern": 1,
                 "secrethistories": 1,
+                "grail": 1,
                 "knock": -1,
+                "heart": -1,
                 "potion.absolute": -1,
             },
             "effects": {
@@ -128,11 +134,32 @@
                 "grail": 1,
                 "winter": 1,
                 "lantern": -1,
+                "moth": -1,
+                "forge": -1,
                 "potion.identity": -1,
             },
             "effects": {
                 "substance": -999,
                 "potion.identity": 2,
+            },
+        }, 
+        {
+            "id": "similar.potion",
+            "label": "Зелье сходства",
+            "extends": ["cook.potion.base"],
+            "linked": [{"id": "cook.end",},],
+            "requirements": {
+                "device": 1,
+                "secrethistories": 2,
+                "heart": 1,
+                "knock": 1,
+                "edge": -1,
+                "winter": -1,
+                "potion.similar": -1,
+            },
+            "effects": {
+                "substance": -999,
+                "potion.similar": 2,
             },
         }, 
         {
@@ -146,28 +173,12 @@
                 "edge": 1,
                 "knock": 1,
                 "grail": -1,
+                "winter": -1,
                 "potion.difference": -1,
             },
             "effects": {
                 "substance": -999,
                 "potion.difference": 2,
-            },
-        }, 
-        {
-            "id": "similar.potion",
-            "label": "Зелье сходства",
-            "extends": ["cook.potion.base"],
-            "linked": [{"id": "cook.end",},],
-            "requirements": {
-                "device": 1,
-                "secrethistories": 2,
-                "heart": 1,
-                "edge": -1,
-                "potion.similar": -1,
-            },
-            "effects": {
-                "substance": -999,
-                "potion.similar": 2,
             },
         }, 
         {
@@ -180,6 +191,8 @@
                 "lantern": 1,
                 "secrethistories": 1,
                 "grail": -1,
+                "edge": -1,
+                "knock": -1,
                 "potion.other": -1,
             },
             "effects": {
@@ -197,6 +210,7 @@
                 "edge": 1,
                 "knock": 1,
                 "lantern": 1,
+                "moth": 1,
                 "heart": -1,
                 "potion.split": -1,
             },
@@ -216,6 +230,7 @@
                 "forge": 1,
                 "device": 1,
                 "edge": -1,
+                "secrethistories": -1,
                 "potion.merge.inactive": -1,
             },
             "effects": {
@@ -232,6 +247,8 @@
                 "device": 1,
                 "winter": 3,
                 "moth": -1,
+                "heart": -1,
+                "secrethistories": -1,
                 "potion.static": -1,
             },
             "effects": {
@@ -249,6 +266,8 @@
                 "forge": 2,
                 "edge": 1,
                 "winter": -1,
+                "moth": -1,
+                "heart": -1,
                 "potion.explosion": -1,
             },
             "effects": {
@@ -266,6 +285,7 @@
                 "winter": 1,
                 "edge": 1,
                 "knock": 1,
+                "secrethistories": 1,
                 "grail": -1,
                 "potion.void": -1,
             },
