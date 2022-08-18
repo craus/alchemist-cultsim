@@ -60,13 +60,13 @@
             "craftable": true,
             "linked": [{"id": "talk.flowermaker.step2"}],
             "deckeffects": {"deck.flowermaker": 10},
-            "effects": {"substance": -9},
+            "effects": {"substance": -8},
         },  
         {
             "id": "talk.flowermaker.step2",
             "extends": ["money.for.trade"],
             "label": "Подходящий цветок",
-            "startdescription": "Одно из растений имеет отношение к алхимии.",
+            "startdescription": "Я заметил парочку растений, имеющих отношение к алхимии.",
             "slots": [              
                 {
                     "id": "money",
@@ -77,7 +77,7 @@
                     },
                 },  
             ],
-            "effects": {"substance": -1},
+            "effects": {"substance": -999},
             "alt":[{"id":"talk.flowermaker.step2.money"}],
         },  
         {
@@ -85,7 +85,7 @@
             "requirements": {"money": 1},
             "label": "Купить",
             "warmup": 30,
-            "startdescription": "Я мог бы найти этому цветку применение в своих алхимических рецептах.",
+            "startdescription": "Я мог бы найти этим цветкам применение в своих алхимических рецептах.",
             "effects": {"money": -1},
         },  
         
