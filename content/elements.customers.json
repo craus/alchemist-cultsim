@@ -1,11 +1,12 @@
 {
     "elements": [
         {
-            "id": "customer.abstract",
+            "id": "customer.base",
             "aspects": {
                 "person": 1,
                 "interlocutor": 1,
                 "customer": 1,
+                "modifiable": 1,
             },
             "slots": [                
                 {
@@ -13,7 +14,7 @@
                     "label": "Товар",
                     "description": "Я должен предоставить товар на продажу.",
                     "required": {
-                        "potion.strengthen": 1
+                        "substance": 1
                     },
                     "actionid": "alchemist.talk",
                 },   
@@ -23,353 +24,185 @@
         },
         {
             "id": "customer.rose",
+            "extends": ["customer.base"],
             "label": "Роуз",
             "aspects": {
                 "person": 1,
-                "potion.strengthen": 1,
+                "required.potion.strengthen": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.strengthen": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье усиления.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.neville",
+            "extends": ["customer.base"],
             "label": "Невилл",
             "aspects": {
                 "person": 1,
-                "potion.weaken": 1,
+                "required.potion.weaken": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.weaken": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье ослабления.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.ysabet",
+            "extends": ["customer.base"],
             "label": "Изабет",
             "aspects": {
                 "person": 1,
-                "potion.reverse": 1,
+                "required.potion.reverse": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.reverse": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье противоположности.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.poppy",
+            "extends": ["customer.base"],
             "label": "Поппи",
             "aspects": {
                 "person": 1,
-                "potion.neutralize": 1,
+                "required.potion.neutralize": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.neutralize": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье нейтрализации.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.cat",
+            "extends": ["customer.base"],
             "label": "Кэт",
             "aspects": {
                 "person": 1,
-                "potion.absolute": 1,
+                "required.potion.absolute": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.absolute": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье абсолюта.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.slee",
+            "extends": ["customer.base"],
             "label": "Сли",
             "aspects": {
                 "person": 1,
-                "potion.identity": 1,
+                "required.potion.identity": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.identity": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье совпадения.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.porter",
+            "extends": ["customer.base"],
             "label": "Портер",
             "aspects": {
                 "person": 1,
-                "potion.difference": 1,
+                "required.potion.difference": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.difference": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье различия.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.natalia",
+            "extends": ["customer.base"],
             "label": "Наталья",
             "aspects": {
                 "person": 1,
-                "potion.similar": 1,
+                "required.potion.similar": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.similar": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье сходства.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.sulochana",
+            "extends": ["customer.base"],
             "label": "Сулочана",
             "aspects": {
                 "person": 1,
-                "potion.other": 1,
+                "required.potion.other": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.other": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье другого.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.sylvia",
+            "extends": ["customer.base"],
             "label": "Сильвия",
             "aspects": {
                 "person": 1,
-                "potion.split": 1,
+                "required.potion.split": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.split": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье разделения.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.clovette",
+            "extends": ["customer.base"],
             "label": "Кловетта",
             "aspects": {
                 "person": 1,
-                "potion.merge": 1,
+                "required.potion.merge": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.merge": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье соединения.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.auclair",
+            "extends": ["customer.base"],
             "label": "Оклер",
             "aspects": {
                 "person": 1,
-                "potion.static": 1,
+                "required.potion.static": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.static": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье статичности.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.clifton",
+            "extends": ["customer.base"],
             "label": "Клифтон",
             "aspects": {
                 "person": 1,
-                "potion.explosion": 1,
+                "required.potion.explosion": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.explosion": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье взрыва.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
         {
             "id": "customer.enid",
+            "extends": ["customer.base"],
             "label": "Энид",
             "aspects": {
                 "person": 1,
-                "potion.void": 1,
+                "required.potion.void": 1,
                 "interlocutor": 1,
                 "customer": 1,
                 "modifiable": 1,
             },
-            "slots": [                
-                {
-                    "id": "result",
-                    "label": "Товар",
-                    "description": "Я должен предоставить товар на продажу.",
-                    "required": {
-                        "potion.void": 1
-                    },
-                    "actionid": "alchemist.talk",
-                },   
-            ], 
             "description": "Хочет приобрести зелье пустоты.",
-            "lifetime": 300,
-            "decayTo": "failedorder",
         },
     ],
 }

@@ -40,7 +40,7 @@
                 },   
             ],
             "startdescription": "Это поможет мне облегчить мою болезнь.",
-            "warmup": 5,
+            "warmup": 30,
             "craftable": true,
             "aspects": {"action.disease.heal": 1},
             "effects": {"recipe": -1},
