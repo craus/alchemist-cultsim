@@ -1,11 +1,11 @@
 strengthen - forge, heart, edge, -moth (rose) [fire]
 weaken - winter, knock, moth, -forge (neville) [water] [air]
 reverse - moth, grail, edge, -lantern (ysabet) [water]
-	-winter | -knock | forge
+	-winter | -knock | forge (vs weaken)
 neutralize - winter, heart, edge, -secret histories (poppy) [air]
-	-forge | moth
-	-knock | -moth | forge
-	-moth | -grail | lantern
+	-forge | moth (vs strengthen)
+	-knock | -moth | forge (vs weaken)
+	-moth | -grail | lantern (vs reverse)
 absolute - forge, lantern, secret histories, -knock (cat) [earth]
 	-heart | -edge | moth
 identity - heart, grail, winter, -lantern (slee) [earth]

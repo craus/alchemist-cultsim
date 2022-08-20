@@ -1,0 +1,11 @@
+static = 
+	winter 3 
+	& -moth 
+	&	(-forge | -heart | -edge) 
+	& (-heart | -edge | secret histories) 
+	& (-forge | -lantern | -secret histories | knock) 
+	& (-heart | -grail | lantern) 
+	& (-secret histories 2 | -heart | edge) 
+	& (-lantern | -secret histories | grail) 
+	& (-edge | -knock | -lantern | heart) 
+	& (-grail | -heart | -forge | edge)

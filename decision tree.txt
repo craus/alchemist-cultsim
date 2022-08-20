@@ -1,0 +1,85 @@
+strengthen - forge, heart, edge, -moth (rose) [fire]
+weaken - winter, knock, moth, -forge (neville) [water] [air]
+reverse - moth, grail, edge, -lantern (ysabet) [water]
+neutralize - winter, heart, edge, -secret histories (poppy) [air]
+absolute - forge, lantern, secret histories, -knock (cat) [earth]
+identity - heart, grail, winter, -lantern (slee) [earth]
+similar - secret histories 2, heart, -edge (natalia) [water]
+difference - moth, edge, knock, -grail (porter) [water]
+other - lantern, secret histories, -grail (sulochana) [air]
+split - edge, knock, lantern, -heart (sylvia) [fire]
+merge - grail, heart, forge, -edge (clovette) [earth]
+static - winter 3, -moth (auclair) [earth]
+explosion - forge, edge, knock, -winter (clifton) [fire]
+void - winter, edge, knock, -grail (enid) [air] [fire]
+
+forge (strengthen?)
+	heart forge (strengthen?)
+		edge heart forge (strengthen?)
+			!moth edge heart forge : strengthen
+			moth edge heart forge (reverse?)
+				grail moth edge heart forge (reverse?)
+					!lantern grail moth edge heart forge : reverse
+					lantern grail moth edge heart forge (neutralize?)
+						winter lantern grail moth edge heart forge (neutralize?)
+							!secret histories winter lantern grail moth edge heart forge: neutralize
+							secret histories winter lantern grail moth edge heart forge: absolute
+						!winter lantern grail moth edge heart forge (absolute?)
+							secret histories !winter lantern grail moth edge heart forge (absolute?)
+								!knock secret histories !winter lantern grail moth edge heart forge: absolute
+								knock secret histories !winter lantern grail moth edge heart forge: explosion
+							!secret histories !winter lantern grail moth edge heart forge (explosion)
+								knock !secret histories !winter lantern grail moth edge heart forge: explosion
+								!knock !secret histories !winter lantern grail moth edge heart forge: FAIL
+				!grail moth edge heart forge (neutralize?)
+					winter !grail moth edge heart forge (neutralize?)
+						!secret histories winter !grail moth edge heart forge: neutralize
+						secret histories winter !grail moth edge heart forge (absolute?)
+							lantern secret histories winter !grail moth edge heart forge (absolute?)
+								!knock lantern secret histories winter !grail moth edge heart forge: absolute
+								knock lantern secret histories winter !grail moth edge heart forge: FAIL
+							!lantern secret histories winter !grail moth edge heart forge (void?)
+								knock !lantern secret histories winter !grail moth edge heart forge: void
+								!knock !lantern secret histories winter !grail moth edge heart forge: FAIL
+					!winter !grail moth edge heart forge (absolute?)
+						lantern !winter !grail moth edge heart forge (absolute?)
+							secret histories lantern !winter !grail moth edge heart forge (absolute?)
+								!knock lantern !winter !grail moth edge heart forge: absolute
+								knock lantern !winter !grail moth edge heart forge: difference
+							!secret histories lantern !winter !grail moth edge heart forge (difference?)
+								knock !secret histories lantern !winter !grail moth edge heart forge: difference
+								!knock !secret histories lantern !winter !grail moth edge heart forge: FAIL
+						!lantern !winter !grail moth edge heart forge (difference?)
+							knock !lantern !winter !grail moth edge heart forge: difference
+							!knock !lantern !winter !grail moth edge heart forge: FAIL
+		!edge heart forge (absolute?)
+			lantern !edge heart forge (absolute?)
+				secret histories lantern !edge heart forge (absolute?)
+					knock secret histories lantern !edge heart forge: absolute
+					!knock secret histories lantern !edge heart forge (similar?)
+						secret histories 2 !knock secret histories lantern !edge heart forge: similar?
+						!secret histories 2 !knock secret histories lantern !edge heart forge (other?)
+							!grail !secret histories 2 !knock secret histories lantern !edge heart forge: other
+							grail !secret histories 2 !knock secret histories lantern !edge heart forge: merge
+				!secret histories lantern !edge heart forge (merge?)
+					grail !secret histories lantern !edge heart forge: merge
+					!grail !secret histories lantern !edge heart forge (static?)
+						winter 3 !grail !secret histories lantern !edge heart forge (static?)
+							!moth winter 3 !grail !secret histories lantern !edge heart forge: static
+							moth winter 3 !grail !secret histories lantern !edge heart forge: FAIL
+						!winter 3 !grail !secret histories lantern !edge heart forge: FAIL
+			!lantern !edge heart forge (identity?)
+				grail !lantern !edge heart forge (identity?)
+					winter grail !lantern !edge heart forge: identity
+					!winter grail !lantern !edge heart forge (similar?)
+						secret histories 2 !winter grail !lantern !edge heart forge: similar
+						!secret histories 2 !winter grail !lantern !edge heart forge: merge
+				!grail !lantern !edge heart forge (similar?)
+					secret histories 2 !grail !lantern !edge heart forge: similar
+					!secret histories 2 !grail !lantern !edge heart forge (static?)
+						winter 3 !secret histories 2 !grail !lantern !edge heart forge (static?)
+							!moth winter 3 !secret histories 2 !grail !lantern !edge heart forge: static
+							moth winter 3 !secret histories 2 !grail !lantern !edge heart forge: FAIL
+						!winter 3 !secret histories 2 !grail !lantern !edge heart forge: FAIL
+	!heart forge (reverse?)
+
