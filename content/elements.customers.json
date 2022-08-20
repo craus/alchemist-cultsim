@@ -22,6 +22,17 @@
                 "customer": 1,
                 "modifiable": 1,
             },
+            "slots": [                
+                {
+                    "id": "result",
+                    "label": "Товар",
+                    "description": "Я должен предоставить товар на продажу.",
+                    "required": {
+                        "substance": 1
+                    },
+                    "actionid": "alchemist.talk",
+                },   
+            ],  
             "description": "Хочет приобрести зелье усиления.",
         },
         {

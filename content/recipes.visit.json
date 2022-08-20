@@ -60,7 +60,7 @@
             "label": "Прогулка по деревне",
             "actionid": "visit",
             "extantreqs": {
-                "contact.village": -3,
+                "contact.village": -2,
             },
             "requirements": {
                 "village": 1,

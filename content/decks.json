@@ -7,7 +7,7 @@
                 "contact.flowermaker",
                 "contact.cartographer",
             ],
-            "resetonexhaustion": true,
+            "resetonexhaustion": false,
         },
         {
             "id": "alchemist.disease.recipes.deck",
