@@ -870,7 +870,7 @@
             "warmup": 60,
             "description": ".",
             "aspects": {
-                "action.neutralize": -1,
+                "action.neutralize": 1,
             },
             "effects": {
                 "potion.neutralize": -1,
