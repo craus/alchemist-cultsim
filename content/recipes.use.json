@@ -1903,7 +1903,14 @@
             },
             "startdescription": "Я могу соединить что-то воедино.",
             "craftable": true,
-            "aspects": {"merge.activate": 1},
+            "mutations": [
+                {"filter": "potion.merge", "mutate": "grail", "level": -1, "additive": true},
+                {"filter": "potion.merge", "mutate": "heart", "level": -1, "additive": true},
+                {"filter": "potion.merge", "mutate": "forge", "level": -1, "additive": true},
+                {"filter": "potion.merge", "mutate": "substance", "level": -1, "additive": true},
+                {"filter": "potion.merge", "mutate": "potion.merge.inactive", "level": -1, "additive": true},
+                {"filter": "potion.merge", "mutate": "activation", "level": 1, "additive": true},
+            ],
             "linked": [{"id": "merge.step0",},],
         },
         {
@@ -1998,10 +2005,15 @@
                 {"id": "explosion.potion.overdraft"},
                 {"id": "void.potion.overdraft"},
             ],
-            "aspects": {"merge.deactivate": 1},
-            "effects": {
-                "fictive.device": -1,
-            },
+            "effects": { "fictive.device": -1},
+            "mutations": [
+                {"filter": "activation", "mutate": "grail", "level": 1, "additive": true},
+                {"filter": "activation", "mutate": "heart", "level": 1, "additive": true},
+                {"filter": "activation", "mutate": "forge", "level": 1, "additive": true},
+                {"filter": "activation", "mutate": "substance", "level": 1, "additive": true},
+                {"filter": "activation", "mutate": "potion.merge.inactive", "level": 1, "additive": true},
+                {"filter": "activation", "mutate": "activation", "level": -1, "additive": true},
+            ],
             "description": "Пожалуй, не буду этого делать.",
         },
         {
@@ -2064,7 +2076,14 @@
             "id": "merge.abort2",
             "label": "Отмена",
             "description": "С таким составом ничего не выйдет.",
-            "aspects": {"merge.deactivate": 1},
+            "mutations": [
+                {"filter": "activation", "mutate": "grail", "level": 1, "additive": true},
+                {"filter": "activation", "mutate": "heart", "level": 1, "additive": true},
+                {"filter": "activation", "mutate": "forge", "level": 1, "additive": true},
+                {"filter": "activation", "mutate": "substance", "level": 1, "additive": true},
+                {"filter": "activation", "mutate": "potion.merge.inactive", "level": 1, "additive": true},
+                {"filter": "activation", "mutate": "activation", "level": -1, "additive": true},
+            ],
             "effects": {"fictive.device": -1},
         },
         
