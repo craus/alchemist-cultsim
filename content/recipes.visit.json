@@ -19,10 +19,8 @@
                 "i": 1,
             },           
             "alt": [
-                {
-                    "id": "reaction.intro",
-                    "additional": true
-                }
+                {"id": "reaction.intro", "additional": true},
+                {"id": "wiki.intro", "additional": true},
             ],            
             "mutations": [
                 {

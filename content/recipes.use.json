@@ -1,6 +1,13 @@
 {
     "recipes": [ 
-    
+            
+        {
+            "id": "use.no.ideas",
+            "label": "Неподходящая цель!",
+            "requirements": {"idea": 1},
+            "startdescription": "Я не могу использовать воображаемые предметы!",
+            "description": "Всё осталось по-прежнему.",
+        }, 
         {
             "id": "unmatch",
             "label": "Неподходящая цель!",

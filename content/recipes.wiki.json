@@ -1,0 +1,52 @@
+{
+    "recipes": [
+        {
+            "id": "wiki.intro",
+            "label": "Чертоги памяти",
+            "actionid": "wiki",
+            "startdescription": "Нет нужды читать всё.",
+            "description": "Я знаю кое-что об алхимии и об окружающем мире. Я могу тебе об этом рассказать.",
+        },  
+        {
+            "id": "wiki.nothing",
+            "label": "Вспомнить всё",
+            "actionid": "wiki",
+            "startdescription": "Я могу рассказать обо всём, что знаю. Но будет проще, если ты задашь вопрос.",
+            "craftable": true,
+            "description": "Вот что мне известно.",
+            "linked": [{"id": "wiki.all.potions"}],
+        },  
+        {
+            "id": "wiki.all.potions",
+            "effects": {
+                "potion.strengthen": 1,
+                "potion.weaken": 1,
+                "potion.reverse": 1,
+                "potion.neutralize": 1,
+                "potion.absolute": 1,
+                "potion.identity": 1,
+                "potion.similar": 1,
+                "potion.difference": 1,
+                "potion.other": 1,
+                "potion.split": 1,
+                "potion.merge": 1,
+                "potion.static": 1,
+                "potion.explosion": 1,
+                "potion.void": 1,
+            },
+            "linked": [{"id": "wiki.mark.ideas"}],
+        },  
+        {
+            "id": "wiki.mark.ideas",
+            "requirements": {"substance": 1},
+            "mutations": [
+                {
+                    "filter": "substance",
+                    "mutate": "idea",
+                    "level": 1,
+                },
+            ],
+            "linked": [{"id": "wiki.mark.ideas"}],
+        },  
+    ]
+}
