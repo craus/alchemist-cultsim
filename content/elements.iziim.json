@@ -55,7 +55,17 @@
                 "action.neutralize": "iziim",
             },
             "description": "«‎Давай же заключим сделку! Чего ты ждёшь?»",
-            "lifetime": 60,
+            "slots": [                
+                {
+                    "id": "target",
+                    "label": "Души",
+                    "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
+                    "required": {
+                        "soul": 1,
+                    },
+                    "actionid": "alchemist.talk",
+                },         
+            ],
             "decayTo": "iziim3",
         },
         {
@@ -84,7 +94,6 @@
                     "actionid": "alchemist.talk",
                 },         
             ],
-            "lifetime": 60,
             "decayTo": "iziim4",
         },
         {
@@ -112,7 +121,6 @@
                     "actionid": "alchemist.talk",
                 },         
             ],
-            "lifetime": 60,
             "decayTo": "iziim5",
         },
         {

@@ -1557,7 +1557,7 @@
             "id": "difference.difference",
             "label": "Отличие от отличия — сходство или другое",
             "requirements": {
-                "potion.similar": 1,
+                "potion.difference": 2,
             },
             "startdescription": ".",
             "warmup": 60,
@@ -1664,7 +1664,7 @@
         },
         {
             "id": "difference.explosion",
-            "label": "Отличие от взрыва — разделение или пустота",
+            "label": "Отличие от взрыва — разделение, статичность или пустота",
             "requirements": {
                 "potion.explosion": 1,
             },

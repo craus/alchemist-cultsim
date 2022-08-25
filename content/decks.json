@@ -263,6 +263,7 @@
             "id": "difference.explosion.deck",
             "spec": [
                 "potion.split",
+                "potion.static",
                 "potion.void",
             ],
             "resetonexhaustion": true

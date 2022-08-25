@@ -48,20 +48,34 @@ identity - heart, grail, winter, -lantern, -moth, -forge (slee) [earth]
   white: winter
   blue: winter
 similar - secret histories 2, heart, knock, -edge, -winter (natalia) [water]
-  white: lantern, edge, winter
-  yellow: heart, lantern, forge 
-  pink: moth, heart, secret histories
-  red: heart, grail, forge
-  orange: edge, forge, grail
-  blue: winter, knock, secret histories
-  black: edge, forge, secret histories
-  purple: knock, grail, moth
-  gray: moth, winter, secret histories
-  brown: moth, grail, forge
+  yellow: heart
+  pink: heart, secret histories
+  red: heart
+  purple: knock
+  brown: 
 difference - moth, edge, knock, -grail, -winter, -lantern (porter) [water]
+  pink: moth
+  black: edge
 other - lantern, secret histories, -grail, -edge, -knock (sulochana) [air]
+  yellow: lantern 
+  pink: secret histories
+  gray: secret histories
 split - edge, knock, lantern, moth, -heart (sylvia) [fire]
+  white: lantern, edge
+  orange: edge
+  blue: knock
+  black: edge
+  purple: knock, moth
+  gray: moth
+  brown: moth
 merge - grail, heart, forge, -edge, -secret histories (clovette) [earth]
+  yellow: heart, forge 
+  red: heart, grail, forge
+  purple: grail
+  brown: grail, forge
 static - winter 3, -moth, -heart, -secret histories (auclair) [earth]
+  white: winter
 explosion - forge, edge, knock, -winter, -moth, -heart (clifton) [fire]
+  orange: edge, forge
+  black: edge, forge
 void - winter, edge, knock, secret histories, -grail, -lantern (enid) [air] [fire]

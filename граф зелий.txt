@@ -90,7 +90,7 @@ difference + other = reverse / difference / identity
 difference + split = explosion / merge / weaken
 difference + merge = split / strengthen
 difference + static = identity / absolute
-difference + explosion = split / void
+difference + explosion = split / static / void
 difference + void = explosion
 
 other + any _other_ = random
