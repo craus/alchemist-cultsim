@@ -179,8 +179,9 @@
             "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
-                "forge": 2,
+                "forge": 1,
                 "edge": 1,
+                "knock": 1,
                 "potion.explosion": 1,
             },
         }, 
@@ -350,8 +351,9 @@
             "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
-                "forge": 2,
+                "forge": 1,
                 "edge": 1,
+                "knock": 1,
             },
         }, 
         {

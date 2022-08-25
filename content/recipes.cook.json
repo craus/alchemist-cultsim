@@ -267,8 +267,9 @@
             "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
-                "forge": 2,
+                "forge": 1,
                 "edge": 1,
+                "knock": 1,
                 "winter": -1,
                 "moth": -1,
                 "heart": -1,
@@ -291,6 +292,7 @@
                 "knock": 1,
                 "secrethistories": 1,
                 "grail": -1,
+                "lantern": -1,
                 "potion.void": -1,
             },
             "effects": {
