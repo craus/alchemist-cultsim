@@ -7,7 +7,7 @@ blue: winter, knock, secret histories
 black: edge, forge, secret histories
 purple: knock, grail, moth
 gray: moth, winter, secret histories
-brown: moth, grail, forge
+brown: moth, edge, forge
 
 NEW
 strengthen - forge, heart, edge, -moth, -winter (rose) [fire]
