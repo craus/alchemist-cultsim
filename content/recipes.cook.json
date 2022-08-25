@@ -178,6 +178,7 @@
                 "knock": 1,
                 "grail": -1,
                 "winter": -1,
+                "lantern": -1,
                 "potion.difference": -1,
             },
             "effects": {
@@ -229,10 +230,10 @@
             "extends": ["cook.potion.base"],
             "linked": [{"id": "cook.end",},],
             "requirements": {
+                "device": 1,
                 "grail": 1,
                 "heart": 1,
                 "forge": 1,
-                "device": 1,
                 "edge": -1,
                 "secrethistories": -1,
                 "potion.merge.inactive": -1,

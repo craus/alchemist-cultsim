@@ -248,6 +248,7 @@
                 "knock": 1,
                 "limit.grail": 1,
                 "limit.winter": 1,
+                "limit.lantern": 1,
                 "part.sphere.water": 1,
             },
             "description": "Делает вещи в чём-то другими, не такими же, как они сейчас.",

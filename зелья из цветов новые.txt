@@ -8,58 +8,147 @@ L lantern
 K knock
 S secret histories
 
-white: lantern, edge, winter
-yellow: heart, lantern, forge 
-pink: moth, heart, secret histories
-red: heart, grail, forge
-orange: edge, forge, grail
-blue: winter, knock, secret histories
-black: edge, forge, secret histories
-purple: knock, grail, moth
-gray: moth, winter, secret histories
-brown: moth, grail, forge
+plain
+  white
+  yellow
+  orange
+island
+  blue
+  pink
+  purple
+swamp
+  black
+  grey
+  purple
+mountain
+  red
+  brown
+  black
+forest
+  white
+  red
+  blue
+
+flowers
+  white: lantern, edge, winter
+  yellow: heart, lantern, forge 
+  pink: moth, heart, secret histories
+  red: heart, grail, forge
+  orange: edge, forge, grail
+  blue: winter, knock, secret histories
+  black: edge, forge, secret histories
+  purple: knock, grail, moth
+  gray: moth, winter, secret histories
+  brown: moth, grail, forge
+
+potions
+  strengthen: forge, heart, edge
+  weaken: winter, knock, moth
+  reverse: moth, grail, edge
+  neutralize: winter, heart, edge
+  absolute: forge, lantern, secret histories, grail
+  identity: heart, grail, winter
+  similar: secret histories 2, heart, knock
+  difference: moth, edge, knock
+  other: lantern, secret histories
+  split: edge, knock, lantern, moth
+  merge: grail, heart, forge
+  static: winter 3
+  explosion: forge, edge, knock
+  void: winter, edge, knock, secret histories
 
 strengthen - forge, heart, edge, -moth, -winter (rose) [fire]
   yellow: heart, forge
   red: heart, forge
   orange: edge, forge
-  = orange & (red | yellow)
+  
+  absolute: forge
+  similar: heart
+  other: 
+  merge: heart, forge
+  explosion: forge, edge
+  
 weaken - winter, knock, moth, -forge, -edge (neville) [water] [air]
   pink: moth
   blue: winter, knock
   purple: knock, moth
   gray: moth, winter
+  
+  identity: winter
+  similar: knock
+  other: 
+  static: winter
+  
 reverse - moth, grail, edge, -lantern, -heart (ysabet) [water]
   orange: edge, grail 
   black: edge
   purple: grail, moth
   gray: moth
   brown: moth, grail
+  
+  weaken: moth
+  difference: moth, edge
+  static: 
+  explosion: edge
+  void: edge
+  
 neutralize - winter, heart, edge, -secret histories, -grail (poppy) [air]
   white: edge, winter
   yellow: heart
+  
+  strengthen: heart, edge
+  weaken: winter
+  difference: edge
+  split: edge
+  static: winter
+  explosion: edge
+  
 absolute - forge, lantern, secret histories, grail, -knock, -heart (cat) [earth]
   white: lantern
-  orange: forge
+  orange: forge, grail
   black: forge, secret histories
   gray: secret histories
   brown: 
+  
+  reverse: 
+  other: lantern, secret histories
+  split: lantern
+  
 identity - heart, grail, winter, -lantern, -moth, -forge (slee) [earth]
   white: winter
   blue: winter
+  
+  neutralize: winter, heart
+  similar: heart
+  static: winter
+  void: winter 
+  
 similar - secret histories 2, heart, knock, -edge, -winter (natalia) [water]
   yellow: heart
   pink: heart, secret histories
   red: heart
   purple: knock
   brown: 
+  
+  absolute: secret histories
+  other: secret histories
+  merge: heart
+  
 difference - moth, edge, knock, -grail, -winter, -lantern (porter) [water]
   pink: moth
-  black: edge
+  black: edge  
+  
+  strengthen: edge
+  similar: knock
+  explosion: edge, knock
+  
 other - lantern, secret histories, -grail, -edge, -knock (sulochana) [air]
   yellow: lantern 
   pink: secret histories
   gray: secret histories
+  
+  static: 
+  
 split - edge, knock, lantern, moth, -heart (sylvia) [fire]
   white: lantern, edge
   orange: edge
@@ -68,14 +157,49 @@ split - edge, knock, lantern, moth, -heart (sylvia) [fire]
   purple: knock, moth
   gray: moth
   brown: moth
+  
+  weaken: knock, moth
+  reverse: moth, edge
+  absolute: lantern
+  difference: moth, edge, knock
+  other: lantern
+  static: 
+  explosion: edge, knock
+  void: edge, knock
+  
 merge - grail, heart, forge, -edge, -secret histories (clovette) [earth]
   yellow: heart, forge 
   red: heart, grail, forge
   purple: grail
   brown: grail, forge
+  
+  weaken: 
+  identity: heart, grail
+  static: 
+  
 static - winter 3, -moth, -heart, -secret histories (auclair) [earth]
   white: winter
+  
+  explosion: 
+  
 explosion - forge, edge, knock, -winter, -moth, -heart (clifton) [fire]
   orange: edge, forge
   black: edge, forge
+  
+  absolute: forge 
+  other: lantern
+  
 void - winter, edge, knock, secret histories, -grail, -lantern (enid) [air] [fire]
+  pink: secret histories
+  blue: winter, knock, secret histories
+  black: edge, secret histories
+  gray: winter, secret histories
+  
+  strengthen: edge
+  weaken: winter, knock
+  neutralize: winter, edge
+  similar: secret histories, knock
+  difference: edge, knock
+  static: winter
+  explosion: edge, knock 
+  
