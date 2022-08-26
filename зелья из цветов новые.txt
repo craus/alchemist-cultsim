@@ -10,19 +10,19 @@ S secret histories
 
 plain
   white
-  yellow
-  orange
+  yellow *
+  orange *
 island
   blue
-  pink
+  pink *
   purple
 swamp
   black
-  grey
+  gray *
   purple
 mountain
   red
-  brown
+  brown *
   black
 forest
   white
@@ -61,6 +61,7 @@ strengthen - forge, heart, edge, -moth, -winter (rose) [fire]
   yellow: heart, forge
   red: heart, forge
   orange: edge, forge
+  black: edge, forge
   
   absolute: forge
   similar: heart
@@ -187,7 +188,7 @@ explosion - forge, edge, knock, -winter, -moth, -heart (clifton) [fire]
   black: edge, forge
   
   absolute: forge 
-  other: lantern
+  other: 
   
 void - winter, edge, knock, secret histories, -grail, -lantern (enid) [air] [fire]
   pink: secret histories
