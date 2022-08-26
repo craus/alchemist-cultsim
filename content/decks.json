@@ -255,6 +255,7 @@
             "id": "difference.static.deck",
             "spec": [
                 "potion.identity",
+                "potion.explosion",
                 "potion.absolute",
             ],
             "resetonexhaustion": true

@@ -89,7 +89,7 @@ difference + difference = other / similar
 difference + other = reverse / difference / identity
 difference + split = explosion / merge / weaken
 difference + merge = split / strengthen
-difference + static = identity / absolute
+difference + static = identity / absolute / explosion
 difference + explosion = split / static / void
 difference + void = explosion
 
