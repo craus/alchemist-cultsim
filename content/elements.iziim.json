@@ -26,17 +26,13 @@
                 "modifiable": 1,
             },
             "description": "«‎Есть души смертных? Я за них хорошо плачу!»",
-            "slots": [                
-                {
+            "slots": [{
                     "id": "target",
                     "label": "Души",
                     "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
-                    "required": {
-                        "soul": 1,
-                    },
+                    "required": {"soul": 1},
                     "actionid": "alchemist.talk",
-                },         
-            ],
+            }],
             "lifetime": 60,
             "decayTo": "iziim2",
         },
@@ -55,17 +51,13 @@
                 "action.neutralize": "iziim",
             },
             "description": "«‎Давай же заключим сделку! Чего ты ждёшь?»",
-            "slots": [                
-                {
+            "slots": [{
                     "id": "target",
                     "label": "Души",
                     "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
-                    "required": {
-                        "soul": 1,
-                    },
+                    "required": {"soul": 1},
                     "actionid": "alchemist.talk",
-                },         
-            ],
+            }],
             "decayTo": "iziim3",
         },
         {
@@ -83,21 +75,18 @@
                 "action.neutralize": "iziim",
             },
             "description": "«Не трать моё время зря, смертный! Не то я могу забрать и <i>твою</i> душу!»",
-            "slots": [                
-                {
+            "slots": [{
                     "id": "target",
                     "label": "Души",
                     "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
-                    "required": {
-                        "soul": 1,
-                    },
+                    "required": {"soul": 1},
                     "actionid": "alchemist.talk",
-                },         
-            ],
+            }],
             "decayTo": "iziim4",
         },
         {
             "id": "iziim4",
+            "extends": ["iziim"],
             "label": "Ищущий (злится)",
             "aspects": {
                 "interlocutor": 1,
@@ -110,17 +99,13 @@
                 "action.neutralize": "iziim",
             },
             "description": "«Выкладывай души, что держишь у себя. Это моё последнее предупреждение!»",
-            "slots": [                
-                {
+            "slots": [{
                     "id": "target",
                     "label": "Души",
                     "description": "Если дать Ищущему хоть что-то, он заберёт всё.",
-                    "required": {
-                        "soul": 1,
-                    },
+                    "required": {"soul": 1},
                     "actionid": "alchemist.talk",
-                },         
-            ],
+            }],
             "decayTo": "iziim5",
         },
         {
