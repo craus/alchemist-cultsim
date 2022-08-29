@@ -39,7 +39,7 @@ flowers
   black: edge, forge, secret histories
   purple: knock, grail, moth
   gray: moth, winter, secret histories
-  brown: moth, grail, forge
+  brown: moth, edge, forge
 
 potions
   strengthen: forge, heart, edge
@@ -85,7 +85,7 @@ reverse - moth, grail, edge, -lantern, -heart (ysabet) [water]
   black: edge
   purple: grail, moth
   gray: moth
-  brown: moth, grail
+  brown: moth, edge
   
   weaken: moth
   difference: moth, edge
@@ -96,6 +96,7 @@ reverse - moth, grail, edge, -lantern, -heart (ysabet) [water]
 neutralize - winter, heart, edge, -secret histories, -grail (poppy) [air]
   white: edge, winter
   yellow: heart
+  brown: edge
   
   strengthen: heart, edge
   weaken: winter
@@ -109,7 +110,7 @@ absolute - forge, lantern, secret histories, grail, -knock, -heart (cat) [earth]
   orange: forge, grail
   black: forge, secret histories
   gray: secret histories
-  brown: 
+  brown: forge
   
   reverse: 
   other: lantern, secret histories
@@ -137,7 +138,8 @@ similar - secret histories 2, heart, knock, -edge, -winter (natalia) [water]
   
 difference - moth, edge, knock, -grail, -winter, -lantern (porter) [water]
   pink: moth
-  black: edge  
+  black: edge 
+  brown: moth, edge
   
   strengthen: edge
   similar: knock
@@ -157,7 +159,7 @@ split - edge, knock, lantern, moth, -heart (sylvia) [fire]
   black: edge
   purple: knock, moth
   gray: moth
-  brown: moth
+  brown: moth, edge
   
   weaken: knock, moth
   reverse: moth, edge
@@ -172,7 +174,6 @@ merge - grail, heart, forge, -edge, -secret histories (clovette) [earth]
   yellow: heart, forge 
   red: heart, grail, forge
   purple: grail
-  brown: grail, forge
   
   weaken: 
   identity: heart, grail
@@ -195,6 +196,7 @@ void - winter, edge, knock, secret histories, -grail, -lantern (enid) [air] [fir
   blue: winter, knock, secret histories
   black: edge, secret histories
   gray: winter, secret histories
+  brown: edge
   
   strengthen: edge
   weaken: winter, knock
