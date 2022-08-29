@@ -808,6 +808,7 @@
                     "description": "На что я хочу повлиять?",
                     "required": {
                         "substance": 1,
+                        "interlocutor": 1,
                     },
                 },   
             ],
