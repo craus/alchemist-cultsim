@@ -103,7 +103,7 @@
             "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
-                "secrethistories": 2,
+                "secrethistories": 1,
                 "heart": 1,
                 "knock": 1,
                 "potion.similar": 1,
@@ -281,7 +281,7 @@
             "linked": [{"id": "cook.abort"}],
             "requirements": {
                 "device": 1,
-                "secrethistories": 2,
+                "secrethistories": 1,
                 "heart": 1,
                 "knock": 1,
             },

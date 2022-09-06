@@ -154,7 +154,7 @@
             "linked": [{"id": "cook.end",},],
             "requirements": {
                 "device": 1,
-                "secrethistories": 2,
+                "secrethistories": 1,
                 "heart": 1,
                 "knock": 1,
                 "edge": -1,

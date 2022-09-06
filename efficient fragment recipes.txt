@@ -1,0 +1,45 @@
+fragments
+  forge
+    absolute = forge + other + grail
+    merge = forge + identity
+  edge
+    strengthen = edge + yellow/red/merge
+    reverse = edge + purple
+    void = edge + blue
+    split = edge + purple/weaken + absolute/other/lantern
+  winter
+    neutralize = winter + strenghten
+    weaken = winter + purple
+    static = winter/white x3
+  heart
+    neutralize = heart + white
+    strengthen = heart + orange/black/explosion
+    similar = heart + purple/knock + absolute/other/secret histories
+  grail
+    reverse = grail + brown/difference
+    identity = grail + neutralize
+    absolute = grail + black + white/split/lantern
+    absolute = grail + other + black/forge
+    merge = grail + yellow
+  moth
+    difference = moth + explosion
+    weaken = moth + blue
+    reverse = moth + orange
+    split = moth + white + blue/explosion/void/knock
+    split = moth + explosion/void + white/absolute/explosion/lantern
+  lantern
+    other = lantern + pink/gray/secret histories
+    split = lantern + difference
+    absolute = lantern + black + grail
+    absolute = lantern + orange + black/gray/secret histories
+  knock
+    difference = knock + brown
+    weaken = knock + gray
+    explosion = knock + orange/black
+    similar = knock + pink
+    split = knock + white + gray/brown/reverse/moth
+    split = knock + brown/reverse + white/absolute/other/lantern
+  secret histories
+    other = secret histories + yellow/lantern
+    similar = secret histories + purple/knock + yellow/red/merge/heart
+    absolute = secret histories + orange + white/split/lantern
