@@ -48,7 +48,7 @@
             "id": "disease.kill",
             "extantreqs": {"alchemist.disease.level": 7},
             "label": "Я при смерти",
-            "startdescription": "Болезнь Алхимика достигла финальной фазы. Очень скоро я буду мёртв, если не найдётся лекарство.",
+            "startdescription": "Болезнь Алхимика достигла финальной фазы. Очень скоро я буду мёртв.",
             "alt": [{"id": "disease.kill.abort"}],
             "warmup": 30,  
             "signalEndingFlavour": "Melancholy",
