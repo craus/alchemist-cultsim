@@ -17,7 +17,47 @@
                 "money": 10,
                 "wish.philosopherstone": 1,
                 "i": 1,
-            },           
+            },   
+            "purge": {
+                "loft": 100,
+                "loft.hard": 100,
+            },        
+            "alt": [
+                {
+                    "id": "reaction.intro",
+                    "additional": true
+                }
+            ],            
+            "mutations": [
+                {
+                    "filter": "loft",
+                    "mutate": "loft.visited",
+                    "level": 1,
+                },
+            ],
+        },  
+        {
+            "id": "visit.loft.first.hard",
+            "label": "Поиск на чердаке",
+            "actionid": "visit",
+            "requirements": {
+                "loft.hard": 1,
+                "loft.visited": -1,
+            },
+            "startdescription": "Когда-то все эти вещи были нужными и о них бережно заботились. Но не теперь.",
+            "description": "Кое-что удалось обнаружить...",
+            "warmup": 10,
+            "craftable": true,
+            "effects": {
+                "loft.hard": -1,
+                "money": 10,
+                "wish.philosopherstone.hard": 1,
+                "i": 1,
+            },   
+            "purge": {
+                "loft": 100,
+                "loft.hard": 100,
+            },          
             "alt": [
                 {
                     "id": "reaction.intro",

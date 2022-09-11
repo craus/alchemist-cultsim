@@ -24,6 +24,16 @@
             "startdescription": "Похоже, меня постигла та же участь, какую находит каждый алхимик. Это недуг, которым болеют изготовители зелий. Болезнь не заразная, но смертельная, если оставить её без внимания.",
             "warmup": 30,  
             "effects": {"alchemist.disease.level1": 1},
+            "alt": [{"id": "disease.easy.create"}],
+        },  
+        {
+            "id": "disease.easy.create",
+            "extantreqs": {"wish.philosopherstone": 1},
+            "label": "Болезнь Алхимика",
+            "actionid": "disease.create",
+            "startdescription": "Похоже, меня постигла та же участь, какую находит каждый алхимик. Это недуг, которым болеют изготовители зелий. Болезнь не заразная, но смертельная, если оставить её без внимания.",
+            "warmup": 30,  
+            "effects": {"alchemist.disease.easy.level1": 1},
         },  
         {
             "id": "disease.searching.recipe",
@@ -47,6 +57,7 @@
         }, 
         {
             "id": "disease.kill.abort",
+            "requirements": {"impossible": 1},
             "label": "Я ещё поживу",
             "startdescription": "Я успел отразить финальную атаку болезни, но время было упущено. Пока я могу работать, мне нужно искать возможности лечения.",
             "linked": [{"id": "disease.searching.recipe"}],

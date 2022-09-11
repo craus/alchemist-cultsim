@@ -7,6 +7,12 @@
             "isAspect": true,
         },
         {
+            "id": "hard",
+            "label": "Сложно",
+            "description": "Игра на высоком уровне сложности.",
+            "isAspect": true,
+        },
+        {
             "id": "substance",
             "label": "Субстанция",
             "description": "Материя, пригодная для алхимических превращений.",

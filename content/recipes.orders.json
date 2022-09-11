@@ -42,8 +42,20 @@
                 "money": 1,
                 "souldrop": 1,
             },     
-            "linked": [{"id": "talk.customer.end"}],
+            "linked": [
+                {"id": "talk.customer.extra.money"},
+                {"id": "talk.customer.end"},
+            ],
         },  
+        {
+            "id": "talk.customer.extra.money",  
+            "label": "Сдать заказ клиенту",
+            "extantreqs": {"wish.philosopherstone": 1},
+            "effects": {"money": 1},  
+            "linked": [
+                {"id": "talk.customer.end"},
+            ],   
+        },
         {
             "label": "Сдать заказ клиенту",
             "description": "Меня порекомендовали! Я получил ещё заказ.",
