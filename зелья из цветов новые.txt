@@ -48,7 +48,7 @@ potions
   neutralize: winter, heart, edge
   absolute: forge, lantern, secret histories, grail
   identity: heart, grail, winter
-  similar: secret histories 2, heart, knock
+  similar: secret histories, heart, knock
   difference: moth, edge, knock
   other: lantern, secret histories
   split: edge, knock, lantern, moth
