@@ -121,9 +121,6 @@
             "actionid": "visit",
             "description": "Настала пора возвращаться.",
             "warmup": 60,
-            "effects": {
-                "substance": -4,
-            },
         },
         {
             "id": "visit.forest",
@@ -135,7 +132,7 @@
             "startdescription": "Прогулка по непролазной лесной чаще обещает быть утомительной...",
             "craftable": true, 
             "deckeffects": {
-                "deck.forest": 6,
+                "deck.forest": 2,
             },
         },
         {
@@ -148,7 +145,7 @@
             "startdescription": "Изнурительный маршрут под палящим солнцем...",
             "craftable": true, 
             "deckeffects": {
-                "deck.plain": 6,
+                "deck.plain": 2,
             },
         },
         {
@@ -161,7 +158,7 @@
             "startdescription": "Опасное преодоление водной пучины...",
             "craftable": true, 
             "deckeffects": {
-                "deck.island": 6,
+                "deck.island": 2,
             },
         },
         {
@@ -174,7 +171,7 @@
             "startdescription": "Мерзкий запах и вязкая почва...",
             "craftable": true, 
             "deckeffects": {
-                "deck.swamp": 6,
+                "deck.swamp": 2,
             },
         },
         {
@@ -187,7 +184,7 @@
             "startdescription": "Одно неосторожное движение — и страх падения окажется предвидением...",
             "craftable": true, 
             "deckeffects": {
-                "deck.mountain": 6,
+                "deck.mountain": 2,
             },
         },
     ]
