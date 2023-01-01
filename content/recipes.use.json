@@ -1413,9 +1413,7 @@
                 "potion.difference": -1,
                 "potion.strengthen": -1,
             },
-            "deckeffects": {
-                "difference.strengthen.deck": 10,
-            },
+            "deckeffects": {"difference.strengthen.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1435,9 +1433,7 @@
                 "potion.difference": -1,
                 "potion.weaken": -1,
             },
-            "deckeffects": {
-                "difference.weaken.deck": 10,
-            },
+            "deckeffects": {"difference.weaken.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1457,9 +1453,7 @@
                 "potion.difference": -1,
                 "potion.reverse": -1,
             },
-            "deckeffects": {
-                "difference.reverse.deck": 10,
-            },
+            "deckeffects": {"difference.reverse.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1479,9 +1473,7 @@
                 "potion.difference": -1,
                 "potion.neutralize": -1,
             },
-            "deckeffects": {
-                "difference.neutralize.deck": 10,
-            },
+            "deckeffects": {"difference.neutralize.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1501,9 +1493,7 @@
                 "potion.difference": -1,
                 "potion.absolute": -1,
             },
-            "deckeffects": {
-                "difference.absolute.deck": 10,
-            },
+            "deckeffects": {"difference.absolute.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1523,9 +1513,7 @@
                 "potion.difference": -1,
                 "potion.identity": -1,
             },
-            "deckeffects": {
-                "difference.identity.deck": 10,
-            },
+            "deckeffects": {"difference.identity.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1545,9 +1533,7 @@
                 "potion.difference": -1,
                 "potion.similar": -1,
             },
-            "deckeffects": {
-                "difference.similar.deck": 10,
-            },
+            "deckeffects": {"difference.similar.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1566,9 +1552,7 @@
             "effects": {
                 "potion.difference": -2,
             },
-            "deckeffects": {
-                "difference.difference.deck": 10,
-            },
+            "deckeffects": {"difference.difference.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1588,9 +1572,7 @@
                 "potion.difference": -1,
                 "potion.other": -1,
             },
-            "deckeffects": {
-                "difference.other.deck": 10,
-            },
+            "deckeffects": {"difference.other.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1610,9 +1592,7 @@
                 "potion.difference": -1,
                 "potion.split": -1,
             },
-            "deckeffects": {
-                "difference.split.deck": 10,
-            },
+            "deckeffects": {"difference.split.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1632,9 +1612,7 @@
                 "potion.difference": -1,
                 "potion.merge": -1,
             },
-            "deckeffects": {
-                "difference.merge.deck": 10,
-            },
+            "deckeffects": {"difference.merge.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1654,9 +1632,7 @@
                 "potion.difference": -1,
                 "potion.static": -1,
             },
-            "deckeffects": {
-                "difference.static.deck": 10,
-            },
+            "deckeffects": {"difference.static.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1676,9 +1652,7 @@
                 "potion.difference": -1,
                 "potion.explosion": -1,
             },
-            "deckeffects": {
-                "difference.explosion.deck": 10,
-            },
+            "deckeffects": {"difference.explosion.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1698,9 +1672,7 @@
                 "potion.difference": -1,
                 "potion.void": -1,
             },
-            "deckeffects": {
-                "difference.void.deck": 10,
-            },
+            "deckeffects": {"difference.void.deck": 10},
             "linked": [
                 {
                     "id": "difference.step2",
@@ -1763,9 +1735,7 @@
             "effects": {
                 "modifiable": -19,
             },
-            "deckeffects": {
-                "other.any.deck": 20,
-            },
+            "deckeffects": {"other.any.deck": 20},
             "linked": [
                 {
                     "id": "other.any.step3",
@@ -1775,9 +1745,7 @@
         {
             "id": "other.any.step3",
             "label": "Вот что я получил.",
-            "aspects": {
-                "copy": 1,
-            },
+            "aspects": {"copy": 1},
         }, 
         
         {

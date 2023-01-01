@@ -109,9 +109,7 @@
             "description": "Кое-что удалось обнаружить...",
             "warmup": 60,
             "craftable": true,
-            "deckeffects": {
-                "deck.village": 1,
-            },      
+            "deckeffects": {"deck.village": 1},      
         },  
         
         
@@ -122,7 +120,7 @@
             "description": "Настала пора возвращаться.",
             "warmup": 60,
             "effects": {
-                "substance": -4,
+                "substance": -1,
             },
         },
         {
@@ -134,9 +132,7 @@
             },
             "startdescription": "Прогулка по непролазной лесной чаще обещает быть утомительной...",
             "craftable": true, 
-            "deckeffects": {
-                "deck.forest": 6,
-            },
+            "deckeffects": {"deck.forest": 3},
         },
         {
             "id": "visit.plain",
@@ -147,9 +143,7 @@
             },
             "startdescription": "Изнурительный маршрут под палящим солнцем...",
             "craftable": true, 
-            "deckeffects": {
-                "deck.plain": 6,
-            },
+            "deckeffects": {"deck.plain": 3},
         },
         {
             "id": "visit.island",
@@ -160,9 +154,7 @@
             },
             "startdescription": "Опасное преодоление водной пучины...",
             "craftable": true, 
-            "deckeffects": {
-                "deck.island": 6,
-            },
+            "deckeffects": {"deck.island": 3},
         },
         {
             "id": "visit.swamp",
@@ -173,9 +165,7 @@
             },
             "startdescription": "Мерзкий запах и вязкая почва...",
             "craftable": true, 
-            "deckeffects": {
-                "deck.swamp": 6,
-            },
+            "deckeffects": {"deck.swamp": 3},
         },
         {
             "id": "visit.mountain",
@@ -186,9 +176,7 @@
             },
             "startdescription": "Одно неосторожное движение — и страх падения окажется предвидением...",
             "craftable": true, 
-            "deckeffects": {
-                "deck.mountain": 6,
-            },
+            "deckeffects": {"deck.mountain": 3},
         },
     ]
 }

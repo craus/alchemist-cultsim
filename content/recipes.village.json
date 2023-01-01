@@ -152,9 +152,7 @@
             "startdescription": "Кто-то заинтересовался моими изделиями!",
             "description": "Я получил заказ!",
             "warmup": 30,
-            "deckeffects": {
-                "customers": 1,
-            },  
+            "deckeffects": {"customers": 1},  
             "alt": [
                 {
                     "id": "talk.village.failedorder",

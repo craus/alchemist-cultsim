@@ -68,10 +68,7 @@
             "actionid": "disease.recipe.create",
             "startdescription": "Я нашёл рецепт средства в книгах отца. Оно не сделает меня здоровым, но задержит развитие болезни.",
             "warmup": 10,  
-            "deckeffects": {
-                "alchemist.disease.deck": 10,
-                "alchemist.disease.recipes.deck": 1,
-            },
+            "deckeffects": {"alchemist.disease.deck": 10,"alchemist.disease.recipes.deck": 1,},
             "linked": [
                 {"id": "disease.recipe.create.step2.level1"},
                 {"id": "disease.recipe.create.step2.level2"},
