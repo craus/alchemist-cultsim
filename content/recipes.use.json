@@ -145,7 +145,7 @@
                 "potion.reverse": 2,
             }
         }, 
-        {
+        { // Эта реакция должна быть выше чем strengthen.strengthen
             "id": "strengthen.absolute",
             "label": "Усиление абсолюта — абсолют",
             "requirements": {
@@ -158,9 +158,13 @@
             "effects": {
                 "potion.strengthen": -1,
                 "potion.absolute": -1,
-                "potion.absolute": 2,
             },
-            "comment": "Эта реакция должна быть выше чем strengthen.strengthen",
+            "linked": [{"id": "strengthen.absolute.step2"}],
+        },
+        {
+            "id": "strengthen.absolute.step2",
+            "label": "Усиление абсолюта — абсолют",
+            "effects": {"potion.absolute": 2},
         },
         {
             "id": "strengthen.strengthen",
