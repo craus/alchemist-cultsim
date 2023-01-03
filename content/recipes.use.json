@@ -80,8 +80,7 @@
             "description": "Пожалуй, не буду этого делать.",
             "alt": [
                 {
-                    "id": "strengthen.absolute",
-                    "comment": "это должно быть выше чем strengthen.strengthen",
+                    "id": "strengthen.absolute", // это должно быть выше чем strengthen.strengthen
                 },
                 {
                     "id": "strengthen.strengthen",
