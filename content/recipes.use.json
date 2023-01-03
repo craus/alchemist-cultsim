@@ -880,13 +880,8 @@
                 "potion.neutralize": -1,
             }
         },
-            
-        {
-            "id": "_absolute",
-            "label": "Абсолют",
-            "actionid": "_alchemist.use",
-            "comment": "Этот рецепт вынесен до рецепта strengthen, чтобы перехватывать его",
-        },
+         
+        // Рецепт absolute вынесен до рецепта strengthen, чтобы перехватывать его
         {
             "id": "absolute.weaken",
             "label": "Абсолют ослабления — противоположность",
