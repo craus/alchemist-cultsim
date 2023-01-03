@@ -65,6 +65,15 @@
                 "recipe": -1,
                 "potion.strengthen.or.absolute": 1,
             },
+            "startdescription": "Я могу что-то усилить.",
+            "craftable": true,
+            "warmup": 5,
+            "linked": [{"id": "strengthen.step2",},],
+        },
+        {
+            "id": "strengthen.step2",
+            "label": "Усиление шаг 2",
+            "startdescription": "Усиление шаг 2 старт",
             "slots": [                
                 {
                     "id": "target",
@@ -75,7 +84,6 @@
                     },
                 },   
             ],
-            "startdescription": "Я могу что-то усилить.",
             "warmup": 60,
             "description": "Пожалуй, не буду этого делать.",
             "alt": [
@@ -114,8 +122,7 @@
                     "id": "unmatch",
                 },
             ],
-            "craftable": true,
-        },       
+        },            
         {
             "id": "strengthen.weaken",
             "label": "Усиление ослабления — нейтрализация",
